@@ -1,0 +1,2532 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/person/art_duration_months:jr:constraintMsg">
+            <value>Months of treatment should not be less than 0 and no more than the person's age in months</value>
+          </text>
+          <text id="/data/person/art_duration_months:label">
+            <value>Months;</value>
+          </text>
+          <text id="/data/person/art_duration_years:jr:constraintMsg">
+            <value>Years of treatment should not be less than 0 and no more than the person's age in years</value>
+          </text>
+          <text id="/data/person/art_duration_years:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/art_duration_years:label">
+            <value>Years;</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/care_giver:label">
+            <value>Guardian/Care giver</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/other:label">
+            <value>Others</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/passport:label">
+            <value>Health passport</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/self:label">
+            <value>Self reported</value>
+          </text>
+          <text id="/data/person/art_emr_id_source:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/art_emr_id_source:label">
+            <value>Source of ART EMR ID</value>
+          </text>
+          <text id="/data/person/art_emr_id_source_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/art_emr_id_source_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/c_art_id:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/c_art_id:jr:constraintMsg">
+            <value>ID should have 4 digits</value>
+          </text>
+          <text id="/data/person/c_art_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/c_art_id:label">
+            <value>Second part of EMR ID</value>
+          </text>
+          <text id="/data/person/c_eid_id:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/c_eid_id:jr:constraintMsg">
+            <value>ID should have 4 digits</value>
+          </text>
+          <text id="/data/person/c_eid_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/c_eid_id:label">
+            <value>Second part of EMR ID</value>
+          </text>
+          <text id="/data/person/c_ncd_id:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/c_ncd_id:jr:constraintMsg">
+            <value>ID should have 4 digits</value>
+          </text>
+          <text id="/data/person/c_ncd_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/c_ncd_id:label">
+            <value>Second part of EMR ID</value>
+          </text>
+          <text id="/data/person/conditions:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/data/person/conditions:jr:constraintMsg">
+            <value><output value=" /data/person/condition_validation_message "/></value>
+          </text>
+          <text id="/data/person/conditions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/conditions:label">
+            <value>Is <output value=" /data/person/name "/> on treatment for any of these conditions?</value>
+          </text>
+          <text id="/data/person/conditions_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/contact_type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/contact_type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/person/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/person/date_of_birth_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/care_giver:label">
+            <value>Guardian/Care giver</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/other:label">
+            <value>Others</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/passport:label">
+            <value>Health passport</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/self:label">
+            <value>Self reported</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source:label">
+            <value>Source of EID EMR ID</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:hint">
+            <value>And how many months?</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:label">
+            <value>Age in months</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:hint">
+            <value>Age in years</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between <output value=" /data/person/ephemeral_dob/c_cohort_constraint_lower "/> and<output value=" /data/person/ephemeral_dob/c_cohort_constraint_upper "/></value></text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort/over_5:label">
+            <value>Over 5</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort/under_5:label">
+            <value>Under 5</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort:label">
+            <value>Cohort</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_approx:label">
+            <value>DOB</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value><output value=" /data/person/ephemeral_dob/dob_validation_message "/></value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar_format:label">
+            <value>_Date of birth is <output value=" /data/person/ephemeral_dob/c_dob_calendar "/>_</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_iso:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_raw:label">
+            <value>Raw DOB</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/ephemeral_months:label">
+            <value>Ephemeral months</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/ephemeral_years:label">
+            <value>Ephemeral years</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob:label">
+            <value>Does <output value=" /data/person/name "/> know their date of birth?</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/n_confirm_age:label">
+            <value>_Confirm age in health passport._</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/n_person_age:label">
+            <value>_Current Age: <output value=" /data/person/ephemeral_dob/c_age_string "/>_</value>
+          </text>
+          <text id="/data/person/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/person/has_art_emr_id/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/has_art_emr_id/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/has_art_emr_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/has_art_emr_id:label">
+            <value>Is the ART EMR ID available</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id:label">
+            <value>Is the EID EMR ID available</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id/no:label">
+            <value>No</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id:label">
+            <value>Is the NCD EMR ID available</value>
+          </text>
+          <text id="/data/person/malnutrition_program/hospitalization:label">
+            <value>Hospitalization (NRU)</value>
+          </text>
+          <text id="/data/person/malnutrition_program/otp:label">
+            <value>OTP</value>
+          </text>
+          <text id="/data/person/malnutrition_program/sfp:label">
+            <value>SFP</value>
+          </text>
+          <text id="/data/person/malnutrition_program:label">
+            <value>Malnutrition enrollment program</value>
+          </text>
+          <text id="/data/person/mental_health_type/depression:label">
+            <value>Depression</value>
+          </text>
+          <text id="/data/person/mental_health_type/mania:label">
+            <value>Mania</value>
+          </text>
+          <text id="/data/person/mental_health_type/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/data/person/mental_health_type/schizophrenia:label">
+            <value>Schizophrenia</value>
+          </text>
+          <text id="/data/person/mental_health_type:hint">
+            <value>Refer to the health passport for the mental health type.</value>
+          </text>
+          <text id="/data/person/mental_health_type:label">
+            <value>Mental health type</value>
+          </text>
+          <text id="/data/person/mental_health_type_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/mental_health_type_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/n_art_id:label">
+            <value>_ART EMR ID is <output value=" /data/person/art_id "/>_</value>
+          </text>
+          <text id="/data/person/n_art_length:label">
+            <value>How long has <output value=" /data/person/name "/> been on the ART program?</value>
+          </text>
+          <text id="/data/person/n_confirm_emr_ids:label">
+            <value>_Confirm if the EMR ID matches the one in the health passport. If it's not matching, edit the EMR details._</value>
+          </text>
+          <text id="/data/person/n_eid_id:label">
+            <value>_EID EMR ID IS <output value=" /data/person/eid_id "/>_</value>
+          </text>
+          <text id="/data/person/n_fill_out_o5_monthly_screening2:label">
+            <value>**Please fill out over 5 monthly screening for <output value=" /data/person/name "/> after submiting this household registration.**</value>
+          </text>
+          <text id="/data/person/n_fill_out_u5_monthly_screening:label">
+            <value>**Please fill out under 5 monthly screening for <output value=" /data/person/name "/> after submiting this household registration.**</value>
+          </text>
+          <text id="/data/person/n_ncd_id:label">
+            <value>_NCD EMR ID IS <output value=" /data/person/ncd_id "/>_</value>
+          </text>
+          <text id="/data/person/name:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/care_giver:label">
+            <value>Guardian/Care giver</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/other:label">
+            <value>Others</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/passport:label">
+            <value>Health passport</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/self:label">
+            <value>Self reported</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source:label">
+            <value>Source of NCD EMR ID</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/ncds/asthma:label">
+            <value>Asthma/chronic lung disease</value>
+          </text>
+          <text id="/data/person/ncds/diabetes:label">
+            <value>Diabetes</value>
+          </text>
+          <text id="/data/person/ncds/epilepsy:label">
+            <value>Epilepsy</value>
+          </text>
+          <text id="/data/person/ncds/heart_failure:label">
+            <value>Heart failure</value>
+          </text>
+          <text id="/data/person/ncds/hypertension:label">
+            <value>Hypertension</value>
+          </text>
+          <text id="/data/person/ncds/mental_health:label">
+            <value>Mental health</value>
+          </text>
+          <text id="/data/person/ncds/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/data/person/ncds:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/data/person/ncds:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ncds:label">
+            <value>NCD type</value>
+          </text>
+          <text id="/data/person/ncds_other:hint">
+            <value>Examples - sickle cell disease, kidney disease, stroke, arthritis</value>
+          </text>
+          <text id="/data/person/ncds_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/ncds_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Notes (optional)</value>
+          </text>
+          <text id="/data/person/parent:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/person/person_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/data/person/person_age_in_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/data/person/pre_art_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_art_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_art_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_art_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_art_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_art_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_art_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_art_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_art_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_art_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_art_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_art_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_art_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_art_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_art_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_art_id:label">
+            <value>First part of EMR ID</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:jr:constraintMsg">
+            <value>Only capital letters allowed</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/pre_eid_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_eid_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_eid_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_eid_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_eid_id:label">
+            <value>First part of EMR ID</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:jr:constraintMsg">
+            <value>Only capital letters allowed</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_ncd_id:label">
+            <value>First part of EMR ID</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:hint">
+            <value>Copy the EMR ID directly from health passport. Use the most recent information in the health passport</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:jr:constraintMsg">
+            <value>Only capital letters allowed</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/primary_phone_number:hint">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/primary_phone_number:jr:constraintMsg">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX.</value>
+          </text>
+          <text id="/data/person/primary_phone_number:label">
+            <value>Primary phone number</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:hint">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:jr:constraintMsg">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX.</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:label">
+            <value>Secondary phone number</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/person/sex:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/person/tb_duration_months:jr:constraintMsg">
+            <value>Months of treatment should not be less than 0 and no more than the person's age in months</value>
+          </text>
+          <text id="/data/person/tb_duration_months:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/data/person/tb_duration_months:label">
+            <value>How many months has <output value=" /data/person/name "/> been on the TB program?</value>
+          </text>
+          <text id="/data/person/type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Person details</value>
+          </text>
+          <text id="static_instance-cohorts-0">
+            <value>Under 5</value>
+          </text>
+          <text id="static_instance-cohorts-1">
+            <value>Over 5</value>
+          </text>
+          <text id="static_instance-conditions-0">
+            <value>EID</value>
+          </text>
+          <text id="static_instance-conditions-1">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-conditions-2">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-conditions-3">
+            <value>NCD</value>
+          </text>
+          <text id="static_instance-conditions-4">
+            <value>Malnutrition</value>
+          </text>
+          <text id="static_instance-conditions-5">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-conditions-6">
+            <value>None</value>
+          </text>
+          <text id="static_instance-education-0">
+            <value>None</value>
+          </text>
+          <text id="static_instance-education-1">
+            <value>Primary</value>
+          </text>
+          <text id="static_instance-education-2">
+            <value>Secondary</value>
+          </text>
+          <text id="static_instance-education-3">
+            <value>College</value>
+          </text>
+          <text id="static_instance-education-4">
+            <value>University</value>
+          </text>
+          <text id="static_instance-emr_id_source-0">
+            <value>Self reported</value>
+          </text>
+          <text id="static_instance-emr_id_source-1">
+            <value>Health passport</value>
+          </text>
+          <text id="static_instance-emr_id_source-2">
+            <value>Guardian/Care giver</value>
+          </text>
+          <text id="static_instance-emr_id_source-3">
+            <value>Others</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>Male</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>Female</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-0">
+            <value>SFP</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-1">
+            <value>OTP</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-2">
+            <value>Hospitalization (NRU)</value>
+          </text>
+          <text id="static_instance-mental_health_type-0">
+            <value>Schizophrenia</value>
+          </text>
+          <text id="static_instance-mental_health_type-1">
+            <value>Mania</value>
+          </text>
+          <text id="static_instance-mental_health_type-2">
+            <value>Depression</value>
+          </text>
+          <text id="static_instance-mental_health_type-3">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-ncds-0">
+            <value>Hypertension</value>
+          </text>
+          <text id="static_instance-ncds-1">
+            <value>Asthma/chronic lung disease</value>
+          </text>
+          <text id="static_instance-ncds-2">
+            <value>Diabetes</value>
+          </text>
+          <text id="static_instance-ncds-3">
+            <value>Epilepsy</value>
+          </text>
+          <text id="static_instance-ncds-4">
+            <value>Mental health</value>
+          </text>
+          <text id="static_instance-ncds-5">
+            <value>Heart failure</value>
+          </text>
+          <text id="static_instance-ncds-6">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-select_dob_method-0">
+            <value>Date of birth with current age</value>
+          </text>
+          <text id="static_instance-select_dob_method-1">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="static_instance-site-0">
+            <value>NNO</value>
+          </text>
+          <text id="static_instance-site-1">
+            <value>DAM</value>
+          </text>
+          <text id="static_instance-site-10">
+            <value>MTE</value>
+          </text>
+          <text id="static_instance-site-11">
+            <value>ZLA</value>
+          </text>
+          <text id="static_instance-site-12">
+            <value>NKA</value>
+          </text>
+          <text id="static_instance-site-13">
+            <value>MIHC</value>
+          </text>
+          <text id="static_instance-site-2">
+            <value>CFGA</value>
+          </text>
+          <text id="static_instance-site-3">
+            <value>LGWE</value>
+          </text>
+          <text id="static_instance-site-4">
+            <value>MGT</value>
+          </text>
+          <text id="static_instance-site-5">
+            <value>MTDN</value>
+          </text>
+          <text id="static_instance-site-6">
+            <value>NSM</value>
+          </text>
+          <text id="static_instance-site-7">
+            <value>NOP</value>
+          </text>
+          <text id="static_instance-site-8">
+            <value>LWAN</value>
+          </text>
+          <text id="static_instance-site-9">
+            <value>LSI</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/person/art_duration_months:jr:constraintMsg">
+            <value>Miyezi ya pa mankhwala siyingakhale yochepera 0 komanso yoposera miyezi yake yonse ya kubadwa.</value>
+          </text>
+          <text id="/data/person/art_duration_months:label">
+            <value>Miyezi;</value>
+          </text>
+          <text id="/data/person/art_duration_years:jr:constraintMsg">
+            <value>Zaka za pa mankhwala sizingakhale zochepera 0 komanso zoposera zaka zake zobadwa.</value>
+          </text>
+          <text id="/data/person/art_duration_years:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/art_duration_years:label">
+            <value>Zaka;</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/care_giver:label">
+            <value>Kwa omuyang'anira</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/passport:label">
+            <value>Mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/art_emr_id_source/self:label">
+            <value>Kwa mwini wake</value>
+          </text>
+          <text id="/data/person/art_emr_id_source:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/art_emr_id_source:label">
+            <value>Nambala ya ART EMR yomwe mwalowetsayi mwayitenga kuti?</value>
+          </text>
+          <text id="/data/person/art_emr_id_source_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/art_emr_id_source_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/c_art_id:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/c_art_id:jr:constraintMsg">
+            <value>ID iyenera kukhala ndi manambala 4</value>
+          </text>
+          <text id="/data/person/c_art_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/c_art_id:label">
+            <value>Gawo lachiwiri la EMR ID</value>
+          </text>
+          <text id="/data/person/c_eid_id:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/c_eid_id:jr:constraintMsg">
+            <value>ID iyenera kukhala ndi manambala 4</value>
+          </text>
+          <text id="/data/person/c_eid_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/c_eid_id:label">
+            <value>Gawo lachiwiri la EMR ID</value>
+          </text>
+          <text id="/data/person/c_ncd_id:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/c_ncd_id:jr:constraintMsg">
+            <value>ID iyenera kukhala ndi manambala 4</value>
+          </text>
+          <text id="/data/person/c_ncd_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/c_ncd_id:label">
+            <value>Gawo lachiwiri la EMR ID</value>
+          </text>
+          <text id="/data/person/conditions:hint">
+            <value>Sankhani nthenda ina iliyonse yomwe munthuyi ali nayo</value>
+          </text>
+          <text id="/data/person/conditions:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china</value>
+          </text>
+          <text id="/data/person/conditions:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/conditions:label">
+            <value>Kodi <output value=" /data/person/name "/> ali pa ndondomeko ya mankhwala a ena mwa matenda awa?</value>
+          </text>
+          <text id="/data/person/conditions_other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/data/person/contact_type:hint">
+            <value>Posayenera kulumphidwa</value>
+          </text>
+          <text id="/data/person/contact_type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/person/date_of_birth:label">
+            <value>Tsiku lobadwa</value>
+          </text>
+          <text id="/data/person/date_of_birth_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/care_giver:label">
+            <value>Kwa omuyang'anira</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/passport:label">
+            <value>Mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source/self:label">
+            <value>Kwa mwini wake</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source:label">
+            <value>Nambala ya EID EMR mwalowetsayi mwayitenga kuti?</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/eid_emr_id_source_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:hint">
+            <value>Miyezi</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Miyezi isachepere 0 komanso isaposere miyezi khumi ndi umodzi</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:label">
+            <value>Miyezi</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:hint">
+            <value>Zaka</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Zaka zikhale za pakati pa <output value=" /data/person/ephemeral_dob/c_cohort_constraint_lower "/> mpaka <output value=" /data/person/ephemeral_dob/c_cohort_constraint_upper "/></value></text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:label">
+            <value>Zaka</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort/over_5:label">
+            <value>Oposera zaka 5</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort/under_5:label">
+            <value>Ochepera zaka 5</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/cohort:label">
+            <value>Ali m'gulu la anthu</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_approx:label">
+            <value>DOB</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Zaka zikhale za pakati pa <output value=" /data/person/ephemeral_dob/c_cohort_constraint_lower "/> mpaka <output value=" /data/person/ephemeral_dob/c_cohort_constraint_upper "/></value></text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:label">
+            <value>Tsiku lobadwa</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar_format:label">
+            <value>_Tsiku lobadwa <output value=" /data/person/ephemeral_dob/c_dob_calendar "/>_</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_iso:label">
+            <value>Tsiku lobadwa</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_raw:label">
+            <value>Raw DOB</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/ephemeral_months:label">
+            <value>Ephemeral months</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/ephemeral_years:label">
+            <value>Ephemeral years</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/knows_dob:label">
+            <value>Kodi akudziwa Tsiku lake lobadwa?</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/n_confirm_age:label">
+            <value>_Tsimikizani zaka powona m'buku lakuchipatala_</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/n_person_age:label">
+            <value>_Zaka zomwe ali nazo: <output value=" /data/person/ephemeral_dob/c_age_string_ny "/>_</value>
+          </text>
+          <text id="/data/person/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/person/has_art_emr_id/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/data/person/has_art_emr_id/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/data/person/has_art_emr_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/has_art_emr_id:label">
+            <value>Kodi nambala yopelekedwa kwa munthu amene ali pa ART ilipo?</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/has_eid_emr_id:label">
+            <value>Kodi nambala ya EID EMR ilipo</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/has_ncd_emr_id:label">
+            <value>Kodi nambala yopelekedwa kwa munthu amene ali pa matenda a mgonagona ilipo?</value>
+          </text>
+          <text id="/data/person/malnutrition_program/hospitalization:label">
+            <value>Kugonekedwa mu chipatala</value>
+          </text>
+          <text id="/data/person/malnutrition_program/otp:label">
+            <value>Chiponde</value>
+          </text>
+          <text id="/data/person/malnutrition_program/sfp:label">
+            <value>Likuni</value>
+          </text>
+          <text id="/data/person/malnutrition_program:label">
+            <value>Ndondomeko ya kunyentchera yomwe walowetsedwamo</value>
+          </text>
+          <text id="/data/person/mental_health_type/depression:label">
+            <value>Depression</value>
+          </text>
+          <text id="/data/person/mental_health_type/mania:label">
+            <value>Mania</value>
+          </text>
+          <text id="/data/person/mental_health_type/other:label">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="/data/person/mental_health_type/schizophrenia:label">
+            <value>Schizophrenia</value>
+          </text>
+          <text id="/data/person/mental_health_type:hint">
+            <value>Onaninso pasipoti ya thanzi ya mtundu wa thanzi labwino.</value>
+          </text>
+          <text id="/data/person/mental_health_type:label">
+            <value>Mtundu wa Matenda amu Ubongo</value>
+          </text>
+          <text id="/data/person/mental_health_type_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/mental_health_type_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/n_art_id:label">
+            <value>_Nambala ya ART ni <output value=" /data/person/art_id "/>_</value>
+          </text>
+          <text id="/data/person/n_art_length:label">
+            <value>Kodi <output value=" /data/person/name "/> wakhala nthawi yayitali bwanji ali pa ART <output value=" /data/person/ephemeral_dob/person_age_years "/> <output value=" /data/person/ephemeral_dob/person_age_months "/></value></text>
+          <text id="/data/person/n_confirm_emr_ids:label">
+            <value>_Tsimikizani ngati nambala ya EMR ikugwilizana ndi ya mu m'buku la kuchipatala. Ngati zikusiyana konzani._</value>
+          </text>
+          <text id="/data/person/n_eid_id:label">
+            <value>_Nambala ya EID ni <output value=" /data/person/eid_id "/>_</value>
+          </text>
+          <text id="/data/person/n_fill_out_o5_monthly_screening2:label">
+            <value>**Chonde lembani fomu ya pamwezi yofufuzira matenda pakati pa anthu oposera zaka zisanu ya <output value=" /data/person/name "/> mukamaliza kulembera banjali.**</value>
+          </text>
+          <text id="/data/person/n_fill_out_u5_monthly_screening:label">
+            <value>**Chonde lembani fomu ya pa mwezi yofufuzira matenda pakati pa ana ochepera zaka zisanu ya <output value=" /data/person/name "/> mukamaliza kulembera banjali.**</value>
+          </text>
+          <text id="/data/person/n_ncd_id:label">
+            <value>_Nambala ya Matenda a mgonagona ni <output value=" /data/person/ncd_id "/>_</value>
+          </text>
+          <text id="/data/person/name:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Dzina</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/care_giver:label">
+            <value>Kwa omuyang'anira</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/passport:label">
+            <value>Mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source/self:label">
+            <value>Kwa mwini wake</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source:label">
+            <value>Nambala ya NCD EMR yomwe mwalowetsayi mwayitenga kuti?</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ncd_emr_id_source_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/ncds/asthma:label">
+            <value>Mphumu</value>
+          </text>
+          <text id="/data/person/ncds/diabetes:label">
+            <value>Matenda a Shuga</value>
+          </text>
+          <text id="/data/person/ncds/epilepsy:label">
+            <value>Khunyu</value>
+          </text>
+          <text id="/data/person/ncds/heart_failure:label">
+            <value>Matenda a mtima</value>
+          </text>
+          <text id="/data/person/ncds/hypertension:label">
+            <value>Kuthamanga kwa magazi</value>
+          </text>
+          <text id="/data/person/ncds/mental_health:label">
+            <value>Matenda a mu ubongo</value>
+          </text>
+          <text id="/data/person/ncds/other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/data/person/ncds:hint">
+            <value>Sankhani nthenda ina iliyonse yomwe munthuyi ali nayo</value>
+          </text>
+          <text id="/data/person/ncds:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ncds:label">
+            <value>Mtundu wa matenda a mgonagona</value>
+          </text>
+          <text id="/data/person/ncds_other:hint">
+            <value>Zitsanzo- nthenda yokutha magazi, nthenda ya chiwindi, kufa ziwalo, nthenda youmitsa mafupa</value>
+          </text>
+          <text id="/data/person/ncds_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/ncds_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Ndemanga</value>
+          </text>
+          <text id="/data/person/parent:hint">
+            <value>Posayenera kulumphidwa</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/data/person/person_age_in_months:label">
+            <value>Miyezi</value>
+          </text>
+          <text id="/data/person/person_age_in_years:label">
+            <value>Zaka</value>
+          </text>
+          <text id="/data/person/pre_art_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_art_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_art_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_art_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_art_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_art_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_art_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_art_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_art_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_art_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_art_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_art_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_art_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_art_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_art_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_art_id:label">
+            <value>Gawo loyamba la EMR ID</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:jr:constraintMsg">
+            <value>Lembani zilembo zikuluzikulu zokha</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_art_id_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/pre_eid_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_eid_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_eid_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_eid_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_eid_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_eid_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_eid_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_eid_id:label">
+            <value>Gawo loyamba la EMR ID</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:jr:constraintMsg">
+            <value>Lembani zilembo zikuluzikulu zokha</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_eid_id_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/CFGA:label">
+            <value>CFGA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/DAM:label">
+            <value>DAM</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LGWE:label">
+            <value>LGWE</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LSI:label">
+            <value>LSI</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/LWAN:label">
+            <value>LWAN</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MGT:label">
+            <value>MGT</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MIHC:label">
+            <value>MIHC</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MTDN:label">
+            <value>MTDN</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/MTE:label">
+            <value>MTE</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NKA:label">
+            <value>NKA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NNO:label">
+            <value>NNO</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NOP:label">
+            <value>NOP</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/NSM:label">
+            <value>NSM</value>
+          </text>
+          <text id="/data/person/pre_ncd_id/ZLA:label">
+            <value>ZLA</value>
+          </text>
+          <text id="/data/person/pre_ncd_id:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_ncd_id:label">
+            <value>Gawo loyamba la EMR ID</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:hint">
+            <value>Gwilitsani ntchito uthenga watsopano mu buku la ku chipatala</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:jr:constraintMsg">
+            <value>Lembani zilembo zikuluzikulu zokha</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/pre_ncd_id_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/data/person/primary_phone_number:hint">
+            <value>Gwiritsani ntchito chimodzi mwa zitsanzo izi:: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/primary_phone_number:jr:constraintMsg">
+            <value>Gwiritsani ntchito imodzi mwa njira izi: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/primary_phone_number:label">
+            <value>Foni Yoyamba</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:hint">
+            <value>Gwiritsani ntchito chimodzi mwa zitsanzo izi:: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:jr:constraintMsg">
+            <value>Gwiritsani ntchito imodzi mwa njira izi: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/person/secondary_phone_number:label">
+            <value>Foni Yachiwiri</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Mkazi</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Mwamuna</value>
+          </text>
+          <text id="/data/person/sex:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Jenda</value>
+          </text>
+          <text id="/data/person/tb_duration_months:jr:constraintMsg">
+            <value>Miyezi ya pa mankhwala siyingakhale yochepera 0 komanso yoposera miyezi yake yonse ya kubadwa.</value>
+          </text>
+          <text id="/data/person/tb_duration_months:jr:requiredMsg">
+            <value>Yankhani funsoli kuti mupitilire</value>
+          </text>
+          <text id="/data/person/tb_duration_months:label">
+            <value>Kodi wakhala nthawi yayitali bwanji pa mankhwala a TB?</value>
+          </text>
+          <text id="/data/person/type:hint">
+            <value>Posayenera kulumphidwa</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Mbiri ya Munthuyo</value>
+          </text>
+          <text id="static_instance-cohorts-0">
+            <value>Ochepera zaka 5</value>
+          </text>
+          <text id="static_instance-cohorts-1">
+            <value>Oposera zaka 5</value>
+          </text>
+          <text id="static_instance-conditions-0">
+            <value>EID</value>
+          </text>
+          <text id="static_instance-conditions-1">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-conditions-2">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-conditions-3">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="static_instance-conditions-4">
+            <value>Kunyentchera</value>
+          </text>
+          <text id="static_instance-conditions-5">
+            <value>Fotokozani</value>
+          </text>
+          <text id="static_instance-conditions-6">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-education-0">
+            <value>None</value>
+          </text>
+          <text id="static_instance-education-1">
+            <value>Primary</value>
+          </text>
+          <text id="static_instance-education-2">
+            <value>Secondary</value>
+          </text>
+          <text id="static_instance-education-3">
+            <value>College</value>
+          </text>
+          <text id="static_instance-education-4">
+            <value>University</value>
+          </text>
+          <text id="static_instance-emr_id_source-0">
+            <value>Kwa mwini wake</value>
+          </text>
+          <text id="static_instance-emr_id_source-1">
+            <value>Mu buku la ku chipatala</value>
+          </text>
+          <text id="static_instance-emr_id_source-2">
+            <value>Kwa omuyang'anira</value>
+          </text>
+          <text id="static_instance-emr_id_source-3">
+            <value>Fotokozani</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>Mwamuna</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>Mkazi</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-0">
+            <value>Likuni</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-1">
+            <value>Chiponde</value>
+          </text>
+          <text id="static_instance-malnutrition_programs-2">
+            <value>Kugonekedwa mu chipatala</value>
+          </text>
+          <text id="static_instance-mental_health_type-0">
+            <value>Schizophrenia</value>
+          </text>
+          <text id="static_instance-mental_health_type-1">
+            <value>Mania</value>
+          </text>
+          <text id="static_instance-mental_health_type-2">
+            <value>Depression</value>
+          </text>
+          <text id="static_instance-mental_health_type-3">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="static_instance-ncds-0">
+            <value>Kuthamanga kwa magazi</value>
+          </text>
+          <text id="static_instance-ncds-1">
+            <value>Mphumu</value>
+          </text>
+          <text id="static_instance-ncds-2">
+            <value>Matenda a Shuga</value>
+          </text>
+          <text id="static_instance-ncds-3">
+            <value>Khunyu</value>
+          </text>
+          <text id="static_instance-ncds-4">
+            <value>Matenda a mu ubongo</value>
+          </text>
+          <text id="static_instance-ncds-5">
+            <value>Matenda a mtima</value>
+          </text>
+          <text id="static_instance-ncds-6">
+            <value>Fotokozani</value>
+          </text>
+          <text id="static_instance-select_dob_method-0">
+            <value>Tsiku lobadwa ndi zaka zomwe munthu ali nazo pa nthawiyo</value>
+          </text>
+          <text id="static_instance-select_dob_method-1">
+            <value>Ndi kalendala (ngati nkotheka)</value>
+          </text>
+          <text id="static_instance-site-0">
+            <value>NNO</value>
+          </text>
+          <text id="static_instance-site-1">
+            <value>DAM</value>
+          </text>
+          <text id="static_instance-site-10">
+            <value>MTE</value>
+          </text>
+          <text id="static_instance-site-11">
+            <value>ZLA</value>
+          </text>
+          <text id="static_instance-site-12">
+            <value>NKA</value>
+          </text>
+          <text id="static_instance-site-13">
+            <value>MIHC</value>
+          </text>
+          <text id="static_instance-site-2">
+            <value>CFGA</value>
+          </text>
+          <text id="static_instance-site-3">
+            <value>LGWE</value>
+          </text>
+          <text id="static_instance-site-4">
+            <value>MGT</value>
+          </text>
+          <text id="static_instance-site-5">
+            <value>MTDN</value>
+          </text>
+          <text id="static_instance-site-6">
+            <value>NSM</value>
+          </text>
+          <text id="static_instance-site-7">
+            <value>NOP</value>
+          </text>
+          <text id="static_instance-site-8">
+            <value>LWAN</value>
+          </text>
+          <text id="static_instance-site-9">
+            <value>LSI</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Eya</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Ayi</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2021-11-11 03:10:19">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <facility_id/>
+            </user>
+          </inputs>
+          <person>
+            <type>contact</type>
+            <contact_type>person</contact_type>
+            <parent>PARENT</parent>
+            <name/>
+            <sex/>
+            <date_of_birth/>
+            <date_of_birth_method/>
+            <person_age_in_years/>
+            <person_age_in_months/>
+            <art_start_date/>
+            <tb_treatment_start_date/>
+            <ephemeral_dob>
+              <cohort/>
+              <c_cohort_constraint_lower/>
+              <c_cohort_constraint_upper/>
+              <n_confirm_age/>
+              <knows_dob/>
+              <dob_validation_message/>
+              <dob_calendar/>
+              <c_dob_calendar/>
+              <dob_calendar_format/>
+              <age_years/>
+              <age_months/>
+              <c_person_age_in_years/>
+              <c_patient_mod_mnths/>
+              <c_age_string/>
+              <c_age_string_ny/>
+              <n_person_age/>
+              <ephemeral_months/>
+              <ephemeral_years/>
+              <dob_approx/>
+              <dob_raw/>
+              <dob_iso/>
+              <person_age_months/>
+              <person_age_years/>
+            </ephemeral_dob>
+            <primary_phone_number/>
+            <secondary_phone_number/>
+            <condition_age_group/>
+            <condition_validation_message/>
+            <conditions/>
+            <conditions_other/>
+            <malnutrition_program/>
+            <c_malnutrition_program/>
+            <ncds/>
+            <ncds_other/>
+            <mental_health_type/>
+            <mental_health_type_other/>
+            <has_eid_emr_id/>
+            <eid_emr_id_source/>
+            <eid_emr_id_source_other/>
+            <pre_eid_id/>
+            <pre_eid_id_other/>
+            <c_eid_id/>
+            <n_eid_id/>
+            <has_art_emr_id/>
+            <art_emr_id_source/>
+            <art_emr_id_source_other/>
+            <pre_art_id/>
+            <pre_art_id_other/>
+            <c_art_id/>
+            <n_art_id/>
+            <has_ncd_emr_id/>
+            <ncd_emr_id_source/>
+            <ncd_emr_id_source_other/>
+            <pre_ncd_id/>
+            <pre_ncd_id_other/>
+            <c_ncd_id/>
+            <n_ncd_id/>
+            <eid_id/>
+            <art_id/>
+            <ncd_id/>
+            <n_confirm_emr_ids/>
+            <n_art_length/>
+            <art_duration_years/>
+            <art_duration_months/>
+            <tb_duration_months/>
+            <notes/>
+            <n_fill_out_u5_monthly_screening/>
+            <n_fill_out_o5_monthly_screening2/>
+            <geolocation/>
+          </person>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="cohorts">
+        <root>
+          <item>
+            <itextId>static_instance-cohorts-0</itextId>
+            <name>under_5</name>
+          </item>
+          <item>
+            <itextId>static_instance-cohorts-1</itextId>
+            <name>over_5</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="education">
+        <root>
+          <item>
+            <itextId>static_instance-education-0</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>static_instance-education-1</itextId>
+            <name>primary</name>
+          </item>
+          <item>
+            <itextId>static_instance-education-2</itextId>
+            <name>secondary</name>
+          </item>
+          <item>
+            <itextId>static_instance-education-3</itextId>
+            <name>college</name>
+          </item>
+          <item>
+            <itextId>static_instance-education-4</itextId>
+            <name>university</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="male_female">
+        <root>
+          <item>
+            <itextId>static_instance-male_female-0</itextId>
+            <name>male</name>
+          </item>
+          <item>
+            <itextId>static_instance-male_female-1</itextId>
+            <name>female</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="emr_id_source">
+        <root>
+          <item>
+            <itextId>static_instance-emr_id_source-0</itextId>
+            <name>self</name>
+          </item>
+          <item>
+            <itextId>static_instance-emr_id_source-1</itextId>
+            <name>passport</name>
+          </item>
+          <item>
+            <itextId>static_instance-emr_id_source-2</itextId>
+            <name>care_giver</name>
+          </item>
+          <item>
+            <itextId>static_instance-emr_id_source-3</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ncds">
+        <root>
+          <item>
+            <itextId>static_instance-ncds-0</itextId>
+            <name>hypertension</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-1</itextId>
+            <name>asthma</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-2</itextId>
+            <name>diabetes</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-3</itextId>
+            <name>epilepsy</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-4</itextId>
+            <name>mental_health</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-5</itextId>
+            <name>heart_failure</name>
+          </item>
+          <item>
+            <itextId>static_instance-ncds-6</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="mental_health_type">
+        <root>
+          <item>
+            <itextId>static_instance-mental_health_type-0</itextId>
+            <name>schizophrenia</name>
+          </item>
+          <item>
+            <itextId>static_instance-mental_health_type-1</itextId>
+            <name>mania</name>
+          </item>
+          <item>
+            <itextId>static_instance-mental_health_type-2</itextId>
+            <name>depression</name>
+          </item>
+          <item>
+            <itextId>static_instance-mental_health_type-3</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="site">
+        <root>
+          <item>
+            <itextId>static_instance-site-0</itextId>
+            <name>NNO</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-1</itextId>
+            <name>DAM</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-2</itextId>
+            <name>CFGA</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-3</itextId>
+            <name>LGWE</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-4</itextId>
+            <name>MGT</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-5</itextId>
+            <name>MTDN</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-6</itextId>
+            <name>NSM</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-7</itextId>
+            <name>NOP</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-8</itextId>
+            <name>LWAN</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-9</itextId>
+            <name>LSI</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-10</itextId>
+            <name>MTE</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-11</itextId>
+            <name>ZLA</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-12</itextId>
+            <name>NKA</name>
+          </item>
+          <item>
+            <itextId>static_instance-site-13</itextId>
+            <name>MIHC</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="malnutrition_programs">
+        <root>
+          <item>
+            <itextId>static_instance-malnutrition_programs-0</itextId>
+            <name>sfp</name>
+          </item>
+          <item>
+            <itextId>static_instance-malnutrition_programs-1</itextId>
+            <name>otp</name>
+          </item>
+          <item>
+            <itextId>static_instance-malnutrition_programs-2</itextId>
+            <name>hospitalization</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="select_dob_method">
+        <root>
+          <item>
+            <itextId>static_instance-select_dob_method-0</itextId>
+            <cohort>over_5</cohort>
+            <name>approx</name>
+          </item>
+          <item>
+            <itextId>static_instance-select_dob_method-1</itextId>
+            <cohort>all</cohort>
+            <name>calendar</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="conditions">
+        <root>
+          <item>
+            <itextId>static_instance-conditions-0</itextId>
+            <name>eid</name>
+            <is_lte_2>0</is_lte_2>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-1</itextId>
+            <is_over_5>2</is_over_5>
+            <name>art</name>
+            <is_btw_2_5>1</is_btw_2_5>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-2</itextId>
+            <name>tb</name>
+            <is_btw_2_5>1</is_btw_2_5>
+            <other>3</other>
+            <is_over_5>2</is_over_5>
+            <is_lte_2>0</is_lte_2>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-3</itextId>
+            <is_over_5>2</is_over_5>
+            <name>ncd</name>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-4</itextId>
+            <name>malnutrition</name>
+            <is_lte_2>0</is_lte_2>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-5</itextId>
+            <name>other</name>
+            <is_btw_2_5>1</is_btw_2_5>
+            <other>3</other>
+            <is_over_5>2</is_over_5>
+            <is_lte_2>0</is_lte_2>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-6</itextId>
+            <name>none</name>
+            <is_btw_2_5>1</is_btw_2_5>
+            <other>3</other>
+            <is_over_5>2</is_over_5>
+            <is_lte_2>0</is_lte_2>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/person/type" type="string"/>
+      <bind nodeset="/data/person/contact_type" type="string"/>
+      <bind nodeset="/data/person/parent" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/name:jr:requiredMsg')" nodeset="/data/person/name" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/sex:jr:requiredMsg')" nodeset="/data/person/sex" required="true()" type="select1"/>
+      <bind calculate="format-date-time(date(../ephemeral_dob/dob_iso),'%Y-%m-%d')" nodeset="/data/person/date_of_birth" type="string"/>
+      <bind calculate="../ephemeral_dob/dob_method" nodeset="/data/person/date_of_birth_method" type="string"/>
+      <bind calculate="floor( difference-in-months(  /data/person/date_of_birth , today() ) div 12 )" nodeset="/data/person/person_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /data/person/date_of_birth , today() )" nodeset="/data/person/person_age_in_months" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time(today()) - ( /data/person/art_duration_years  * 365 + round( /data/person/art_duration_months  * 30.5, 0))), &quot;%Y-%m-%d&quot;)" nodeset="/data/person/art_start_date" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time(today()) - round( /data/person/tb_duration_months  * 30.5, 0)), &quot;%Y-%m-%d&quot;)" nodeset="/data/person/tb_treatment_start_date" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ephemeral_dob/cohort:jr:requiredMsg')" nodeset="/data/person/ephemeral_dob/cohort" required="true()" type="select1"/>
+      <bind calculate="if(selected(../cohort, 'over_5'), 5, 0)" nodeset="/data/person/ephemeral_dob/c_cohort_constraint_lower" type="string"/>
+      <bind calculate="if(selected(../cohort, 'under_5'), 5, 130)" nodeset="/data/person/ephemeral_dob/c_cohort_constraint_upper" type="string"/>
+      <bind nodeset="/data/person/ephemeral_dob/n_confirm_age" readonly="true()" relevant="selected(../cohort, 'under_5')" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ephemeral_dob/knows_dob:jr:requiredMsg')" nodeset="/data/person/ephemeral_dob/knows_dob" relevant="selected(../cohort, 'over_5')" required="true()" type="select1"/>
+      <bind calculate="if(../dob_calendar &gt; today(), 'Date of birth should not be greater than today.', if(../dob_calendar &gt; date-time(decimal-date-time(today() - (int(../c_cohort_constraint_lower) * 365)))
+and ../dob_calendar &lt; date-time(decimal-date-time(today() - (int(../c_cohort_constraint_upper) * 365))), concat('Age must be between ',  /data/person/ephemeral_dob/c_cohort_constraint_lower , ' and ',  /data/person/ephemeral_dob/c_cohort_constraint_upper , '.'), concat('Age must be between ',  /data/person/ephemeral_dob/c_cohort_constraint_lower , ' and ',  /data/person/ephemeral_dob/c_cohort_constraint_upper , '.')))" nodeset="/data/person/ephemeral_dob/dob_validation_message" type="string"/>
+      <bind constraint=". &lt;= date-time(decimal-date-time(today() - (int(../c_cohort_constraint_lower) * 365)))
+and . &gt;= date-time(decimal-date-time(today() - (int(../c_cohort_constraint_upper) * 365))) and . &lt;= today()" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/ephemeral_dob/dob_calendar:jr:requiredMsg')" nodeset="/data/person/ephemeral_dob/dob_calendar" relevant="selected(../cohort, 'under_5')
+or selected(../knows_dob, 'yes')" required="true()" type="date"/>
+      <bind calculate="format-date-time(../dob_calendar,&quot;%d/%m/%Y&quot;)" nodeset="/data/person/ephemeral_dob/c_dob_calendar" type="string"/>
+      <bind nodeset="/data/person/ephemeral_dob/dob_calendar_format" readonly="true()" relevant="selected(../cohort, 'under_5')
+or selected(../knows_dob, 'yes')" type="string"/>
+      <bind constraint=". &gt;= int(../c_cohort_constraint_lower)
+and . &lt;= int(../c_cohort_constraint_upper)" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/age_years:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/ephemeral_dob/age_years:jr:requiredMsg')" nodeset="/data/person/ephemeral_dob/age_years" relevant="selected(../cohort, 'over_5')
+and selected(../knows_dob, 'no')" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 11" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/age_months:jr:constraintMsg')" nodeset="/data/person/ephemeral_dob/age_months" relevant="selected(../cohort, 'over_5')
+and selected(../knows_dob, 'no')" required="false()" type="int"/>
+      <bind calculate="../person_age_years" nodeset="/data/person/ephemeral_dob/c_person_age_in_years" type="string"/>
+      <bind calculate="../person_age_months mod 12" nodeset="/data/person/ephemeral_dob/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../c_person_age_in_years &lt;= 5, 
+concat( /data/person/ephemeral_dob/c_person_age_in_years , ' years ',  /data/person/ephemeral_dob/c_patient_mod_mnths , ' months old'),
+concat( /data/person/ephemeral_dob/c_person_age_in_years , ' years old'))" nodeset="/data/person/ephemeral_dob/c_age_string" type="string"/>
+      <bind calculate="if(../c_person_age_in_years &lt;= 5, 
+concat( /data/person/ephemeral_dob/c_person_age_in_years , ' zaka ',  /data/person/ephemeral_dob/c_patient_mod_mnths , ' miyezi yakale'),
+concat( /data/person/ephemeral_dob/c_person_age_in_years , ' zaka zakale'))" nodeset="/data/person/ephemeral_dob/c_age_string_ny" type="string"/>
+      <bind nodeset="/data/person/ephemeral_dob/n_person_age" readonly="true()" relevant="../dob_calendar != '' or ../age_years != ''" type="string"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)" nodeset="/data/person/ephemeral_dob/ephemeral_months" type="string"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)" nodeset="/data/person/ephemeral_dob/ephemeral_years" type="string"/>
+      <bind calculate="date(concat(string( /data/person/ephemeral_dob/ephemeral_years ),'-',if( /data/person/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /data/person/ephemeral_dob/ephemeral_months )),  /data/person/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;))))" nodeset="/data/person/ephemeral_dob/dob_approx" type="string"/>
+      <bind calculate="if(../dob_calendar != '', 
+../dob_calendar,
+../dob_approx)" nodeset="/data/person/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="decimal-date-time(../dob_raw)" nodeset="/data/person/ephemeral_dob/dob_iso" type="string"/>
+      <bind calculate="if( /data/person/ephemeral_dob/dob_calendar  != '',difference-in-months( ../dob_iso, today() ),(../age_years)*12 + ../age_months)" nodeset="/data/person/ephemeral_dob/person_age_months" type="string"/>
+      <bind calculate="if( /data/person/ephemeral_dob/dob_calendar  != '',floor( difference-in-months( ../dob_iso, today() ) div 12 ),../age_years)" nodeset="/data/person/ephemeral_dob/person_age_years" type="string"/>
+      <bind constraint="regex(.,'^(088|099|018|012|022)[0-9]{7}$')" jr:constraintMsg="jr:itext('/data/person/primary_phone_number:jr:constraintMsg')" nodeset="/data/person/primary_phone_number" relevant=" /data/person/ephemeral_dob/person_age_years  &gt;= 10" required="false()" type="string"/>
+      <bind constraint="regex(.,'^(088|099|018|012|022)[0-9]{7}$')" jr:constraintMsg="jr:itext('/data/person/secondary_phone_number:jr:constraintMsg')" nodeset="/data/person/secondary_phone_number" relevant=" /data/person/ephemeral_dob/person_age_years  &gt;= 10" required="false()" type="string"/>
+      <bind calculate="if( /data/person/ephemeral_dob/person_age_months  &lt;= 24 and  /data/person/ephemeral_dob/dob_calendar  != '', 0, if( /data/person/ephemeral_dob/person_age_months  &gt; 24 and  /data/person/ephemeral_dob/person_age_months  &lt; 60, 1, if( /data/person/ephemeral_dob/person_age_months  &gt;= 60 or selected( /data/person/ephemeral_dob/cohort , 'over_5'), 2, 3)))" nodeset="/data/person/condition_age_group" type="string"/>
+      <bind calculate="if(selected(../conditions, 'none')
+and (count-selected(../conditions) &gt; 1), 'None cannot be selected with any other choice!', if(selected(../conditions, 'eid') and selected(../conditions, 'art'), 'EID cannot be selected with ART!', ''))" nodeset="/data/person/condition_validation_message" type="string"/>
+      <bind constraint="not(selected(../conditions, 'none')
+and (count-selected(.) &gt; 1)) and not(selected(../conditions, 'eid') and selected(../conditions, 'art'))" jr:constraintMsg="jr:itext('/data/person/conditions:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/conditions:jr:requiredMsg')" nodeset="/data/person/conditions" required="true()" type="select"/>
+      <bind nodeset="/data/person/conditions_other" relevant="selected(../conditions, 'other')" type="string"/>
+      <bind nodeset="/data/person/malnutrition_program" relevant="selected(../conditions, 'malnutrition')" required="false()" type="select1"/>
+      <bind calculate="jr:choice-name( /data/person/malnutrition_program , ' /data/person/malnutrition_program ')" nodeset="/data/person/c_malnutrition_program" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ncds:jr:requiredMsg')" nodeset="/data/person/ncds" relevant="selected(../conditions, 'ncd')" required="true()" type="select"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ncds_other:jr:requiredMsg')" nodeset="/data/person/ncds_other" relevant="selected(../ncds, 'other')" required="true()" type="string"/>
+      <bind nodeset="/data/person/mental_health_type" relevant="selected(../ncds, 'mental_health')" required="false()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/mental_health_type_other:jr:requiredMsg')" nodeset="/data/person/mental_health_type_other" relevant="selected(../mental_health_type, 'other')" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/has_eid_emr_id:jr:requiredMsg')" nodeset="/data/person/has_eid_emr_id" relevant="selected(../conditions, 'eid') and not(selected(../conditions, 'art'))" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/eid_emr_id_source:jr:requiredMsg')" nodeset="/data/person/eid_emr_id_source" relevant="../has_eid_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/eid_emr_id_source_other:jr:requiredMsg')" nodeset="/data/person/eid_emr_id_source_other" relevant="../eid_emr_id_source = 'other'" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/pre_eid_id:jr:requiredMsg')" nodeset="/data/person/pre_eid_id" relevant="../has_eid_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind constraint="regex(., '[A-Z]{1,5}')" jr:constraintMsg="jr:itext('/data/person/pre_eid_id_other:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/pre_eid_id_other:jr:requiredMsg')" nodeset="/data/person/pre_eid_id_other" relevant="../pre_eid_id = 'other'" required="true()" type="string"/>
+      <bind constraint=". &gt; 0 and . &lt; 10000" jr:constraintMsg="jr:itext('/data/person/c_eid_id:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/c_eid_id:jr:requiredMsg')" nodeset="/data/person/c_eid_id" relevant="../has_eid_emr_id = 'yes'" required="true()" type="int"/>
+      <bind nodeset="/data/person/n_eid_id" readonly="true()" relevant="../c_eid_id != ''" required="false()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/has_art_emr_id:jr:requiredMsg')" nodeset="/data/person/has_art_emr_id" relevant="selected(../conditions, 'art') and not(selected(../conditions, 'eid'))" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/art_emr_id_source:jr:requiredMsg')" nodeset="/data/person/art_emr_id_source" relevant="../has_art_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/art_emr_id_source_other:jr:requiredMsg')" nodeset="/data/person/art_emr_id_source_other" relevant="../art_emr_id_source = 'other'" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/pre_art_id:jr:requiredMsg')" nodeset="/data/person/pre_art_id" relevant="../has_art_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind constraint="regex(., '[A-Z]{1,5}')" jr:constraintMsg="jr:itext('/data/person/pre_art_id_other:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/pre_art_id_other:jr:requiredMsg')" nodeset="/data/person/pre_art_id_other" relevant="../pre_art_id = 'other'" required="true()" type="string"/>
+      <bind constraint=". &gt; 0 and . &lt; 10000" jr:constraintMsg="jr:itext('/data/person/c_art_id:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/c_art_id:jr:requiredMsg')" nodeset="/data/person/c_art_id" relevant="../has_art_emr_id = 'yes'" required="true()" type="int"/>
+      <bind nodeset="/data/person/n_art_id" readonly="true()" relevant="../c_art_id != ''" required="false()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/has_ncd_emr_id:jr:requiredMsg')" nodeset="/data/person/has_ncd_emr_id" relevant="selected(../conditions, 'ncd')" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ncd_emr_id_source:jr:requiredMsg')" nodeset="/data/person/ncd_emr_id_source" relevant="../has_ncd_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/ncd_emr_id_source_other:jr:requiredMsg')" nodeset="/data/person/ncd_emr_id_source_other" relevant="../ncd_emr_id_source = 'other'" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/pre_ncd_id:jr:requiredMsg')" nodeset="/data/person/pre_ncd_id" relevant="../has_ncd_emr_id = 'yes'" required="true()" type="select1"/>
+      <bind constraint="regex(., '[A-Z]{1,5}')" jr:constraintMsg="jr:itext('/data/person/pre_ncd_id_other:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/pre_ncd_id_other:jr:requiredMsg')" nodeset="/data/person/pre_ncd_id_other" relevant="../pre_ncd_id = 'other'" required="true()" type="string"/>
+      <bind constraint=". &gt; 0 and . &lt; 10000" jr:constraintMsg="jr:itext('/data/person/c_ncd_id:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/c_ncd_id:jr:requiredMsg')" nodeset="/data/person/c_ncd_id" relevant="../has_ncd_emr_id = 'yes'" required="true()" type="int"/>
+      <bind nodeset="/data/person/n_ncd_id" readonly="true()" relevant="../c_ncd_id != ''" required="false()" type="string"/>
+      <bind calculate="concat(if(../pre_eid_id = 'other', ../pre_eid_id_other, ../pre_eid_id), ' ', ../c_eid_id, ' HCC')" nodeset="/data/person/eid_id" type="string"/>
+      <bind calculate="concat(if(../pre_art_id = 'other', ../pre_art_id_other, ../pre_art_id), ' ', ../c_art_id)" nodeset="/data/person/art_id" type="string"/>
+      <bind calculate="concat(if(../pre_ncd_id = 'other', ../pre_ncd_id_other, ../pre_ncd_id), ' ', ../c_ncd_id, ' CCC')" nodeset="/data/person/ncd_id" type="string"/>
+      <bind nodeset="/data/person/n_confirm_emr_ids" readonly="true()" relevant="../c_eid_id != '' or ../c_art_id != '' or ../c_ncd_id != ''" type="string"/>
+      <bind nodeset="/data/person/n_art_length" readonly="true()" relevant="selected(../conditions, 'art')" type="string"/>
+      <bind constraint="int(.) &gt;= 0 and int(.) &lt;= int( /data/person/ephemeral_dob/person_age_years )" jr:constraintMsg="jr:itext('/data/person/art_duration_years:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/art_duration_years:jr:requiredMsg')" nodeset="/data/person/art_duration_years" relevant="selected(../conditions, 'art')" required="true()" type="int"/>
+      <bind constraint="int(.) &gt;= 0 and int(.) &lt;= int( /data/person/ephemeral_dob/person_age_months )" jr:constraintMsg="jr:itext('/data/person/art_duration_months:jr:constraintMsg')" nodeset="/data/person/art_duration_months" relevant="selected(../conditions, 'art')" required="false()" type="int"/>
+      <bind constraint="int(.) &gt;= 0 and int(.) &lt;= int( /data/person/ephemeral_dob/person_age_months )" jr:constraintMsg="jr:itext('/data/person/tb_duration_months:jr:constraintMsg')" jr:requiredMsg="jr:itext('/data/person/tb_duration_months:jr:requiredMsg')" nodeset="/data/person/tb_duration_months" relevant="selected(../conditions, 'tb')" required="true()" type="int"/>
+      <bind nodeset="/data/person/notes" type="string"/>
+      <bind nodeset="/data/person/n_fill_out_u5_monthly_screening" readonly="true()" relevant=" /data/person/ephemeral_dob/person_age_years  != '' and  /data/person/ephemeral_dob/person_age_years  &lt; 5" type="string"/>
+      <bind nodeset="/data/person/n_fill_out_o5_monthly_screening2" readonly="true()" relevant=" /data/person/ephemeral_dob/person_age_years  &gt;= 5" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/person/geolocation" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/person">
+      <label ref="jr:itext('/data/person:label')"/>
+      <input appearance="hidden" ref="/data/person/type">
+        <label ref="jr:itext('/data/person/type:label')"/>
+        <hint ref="jr:itext('/data/person/type:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/contact_type">
+        <label ref="jr:itext('/data/person/contact_type:label')"/>
+        <hint ref="jr:itext('/data/person/contact_type:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/parent">
+        <label ref="jr:itext('/data/person/parent:label')"/>
+        <hint ref="jr:itext('/data/person/parent:hint')"/>
+      </input>
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
+      </input>
+      <select1 ref="/data/person/sex">
+        <label ref="jr:itext('/data/person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+      </select1>
+      <group ref="/data/person/ephemeral_dob">
+        <select1 ref="/data/person/ephemeral_dob/cohort">
+          <label ref="jr:itext('/data/person/ephemeral_dob/cohort:label')"/>
+          <item>
+            <label ref="jr:itext('/data/person/ephemeral_dob/cohort/under_5:label')"/>
+            <value>under_5</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/ephemeral_dob/cohort/over_5:label')"/>
+            <value>over_5</value>
+          </item>
+        </select1>
+        <input ref="/data/person/ephemeral_dob/n_confirm_age">
+          <label ref="jr:itext('/data/person/ephemeral_dob/n_confirm_age:label')"/>
+        </input>
+        <select1 ref="/data/person/ephemeral_dob/knows_dob">
+          <label ref="jr:itext('/data/person/ephemeral_dob/knows_dob:label')"/>
+          <item>
+            <label ref="jr:itext('/data/person/ephemeral_dob/knows_dob/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/ephemeral_dob/knows_dob/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/data/person/ephemeral_dob/dob_calendar">
+          <label ref="jr:itext('/data/person/ephemeral_dob/dob_calendar:label')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/dob_calendar_format">
+          <label ref="jr:itext('/data/person/ephemeral_dob/dob_calendar_format:label')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/age_years">
+          <label ref="jr:itext('/data/person/ephemeral_dob/age_years:label')"/>
+          <hint ref="jr:itext('/data/person/ephemeral_dob/age_years:hint')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/age_months">
+          <label ref="jr:itext('/data/person/ephemeral_dob/age_months:label')"/>
+          <hint ref="jr:itext('/data/person/ephemeral_dob/age_months:hint')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/n_person_age">
+          <label ref="jr:itext('/data/person/ephemeral_dob/n_person_age:label')"/>
+        </input>
+      </group>
+      <input appearance="numbers" ref="/data/person/primary_phone_number">
+        <label ref="jr:itext('/data/person/primary_phone_number:label')"/>
+        <hint ref="jr:itext('/data/person/primary_phone_number:hint')"/>
+      </input>
+      <input appearance="numbers" ref="/data/person/secondary_phone_number">
+        <label ref="jr:itext('/data/person/secondary_phone_number:label')"/>
+        <hint ref="jr:itext('/data/person/secondary_phone_number:hint')"/>
+      </input>
+      <select ref="/data/person/conditions">
+        <label ref="jr:itext('/data/person/conditions:label')"/>
+        <hint ref="jr:itext('/data/person/conditions:hint')"/>
+        <itemset nodeset="instance('conditions')/root/item[is_lte_2 =  /data/person/condition_age_group 
+or is_btw_2_5 =  /data/person/condition_age_group  or is_over_5 =  /data/person/condition_age_group  or other =  /data/person/condition_age_group ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/person/conditions_other">
+        <label ref="jr:itext('/data/person/conditions_other:label')"/>
+      </input>
+      <select1 ref="/data/person/malnutrition_program">
+        <label ref="jr:itext('/data/person/malnutrition_program:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/malnutrition_program/sfp:label')"/>
+          <value>sfp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/malnutrition_program/otp:label')"/>
+          <value>otp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/malnutrition_program/hospitalization:label')"/>
+          <value>hospitalization</value>
+        </item>
+      </select1>
+      <select ref="/data/person/ncds">
+        <label ref="jr:itext('/data/person/ncds:label')"/>
+        <hint ref="jr:itext('/data/person/ncds:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/hypertension:label')"/>
+          <value>hypertension</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/asthma:label')"/>
+          <value>asthma</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/diabetes:label')"/>
+          <value>diabetes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/epilepsy:label')"/>
+          <value>epilepsy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/mental_health:label')"/>
+          <value>mental_health</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/heart_failure:label')"/>
+          <value>heart_failure</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncds/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/data/person/ncds_other">
+        <label ref="jr:itext('/data/person/ncds_other:label')"/>
+        <hint ref="jr:itext('/data/person/ncds_other:hint')"/>
+      </input>
+      <select1 ref="/data/person/mental_health_type">
+        <label ref="jr:itext('/data/person/mental_health_type:label')"/>
+        <hint ref="jr:itext('/data/person/mental_health_type:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/person/mental_health_type/schizophrenia:label')"/>
+          <value>schizophrenia</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/mental_health_type/mania:label')"/>
+          <value>mania</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/mental_health_type/depression:label')"/>
+          <value>depression</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/mental_health_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/person/mental_health_type_other">
+        <label ref="jr:itext('/data/person/mental_health_type_other:label')"/>
+      </input>
+      <select1 ref="/data/person/has_eid_emr_id">
+        <label ref="jr:itext('/data/person/has_eid_emr_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/has_eid_emr_id/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/has_eid_emr_id/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/person/eid_emr_id_source">
+        <label ref="jr:itext('/data/person/eid_emr_id_source:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/eid_emr_id_source/self:label')"/>
+          <value>self</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/eid_emr_id_source/passport:label')"/>
+          <value>passport</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/eid_emr_id_source/care_giver:label')"/>
+          <value>care_giver</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/eid_emr_id_source/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/person/eid_emr_id_source_other">
+        <label ref="jr:itext('/data/person/eid_emr_id_source_other:label')"/>
+      </input>
+      <select1 ref="/data/person/pre_eid_id">
+        <label ref="jr:itext('/data/person/pre_eid_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/NNO:label')"/>
+          <value>NNO</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/DAM:label')"/>
+          <value>DAM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/CFGA:label')"/>
+          <value>CFGA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/LGWE:label')"/>
+          <value>LGWE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/MGT:label')"/>
+          <value>MGT</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/MTDN:label')"/>
+          <value>MTDN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/NSM:label')"/>
+          <value>NSM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/NOP:label')"/>
+          <value>NOP</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/LWAN:label')"/>
+          <value>LWAN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/LSI:label')"/>
+          <value>LSI</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/MTE:label')"/>
+          <value>MTE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/ZLA:label')"/>
+          <value>ZLA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/NKA:label')"/>
+          <value>NKA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_eid_id/MIHC:label')"/>
+          <value>MIHC</value>
+        </item>
+      </select1>
+      <input ref="/data/person/pre_eid_id_other">
+        <label ref="jr:itext('/data/person/pre_eid_id_other:label')"/>
+        <hint ref="jr:itext('/data/person/pre_eid_id_other:hint')"/>
+      </input>
+      <input ref="/data/person/c_eid_id">
+        <label ref="jr:itext('/data/person/c_eid_id:label')"/>
+        <hint ref="jr:itext('/data/person/c_eid_id:hint')"/>
+      </input>
+      <input ref="/data/person/n_eid_id">
+        <label ref="jr:itext('/data/person/n_eid_id:label')"/>
+      </input>
+      <select1 ref="/data/person/has_art_emr_id">
+        <label ref="jr:itext('/data/person/has_art_emr_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/has_art_emr_id/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/has_art_emr_id/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/person/art_emr_id_source">
+        <label ref="jr:itext('/data/person/art_emr_id_source:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/art_emr_id_source/self:label')"/>
+          <value>self</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/art_emr_id_source/passport:label')"/>
+          <value>passport</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/art_emr_id_source/care_giver:label')"/>
+          <value>care_giver</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/art_emr_id_source/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/person/art_emr_id_source_other">
+        <label ref="jr:itext('/data/person/art_emr_id_source_other:label')"/>
+      </input>
+      <select1 ref="/data/person/pre_art_id">
+        <label ref="jr:itext('/data/person/pre_art_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/NNO:label')"/>
+          <value>NNO</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/DAM:label')"/>
+          <value>DAM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/CFGA:label')"/>
+          <value>CFGA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/LGWE:label')"/>
+          <value>LGWE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/MGT:label')"/>
+          <value>MGT</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/MTDN:label')"/>
+          <value>MTDN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/NSM:label')"/>
+          <value>NSM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/NOP:label')"/>
+          <value>NOP</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/LWAN:label')"/>
+          <value>LWAN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/LSI:label')"/>
+          <value>LSI</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/MTE:label')"/>
+          <value>MTE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/ZLA:label')"/>
+          <value>ZLA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/NKA:label')"/>
+          <value>NKA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_art_id/MIHC:label')"/>
+          <value>MIHC</value>
+        </item>
+      </select1>
+      <input ref="/data/person/pre_art_id_other">
+        <label ref="jr:itext('/data/person/pre_art_id_other:label')"/>
+        <hint ref="jr:itext('/data/person/pre_art_id_other:hint')"/>
+      </input>
+      <input ref="/data/person/c_art_id">
+        <label ref="jr:itext('/data/person/c_art_id:label')"/>
+        <hint ref="jr:itext('/data/person/c_art_id:hint')"/>
+      </input>
+      <input ref="/data/person/n_art_id">
+        <label ref="jr:itext('/data/person/n_art_id:label')"/>
+      </input>
+      <select1 ref="/data/person/has_ncd_emr_id">
+        <label ref="jr:itext('/data/person/has_ncd_emr_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/has_ncd_emr_id/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/has_ncd_emr_id/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/data/person/ncd_emr_id_source">
+        <label ref="jr:itext('/data/person/ncd_emr_id_source:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/ncd_emr_id_source/self:label')"/>
+          <value>self</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncd_emr_id_source/passport:label')"/>
+          <value>passport</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncd_emr_id_source/care_giver:label')"/>
+          <value>care_giver</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/ncd_emr_id_source/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/data/person/ncd_emr_id_source_other">
+        <label ref="jr:itext('/data/person/ncd_emr_id_source_other:label')"/>
+      </input>
+      <select1 ref="/data/person/pre_ncd_id">
+        <label ref="jr:itext('/data/person/pre_ncd_id:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/NNO:label')"/>
+          <value>NNO</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/DAM:label')"/>
+          <value>DAM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/CFGA:label')"/>
+          <value>CFGA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/LGWE:label')"/>
+          <value>LGWE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/MGT:label')"/>
+          <value>MGT</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/MTDN:label')"/>
+          <value>MTDN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/NSM:label')"/>
+          <value>NSM</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/NOP:label')"/>
+          <value>NOP</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/LWAN:label')"/>
+          <value>LWAN</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/LSI:label')"/>
+          <value>LSI</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/MTE:label')"/>
+          <value>MTE</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/ZLA:label')"/>
+          <value>ZLA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/NKA:label')"/>
+          <value>NKA</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/pre_ncd_id/MIHC:label')"/>
+          <value>MIHC</value>
+        </item>
+      </select1>
+      <input ref="/data/person/pre_ncd_id_other">
+        <label ref="jr:itext('/data/person/pre_ncd_id_other:label')"/>
+        <hint ref="jr:itext('/data/person/pre_ncd_id_other:hint')"/>
+      </input>
+      <input ref="/data/person/c_ncd_id">
+        <label ref="jr:itext('/data/person/c_ncd_id:label')"/>
+        <hint ref="jr:itext('/data/person/c_ncd_id:hint')"/>
+      </input>
+      <input ref="/data/person/n_ncd_id">
+        <label ref="jr:itext('/data/person/n_ncd_id:label')"/>
+      </input>
+      <input ref="/data/person/n_confirm_emr_ids">
+        <label ref="jr:itext('/data/person/n_confirm_emr_ids:label')"/>
+      </input>
+      <input ref="/data/person/n_art_length">
+        <label ref="jr:itext('/data/person/n_art_length:label')"/>
+      </input>
+      <input ref="/data/person/art_duration_years">
+        <label ref="jr:itext('/data/person/art_duration_years:label')"/>
+      </input>
+      <input ref="/data/person/art_duration_months">
+        <label ref="jr:itext('/data/person/art_duration_months:label')"/>
+      </input>
+      <input ref="/data/person/tb_duration_months">
+        <label ref="jr:itext('/data/person/tb_duration_months:label')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/notes">
+        <label ref="jr:itext('/data/person/notes:label')"/>
+      </input>
+      <input ref="/data/person/n_fill_out_u5_monthly_screening">
+        <label ref="jr:itext('/data/person/n_fill_out_u5_monthly_screening:label')"/>
+      </input>
+      <input ref="/data/person/n_fill_out_o5_monthly_screening2">
+        <label ref="jr:itext('/data/person/n_fill_out_o5_monthly_screening2:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

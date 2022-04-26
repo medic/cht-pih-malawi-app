@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New SCHW Region</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/contact/alternate_phone:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/contact/date_joined:label">
+            <value>Date joined</value>
+          </text>
+          <text id="/data/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/contact/education_level/college:label">
+            <value>College</value>
+          </text>
+          <text id="/data/contact/education_level/none:label">
+            <value>None</value>
+          </text>
+          <text id="/data/contact/education_level/primary:label">
+            <value>Primary</value>
+          </text>
+          <text id="/data/contact/education_level/secondary:label">
+            <value>Secondary</value>
+          </text>
+          <text id="/data/contact/education_level/university:label">
+            <value>University</value>
+          </text>
+          <text id="/data/contact/education_level:label">
+            <value>Education level</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/age:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method/approx:label">
+            <value>Date of birth with current age</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method/calendar:label">
+            <value>Date of birth with calendar</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/dob_iso:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/contact/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Full Name</value>
+          </text>
+          <text id="/data/contact/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/contact/treatment_program:label">
+            <value>Treatment Program</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>New Person</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>Create a new person</value>
+          </text>
+          <text id="/data/init/create_new_person/none:label">
+            <value>Skip this step</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
+          </text>
+          <text id="/data/schw_region/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/schw_region/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/schw_region/notes:label">
+            <value>Notes</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/contact/alternate_phone:label">
+            <value>Namba Ya</value>
+          </text>
+          <text id="/data/contact/date_joined:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level/college:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level/none:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level/primary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level/secondary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level/university:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/education_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/age:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method/approx:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method/calendar:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/contact_dob_method:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/dob_calendar:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/dob_iso:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob/dob_raw:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/ephemeral_dob:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/external_id:label">
+            <value>Kitambulisho cha nje</value>
+          </text>
+          <text id="/data/contact/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/contact/notes:label">
+            <value>Maelezo</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Namba ya Simi</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Kike</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Kiume</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/contact/treatment_program:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>Mtu Mpya</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>Ongeza mtumizi mpya</value>
+          </text>
+          <text id="/data/init/create_new_person/none:label">
+            <value>Ruka hatua ii</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Weka mwasiliwa mkuu</value>
+          </text>
+          <text id="/data/schw_region/external_id:label">
+            <value>Namba ya nje</value>
+          </text>
+          <text id="/data/schw_region/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/schw_region/notes:label">
+            <value>Maelezo</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:schw_region:create" prefix="J1!contact:schw_region:create!" version="2020-02-11_07-53">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <schw_region>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>schw_region</contact_type>
+            <name/>
+            <external_id/>
+            <notes/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </schw_region>
+          <init>
+            <create_new_person/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>chw</contact_type>
+            <name/>
+            <sex/>
+            <date_of_birth/>
+            <ephemeral_dob>
+              <contact_dob_method/>
+              <dob_calendar/>
+              <age/>
+              <dob_raw/>
+              <dob_iso/>
+            </ephemeral_dob>
+            <phone/>
+            <alternate_phone/>
+            <external_id/>
+            <treatment_program/>
+            <education_level/>
+            <date_joined/>
+            <notes/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" required="true()" type="select1"/>
+      <bind nodeset="/data/contact" relevant="selected( /data/init/create_new_person ,'new_person')"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/contact_type" type="string"/>
+      <bind nodeset="/data/contact/name" required="true()" type="string"/>
+      <bind nodeset="/data/contact/sex" relevant="selected( /data/init/create_new_person ,'new_person')" required="true()" type="select1"/>
+      <bind calculate="format-date-time( /data/contact/ephemeral_dob/dob_raw ,&quot;%Y-%m-%d&quot;)" nodeset="/data/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/contact/ephemeral_dob/contact_dob_method" type="select1"/>
+      <bind constraint=".&lt;today()" jr:constraintMsg="Date must be before today" nodeset="/data/contact/ephemeral_dob/dob_calendar" relevant="selected(../contact_dob_method,'calendar')" required="true()" type="date"/>
+      <bind constraint=". &gt; 0 and . &lt; 120" jr:constraintMsg="Age must be between 0 and 120" nodeset="/data/contact/ephemeral_dob/age" relevant="selected(../contact_dob_method,'approx')" required="true()" type="int"/>
+      <bind calculate="if(selected( ../contact_dob_method,'calendar'), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age) , &quot;%Y-%m-%d&quot;) )" nodeset="/data/contact/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="decimal-date-time(../dob_raw)" nodeset="/data/contact/ephemeral_dob/dob_iso" type="string"/>
+      <bind constraint="true()" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" nodeset="/data/contact/phone" relevant="selected( /data/init/create_new_person ,'new_person')" type="tel"/>
+      <bind constraint="true()" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" nodeset="/data/contact/alternate_phone" relevant="selected( /data/init/create_new_person ,'new_person')" type="tel"/>
+      <bind nodeset="/data/contact/external_id" relevant="selected( /data/init/create_new_person ,'new_person')" type="string"/>
+      <bind nodeset="/data/contact/treatment_program" type="string"/>
+      <bind nodeset="/data/contact/education_level" type="select1"/>
+      <bind constraint=". &lt; today()" jr:constraintMsg="Date must be before today" nodeset="/data/contact/date_joined" type="date"/>
+      <bind nodeset="/data/contact/notes" relevant="selected( /data/init/create_new_person ,'new_person')" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/contact/meta/created_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/contact/meta/created_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/contact/meta/created_by_place_uuid" type="string"/>
+      <bind nodeset="/data/schw_region/parent" type="string"/>
+      <bind nodeset="/data/schw_region/type" type="string"/>
+      <bind nodeset="/data/schw_region/contact_type" type="string"/>
+      <bind nodeset="/data/schw_region/name" required="true()" type="string"/>
+      <bind nodeset="/data/schw_region/external_id" type="string"/>
+      <bind nodeset="/data/schw_region/notes" type="string"/>
+      <bind calculate="if(selected( /data/init/create_new_person ,'none'), &quot;&quot;, &quot;NEW&quot;)" nodeset="/data/schw_region/contact" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/schw_region/geolocation" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/schw_region/meta/created_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/schw_region/meta/created_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/schw_region/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="horizontal-compact" ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/new_person:label')"/>
+          <value>new_person</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/none:label')"/>
+          <value>none</value>
+        </item>
+      </select1>
+      <group appearance="field-list" ref="/data/contact">
+        <label ref="jr:itext('/data/contact:label')"/>
+        <input ref="/data/contact/name">
+          <label ref="jr:itext('/data/contact/name:label')"/>
+        </input>
+        <select1 appearance="horizontal" ref="/data/contact/sex">
+          <label ref="jr:itext('/data/contact/sex:label')"/>
+          <item>
+            <label ref="jr:itext('/data/contact/sex/female:label')"/>
+            <value>female</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/contact/sex/male:label')"/>
+            <value>male</value>
+          </item>
+        </select1>
+        <group ref="/data/contact/ephemeral_dob">
+          <select1 ref="/data/contact/ephemeral_dob/contact_dob_method">
+            <label ref="jr:itext('/data/contact/ephemeral_dob/contact_dob_method:label')"/>
+            <item>
+              <label ref="jr:itext('/data/contact/ephemeral_dob/contact_dob_method/calendar:label')"/>
+              <value>calendar</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/data/contact/ephemeral_dob/contact_dob_method/approx:label')"/>
+              <value>approx</value>
+            </item>
+          </select1>
+          <input ref="/data/contact/ephemeral_dob/dob_calendar">
+            <label ref="jr:itext('/data/contact/ephemeral_dob/dob_calendar:label')"/>
+          </input>
+          <input ref="/data/contact/ephemeral_dob/age">
+            <label ref="jr:itext('/data/contact/ephemeral_dob/age:label')"/>
+          </input>
+        </group>
+      </group>
+      <input ref="/data/contact/phone">
+        <label ref="jr:itext('/data/contact/phone:label')"/>
+      </input>
+      <input ref="/data/contact/alternate_phone">
+        <label ref="jr:itext('/data/contact/alternate_phone:label')"/>
+      </input>
+      <input ref="/data/contact/external_id">
+        <label ref="jr:itext('/data/contact/external_id:label')"/>
+      </input>
+      <input ref="/data/contact/treatment_program">
+        <label ref="jr:itext('/data/contact/treatment_program:label')"/>
+      </input>
+      <select1 ref="/data/contact/education_level">
+        <label ref="jr:itext('/data/contact/education_level:label')"/>
+        <item>
+          <label ref="jr:itext('/data/contact/education_level/none:label')"/>
+          <value>none</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/education_level/primary:label')"/>
+          <value>primary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/education_level/secondary:label')"/>
+          <value>secondary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/education_level/college:label')"/>
+          <value>college</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/contact/education_level/university:label')"/>
+          <value>university</value>
+        </item>
+      </select1>
+      <input ref="/data/contact/date_joined">
+        <label ref="jr:itext('/data/contact/date_joined:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/contact/notes">
+        <label ref="jr:itext('/data/contact/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/contact/meta"/>
+    </group>
+    <group appearance="field-list" ref="/data/schw_region">
+      <input ref="/data/schw_region/name">
+        <label ref="jr:itext('/data/schw_region/name:label')"/>
+      </input>
+      <input ref="/data/schw_region/external_id">
+        <label ref="jr:itext('/data/schw_region/external_id:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/schw_region/notes">
+        <label ref="jr:itext('/data/schw_region/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/schw_region/meta"/>
+    </group>
+  </h:body>
+</h:html>

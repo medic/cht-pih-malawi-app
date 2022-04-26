@@ -1,0 +1,15 @@
+{
+    "icon": "icon-condition-cough",
+    "title": {
+        "en": "Sputum collection",
+        "ny": "Chikalata chotumizira makhololo"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact && user.parent.contact_type === 'schw_region' && user._id != contact._id && contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+
+    ]
+}

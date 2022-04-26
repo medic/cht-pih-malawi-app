@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TB results</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/tb_results/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results/tb_results/results/negative:label">
+            <value>Negative</value>
+          </text>
+          <text id="/tb_results/tb_results/results/positive:label">
+            <value>Positive</value>
+          </text>
+          <text id="/tb_results/tb_results/results/rejected:label">
+            <value>Samples were rejected</value>
+          </text>
+          <text id="/tb_results/tb_results/results:label">
+            <value>TB results</value>
+          </text>
+          <text id="/tb_results/tb_results:label">
+            <value>TB results</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/tb_results/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results/tb_results/results/negative:label">
+            <value>Alibe TB</value>
+          </text>
+          <text id="/tb_results/tb_results/results/positive:label">
+            <value>Ali ndi TB</value>
+          </text>
+          <text id="/tb_results/tb_results/results/rejected:label">
+            <value>Makhololo anabwezedwa</value>
+          </text>
+          <text id="/tb_results/tb_results/results:label">
+            <value>Zotsatira za TB</value>
+          </text>
+          <text id="/tb_results/tb_results:label">
+            <value>Zotsatira za TB</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <tb_results delimiter="#" id="tb_results" prefix="J1!tb_results!" version="2021-11-15 22:26:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_years/>
+          <c_patient_name/>
+          <c_patient_age_in_years/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <results/>
+          <tb_results>
+            <results/>
+          </tb_results>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </tb_results>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/tb_results/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/tb_results/inputs/source" type="string"/>
+      <bind nodeset="/tb_results/inputs/source_id" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/_id" required="true()" type="db:person"/>
+      <bind nodeset="/tb_results/inputs/contact/name" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/sex" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/tb_results/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/tb_results/patient_uuid" type="string"/>
+      <bind calculate="../patient_uuid" nodeset="/tb_results/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/tb_results/patient_name" required="true()" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/tb_results/patient_age_in_years" type="string"/>
+      <bind calculate="../patient_name" nodeset="/tb_results/c_patient_name" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/tb_results/c_patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_results/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/phone" nodeset="/tb_results/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/tb_results/geolocation" type="string"/>
+      <bind calculate="../tb_results/results" nodeset="/tb_results/results" type="string"/>
+      <bind nodeset="/tb_results/tb_results/results" required="true()" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tb_results/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/tb_results/inputs">
+      <label ref="jr:itext('/tb_results/inputs:label')"/>
+      <group ref="/tb_results/inputs/contact">
+        <input appearance="db-object" ref="/tb_results/inputs/contact/_id">
+          <label ref="jr:itext('/tb_results/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/tb_results/inputs/contact/parent">
+          <label ref="jr:itext('/tb_results/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/tb_results/inputs/contact/parent/parent">
+            <label ref="jr:itext('/tb_results/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/tb_results/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/tb_results/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/tb_results/tb_results">
+      <label ref="jr:itext('/tb_results/tb_results:label')"/>
+      <select1 ref="/tb_results/tb_results/results">
+        <label ref="jr:itext('/tb_results/tb_results/results:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_results/tb_results/results/positive:label')"/>
+          <value>positive</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_results/tb_results/results/negative:label')"/>
+          <value>negative</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_results/tb_results/results/rejected:label')"/>
+          <value>rejected</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

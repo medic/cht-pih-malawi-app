@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-diagnosis",
+    "title": {
+        "en": "TB results task",
+        "ny": "Ntchito ya zotsatira za TB"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.parent.type === 'chw_area' && user._id != contact._id && contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+
+    ]
+}

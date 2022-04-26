@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TB home visit</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/tb_home_visit/contact_tracing/n_educate:label">
+            <value>_Educate other household members on TB prevention and refer all over 5 years to the SCHW home for sputum collection. For children under 5 years refer them to the health facility for IPT and submit a TB contact tracing form._</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members:label">
+            <value>Are there other family members living in the same household as <output value=" /tb_home_visit/patient_name "/>?</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing:label">
+            <value>Contact tracing</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred:label">
+            <value>Have you referred any under 5 or other household members to the health facility?</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_adhering_to_treatment:label">
+            <value>_<output value=" /tb_home_visit/patient_name "/> is adhering to treatment._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_difficulty_swallowing:label">
+            <value>Difficulty swallowing</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_hearing_loss:label">
+            <value>Hearing loss</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_jaundice:label">
+            <value>Yellow eyes (jaundice)</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_loss_of_appetite:label">
+            <value>Loss of appetite</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_muscle_or_joint_pain:label">
+            <value>Muscle or joint pain</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_no_opportunistic_infection:label">
+            <value>No opportunistic infection present!</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_none:label">
+            <value>None</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_not_adhering_to_treatment:label">
+            <value>_<output value=" /tb_home_visit/patient_name "/> is not adhering to treatment._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_numbness_of_feet:label">
+            <value>Numbness of feet</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_opportunistic_infection:label">
+            <value>Opportunistic infection present!</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /tb_home_visit/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /tb_home_visit/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_rash:label">
+            <value>Rash</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_side_effects_title:label">
+            <value>**_Side effects_**</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_swollen_eyes:label">
+            <value>Swollen eyes</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_swollen_tongue:label">
+            <value>Swollen tongue</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_tracing_title:label">
+            <value>**_Contact tracing_**</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_vision_loss:label">
+            <value>Vision loss</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_vomiting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_weakness_or_fatigue:label">
+            <value>Weakness or fatigue</value>
+          </text>
+          <text id="/tb_home_visit/group_review:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_home_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_home_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_home_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/n_refer_and_accompany2:label">
+            <value>_Refer and accompany <output value=" /tb_home_visit/patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness:hint">
+            <value>Educate the client on health behaviors using TB counselling cards</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness:label">
+            <value>Does <output value=" /tb_home_visit/patient_name "/> have any other illness that needs medical attention?</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections:label">
+            <value>Opportunistic infections</value>
+          </text>
+          <text id="/tb_home_visit/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/tb_home_visit/ref_type/no_chw:label">
+            <value>Without CHW</value>
+          </text>
+          <text id="/tb_home_visit/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/n_refer1:label">
+            <value>_Refer <output value=" /tb_home_visit/patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/n_refer_and_accompany1:label">
+            <value>_Refer and accompany <output value=" /tb_home_visit/patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/difficulty_swallowing:label">
+            <value>Difficulty swallowing</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/hearing_loss:label">
+            <value>Hearing loss</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/jaundice:label">
+            <value>Yellow eyes (jaundice)</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/loss_of_appetite:label">
+            <value>Loss of appetite</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/muscle_or_joint_pain:label">
+            <value>Muscle or joint pain</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/none:label">
+            <value>None</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/numbness_of_feet:label">
+            <value>Numbness of feet</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/rash:label">
+            <value>Rash</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/swollen_eyes:label">
+            <value>Swollen eyes</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/swollen_tongue:label">
+            <value>Swollen tongue</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/vision_loss:label">
+            <value>Vision loss</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/vomiting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/weakness_or_fatigue:label">
+            <value>Weakness or fatigue</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:hint">
+            <value>Educate the client on TB drugs side effects using TB counselling cards</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:label">
+            <value>Is <output value=" /tb_home_visit/patient_name "/> experiencing any of the following signs?</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening:label">
+            <value>Side effects screening</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication:label">
+            <value>Does <output value=" /tb_home_visit/patient_name "/> have any challenges taking their medication?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/n_plan_to_accompany:label">
+            <value>_Plan to accompany <output value=" /tb_home_visit/patient_name "/> on their next appointment._</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/n_provide_emotional_support:label">
+            <value>_Give <output value=" /tb_home_visit/patient_name "/> hope using Joseph's story in the TB counselling cards._</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/next_visit:label">
+            <value>When is the next appointment date?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment:hint">
+            <value>Educate new patients using TB counselling cards</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment:label">
+            <value>Is <output value=" /tb_home_visit/patient_name "/> taking treatment as prescribed?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance:label">
+            <value>ARV adherance</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/tb_home_visit/contact_tracing/n_educate:label">
+            <value>_Phunzitsani anthu ena pa banjapo za kapewedwe ka TB ndikutumiza onse oposera zaka 5 kukhomo kwa a SCHW kuti akapeleke makhololo. Kwa ana ochepera zaka 5 atumizeni ku chipatala kuti akalandire mankhwala oteteza ku TB kenako perekani chikalata chotumizira anthu a pabanja kuchipatala pomwe papezeka munthu wa TB yopezeka m'makhololo._</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing/other_family_members:label">
+            <value>Kodi pali anthu ena pabanjapo omwe amakhala limodzi ndi <output value=" /tb_home_visit/patient_name "/>?</value>
+          </text>
+          <text id="/tb_home_visit/contact_tracing:label">
+            <value>Matenda opezerapo mwayi chifukwa cha kuchepa kwa chitetezo cha mthupi</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/tb_home_visit/group_review/household_referred:label">
+            <value>Kodi mwatumiza mwana ochepera zaka zisanu kapena wina wa pabanja kuchipatala?</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_adhering_to_treatment:label">
+            <value>_<output value=" /tb_home_visit/patient_name "/> akumwa mankhwala mwa ndondomeko._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_difficulty_breathing:label">
+            <value>Kuvutika kupuma</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_difficulty_swallowing:label">
+            <value>Kuvutika kumeza</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_dizziness:label">
+            <value>Chizungulire</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_hearing_loss:label">
+            <value>Kugontha m'makutu</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_jaundice:label">
+            <value>Chikaso m'maso</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_loss_of_appetite:label">
+            <value>Kusowa chilakolako cha chakudya</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_muscle_or_joint_pain:label">
+            <value>Kupweteka kwa minyewa ndi m'mafupa</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_no_opportunistic_infection:label">
+            <value>Palibe matenda opezerapo mwayi chifukwa cha kuchepa kwa chitetezo m'thupi</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_not_adhering_to_treatment:label">
+            <value>_<output value=" /tb_home_visit/patient_name "/> sakumwa mankhwala mwa ndondomeko._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_numbness_of_feet:label">
+            <value>Dzanzi m'mapazi</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_opportunistic_infection:label">
+            <value>Matenda opezerapo mwayi chifukwa cha kuchepa kwa chitetezo m'thupi alipo</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /tb_home_visit/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /tb_home_visit/patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_patient_details_title:label">
+            <value>Mbiri ya odwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_rash:label">
+            <value>Zilonda pa khungu</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_side_effects_title:label">
+            <value>**_ Zotsatira zobwera chifukwa cha mankhwala_**</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_swollen_eyes:label">
+            <value>Kutupa maso</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_swollen_tongue:label">
+            <value>Kutupa kwa lilime</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_tracing_title:label">
+            <value>**_Kulumikiza anthu ena apabanja kuchipatala pa nkhani ya TB_**</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_vision_loss:label">
+            <value>Khungu m'maso</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_vomiting:label">
+            <value>Kusanza</value>
+          </text>
+          <text id="/tb_home_visit/group_review/n_weakness_or_fatigue:label">
+            <value>Kufowoka kapena kutopa</value>
+          </text>
+          <text id="/tb_home_visit/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_home_visit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_home_visit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_home_visit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_home_visit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/n_refer_and_accompany2:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /tb_home_visit/patient_name "/> kuchipatala kuti akalndire thandizo._</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness:hint">
+            <value>Phunzitsani <output value=" /tb_home_visit/patient_name "/> za m'mene angazisamalilire pogwilitsa ntchito ma kadi ophunzitsira a TB</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections/other_illness:label">
+            <value>Kodi <output value=" /tb_home_visit/patient_name "/> ali matenda ena ofunika thandizo lachipatala machangu?</value>
+          </text>
+          <text id="/tb_home_visit/opportunistic_infections:label">
+            <value>Matenda opezerapo mwayi chifukwa cha kuchepa kwa chitetezo cha mthupi</value>
+          </text>
+          <text id="/tb_home_visit/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/tb_home_visit/ref_type/no_chw:label">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="/tb_home_visit/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/n_refer1:label">
+            <value>_Mutumizeni <output value=" /tb_home_visit/patient_name "/> kuchipatala kuti akalandire thandizo._</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/n_refer_and_accompany1:label">
+            <value>_Mupelekezeni <output value=" /tb_home_visit/patient_name "/> ku chipatala kuti akathandizidwe._</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/refer_and_accompany:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/refer_only:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/difficulty_breathing:label">
+            <value>Kuvutika kupuma</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/difficulty_swallowing:label">
+            <value>Kuvutika kumeza</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/dizziness:label">
+            <value>Chizungulire</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/hearing_loss:label">
+            <value>Kugontha m'makutu</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/jaundice:label">
+            <value>Chikaso m'maso</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/loss_of_appetite:label">
+            <value>Kusowa chilakolako cha chakudya</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/muscle_or_joint_pain:label">
+            <value>Kupweteka kwa minyewa ndi m'mafupa</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/numbness_of_feet:label">
+            <value>Dzanzi m'mapazi</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/rash:label">
+            <value>Zilonda pa khungu</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/swollen_eyes:label">
+            <value>Kutupa maso</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/swollen_tongue:label">
+            <value>Kutupa kwa lilime</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/vision_loss:label">
+            <value>Khungu m'maso</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/vomiting:label">
+            <value>Kusanza</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects/weakness_or_fatigue:label">
+            <value>Kufowoka kapena kutopa</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:hint">
+            <value>Phunzitsani <output value=" /tb_home_visit/patient_name "/> za zizindikilo zachilendo zobwera kamba komwa mankhwala a TB pogwilitsa ntchito ma kadi ophunzitsira</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening/side_effects:label">
+            <value>Kodi <output value=" /tb_home_visit/patient_name "/> akukumana ndi mavuto ena alionse kamba komwa mankhwala a TB?</value>
+          </text>
+          <text id="/tb_home_visit/side_effect_screening:label">
+            <value>Kufufuza zizindikiro zowopsa zodza kamba komwa mankhwala a TB</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/challenges_taking_medication:label">
+            <value>Kodi <output value=" /tb_home_visit/patient_name "/> akukumana ndi mavuto ena alionse kamba kakumwa mankhwalawa?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/n_plan_to_accompany:label">
+            <value>_Konzekerani zomuperekeza <output value=" /tb_home_visit/patient_name "/> kuchipatala pa Tsikuli._</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/n_provide_emotional_support:label">
+            <value>Perekani uthenga wachilimbikitso kwa odwala pogwiritsa ntchito nkhani ya Josefe.</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/next_visit:label">
+            <value>Kodi tsiku lobweleleranso ndi liti?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment:hint">
+            <value>Phunzitsani odwala atsopano pogwiritsa ntchito ma kadi ophunzitsira a TB</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance/taking_treatment:label">
+            <value>Kodi <output value=" /tb_home_visit/patient_name "/> akumwa mankhwala mwandondomeko?</value>
+          </text>
+          <text id="/tb_home_visit/treatment_adherance:label">
+            <value>Ndondomeko wa mankhwala ama ARV</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <tb_home_visit delimiter="#" id="tb_home_visit" prefix="J1!tb_home_visit!" version="2019-05-28 18:10:00">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <treatment_adherance>
+            <taking_treatment/>
+            <challenges_taking_medication/>
+            <n_provide_emotional_support/>
+            <next_visit/>
+            <n_plan_to_accompany/>
+          </treatment_adherance>
+          <side_effect_screening>
+            <side_effects/>
+            <refer_and_accompany/>
+            <refer_only/>
+            <n_refer_and_accompany1/>
+            <n_refer1/>
+          </side_effect_screening>
+          <opportunistic_infections>
+            <other_illness/>
+            <n_refer_and_accompany2/>
+          </opportunistic_infections>
+          <contact_tracing>
+            <other_family_members/>
+            <n_educate/>
+          </contact_tracing>
+          <ref_type/>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_adhering_to_treatment/>
+            <n_not_adhering_to_treatment/>
+            <n_side_effects_title/>
+            <n_difficulty_breathing/>
+            <n_hearing_loss/>
+            <n_jaundice/>
+            <n_vision_loss/>
+            <n_vomiting/>
+            <n_rash/>
+            <n_muscle_or_joint_pain/>
+            <n_difficulty_swallowing/>
+            <n_weakness_or_fatigue/>
+            <n_loss_of_appetite/>
+            <n_swollen_eyes/>
+            <n_swollen_tongue/>
+            <n_numbness_of_feet/>
+            <n_dizziness/>
+            <n_none/>
+            <n_opportunistic_infection/>
+            <n_no_opportunistic_infection/>
+            <n_tracing_title/>
+            <household_referred/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </tb_home_visit>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/tb_home_visit/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/tb_home_visit/inputs/source" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/source_id" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/name" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/sex" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/tb_home_visit/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/tb_home_visit/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/tb_home_visit/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/tb_home_visit/patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/tb_home_visit/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/tb_home_visit/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/tb_home_visit/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_home_visit/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/tb_home_visit/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/tb_home_visit/geolocation" type="string"/>
+      <bind nodeset="/tb_home_visit/treatment_adherance/taking_treatment" type="select1"/>
+      <bind nodeset="/tb_home_visit/treatment_adherance/challenges_taking_medication" type="select1"/>
+      <bind nodeset="/tb_home_visit/treatment_adherance/n_provide_emotional_support" readonly="true()" relevant="selected(../challenges_taking_medication, 'yes')" type="string"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/tb_home_visit/treatment_adherance/next_visit:jr:constraintMsg')" nodeset="/tb_home_visit/treatment_adherance/next_visit" type="date"/>
+      <bind nodeset="/tb_home_visit/treatment_adherance/n_plan_to_accompany" readonly="true()" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/tb_home_visit/side_effect_screening/side_effects:jr:constraintMsg')" nodeset="/tb_home_visit/side_effect_screening/side_effects" type="select"/>
+      <bind calculate="if(selected(../side_effects, 'difficulty_breathing')
+or selected(../side_effects, 'hearing_loss')
+or selected(../side_effects, 'jaundice')
+or selected(../side_effects, 'vision_loss')
+or selected(../side_effects, 'vomiting')
+or selected(../side_effects, 'rash'),
+'yes', 'no')" nodeset="/tb_home_visit/side_effect_screening/refer_and_accompany" type="string"/>
+      <bind calculate="if(selected(../side_effects, 'muscle_or_joint_pain')
+or selected(../side_effects, 'difficulty_swallowing')
+or selected(../side_effects, 'weakness_or_fatigue')
+or selected(../side_effects, 'loss_of_appetite')
+or selected(../side_effects, 'swollen_eyes')
+or selected(../side_effects, 'swollen_tongue')
+or selected(../side_effects, 'numbness_of_feet')
+or selected(../side_effects, 'dizziness')
+and ../refer_and_accompany = 'no',
+'yes', 'no')" nodeset="/tb_home_visit/side_effect_screening/refer_only" type="string"/>
+      <bind nodeset="/tb_home_visit/side_effect_screening/n_refer_and_accompany1" readonly="true()" relevant="../refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/tb_home_visit/side_effect_screening/n_refer1" readonly="true()" relevant="../refer_only = 'yes'
+and ../refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/tb_home_visit/opportunistic_infections/other_illness" type="select1"/>
+      <bind nodeset="/tb_home_visit/opportunistic_infections/n_refer_and_accompany2" readonly="true()" relevant="selected(../other_illness, 'yes')" type="string"/>
+      <bind nodeset="/tb_home_visit/contact_tracing/other_family_members" type="select1"/>
+      <bind nodeset="/tb_home_visit/contact_tracing/n_educate" readonly="true()" relevant="selected(../other_family_members, 'yes')" type="string"/>
+      <bind nodeset="/tb_home_visit/ref_type" relevant="(not(selected(../side_effect_screening/side_effects, 'none'))
+and count-selected(../side_effect_screening/side_effects) &gt;= 1)
+or selected(../opportunistic_infections/other_illness, 'yes')" type="select1"/>
+      <bind nodeset="/tb_home_visit/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_findings_title" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_adhering_to_treatment" readonly="true()" relevant="selected(../../treatment_adherance/taking_treatment, 'yes')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_not_adhering_to_treatment" readonly="true()" relevant="selected(../../treatment_adherance/taking_treatment, 'no')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_side_effects_title" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_difficulty_breathing" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'difficulty_breathing')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_hearing_loss" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'hearing_loss')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_jaundice" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'jaundice')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_vision_loss" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'vision_loss')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_vomiting" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'vomiting')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_rash" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'rash')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_muscle_or_joint_pain" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'muscle_or_joint_pain')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_difficulty_swallowing" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'difficulty_swallowing')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_weakness_or_fatigue" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'weakness_or_fatigue')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_loss_of_appetite" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'loss_of_appetite')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_swollen_eyes" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'swollen_eyes')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_swollen_tongue" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'swollen_tongue')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_numbness_of_feet" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'numbness_of_feet')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_dizziness" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'dizziness')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_none" readonly="true()" relevant="selected(../../side_effect_screening/side_effects, 'none')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_opportunistic_infection" readonly="true()" relevant="selected(../../opportunistic_infections/other_illness, 'yes')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_no_opportunistic_infection" readonly="true()" relevant="selected(../../opportunistic_infections/other_illness, 'no')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_tracing_title" readonly="true()" relevant="selected(../../contact_tracing/other_family_members, 'yes')" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/household_referred" relevant="selected(../../contact_tracing/other_family_members, 'yes')" type="select1"/>
+      <bind nodeset="/tb_home_visit/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind nodeset="/tb_home_visit/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tb_home_visit/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/tb_home_visit/inputs">
+      <label ref="jr:itext('/tb_home_visit/inputs:label')"/>
+      <group ref="/tb_home_visit/inputs/contact">
+        <label ref="jr:itext('/tb_home_visit/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/tb_home_visit/inputs/contact/_id">
+          <label ref="jr:itext('/tb_home_visit/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/tb_home_visit/inputs/contact/parent">
+          <label ref="jr:itext('/tb_home_visit/inputs/contact/parent:label')"/>
+          <group ref="/tb_home_visit/inputs/contact/parent/parent">
+            <label ref="jr:itext('/tb_home_visit/inputs/contact/parent/parent:label')"/>
+            <group ref="/tb_home_visit/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/tb_home_visit/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/tb_home_visit/treatment_adherance">
+      <label ref="jr:itext('/tb_home_visit/treatment_adherance:label')"/>
+      <select1 ref="/tb_home_visit/treatment_adherance/taking_treatment">
+        <label ref="jr:itext('/tb_home_visit/treatment_adherance/taking_treatment:label')"/>
+        <hint ref="jr:itext('/tb_home_visit/treatment_adherance/taking_treatment:hint')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/treatment_adherance/taking_treatment/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/treatment_adherance/taking_treatment/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/tb_home_visit/treatment_adherance/challenges_taking_medication">
+        <label ref="jr:itext('/tb_home_visit/treatment_adherance/challenges_taking_medication:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/treatment_adherance/challenges_taking_medication/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/treatment_adherance/challenges_taking_medication/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/tb_home_visit/treatment_adherance/n_provide_emotional_support">
+        <label ref="jr:itext('/tb_home_visit/treatment_adherance/n_provide_emotional_support:label')"/>
+      </input>
+      <input ref="/tb_home_visit/treatment_adherance/next_visit">
+        <label ref="jr:itext('/tb_home_visit/treatment_adherance/next_visit:label')"/>
+      </input>
+      <input ref="/tb_home_visit/treatment_adherance/n_plan_to_accompany">
+        <label ref="jr:itext('/tb_home_visit/treatment_adherance/n_plan_to_accompany:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/tb_home_visit/side_effect_screening">
+      <label ref="jr:itext('/tb_home_visit/side_effect_screening:label')"/>
+      <select ref="/tb_home_visit/side_effect_screening/side_effects">
+        <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects:label')"/>
+        <hint ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects:hint')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/difficulty_breathing:label')"/>
+          <value>difficulty_breathing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/hearing_loss:label')"/>
+          <value>hearing_loss</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/jaundice:label')"/>
+          <value>jaundice</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/vision_loss:label')"/>
+          <value>vision_loss</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/vomiting:label')"/>
+          <value>vomiting</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/rash:label')"/>
+          <value>rash</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/muscle_or_joint_pain:label')"/>
+          <value>muscle_or_joint_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/difficulty_swallowing:label')"/>
+          <value>difficulty_swallowing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/weakness_or_fatigue:label')"/>
+          <value>weakness_or_fatigue</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/loss_of_appetite:label')"/>
+          <value>loss_of_appetite</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/swollen_eyes:label')"/>
+          <value>swollen_eyes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/swollen_tongue:label')"/>
+          <value>swollen_tongue</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/numbness_of_feet:label')"/>
+          <value>numbness_of_feet</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/dizziness:label')"/>
+          <value>dizziness</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/side_effect_screening/side_effects/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/tb_home_visit/side_effect_screening/n_refer_and_accompany1">
+        <label ref="jr:itext('/tb_home_visit/side_effect_screening/n_refer_and_accompany1:label')"/>
+      </input>
+      <input ref="/tb_home_visit/side_effect_screening/n_refer1">
+        <label ref="jr:itext('/tb_home_visit/side_effect_screening/n_refer1:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/tb_home_visit/opportunistic_infections">
+      <label ref="jr:itext('/tb_home_visit/opportunistic_infections:label')"/>
+      <select1 ref="/tb_home_visit/opportunistic_infections/other_illness">
+        <label ref="jr:itext('/tb_home_visit/opportunistic_infections/other_illness:label')"/>
+        <hint ref="jr:itext('/tb_home_visit/opportunistic_infections/other_illness:hint')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/opportunistic_infections/other_illness/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/opportunistic_infections/other_illness/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/tb_home_visit/opportunistic_infections/n_refer_and_accompany2">
+        <label ref="jr:itext('/tb_home_visit/opportunistic_infections/n_refer_and_accompany2:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/tb_home_visit/contact_tracing">
+      <label ref="jr:itext('/tb_home_visit/contact_tracing:label')"/>
+      <select1 ref="/tb_home_visit/contact_tracing/other_family_members">
+        <label ref="jr:itext('/tb_home_visit/contact_tracing/other_family_members:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/contact_tracing/other_family_members/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/contact_tracing/other_family_members/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/tb_home_visit/contact_tracing/n_educate">
+        <label ref="jr:itext('/tb_home_visit/contact_tracing/n_educate:label')"/>
+      </input>
+    </group>
+    <select1 ref="/tb_home_visit/ref_type">
+      <label ref="jr:itext('/tb_home_visit/ref_type:label')"/>
+      <item>
+        <label ref="jr:itext('/tb_home_visit/ref_type/chw:label')"/>
+        <value>chw</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/tb_home_visit/ref_type/no_chw:label')"/>
+        <value>no_chw</value>
+      </item>
+    </select1>
+    <group appearance="field-list summary" ref="/tb_home_visit/group_review">
+      <label ref="jr:itext('/tb_home_visit/group_review:label')"/>
+      <input ref="/tb_home_visit/group_review/n_submit">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/tb_home_visit/group_review/n_patient_details_title">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_patient_details">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/tb_home_visit/group_review/n_findings_title">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_adhering_to_treatment">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_adhering_to_treatment:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_not_adhering_to_treatment">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_not_adhering_to_treatment:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_side_effects_title">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_side_effects_title:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_difficulty_breathing">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_difficulty_breathing:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_hearing_loss">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_hearing_loss:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_jaundice">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_jaundice:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_vision_loss">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_vision_loss:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_vomiting">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_vomiting:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_rash">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_rash:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_muscle_or_joint_pain">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_muscle_or_joint_pain:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_difficulty_swallowing">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_difficulty_swallowing:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_weakness_or_fatigue">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_weakness_or_fatigue:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_loss_of_appetite">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_loss_of_appetite:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_swollen_eyes">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_swollen_eyes:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_swollen_tongue">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_swollen_tongue:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_numbness_of_feet">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_numbness_of_feet:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_dizziness">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_dizziness:label')"/>
+      </input>
+      <input appearance="li" ref="/tb_home_visit/group_review/n_none">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_none:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_opportunistic_infection">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_opportunistic_infection:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_no_opportunistic_infection">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_no_opportunistic_infection:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_tracing_title">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_tracing_title:label')"/>
+      </input>
+      <select1 ref="/tb_home_visit/group_review/household_referred">
+        <label ref="jr:itext('/tb_home_visit/group_review/household_referred:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/group_review/household_referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_home_visit/group_review/household_referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/tb_home_visit/group_review/n_follow_up_title">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/tb_home_visit/group_review/n_follow_up">
+        <label ref="jr:itext('/tb_home_visit/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

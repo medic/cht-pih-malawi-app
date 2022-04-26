@@ -1,0 +1,15 @@
+{
+    "icon": "icon-disease-respiratory",
+    "title": {
+        "en": "Lipoti loyendera odwala TB kunyumba",
+        "ny": ""
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && !contact.date_of_death"
+    },
+    "hidden_fields": [
+
+    ]
+}

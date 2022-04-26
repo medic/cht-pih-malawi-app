@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Spot check</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/spot_check/inputs/contact/_id:label">
+            <value>What is the household name?</value>
+          </text>
+          <text id="/spot_check/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/spot_check/inputs/contact/user_type:label">
+            <value>Ty</value>
+          </text>
+          <text id="/spot_check/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/spot_check/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/spot_check/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/spot_check/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments:label">
+            <value>Follow through with scheduled appointments or communicate changes in a timely manner</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral:label">
+            <value>Follow up within 2 days after referring sick household members</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential:label">
+            <value>Keep information confidential</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/last_visited_by_chw:jr:constraintMsg">
+            <value>Future dates not allowed!</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/last_visited_by_chw:label">
+            <value>When was the last time you were visited by your CHW</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility:label">
+            <value>Link sick household members to the health facility</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment:label">
+            <value>Make an appointment for each home visit</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members:label">
+            <value>Try to mobilize all household members when they come for their monthly visits</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_10:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_1:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_2:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_4:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_5:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_6:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_7:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_8:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_9:label">
+            <value>_Talk to CHW about the importance of this action_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_interview:label">
+            <value>**Does your CHW always**</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_mentorship:label">
+            <value>_Please provide mentorship to <output value=" /spot_check/spot_check_details/family_interview/chw_name1 "/>._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_officer_conf:label">
+            <value>_Report to your CHW officer_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_officer_respect:label">
+            <value>_Report to your CHW officer_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_ss_conf:label">
+            <value>_Report to your Site Supervisor_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_ss_respect:label">
+            <value>_Report to your Site Supervisor_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition:label">
+            <value>Screen all under 5 children for malnutrition every month</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly:label">
+            <value>Screen everyone in the household for TB each month</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age:label">
+            <value>Screen all women of childbearing age for pregnancy and family planning</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully:label">
+            <value>Treat your household in an appropriate and respectful manner</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides:label">
+            <value>Use job aides when they are doing health education</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw/no:label">
+            <value>No</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw:label">
+            <value>Have you been visited monthly by your CHW?</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview:label">
+            <value>Family interview</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/other_notes:label">
+            <value>Other notes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/unrecommended_duration_reason:label">
+            <value>Why did the household visit not take the reccomended time?</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/visit_duration:hint">
+            <value>Time should be in minutes</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/visit_duration:label">
+            <value>How long did <output value=" /spot_check/chw_name "/> take during the household visit</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration:label">
+            <value>Time taken during HH visit</value>
+          </text>
+          <text id="/spot_check/spot_check_details/reports_validation/n_validate:label">
+            <value>_Validate submitted reports against HH members._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/reports_validation:label">
+            <value>Reports validation</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification/user_id:jr:constraintMsg">
+            <value>Please use the correct log in details</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification/user_id:label">
+            <value>User ID</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification:label">
+            <value>User identification</value>
+          </text>
+          <text id="/spot_check/spot_check_details:label">
+            <value>Spot check details</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/spot_check/chw_name:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/household_name:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/contact/_id:label">
+            <value>What is the household name?</value>
+          </text>
+          <text id="/spot_check/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/spot_check/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/contact/user_type:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/spot_check/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/place_id:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/source:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_follow_through_with_scheduled_appointments:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_follow_up_within_2_days_of_referral:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_full_last_visited:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_link_sick_to_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_make_appointment:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_mentorship:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_mobilise_household_members:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_screen_all_under_5_for_malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_screen_household_for_tb_monthly:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_screen_women_of_age:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_treat_households_respectfully:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/c_use_job_aides:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/chw_name1:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/first_of_month:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments:label">
+            <value>Kutsatira ndondomeko ya nthawi yomwe munagwirizana</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral:label">
+            <value>Amabweleranso pa banja pano pasanathe masiku awiri akatumiza odwala kuchipatala</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/keep_information_confidential:label">
+            <value>Amasunga chinsinsi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/last_visited_by_chw:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/last_visited_by_chw:label">
+            <value>Kodi CHW wanu anakuyenderani liti ulendo wake omaliza?</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/link_sick_to_facility:label">
+            <value>Amalumikiza anthu obwala pa banjapa ndi a chipatala</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/make_appointment:label">
+            <value>Amakudziwitsani akamakuyenderani pakhomo pano</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/mobilise_household_members:label">
+            <value>Amasonkhanitsa anthu onse a pa banja pano akabwera</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_10:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_1:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_2:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_4:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi.._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_5:label">
+            <value>_Mufotokozereni CHW za kufunika kwa mfundo imeneyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_6:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_7:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_8:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_importance_9:label">
+            <value>_Kambiranani ndi CHW wanu zakufunika kwa ntchito iyi._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_interview:label">
+            <value>**Kodi CHW wanu nthawi zonse**</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_mentorship:label">
+            <value>_Chonde perekani upangiri kwa <output value=" /spot_check/spot_check_details/family_interview/chw_name1 "/> za nthawi yomwe wakhala pabanjapo._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_officer_conf:label">
+            <value>_Dziwitsani CHW officer_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_officer_respect:label">
+            <value>_Dziwitsani CHW officer_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_ss_conf:label">
+            <value>_Dziwitsani Site Supervisor wanu_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/n_report_ss_respect:label">
+            <value>_Dziwitsani Site Supervisor wanu_</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition:label">
+            <value>Amafufuza mwezi uliwonse ana ochepera zaka zisanu ngati ali wonyenthera</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly:label">
+            <value>Amafufuza wina aliyense pa banja pano za TB</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/screen_women_of_age:label">
+            <value>Amafufunza za pakati ndi kulera kwa amayi onse a msinkhu wobereka</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/treat_households_respectfully:label">
+            <value>kodi CHW amapereka ulemu ndi kucheza nanu moyenera</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/use_job_aides:label">
+            <value>Amagwiritsa ntchito zipangizo zophunzitsira akamaphunzitsa</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview/visited_by_chw:label">
+            <value>Kodi mumayenderedwa mwezi uliwonse ndi CHW wanu?</value>
+          </text>
+          <text id="/spot_check/spot_check_details/family_interview:label">
+            <value>Kucheza ndi banja</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/other_notes:label">
+            <value>zolemba zina</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/unrecommended_duration_reason:label">
+            <value>Ndi chifukwa chani kuyenderaku sikunafikire nthawi yovomerezeka?</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/visit_duration:hint">
+            <value>Nthawi ikuyenera kukhala mu mphindi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration/visit_duration:label">
+            <value>Ndi nthawi yaitali bwanji yomwe <output value=" /spot_check/chw_name "/> anatenga poyendera banja</value>
+          </text>
+          <text id="/spot_check/spot_check_details/hh_visit_duration:label">
+            <value>Kuchuluka kwa nthawi yomwe mwatenga poyendera banja</value>
+          </text>
+          <text id="/spot_check/spot_check_details/reports_validation/n_validate:label">
+            <value>_Tsimikizirani malipoti amene mwalandira ngati alidi ogwilizana ndi anthu amene akupezeka m'banjamo._</value>
+          </text>
+          <text id="/spot_check/spot_check_details/reports_validation:label">
+            <value>Kutsimikizira malipoti</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification/c_proceed:label">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification/user_id:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification/user_id:label">
+            <value>Nambala ya chinsinsi</value>
+          </text>
+          <text id="/spot_check/spot_check_details/user_identification:label">
+            <value>Nambala ya chinsinsi</value>
+          </text>
+          <text id="/spot_check/spot_check_details:label">
+            <value>Ndondomeko yofufuza momwe anthu akugwilira ntchito</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <spot_check delimiter="#" id="spot_check" prefix="J1!spot_check!" version="2020-03-16 16:17:02">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <user_type/>
+              <parent>
+                <_id/>
+                <contact>
+                  <_id/>
+                  <name/>
+                  <phone/>
+                </contact>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <place_id/>
+          <household_name/>
+          <chw_name/>
+          <geolocation/>
+          <schw_id/>
+          <ss_id/>
+          <pin/>
+          <spot_check_details>
+            <user_identification>
+              <user_id/>
+              <c_proceed/>
+              <is_ss/>
+              <is_schw/>
+            </user_identification>
+            <reports_validation>
+              <n_validate/>
+            </reports_validation>
+            <family_interview>
+              <visited_by_chw/>
+              <first_of_month/>
+              <c_full_last_visited/>
+              <last_visited_by_chw/>
+              <n_interview/>
+              <make_appointment/>
+              <n_importance_1/>
+              <follow_through_with_scheduled_appointments/>
+              <n_importance_2/>
+              <treat_households_respectfully/>
+              <n_report_ss_respect/>
+              <n_report_officer_respect/>
+              <keep_information_confidential/>
+              <n_report_ss_conf/>
+              <n_report_officer_conf/>
+              <link_sick_to_facility/>
+              <n_importance_4/>
+              <mobilise_household_members/>
+              <n_importance_5/>
+              <use_job_aides/>
+              <n_importance_6/>
+              <follow_up_within_2_days_of_referral/>
+              <n_importance_7/>
+              <screen_household_for_tb_monthly/>
+              <n_importance_8/>
+              <screen_women_of_age/>
+              <n_importance_9/>
+              <screen_all_under_5_for_malnutrition/>
+              <n_importance_10/>
+              <c_make_appointment/>
+              <c_follow_through_with_scheduled_appointments/>
+              <c_treat_households_respectfully/>
+              <c_link_sick_to_facility/>
+              <c_mobilise_household_members/>
+              <c_use_job_aides/>
+              <c_follow_up_within_2_days_of_referral/>
+              <c_screen_household_for_tb_monthly/>
+              <c_screen_women_of_age/>
+              <c_screen_all_under_5_for_malnutrition/>
+              <c_mentorship/>
+              <chw_name1/>
+              <n_mentorship/>
+            </family_interview>
+            <hh_visit_duration>
+              <visit_duration/>
+              <unrecommended_duration_reason/>
+              <other_notes/>
+            </hh_visit_duration>
+          </spot_check_details>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </spot_check>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/spot_check/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/spot_check/inputs/source" type="string"/>
+      <bind nodeset="/spot_check/inputs/source_id" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/_id" required="true()" type="db:person"/>
+      <bind nodeset="/spot_check/inputs/contact/name" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/user_type" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/parent/contact/_id" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/parent/contact/name" type="string"/>
+      <bind nodeset="/spot_check/inputs/contact/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/spot_check/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/spot_check/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/spot_check/place_id" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/spot_check/household_name" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/name" nodeset="/spot_check/chw_name" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/spot_check/geolocation" type="string"/>
+      <bind calculate="instance('contact-summary')/context/schw_id" nodeset="/spot_check/schw_id" type="string"/>
+      <bind calculate="instance('contact-summary')/context/ss_id" nodeset="/spot_check/ss_id" type="string"/>
+      <bind calculate="concat('0', coalesce( /spot_check/ss_id ,  /spot_check/schw_id ))" nodeset="/spot_check/pin" type="string"/>
+      <bind constraint="int(.) = int( /spot_check/pin )" jr:constraintMsg="jr:itext('/spot_check/spot_check_details/user_identification/user_id:jr:constraintMsg')" nodeset="/spot_check/spot_check_details/user_identification/user_id" required="true()" type="string"/>
+      <bind calculate="if(int(../user_id) = int( /spot_check/pin ), 'yes', 'no')" nodeset="/spot_check/spot_check_details/user_identification/c_proceed" type="string"/>
+      <bind calculate="if( /spot_check/ss_id  != '', 'yes', 'no')" nodeset="/spot_check/spot_check_details/user_identification/is_ss" type="string"/>
+      <bind calculate="if( /spot_check/schw_id  != '' and  /spot_check/ss_id  = '', 'yes', 'no')" nodeset="/spot_check/spot_check_details/user_identification/is_schw" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/reports_validation" relevant=" /spot_check/spot_check_details/user_identification/c_proceed  = 'yes'"/>
+      <bind nodeset="/spot_check/spot_check_details/reports_validation/n_validate" readonly="true()" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview" relevant=" /spot_check/spot_check_details/user_identification/c_proceed  = 'yes'"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/visited_by_chw" required="true()" type="select1"/>
+      <bind calculate="decimal-date-time(concat(format-date(today(), '%Y-%m'), '-01'))" nodeset="/spot_check/spot_check_details/family_interview/first_of_month" type="string"/>
+      <bind calculate="decimal-date-time(../last_visited_by_chw)" nodeset="/spot_check/spot_check_details/family_interview/c_full_last_visited" type="string"/>
+      <bind constraint=" /spot_check/spot_check_details/family_interview/c_full_last_visited  &lt;=  /spot_check/spot_check_details/family_interview/first_of_month " jr:constraintMsg="jr:itext('/spot_check/spot_check_details/family_interview/last_visited_by_chw:jr:constraintMsg')" nodeset="/spot_check/spot_check_details/family_interview/last_visited_by_chw" required="true()" type="date"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_interview" readonly="true()" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/make_appointment" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_1" readonly="true()" relevant="selected(../make_appointment, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_2" readonly="true()" relevant="selected(../follow_through_with_scheduled_appointments, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/treat_households_respectfully" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_report_ss_respect" readonly="true()" relevant="selected(../treat_households_respectfully, 'no') and  /spot_check/spot_check_details/user_identification/is_ss ='no'" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_report_officer_respect" readonly="true()" relevant="selected(../treat_households_respectfully, 'no') and  /spot_check/spot_check_details/user_identification/is_ss ='yes'" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/keep_information_confidential" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_report_ss_conf" readonly="true()" relevant="selected(../keep_information_confidential, 'no') and  /spot_check/spot_check_details/user_identification/is_ss ='no'" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_report_officer_conf" readonly="true()" relevant="selected(../keep_information_confidential, 'no') and  /spot_check/spot_check_details/user_identification/is_ss ='yes'" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/link_sick_to_facility" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_4" readonly="true()" relevant="selected(../link_sick_to_facility, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/mobilise_household_members" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_5" readonly="true()" relevant="selected(../mobilise_household_members, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/use_job_aides" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_6" readonly="true()" relevant="selected(../use_job_aides, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_7" readonly="true()" relevant="selected(../follow_up_within_2_days_of_referral, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_8" readonly="true()" relevant="selected(../screen_household_for_tb_monthly, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/screen_women_of_age" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_9" readonly="true()" relevant="selected(../screen_women_of_age, 'no')" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition" required="true()" type="select1"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_importance_10" readonly="true()" relevant="selected(../screen_all_under_5_for_malnutrition, 'no')" type="string"/>
+      <bind calculate="if(selected(../make_appointment, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_make_appointment" type="string"/>
+      <bind calculate="if(selected(../follow_through_with_scheduled_appointments, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_follow_through_with_scheduled_appointments" type="string"/>
+      <bind calculate="if(selected(../treat_households_respectfully, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_treat_households_respectfully" type="string"/>
+      <bind calculate="if(selected(../link_sick_to_facility, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_link_sick_to_facility" type="string"/>
+      <bind calculate="if(selected(../mobilise_household_members, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_mobilise_household_members" type="string"/>
+      <bind calculate="if(selected(../use_job_aides, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_use_job_aides" type="string"/>
+      <bind calculate="if(selected(../follow_up_within_2_days_of_referral, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_follow_up_within_2_days_of_referral" type="string"/>
+      <bind calculate="if(selected(../screen_household_for_tb_monthly, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_screen_household_for_tb_monthly" type="string"/>
+      <bind calculate="if(selected(../screen_women_of_age, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_screen_women_of_age" type="string"/>
+      <bind calculate="if(selected(../screen_all_under_5_for_malnutrition, 'no'), 1, 0)" nodeset="/spot_check/spot_check_details/family_interview/c_screen_all_under_5_for_malnutrition" type="string"/>
+      <bind calculate="int(../c_make_appointment) + int(../c_follow_through_with_scheduled_appointments) + int(../c_treat_households_respectfully) + int(../c_link_sick_to_facility) + int(../c_mobilise_household_members) + int(../c_use_job_aides) + int(../c_follow_up_within_2_days_of_referral) + int(../c_screen_household_for_tb_monthly) + int(../c_screen_women_of_age) + int(../c_screen_all_under_5_for_malnutrition)" nodeset="/spot_check/spot_check_details/family_interview/c_mentorship" type="string"/>
+      <bind calculate="../../../inputs/contact/parent/contact/name" nodeset="/spot_check/spot_check_details/family_interview/chw_name1" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/family_interview/n_mentorship" readonly="true()" relevant="../c_mentorship &gt;= 5" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/hh_visit_duration" relevant=" /spot_check/spot_check_details/user_identification/c_proceed  = 'yes'"/>
+      <bind nodeset="/spot_check/spot_check_details/hh_visit_duration/visit_duration" required="true()" type="int"/>
+      <bind nodeset="/spot_check/spot_check_details/hh_visit_duration/unrecommended_duration_reason" relevant="int(../visit_duration) &lt; 30" required="true()" type="string"/>
+      <bind nodeset="/spot_check/spot_check_details/hh_visit_duration/other_notes" required="false()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/spot_check/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/spot_check/inputs">
+      <label ref="jr:itext('/spot_check/inputs:label')"/>
+      <group ref="/spot_check/inputs/contact">
+        <label ref="jr:itext('/spot_check/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/spot_check/inputs/contact/_id">
+          <label ref="jr:itext('/spot_check/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/spot_check/inputs/contact/parent">
+          <label ref="jr:itext('/spot_check/inputs/contact/parent:label')"/>
+          <group ref="/spot_check/inputs/contact/parent/contact">
+            <label ref="jr:itext('/spot_check/inputs/contact/parent/contact:label')"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/spot_check/spot_check_details">
+      <label ref="jr:itext('/spot_check/spot_check_details:label')"/>
+      <group ref="/spot_check/spot_check_details/user_identification">
+        <label ref="jr:itext('/spot_check/spot_check_details/user_identification:label')"/>
+        <input ref="/spot_check/spot_check_details/user_identification/user_id">
+          <label ref="jr:itext('/spot_check/spot_check_details/user_identification/user_id:label')"/>
+        </input>
+      </group>
+      <group ref="/spot_check/spot_check_details/reports_validation">
+        <label ref="jr:itext('/spot_check/spot_check_details/reports_validation:label')"/>
+        <input ref="/spot_check/spot_check_details/reports_validation/n_validate">
+          <label ref="jr:itext('/spot_check/spot_check_details/reports_validation/n_validate:label')"/>
+        </input>
+      </group>
+      <group appearance="field-list" ref="/spot_check/spot_check_details/family_interview">
+        <label ref="jr:itext('/spot_check/spot_check_details/family_interview:label')"/>
+        <select1 ref="/spot_check/spot_check_details/family_interview/visited_by_chw">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/visited_by_chw:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/visited_by_chw/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/visited_by_chw/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input appearance="month-year" ref="/spot_check/spot_check_details/family_interview/last_visited_by_chw">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/last_visited_by_chw:label')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/family_interview/n_interview">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_interview:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/make_appointment">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/make_appointment:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/make_appointment/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/make_appointment/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_1">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_1:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_through_with_scheduled_appointments/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_2">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_2:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/treat_households_respectfully">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/treat_households_respectfully:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/treat_households_respectfully/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/treat_households_respectfully/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_report_ss_respect">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_report_ss_respect:label')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/family_interview/n_report_officer_respect">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_report_officer_respect:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/keep_information_confidential">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/keep_information_confidential:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/keep_information_confidential/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/keep_information_confidential/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_report_ss_conf">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_report_ss_conf:label')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/family_interview/n_report_officer_conf">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_report_officer_conf:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/link_sick_to_facility">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/link_sick_to_facility:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/link_sick_to_facility/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/link_sick_to_facility/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_4">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_4:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/mobilise_household_members">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/mobilise_household_members:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/mobilise_household_members/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/mobilise_household_members/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_5">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_5:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/use_job_aides">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/use_job_aides:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/use_job_aides/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/use_job_aides/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_6">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_6:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/follow_up_within_2_days_of_referral/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_7">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_7:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_household_for_tb_monthly/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_8">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_8:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/screen_women_of_age">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_women_of_age:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_women_of_age/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_women_of_age/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_9">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_9:label')"/>
+        </input>
+        <select1 ref="/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition:label')"/>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/spot_check/spot_check_details/family_interview/screen_all_under_5_for_malnutrition/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/spot_check/spot_check_details/family_interview/n_importance_10">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_importance_10:label')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/family_interview/n_mentorship">
+          <label ref="jr:itext('/spot_check/spot_check_details/family_interview/n_mentorship:label')"/>
+        </input>
+      </group>
+      <group ref="/spot_check/spot_check_details/hh_visit_duration">
+        <label ref="jr:itext('/spot_check/spot_check_details/hh_visit_duration:label')"/>
+        <input ref="/spot_check/spot_check_details/hh_visit_duration/visit_duration">
+          <label ref="jr:itext('/spot_check/spot_check_details/hh_visit_duration/visit_duration:label')"/>
+          <hint ref="jr:itext('/spot_check/spot_check_details/hh_visit_duration/visit_duration:hint')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/hh_visit_duration/unrecommended_duration_reason">
+          <label ref="jr:itext('/spot_check/spot_check_details/hh_visit_duration/unrecommended_duration_reason:label')"/>
+        </input>
+        <input ref="/spot_check/spot_check_details/hh_visit_duration/other_notes">
+          <label ref="jr:itext('/spot_check/spot_check_details/hh_visit_duration/other_notes:label')"/>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

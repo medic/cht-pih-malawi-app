@@ -1,0 +1,578 @@
+{
+  "locales": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "es",
+      "name": "Español (Spanish)"
+    },
+    {
+      "code": "fr",
+      "name": "Français (French)"
+    },
+    {
+      "code": "ne",
+      "name": "नेपाली (Nepali)"
+    },
+    {
+      "code": "sw",
+      "name": "Kiswahili (Swahili)"
+    }
+  ],
+  "locale": "en",
+  "locale_outgoing": "en",
+  "date_format": "D MMM, YYYY",
+  "reported_date_format": "DD-MMM-YYYY HH:mm:ss",
+  "forms_only_mode": false,
+  "place_hierarchy_types": [
+    "site",
+    "schw_region",
+    "chw_area",
+    "household"
+  ],
+  "default_responses": {
+    "start_date": ""
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": 254,
+  "gateway_number": "+254798217246",
+  "kujua-reporting": [
+    {
+      "code": "VPD",
+      "reporting_freq": "weekly"
+    }
+  ],
+  "schedule_morning_hours": 0,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 23,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "clinic.name",
+  "roles": {
+    "data_entry": {
+      "name": "usertype.data-entry"
+    },
+    "analytics": {
+      "name": "usertype.analytics"
+    },
+    "gateway": {
+      "name": "usertype.gateway"
+    },
+    "program_officer": {
+      "name": "usertype.program-officer"
+    },
+    "supervisor": {
+      "name": "usertype.supervisor",
+      "offline": true
+    },
+    "district_admin": {
+      "name": "usertype.district_admin",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+      "gateway"
+    ],
+    "can_bulk_delete_reports": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_configure": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_create_people": [
+      "district_admin",
+      "program_officer"
+    ],
+    "can_create_places": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_create_records": [
+      "national_admin",
+      "district_admin",
+      "data_entry",
+      "gateway",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_create_users": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_delete_contacts": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_delete_messages": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_delete_reports": [
+      "national_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_delete_users": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_edit": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "program_officer"
+    ],
+    "can_edit_profile": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_edit_verification": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_export_all": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_export_audit": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_export_contacts": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_export_feedback": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_export_forms": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_export_messages": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_log_out_on_android": [],
+    "can_update_messages": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "program_officer"
+    ],
+    "can_update_people": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_update_places": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_update_reports": [
+      "national_admin",
+      "district_admin",
+      "program_officer"
+    ],
+    "can_update_users": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_verify_reports": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_analytics": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_analytics_tab": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_call_action": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_contacts": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_contacts_tab": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_data_records": [
+      "national_admin",
+      "district_admin",
+      "analytics",
+      "gateway",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_last_visited_date": [
+      "district_admin"
+    ],
+    "can_view_message_action": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_messages": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_messages_tab": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_outgoing_messages": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_view_reports": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_reports_tab": [
+      "national_admin",
+      "district_admin",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_tasks": [
+      "district_admin",
+      "supervisor"
+    ],
+    "can_view_tasks_tab": [
+      "district_admin",
+      "supervisor"
+    ],
+    "can_view_unallocated_data_records": [
+      "national_admin",
+      "district_admin",
+      "gateway",
+      "program_officer",
+      "supervisor"
+    ],
+    "can_view_users": [
+      "national_admin",
+      "program_officer"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_view_uhc_stats": [
+      "district_admin"
+    ],
+    "can_aggregate_targets": [
+      "supervisor"
+    ]
+  },
+  "uhc": {
+    "contacts_default_sort": "last_visited_date",
+    "visit_count": {
+      "month_start_date": 1,
+      "visit_count_goal": 1
+    }
+  },
+  "changes_controller": {
+    "reiterate_changes": true,
+    "changes_limit": 100,
+    "debounce_interval": 200
+  },
+  "replication_depth": [
+    {
+      "role": "supervisor",
+      "depth": 3
+    }
+  ],
+  "contact_types": [
+    {
+      "id": "site",
+      "name_key": "contact.type.site",
+      "group_key": "contact.type.site.plural",
+      "create_key": "contact.type.site.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-facility",
+      "create_form": "form:contact:site:create",
+      "edit_form": "form:contact:site:edit"
+    },
+    {
+      "id": "schw_region",
+      "name_key": "contact.type.schw_region",
+      "group_key": "contact.type.schw_region.plural",
+      "create_key": "contact.type.schw_region.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "site"
+      ],
+      "icon": "medic-schw-region",
+      "create_form": "form:contact:schw_region:create",
+      "edit_form": "form:contact:schw_region:edit"
+    },
+    {
+      "id": "chw_area",
+      "name_key": "contact.type.chw_area",
+      "group_key": "contact.type.chw_area.plural",
+      "create_key": "contact.type.chw_area.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "schw_region"
+      ],
+      "icon": "medic-chw-area",
+      "create_form": "form:contact:chw_area:create",
+      "edit_form": "form:contact:chw_area:edit"
+    },
+    {
+      "id": "household",
+      "name_key": "contact.type.household",
+      "group_key": "contact.type.household.plural",
+      "create_key": "contact.type.household.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "chw_area"
+      ],
+      "icon": "medic-household",
+      "create_form": "form:contact:household:create",
+      "edit_form": "form:contact:household:edit",
+      "count_visits": true
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "household"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true
+    },
+    {
+      "id": "site_supervisor",
+      "name_key": "contact.type.site_supervisor",
+      "group_key": "contact.type.site_supervisor.plural",
+      "create_key": "contact.type.site_supervisor.new",
+      "edit_key": "contact.type.site_supervisor.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "site"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:site_supervisor:create",
+      "edit_form": "form:contact:site_supervisor:edit",
+      "person": true
+    },
+    {
+      "id": "schw",
+      "name_key": "contact.type.schw",
+      "group_key": "contact.type.schw.plural",
+      "create_key": "contact.type.schw.new",
+      "edit_key": "contact.type.schw.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "site",
+        "schw_region"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:schw:create",
+      "edit_form": "form:contact:schw:edit",
+      "person": true
+    },
+    {
+      "id": "chw",
+      "name_key": "contact.type.chw",
+      "group_key": "contact.type.chw.plural",
+      "create_key": "contact.type.chw.new",
+      "edit_key": "contact.type.chw.edit",
+      "primary_contact_key": "place.field.contact",
+      "parents": [
+        "site",
+        "schw_region",
+        "chw_area"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:chw:create",
+      "edit_form": "form:contact:chw:edit",
+      "person": true
+    }
+  ],
+  "setup_complete": true,
+  "transitions": {
+    "muting": true,
+    "default_responses": true,
+    "update_clinics": true,
+    "accept_patient_reports": true,
+    "conditional_alerts": true,
+    "update_sent_by": false,
+    "registration": true,
+    "update_scheduled_reports": false,
+    "multi_report_alerts": false,
+    "update_sent_forms": false,
+    "generate_patient_id_on_people": true,
+    "death_reporting": true,
+    "resolve_pending": false
+  },
+  "death_reporting": {
+    "mark_deceased_forms": [
+      "death"
+    ],
+    "undo_deceased_forms": [
+      "undo-death"
+    ],
+    "date_field": "fields.death_date"
+  },
+  "muting": {
+    "mute_forms": [
+      "mute",
+      "mute_clinic",
+      "mute_health_center"
+    ],
+    "unmute_forms": [
+      "unmute",
+      "unmute_clinic",
+      "unmute_health_center"
+    ],
+    "validations": {
+      "join_responses": true,
+      "list": []
+    },
+    "messages": [
+      {
+        "translation_key": "",
+        "event_type": "mute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "translation_key": "",
+        "event_type": "unmute",
+        "recipient": "reporting_unit"
+      },
+      {
+        "translation_key": "",
+        "event_type": "already_muted",
+        "recipient": "reporting_unit"
+      },
+      {
+        "translation_key": "",
+        "event_type": "already_unmuted",
+        "recipient": "reporting_unit"
+      },
+      {
+        "translation_key": "",
+        "event_type": "contact_not_found",
+        "recipient": "reporting_unit"
+      }
+    ]
+  },
+  "patient_reports": [
+    {
+      "form": "tb_screening",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Presumptive TB alert",
+          "bool_expr": "doc.fields.c_refer_for_sputum === 'yes'"
+        }
+      ]
+    },
+    {
+      "form": "trace",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Trace report alert",
+          "bool_expr": "doc.fields.trace_details.trace_reasons !== ''"
+        }
+      ]
+    },
+    {
+      "form": "tb_results",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "TB results alert",
+          "bool_expr": "doc.fields.tb_results.results !== 'rejected'"
+        }
+      ]
+    },
+    {
+      "form": "discharge",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Discharge report alert",
+          "bool_expr": "doc.fields.discharge_details.discharge_diagnoses && /yes/.test(doc.fields.discharge_details.discharge_diagnoses)"
+        }
+      ]
+    },
+    {
+      "form": "tb_results",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "Rejected TB sample alert",
+          "bool_expr": "doc.fields.tb_results.results === 'rejected'"
+        }
+      ]
+    }
+  ],
+  "registrations": [],
+  "replications": [
+    {
+      "fromSuffix": "user-[^\\-]+-meta",
+      "toSuffix": "users-meta",
+      "text_expression": "",
+      "cron": "0 2 * * *"
+    }
+  ]
+}

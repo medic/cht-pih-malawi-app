@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit Site Supervisor</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/init/note_place:label">
+            <value><output value=" /data/init/person_name "/>&amp;nbsp;currently belongs to **<output value=" /data/init/person_place_name "/>**</value>
+          </text>
+          <text id="/data/init/person_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/person_parent:label">
+            <value>Current Place</value>
+          </text>
+          <text id="/data/init/person_place_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/site_supervisor/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/site_supervisor/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/site_supervisor/notes:label">
+            <value>Notes (optional)</value>
+          </text>
+          <text id="/data/site_supervisor/parent:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/site_supervisor/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:hint">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:jr:constraintMsg">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX.</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:label">
+            <value>Primary phone number</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:hint">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:jr:constraintMsg">
+            <value>Use one of the following formats: 099XXXXXXX or 088XXXXXXX or 018XXXXX or 012XXXXXXX or 022XXXXXXX.</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:label">
+            <value>Secondary phone number</value>
+          </text>
+          <text id="/data/site_supervisor/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/site_supervisor/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/site_supervisor/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/site_supervisor:label">
+            <value>Person details</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/data/init/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/note_place:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/person_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/person_parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/person_place_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/created_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/created_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/last_edited_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/last_edited_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta/last_edited_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/notes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/parent:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/site_supervisor/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:hint">
+            <value>Gwiritsani ntchito chimodzi mwa zitsanzo izi:: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:hint">
+            <value>Gwiritsani ntchito chimodzi mwa zitsanzo izi:: 099XXXXXXX kapena 088XXXXXXX kapena 018XXXXX kapena 012XXXXXXX kapena 022XXXXXXX</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/sex/female:label">
+            <value>Mke</value>
+          </text>
+          <text id="/data/site_supervisor/sex/male:label">
+            <value>Mume</value>
+          </text>
+          <text id="/data/site_supervisor/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/init/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/init/person_name:label">
+            <value>Jina la mtu</value>
+          </text>
+          <text id="/data/init/person_parent:label">
+            <value>Jina la kijiji</value>
+          </text>
+          <text id="/data/init/person_place_name:label">
+            <value>Jina la anapoishi</value>
+          </text>
+          <text id="/data/init/type:label">
+            <value>Aina</value>
+          </text>
+          <text id="/data/init:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Namba ya Usajili ya mtumiaji wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Kitambulisho cha mahali cha mtumizi wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Jina ya mtumizi</value>
+          </text>
+          <text id="/data/site_supervisor/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/site_supervisor/notes:label">
+            <value>Maelezo ya ziada</value>
+          </text>
+          <text id="/data/site_supervisor/parent:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/parent:label">
+            <value>nambari ya mzazi</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/primary_phone_number:label">
+            <value>Nambari ya simu</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/secondary_phone_number:label">
+            <value>Nambari nyingine ya simu</value>
+          </text>
+          <text id="/data/site_supervisor/sex/female:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/sex/male:label">
+            <value>-</value>
+          </text>
+          <text id="/data/site_supervisor/sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/site_supervisor:label">
+            <value>Maelezo ya mtu</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:site_supervisor:edit" prefix="J1!contact:site_supervisor:edit!" version="2020-02-11 07:57:18">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <site_supervisor>
+            <parent>PARENT</parent>
+            <name/>
+            <sex/>
+            <primary_phone_number/>
+            <secondary_phone_number/>
+            <notes/>
+            <external_id/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </site_supervisor>
+          <init>
+            <person_name/>
+            <person_place_name/>
+            <person_parent/>
+            <type/>
+            <name/>
+            <note_place/>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind calculate="../../person/name" nodeset="/data/init/person_name" type="string"/>
+      <bind calculate="../name" nodeset="/data/init/person_place_name" type="string"/>
+      <bind calculate=" /data/site_supervisor/parent " nodeset="/data/init/person_parent" type="string"/>
+      <bind nodeset="/data/init/type" type="string"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/init/note_place" readonly="true()" type="string"/>
+      <bind nodeset="/data/site_supervisor/parent" type="string"/>
+      <bind nodeset="/data/site_supervisor/name" required="true()" type="string"/>
+      <bind nodeset="/data/site_supervisor/sex" required="true()" type="select1"/>
+      <bind constraint="regex(.,'^(088|099|018|012|022)[0-9]{7}$')" jr:constraintMsg="jr:itext('/data/site_supervisor/primary_phone_number:jr:constraintMsg')" nodeset="/data/site_supervisor/primary_phone_number" required="false()" type="string"/>
+      <bind constraint="regex(.,'^(088|099|018|012|022)[0-9]{7}$')" jr:constraintMsg="jr:itext('/data/site_supervisor/secondary_phone_number:jr:constraintMsg')" nodeset="/data/site_supervisor/secondary_phone_number" required="false()" type="string"/>
+      <bind nodeset="/data/site_supervisor/notes" type="string"/>
+      <bind nodeset="/data/site_supervisor/external_id" type="string"/>
+      <bind nodeset="/data/site_supervisor/meta/created_by" type="string"/>
+      <bind nodeset="/data/site_supervisor/meta/created_by_person_uuid" type="string"/>
+      <bind nodeset="/data/site_supervisor/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/site_supervisor/meta/last_edited_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/site_supervisor/meta/last_edited_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/site_supervisor/meta/last_edited_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/init">
+      <input appearance="db-object hidden" ref="/data/init/person_parent">
+        <label ref="jr:itext('/data/init/person_parent:label')"/>
+      </input>
+      <input appearance="hidden" ref="/data/init/type">
+        <label ref="jr:itext('/data/init/type:label')"/>
+      </input>
+      <input appearance="hidden" ref="/data/init/name">
+        <label ref="jr:itext('/data/init/name:label')"/>
+      </input>
+      <input ref="/data/init/note_place">
+        <label ref="jr:itext('/data/init/note_place:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/site_supervisor">
+      <label ref="jr:itext('/data/site_supervisor:label')"/>
+      <input ref="/data/site_supervisor/name">
+        <label ref="jr:itext('/data/site_supervisor/name:label')"/>
+      </input>
+      <select1 ref="/data/site_supervisor/sex">
+        <label ref="jr:itext('/data/site_supervisor/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/site_supervisor/sex/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/site_supervisor/sex/female:label')"/>
+          <value>female</value>
+        </item>
+      </select1>
+      <input appearance="numbers" ref="/data/site_supervisor/primary_phone_number">
+        <label ref="jr:itext('/data/site_supervisor/primary_phone_number:label')"/>
+        <hint ref="jr:itext('/data/site_supervisor/primary_phone_number:hint')"/>
+      </input>
+      <input appearance="numbers" ref="/data/site_supervisor/secondary_phone_number">
+        <label ref="jr:itext('/data/site_supervisor/secondary_phone_number:label')"/>
+        <hint ref="jr:itext('/data/site_supervisor/secondary_phone_number:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/site_supervisor/notes">
+        <label ref="jr:itext('/data/site_supervisor/notes:label')"/>
+      </input>
+      <input ref="/data/site_supervisor/external_id">
+        <label ref="jr:itext('/data/site_supervisor/external_id:label')"/>
+      </input>
+      <group ref="/data/site_supervisor/meta"/>
+    </group>
+  </h:body>
+</h:html>

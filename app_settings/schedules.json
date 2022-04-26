@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Trace report alert",
+    "summary": "",
+    "description": "",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "trace.report.alert",
+        "group": 1,
+        "offset": "1 minutes",
+        "send_day": "",
+        "send_time": "",
+        "recipient": "chw_phone"
+      }
+    ]
+  },
+  {
+    "name": "TB results alert",
+    "summary": "",
+    "description": "",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "tb.report.alert",
+        "group": 1,
+        "offset": "1 minutes",
+        "send_day": "",
+        "send_time": "",
+        "recipient": "chw_phone"
+      }
+    ]
+  },
+  {
+    "name": "Discharge report alert",
+    "summary": "",
+    "description": "",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "discharge.report.alert",
+        "group": 1,
+        "offset": "1 minutes",
+        "send_day": "",
+        "send_time": "",
+        "recipient": "chw_phone"
+      }
+    ]
+  },
+  {
+    "name": "Rejected TB sample alert",
+    "summary": "",
+    "description": "",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "rejected.tb_sample.alert",
+        "group": 1,
+        "offset": "1 minutes",
+        "send_day": "",
+        "send_time": "",
+        "recipient": "schw_phone"
+      }
+    ]
+  },
+  {
+    "name": "Presumptive TB alert",
+    "summary": "",
+    "description": "",
+    "start_from": "reported_date",
+    "messages": [
+      {
+        "translation_key": "presumptive.tb.alert",
+        "group": 1,
+        "offset": "1 minutes",
+        "send_day": "",
+        "send_time": "",
+        "recipient": "parent"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+    "icon": "icon-form-general",
+    "title": {
+        "en": "Facility reports",
+        "ny": "Lipoti la kuchipatala"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.role === 'district-admin'"
+    },
+    "hidden_fields": [
+
+    ]
+}

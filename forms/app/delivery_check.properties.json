@@ -1,0 +1,15 @@
+{
+    "icon": "icon-delivery",
+    "title": {
+        "en": "Delivery check",
+        "ny": "Lipoti la cheke kuchira"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+
+    ]
+}

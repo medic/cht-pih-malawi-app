@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Family planning screening</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/fp_screening/fp_screening/change_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/change_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/change_fp:label">
+            <value>Would <output value=" /fp_screening/c_patient_name "/> want to change the FP method she is currently using?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/expiry_date:label">
+            <value>Date of expiry</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/bilateral_tubal_ligation:label">
+            <value>Bilateral Tubal Ligation</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/combined_oral_contraceptives:label">
+            <value>Combined Oral Contraceptive Pills- COCs</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/depo_provera:label">
+            <value>Depo-Provera</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/emergency_pills:label">
+            <value>Emergency Pills</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/iud:label">
+            <value>Intrauterine Device (IUD)</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/progestreone_only_pills:label">
+            <value>Progesterone Only Pills (POPs)</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/subdermal_implant:label">
+            <value>Subdermal Implant (Implanon, Norplant)</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method:label">
+            <value>Which family planning method is <output value=" /fp_screening/c_patient_name "/> using?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/not_begun:label">
+            <value>Has not yet begun menstruation</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date:label">
+            <value>Does <output value=" /fp_screening/c_patient_name "/> know the date of the last menstrual cycle?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/2:label">
+            <value>Up to 2 months ago</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/3:label">
+            <value>Up to 3 months ago</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/4:label">
+            <value>Up to 4 months ago</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/5:label">
+            <value>Between 5 and 6 months ago</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/7:label">
+            <value>Between 7 and 8 months ago</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx:label">
+            <value>What is <output value=" /fp_screening/c_patient_name "/>'s approximate date of last cycle?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_date:label">
+            <value>When was the start date of <output value=" /fp_screening/c_patient_name "/>'s last menstrual cycle?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_counsel_and_refer:label">
+            <value>_Please counsel <output value=" /fp_screening/c_patient_name "/> and refer them to the health facility._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_fp_education:label">
+            <value>_Use the family planning story to educate household members on family planning._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_no_condoms:label">
+            <value>_Inform <output value=" /fp_screening/c_patient_name "/> to talk to their health provider on usage of back up method during their next clinic appointment._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_fp:label">
+            <value>_Refer <output value=" /fp_screening/c_patient_name "/> to go to health facility for family planning service._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_preg_test:label">
+            <value>_Accompany <output value=" /fp_screening/c_patient_name "/> to the health facility for pregnancy test._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_renewal:label">
+            <value>_Refer <output value=" /fp_screening/c_patient_name "/> to the health facility for FP renewal._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp:label">
+            <value>Is <output value=" /fp_screening/c_patient_name "/> on family planning?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects:label">
+            <value>Are there any side effects?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before:label">
+            <value>Has <output value=" /fp_screening/c_patient_name "/> ever used any modern FP method before?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms:label">
+            <value>Is <output value=" /fp_screening/c_patient_name "/> using condoms as a back up method?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp:label">
+            <value>Would <output value=" /fp_screening/c_patient_name "/> like to start using a family planning method?</value>
+          </text>
+          <text id="/fp_screening/fp_screening:label">
+            <value>FP screening</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/fp_screening/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/fp_screening/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/fp_screening/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/fp_screening/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/fp_screening/fp_screening/change_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/change_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/change_fp:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akufuna atasintha njira yakulera yomwe akugwilitsa ntchito?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/expiry_date:label">
+            <value>Tsiku lomwe njira yakulera idzathe mphamvu</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/bilateral_tubal_ligation:label">
+            <value>Kuseka kwa amayi kwa mbali ziwiri</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/combined_oral_contraceptives:label">
+            <value>Njiraya kulera ya mapilisi a mphamvu ziwiri</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/depo_provera:label">
+            <value>Kulera kwa jakisoni</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/emergency_pills:label">
+            <value>Kulera kwa pangozi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/iud:label">
+            <value>Kachida kolowa mu chibelekero</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/progestreone_only_pills:label">
+            <value>Njira ya kulera ya mphamvu imodzi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method/subdermal_implant:label">
+            <value>Njira ya kulera ya pa nkono</value>
+          </text>
+          <text id="/fp_screening/fp_screening/fp_method:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akugwilitsa ntchito njira yanji yakulera?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/not_begun:label">
+            <value>Sanayambebe kusamba</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/knows_lmp_date:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akudziwa tsiku limene anasamba komaliza?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/2:label">
+            <value>Miyezi 2 yapitayo</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/3:label">
+            <value>Miyezi 3 yapitayo</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/4:label">
+            <value>Miyezi 4 yapitayo</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/5:label">
+            <value>Pakati pa miyezi 5 ndi 6</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx/7:label">
+            <value>Pakati pa miyezi 7 ndi 8</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_approx:label">
+            <value>Tsiku lomwe akuganizira kuti anamaliza nsambo omaliza?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/fp_screening/fp_screening/lmp_date:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> nsambo wake womaliza anayamba liti?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_counsel_and_refer:label">
+            <value>_Langizani <output value=" /fp_screening/c_patient_name "/> ndipo mutumizeni ku chipatala_</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_fp_education:label">
+            <value>_Phunzitsani onse a pa banja pogwiritsa ntchito nkhani yakulera_</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_no_condoms:label">
+            <value>_Dziwitsani <output value=" /fp_screening/c_patient_name "/> kuti akalankhulane ndi a chipatala pa kagwiritsidwe ntchito ka njira zina zapangozi akapita ku chipatala ulendo otsatira._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_fp:label">
+            <value>_Mtumizeni <output value=" /fp_screening/c_patient_name "/> kuchipatala kuti akalandire thandizo la kulera_</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_preg_test:label">
+            <value>_Pelekezani mai kuchipatala kuti akayezetse ngati ali ndi pakati._</value>
+          </text>
+          <text id="/fp_screening/fp_screening/n_ref_for_renewal:label">
+            <value>_Tumizani <output value=" /fp_screening/c_patient_name "/> kuchipatala kuti akatengenso njira ya kulera_</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/on_fp:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akutenga njira za kulera?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/side_effects:label">
+            <value>Pali zovuta zodza kamba ka kugwiritsa ntchito njira ya kulerayi?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/used_fp_before:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> anayamba wagwiritsapo ntchito njira za kulera zamakono m'mbuyomo?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/using_condoms:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akugwilitsa ntchito makondomu ngati njira ina yothandizira kulera?</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_screening/fp_screening/wants_fp:label">
+            <value>Kodi <output value=" /fp_screening/c_patient_name "/> akufuna kuyamba kutenga njira ya kulera?</value>
+          </text>
+          <text id="/fp_screening/fp_screening:label">
+            <value>Kufufuza njira zakulera</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/source:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_screening/source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <fp_screening delimiter="#" id="fp_screening" prefix="J1!fp_screening!" version="2021-01-19 08:31:15">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid tag="hidden"/>
+          <patient_id/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <age/>
+          <eligible_for_fp/>
+          <counselled_on_fp/>
+          <previous_user/>
+          <current_user/>
+          <current_user_type/>
+          <take_on_new/>
+          <take_on_switch/>
+          <take_on_stay/>
+          <refer_to_hf/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <c_patient_name/>
+          <fp_screening>
+            <on_fp/>
+            <fp_method/>
+            <expiry_date/>
+            <n_ref_for_renewal/>
+            <using_condoms/>
+            <n_no_condoms/>
+            <n_fp_education/>
+            <used_fp_before/>
+            <knows_lmp_date/>
+            <lmp_date/>
+            <days_since_lmp/>
+            <lmp_approx/>
+            <weeks_since_lmp/>
+            <n_ref_for_preg_test/>
+            <wants_fp/>
+            <side_effects/>
+            <n_counsel_and_refer/>
+            <change_fp/>
+            <n_ref_for_fp/>
+          </fp_screening>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </fp_screening>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/fp_screening/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/fp_screening/inputs/source" type="string"/>
+      <bind nodeset="/fp_screening/inputs/source_id" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/fp_screening/inputs/contact/name" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/sex" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/fp_screening/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/fp_screening/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/fp_screening/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/fp_screening/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/fp_screening/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/fp_screening/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/fp_screening/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /fp_screening/patient_date_of_birth , today() ) div 12 )" nodeset="/fp_screening/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /fp_screening/patient_date_of_birth , today() )" nodeset="/fp_screening/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /fp_screening/patient_date_of_birth ) )" nodeset="/fp_screening/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /fp_screening/patient_date_of_birth )) div 7)" nodeset="/fp_screening/patient_age_in_weeks" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/fp_screening/age" type="string"/>
+      <bind calculate="if(selected(../on_fp, 'no') and ../weeks_since_lmp &lt;= 4, 'yes', 'no')" nodeset="/fp_screening/eligible_for_fp" type="string"/>
+      <bind calculate="if(selected(../side_effects, 'yes'), 'yes', 'no')" nodeset="/fp_screening/counselled_on_fp" type="string"/>
+      <bind calculate="if(selected(../used_fp_before, 'yes'), 'yes', 'no')" nodeset="/fp_screening/previous_user" type="string"/>
+      <bind calculate="if(selected(../on_fp, 'yes'), 'yes', 'no')" nodeset="/fp_screening/current_user" type="string"/>
+      <bind calculate="../fp_method" nodeset="/fp_screening/current_user_type" type="string"/>
+      <bind calculate="../wants_fp" nodeset="/fp_screening/take_on_new" type="string"/>
+      <bind calculate="../change_fp" nodeset="/fp_screening/take_on_switch" type="string"/>
+      <bind calculate="if(selected(../change_fp, 'no'), 'yes', 'no')" nodeset="/fp_screening/take_on_stay" type="string"/>
+      <bind calculate="if(selected(../fp_screening/wants_fp, 'yes')
+or selected(../fp_screening/change_fp, 'yes'), 'yes', 'no')" nodeset="/fp_screening/refer_to_hf" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/fp_screening/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/fp_screening/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/fp_screening/geolocation" type="string"/>
+      <bind calculate="../patient_name" nodeset="/fp_screening/c_patient_name" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/on_fp" required="true()" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/fp_method" relevant="selected(../on_fp, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/expiry_date" relevant="selected(../fp_method, 'iucd')
+or selected(../fp_method, 'implant')
+or selected(../fp_method, 'depo_provera')" required="false()" type="date"/>
+      <bind nodeset="/fp_screening/fp_screening/n_ref_for_renewal" readonly="true()" relevant="decimal-date-time(../expiry_date) &lt;= decimal-date-time(today())" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/using_condoms" relevant="selected(../fp_method, 'implant')
+and ../../../is_in_art = 'yes'" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/n_no_condoms" readonly="true()" relevant="selected(../using_condoms, 'no')" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/n_fp_education" readonly="true()" relevant="selected(../on_fp, 'no')" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/used_fp_before" relevant="selected(../on_fp, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/knows_lmp_date" relevant="selected(../on_fp, 'no')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/fp_screening/fp_screening/lmp_date:jr:constraintMsg')" nodeset="/fp_screening/fp_screening/lmp_date" relevant="selected(../knows_lmp_date, 'yes')" required="true()" type="date"/>
+      <bind calculate="round(decimal-date-time(today()) - decimal-date-time(../lmp_date), 2)" nodeset="/fp_screening/fp_screening/days_since_lmp" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/lmp_approx" relevant="selected(../knows_lmp_date, 'no')" required="true()" type="select1"/>
+      <bind calculate="if(selected(../knows_lmp_date, 'yes'), 
+round(../days_since_lmp div 7, 2),
+int(../lmp_approx))" nodeset="/fp_screening/fp_screening/weeks_since_lmp" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/n_ref_for_preg_test" readonly="true()" relevant="../weeks_since_lmp &gt; 4" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/wants_fp" relevant="../weeks_since_lmp &lt;= 4" required="true()" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/side_effects" relevant="selected(../on_fp, 'yes')" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/n_counsel_and_refer" readonly="true()" relevant="selected(../side_effects, 'yes')" type="string"/>
+      <bind nodeset="/fp_screening/fp_screening/change_fp" relevant="selected(../on_fp, 'yes') and ../fp_method != 'tubal_ligation'" type="select1"/>
+      <bind nodeset="/fp_screening/fp_screening/n_ref_for_fp" readonly="true()" relevant="selected(../wants_fp, 'yes')
+or selected(../change_fp, 'yes')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/fp_screening/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/fp_screening/inputs">
+      <label ref="jr:itext('/fp_screening/inputs:label')"/>
+      <group ref="/fp_screening/inputs/contact">
+        <label ref="jr:itext('/fp_screening/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/fp_screening/inputs/contact/_id">
+          <label ref="jr:itext('/fp_screening/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/fp_screening/inputs/contact/parent">
+          <label ref="jr:itext('/fp_screening/inputs/contact/parent:label')"/>
+          <group ref="/fp_screening/inputs/contact/parent/parent">
+            <label ref="jr:itext('/fp_screening/inputs/contact/parent/parent:label')"/>
+            <group ref="/fp_screening/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/fp_screening/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/fp_screening/fp_screening">
+      <label ref="jr:itext('/fp_screening/fp_screening:label')"/>
+      <select1 ref="/fp_screening/fp_screening/on_fp">
+        <label ref="jr:itext('/fp_screening/fp_screening/on_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/on_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/on_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_screening/fp_screening/fp_method">
+        <label ref="jr:itext('/fp_screening/fp_screening/fp_method:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/combined_oral_contraceptives:label')"/>
+          <value>combined_oral_contraceptives</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/progestreone_only_pills:label')"/>
+          <value>progestreone_only_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/emergency_pills:label')"/>
+          <value>emergency_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/iud:label')"/>
+          <value>iud</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/subdermal_implant:label')"/>
+          <value>subdermal_implant</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/bilateral_tubal_ligation:label')"/>
+          <value>bilateral_tubal_ligation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/fp_method/depo_provera:label')"/>
+          <value>depo_provera</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/expiry_date">
+        <label ref="jr:itext('/fp_screening/fp_screening/expiry_date:label')"/>
+      </input>
+      <input ref="/fp_screening/fp_screening/n_ref_for_renewal">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_ref_for_renewal:label')"/>
+      </input>
+      <select1 ref="/fp_screening/fp_screening/using_condoms">
+        <label ref="jr:itext('/fp_screening/fp_screening/using_condoms:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/using_condoms/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/using_condoms/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/n_no_condoms">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_no_condoms:label')"/>
+      </input>
+      <input ref="/fp_screening/fp_screening/n_fp_education">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_fp_education:label')"/>
+      </input>
+      <select1 ref="/fp_screening/fp_screening/used_fp_before">
+        <label ref="jr:itext('/fp_screening/fp_screening/used_fp_before:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/used_fp_before/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/used_fp_before/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_screening/fp_screening/knows_lmp_date">
+        <label ref="jr:itext('/fp_screening/fp_screening/knows_lmp_date:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/knows_lmp_date/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/knows_lmp_date/no:label')"/>
+          <value>no</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/knows_lmp_date/not_begun:label')"/>
+          <value>not_begun</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/lmp_date">
+        <label ref="jr:itext('/fp_screening/fp_screening/lmp_date:label')"/>
+      </input>
+      <select1 ref="/fp_screening/fp_screening/lmp_approx">
+        <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/lmp_approx/7:label')"/>
+          <value>7</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/n_ref_for_preg_test">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_ref_for_preg_test:label')"/>
+      </input>
+      <select1 ref="/fp_screening/fp_screening/wants_fp">
+        <label ref="jr:itext('/fp_screening/fp_screening/wants_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/wants_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/wants_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_screening/fp_screening/side_effects">
+        <label ref="jr:itext('/fp_screening/fp_screening/side_effects:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/side_effects/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/side_effects/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/n_counsel_and_refer">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_counsel_and_refer:label')"/>
+      </input>
+      <select1 ref="/fp_screening/fp_screening/change_fp">
+        <label ref="jr:itext('/fp_screening/fp_screening/change_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/change_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_screening/fp_screening/change_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_screening/fp_screening/n_ref_for_fp">
+        <label ref="jr:itext('/fp_screening/fp_screening/n_ref_for_fp:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

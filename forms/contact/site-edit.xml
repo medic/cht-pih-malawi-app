@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit Site</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/site/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/site/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/site/notes:label">
+            <value>Notes</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/site/external_id:label">
+            <value>Namba ya nje</value>
+          </text>
+          <text id="/data/site/name:label">
+            <value>Jaza jina la eneo hii</value>
+          </text>
+          <text id="/data/site/notes:label">
+            <value>Maelezo</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:site:edit" prefix="J1!contact:site:edit!" version="2020-02-11_07-57">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <site>
+            <parent/>
+            <type/>
+            <name/>
+            <external_id/>
+            <notes/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </site>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/site/parent" readonly="true()" type="string"/>
+      <bind nodeset="/data/site/type" readonly="true()" type="string"/>
+      <bind nodeset="/data/site/name" required="true()" type="string"/>
+      <bind nodeset="/data/site/external_id" type="string"/>
+      <bind nodeset="/data/site/notes" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/site/geolocation" type="string"/>
+      <bind nodeset="/data/site/meta/created_by" readonly="true()" type="string"/>
+      <bind nodeset="/data/site/meta/created_by_person_uuid" readonly="true()" type="string"/>
+      <bind nodeset="/data/site/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/site/meta/last_edited_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/site/meta/last_edited_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/site/meta/last_edited_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/site">
+      <input ref="/data/site/name">
+        <label ref="jr:itext('/data/site/name:label')"/>
+      </input>
+      <input ref="/data/site/external_id">
+        <label ref="jr:itext('/data/site/external_id:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/site/notes">
+        <label ref="jr:itext('/data/site/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/site/meta"/>
+    </group>
+  </h:body>
+</h:html>

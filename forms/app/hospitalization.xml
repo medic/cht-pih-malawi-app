@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Hospitalization</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/hospitalization/group_review/n_art:label">
+            <value>ART</value>
+          </text>
+          <text id="/hospitalization/group_review/n_hospitalization_reasons_title:label">
+            <value>Hospitalization reasons&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/hospitalization/group_review/n_ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/hospitalization/group_review/n_other:label">
+            <value><output value=" /hospitalization/hospitalization_details/hospitalization_reasons_other "/></value>
+          </text>
+          <text id="/hospitalization/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /hospitalization/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /hospitalization/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_pregnancy_related:label">
+            <value>Pregnancy related (not for delivery)</value>
+          </text>
+          <text id="/hospitalization/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/hospitalization/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/hospitalization/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_date:label">
+            <value>Date of hospitalization</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/hiv:label">
+            <value>HIV related</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/pregnancy_related:label">
+            <value>Pregnancy related (not for delivery)</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons:label">
+            <value>Reason for hospitalization</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details:label">
+            <value>Hospitalization details</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/hospitalization/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/hospitalization/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/hospitalization/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/hospitalization/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/hospitalization/group_review/n_art:label">
+            <value>ART</value>
+          </text>
+          <text id="/hospitalization/group_review/n_hospitalization_reasons_title:label">
+            <value>Zifukwa zogonekeredwa mchipatalas&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_malnutrition:label">
+            <value>Kunyetchera</value>
+          </text>
+          <text id="/hospitalization/group_review/n_ncd:label">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="/hospitalization/group_review/n_other:label">
+            <value><output value=" /hospitalization/hospitalization_details/hospitalization_reasons_other "/></value>
+          </text>
+          <text id="/hospitalization/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /hospitalization/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /hospitalization/patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/hospitalization/group_review/n_pregnancy_related:label">
+            <value>Vuto lokhudzana ndi pakati (Osati kubeleka)</value>
+          </text>
+          <text id="/hospitalization/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/hospitalization/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/hospitalization/group_review:label">
+            <value>Tsamba la Zotsatira</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_date:label">
+            <value>Tsiku logonekedwa m'chipatala</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/hiv:label">
+            <value>HIV</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/malnutrition:label">
+            <value>Kunyetchera</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/ncd:label">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/pregnancy_related:label">
+            <value>Vuto lokhudzana ndi pakati (Osati kubeleka)</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons/tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons:label">
+            <value>Chifukwa chogonekedwa mu chipatala</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details/hospitalization_reasons_other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/hospitalization/hospitalization_details:label">
+            <value>Tsatanetsatane wogonekedwa m'chipatala</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/hospitalization/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/hospitalization/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/hospitalization/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/hospitalization/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/hospitalization/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <hospitalization delimiter="#" id="hospitalization" prefix="J1!hospitalization!" version="2019-05-28 17:59:01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <hospitalization_details>
+            <hospitalization_date/>
+            <hospitalization_reasons/>
+            <hospitalization_reasons_other/>
+          </hospitalization_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_hospitalization_reasons_title/>
+            <n_art/>
+            <n_tb/>
+            <n_malnutrition/>
+            <n_ncd/>
+            <n_pregnancy_related/>
+            <n_other/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </hospitalization>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/hospitalization/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/hospitalization/inputs/source" type="string"/>
+      <bind nodeset="/hospitalization/inputs/source_id" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/hospitalization/inputs/contact/name" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/sex" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/hospitalization/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/hospitalization/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/hospitalization/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/hospitalization/patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/hospitalization/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/hospitalization/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/hospitalization/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/hospitalization/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/hospitalization/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/hospitalization/geolocation" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/hospitalization/hospitalization_details/hospitalization_date:jr:constraintMsg')" nodeset="/hospitalization/hospitalization_details/hospitalization_date" required="true()" type="date"/>
+      <bind nodeset="/hospitalization/hospitalization_details/hospitalization_reasons" required="true()" type="select"/>
+      <bind nodeset="/hospitalization/hospitalization_details/hospitalization_reasons_other" relevant="selected(../hospitalization_reasons, 'other')" required="true()" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_hospitalization_reasons_title" readonly="true()" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_art" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'art')" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_tb" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'tb')" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_malnutrition" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'malnutrition')" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_ncd" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'ncd')" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_pregnancy_related" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'pregnancy_related')" type="string"/>
+      <bind nodeset="/hospitalization/group_review/n_other" readonly="true()" relevant="selected(../../hospitalization_details/hospitalization_reasons, 'other')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/hospitalization/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/hospitalization/inputs">
+      <label ref="jr:itext('/hospitalization/inputs:label')"/>
+      <group ref="/hospitalization/inputs/contact">
+        <label ref="jr:itext('/hospitalization/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/hospitalization/inputs/contact/_id">
+          <label ref="jr:itext('/hospitalization/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/hospitalization/inputs/contact/parent">
+          <label ref="jr:itext('/hospitalization/inputs/contact/parent:label')"/>
+          <group ref="/hospitalization/inputs/contact/parent/parent">
+            <label ref="jr:itext('/hospitalization/inputs/contact/parent/parent:label')"/>
+            <group ref="/hospitalization/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/hospitalization/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/hospitalization/hospitalization_details">
+      <label ref="jr:itext('/hospitalization/hospitalization_details:label')"/>
+      <input ref="/hospitalization/hospitalization_details/hospitalization_date">
+        <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_date:label')"/>
+      </input>
+      <select ref="/hospitalization/hospitalization_details/hospitalization_reasons">
+        <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons:label')"/>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/hiv:label')"/>
+          <value>hiv</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/tb:label')"/>
+          <value>tb</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/malnutrition:label')"/>
+          <value>malnutrition</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/ncd:label')"/>
+          <value>ncd</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/pregnancy_related:label')"/>
+          <value>pregnancy_related</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/hospitalization/hospitalization_details/hospitalization_reasons_other">
+        <label ref="jr:itext('/hospitalization/hospitalization_details/hospitalization_reasons_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/hospitalization/group_review">
+      <label ref="jr:itext('/hospitalization/group_review:label')"/>
+      <input ref="/hospitalization/group_review/n_submit">
+        <label ref="jr:itext('/hospitalization/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/hospitalization/group_review/n_patient_details_title">
+        <label ref="jr:itext('/hospitalization/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/hospitalization/group_review/n_patient_details">
+        <label ref="jr:itext('/hospitalization/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/hospitalization/group_review/n_hospitalization_reasons_title">
+        <label ref="jr:itext('/hospitalization/group_review/n_hospitalization_reasons_title:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_art">
+        <label ref="jr:itext('/hospitalization/group_review/n_art:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_tb">
+        <label ref="jr:itext('/hospitalization/group_review/n_tb:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_malnutrition">
+        <label ref="jr:itext('/hospitalization/group_review/n_malnutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_ncd">
+        <label ref="jr:itext('/hospitalization/group_review/n_ncd:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_pregnancy_related">
+        <label ref="jr:itext('/hospitalization/group_review/n_pregnancy_related:label')"/>
+      </input>
+      <input appearance="li" ref="/hospitalization/group_review/n_other">
+        <label ref="jr:itext('/hospitalization/group_review/n_other:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

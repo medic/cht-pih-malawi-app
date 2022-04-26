@@ -1,0 +1,12 @@
+{
+  "context": {
+    "expression": "contact.contact_type === 'chw_area' && contact.muted && user.role === 'district-admin' && user._id !== contact._id",
+    "person": false,
+    "place": true
+  },
+  "icon": "icon-messages-on",
+  "title": {
+    "en": "Unmute request",
+    "ny": "Kuchotsa pempho loyimitsa"
+  }
+}

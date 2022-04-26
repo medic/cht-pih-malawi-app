@@ -1,0 +1,15 @@
+{
+    "icon": "icon-community",
+    "title": {
+        "en": "Household GPS",
+        "ny": "GPS la banja"
+    },
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact.contact_type === 'household' && user._id != contact._id && user.contact_type === 'chw' && !contact.muted"
+    },
+    "hidden_fields": [
+
+    ]
+}

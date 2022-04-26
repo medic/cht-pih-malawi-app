@@ -1,0 +1,15 @@
+{
+    "icon": "icon-people-woman-pregnant",
+    "title": {
+        "en": "Pregnancy",
+        "ny": "Kufufuza amayi apakati ndi njira zolera"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "false"
+    },
+    "hidden_fields": [
+        "patient_uuid"
+    ]
+}

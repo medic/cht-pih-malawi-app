@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-diagnosis",
+    "title": {
+        "en": "TB results notification",
+        "ny": "Kudziwitsa ya zotsatira za TB"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "false"
+    },
+    "hidden_fields": [
+
+    ]
+}

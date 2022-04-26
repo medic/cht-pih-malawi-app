@@ -1,0 +1,1132 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Pregnancy follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/constipation:label">
+            <value>Constipation</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/haemorrhoids:label">
+            <value>Haemorrhoids</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/muscle_cramps:label">
+            <value>Muscle cramps</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/water_bag_breaks:label">
+            <value>Water bag breaks early</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:hint">
+            <value>Please educate the client on danger signs using the job aids</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:label">
+            <value>Is <output value=" /pregnancy_follow_up/patient_name "/> currently experiencing any of these danger signs?</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/n_ref:label">
+            <value>_Refer <output value=" /pregnancy_follow_up/patient_name "/> to the health facility immediately._</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/n_ref_and_accompany:label">
+            <value>_Refer and accompany <output value=" /pregnancy_follow_up/patient_name "/> to the health facility immediately._</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method/by_phone:label">
+            <value>By phone</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method/in_person:label">
+            <value>In person</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method:label">
+            <value>How are you following up?</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_appreciate:label">
+            <value>_Appreciate <output value=" /pregnancy_follow_up/patient_name "/> for attending her ANCs._</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_constipation:label">
+            <value>Constipation</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_danger_signs_title:label">
+            <value>**_Danger signs_**</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_haemorrhoids:label">
+            <value>Haemorrhoids</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_muscle_cramps:label">
+            <value>Muscle cramps</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_none:label">
+            <value>None</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_follow_up/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_referral:label">
+            <value>_Refer <output value=" /pregnancy_follow_up/patient_name "/> immediately for danger signs management!_</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_water_bag_breaks:label">
+            <value>Water bag breaks early</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/date_of_micarriage:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/date_of_micarriage:label">
+            <value>Select date of miscarriage</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_death_report:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_death_report:label">
+            <value>_After completing this form, kindly submit the Death Report for this person._</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_delivered:label">
+            <value>_After completing this form, kindly submit the Delivery Report for this delivery to be recorded._</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/delivered:label">
+            <value>Woman delivered</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/died:label">
+            <value>Woman died</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/miscarried:label">
+            <value>Woman miscarried</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end:label">
+            <value>What happened to the pregnancy?</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant:label">
+            <value>Is <output value=" /pregnancy_follow_up/patient_name "/> still pregnant?</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status:label">
+            <value>Pregnancy status</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended:label">
+            <value>Has <output value=" /pregnancy_follow_up/patient_name "/> gone for her ANC visit at the facility this month?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/husband:label">
+            <value>Husband</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/non_family_member:label">
+            <value>Non family member</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/none:label">
+            <value>Was not accompanied</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/other_relative:label">
+            <value>Other relative</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions:jr:constraintMsg">
+            <value>You cannot select 'Was not accompanied' if you have selected another option!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions:label">
+            <value>Who accompanied <output value=" /pregnancy_follow_up/patient_name "/> to the clinic during her last ANC visit?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/n_current_edd:label">
+            <value>Current EDD in the system is <output value=" /pregnancy_follow_up/c_edd "/></value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/n_encourage_ancv:label">
+            <value>_Encourage <output value=" /pregnancy_follow_up/patient_name "/> to go for her ANC clinics in order to ensure that she and her baby are healthy and to plan for her delivery._</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/new_edd:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/new_edd:label">
+            <value>Select the new EDD</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/next_visit:label">
+            <value>What is the date of the next ANC visit?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd:hint">
+            <value>Confirm EDD from health passport</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd:label">
+            <value>Would you like to update the EDD</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/1:label">
+            <value>First ANC</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/2:label">
+            <value>Second ANC</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/3:label">
+            <value>Thirst ANC</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/4:label">
+            <value>Fourth ANC</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/5:label">
+            <value>More than 4</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit:label">
+            <value>Which ANC visit has <output value=" /pregnancy_follow_up/patient_name "/> attended?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit_date:label">
+            <value>Date of <output value=" /pregnancy_follow_up/patient_name "/>'s ANC visit?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details:label">
+            <value>ANC Visit Details</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/constipation:label">
+            <value>Kudzimbidwa</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/haemorrhoids:label">
+            <value>Zotupa za mmimba</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulira kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/lower_abdominal_pain:label">
+            <value>kKupweteka pansi pa nchombo</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/muscle_cramps:label">
+            <value>Kupweteka kwa minyewa</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/nausea:label">
+            <value>Nselu</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs/water_bag_breaks:label">
+            <value>Kutaya madzi</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:hint">
+            <value>Chonde phunzitsani mayi woyembekezera za zizindikiro zowopysa pogwilitsa ntchito zipangizo zophunzitsira</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:jr:constraintMsg">
+            <value>Tumizani munthuyo kuchipatala kuti akayezedwe kuthamanga kwa magazi!</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/danger_signs:label">
+            <value>Kodi <output value=" /pregnancy_follow_up/patient_name "/> mai oyembekezera akuwona zizindikiro zoopsa izi?</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/n_ref:label">
+            <value>_Tumizani <output value=" /pregnancy_follow_up/patient_name "/> ku chipatala mwa msanga._</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening/n_ref_and_accompany:label">
+            <value>_ Mutumizeni ndi kumupelekeza <output value=" /pregnancy_follow_up/patient_name "/> kuchipatala mwamsanga._</value>
+          </text>
+          <text id="/pregnancy_follow_up/danger_sign_screening:label">
+            <value>Zizindikiro zowopsya</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method/by_phone:label">
+            <value>Pa lamya</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method/in_person:label">
+            <value>Pa maso</value>
+          </text>
+          <text id="/pregnancy_follow_up/follow_up_method:label">
+            <value>Kodi mukumulondila bwanji wodwalayo?</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_appreciate:label">
+            <value>_ M'thokozeni <output value=" /pregnancy_follow_up/patient_name "/> pokwanitsa kupita kuchipatala._</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_constipation:label">
+            <value>Kudzimbidwa</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_danger_signs_title:label">
+            <value>**_Zizindikiro zoopsa_**</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_haemorrhoids:label">
+            <value>Zotupa za mmimba</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulira kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_lower_abdominal_pain:label">
+            <value>kKupweteka pansi pa nchombo</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_muscle_cramps:label">
+            <value>Kupweteka kwa minyewa</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_nausea:label">
+            <value>Nselu</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy_follow_up/patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_referral:label">
+            <value>_Tumizani <output value=" /pregnancy_follow_up/patient_name "/> mwansanga kuchipatala akakhala ndi zizizndikiro zoopsa!_</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_referral_title:label">
+            <value>Tumizani kuchipatala&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review/n_water_bag_breaks:label">
+            <value>Kutaya madzi</value>
+          </text>
+          <text id="/pregnancy_follow_up/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/date_of_micarriage:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/date_of_micarriage:label">
+            <value>Lembani tsiku lomwe anapita pachabe</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_death_report:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_death_report:label">
+            <value>_Mukamaliza kulemba lipoti ili perekani lipoti imfa ya mayi._</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/n_delivered:label">
+            <value>_Mukamaliza kulowetsa uthengawu, tumizani zotsatira kuti zikalowetsedwe._</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/delivered:label">
+            <value>Mayi wachira</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/died:label">
+            <value>Mayi anamwalira</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/miscarried:label">
+            <value>Mayi wapita pachabe</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end:label">
+            <value>Chinachitika ndi chani ndi pakatipo?</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status/still_pregnant:label">
+            <value>Kodi <output value=" /pregnancy_follow_up/patient_name "/> akadali woyembekezera?</value>
+          </text>
+          <text id="/pregnancy_follow_up/pregnancy_status:label">
+            <value>Zokhudza Pakati</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type/no_chw:label">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="/pregnancy_follow_up/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/attended:label">
+            <value>Kodi <output value=" /pregnancy_follow_up/patient_name "/> anapita kusikelo ya amai oyembekezera mwezi uno?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/husband:label">
+            <value>Mwamuna wake</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/non_family_member:label">
+            <value>Osakhala wachibale</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/none:label">
+            <value>Sanapelekezedwe</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/other_relative:label">
+            <value>Wachibale</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions/parent:label">
+            <value>Makolo</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions:jr:constraintMsg">
+            <value>Simungasankhe "sanaperekezedwe" ngati mwasankha kale zina!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/companions:label">
+            <value>Anamupelekeza ndi ndani ku sikelo ya amai oyembekezera?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/n_current_edd:label">
+            <value>Tsiku loyembekezera kuchira lomwe liri mu kaundula:</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/n_encourage_ancv:label">
+            <value>_Mulimbikitseni mai kuti apite ku sikelo kuti iye ndi mwana womuyembekezerayo akhale athanzi ndi kukonzekera kukachilira ku chipatala._</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/new_edd:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/new_edd:label">
+            <value>Tsiku latsopano loyembekezera kudzachira</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/next_visit:label">
+            <value>Sikelo ina yotsatira ili liti?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd:hint">
+            <value>Tsimikizani tsiku loyembekezera kuchira lomwe liri mu buku la ku chipatala</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/update_edd:label">
+            <value>Mukufuna kusintha EDD?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/1:label">
+            <value>Sikelo yoyamba ya mayi wapakati</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/2:label">
+            <value>Sikelo yachiwiri ya mayi wapakati</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/3:label">
+            <value>Sikelo yachitatu ya mayi wapakati</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/4:label">
+            <value>Sikelo yachinayi ya mayi wapakati</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit/5:label">
+            <value>Kuposera kanayi</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit:label">
+            <value>Kodi ndi sikelo iti ya amai oyembekezera yomwe <output value=" /pregnancy_follow_up/patient_name "/> anapita?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details/visit_date:label">
+            <value>Tsiku lomwe wapita ku sikelo?</value>
+          </text>
+          <text id="/pregnancy_follow_up/visit_details:label">
+            <value>Tsatanetsatane wa Sikelo ya Amai Oyembekezera</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pregnancy_follow_up delimiter="#" id="pregnancy_follow_up" prefix="J1!pregnancy_follow_up!" version="2020-03-16 16:19:13">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <edd/>
+          <anc_visits>0</anc_visits>
+          <c_edd/>
+          <pregnancy_uuid/>
+          <pregnancy_id/>
+          <danger_sign/>
+          <hf_visit/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <follow_up_method/>
+          <pregnancy_status>
+            <still_pregnant/>
+            <reason_for_pregnancy_end/>
+            <n_delivered/>
+            <date_of_micarriage/>
+            <n_death_report/>
+          </pregnancy_status>
+          <visit_details>
+            <attended/>
+            <visit/>
+            <visit_date/>
+            <companions/>
+            <n_encourage_ancv/>
+            <n_current_edd/>
+            <update_edd/>
+            <new_edd/>
+            <next_visit/>
+          </visit_details>
+          <danger_sign_screening>
+            <danger_signs/>
+            <refer_and_accompany/>
+            <refer_only/>
+            <n_ref_and_accompany/>
+            <n_ref/>
+          </danger_sign_screening>
+          <ref_type/>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_appreciate/>
+            <n_danger_signs_title/>
+            <n_bleeding/>
+            <n_swelling/>
+            <n_fever/>
+            <n_headache_dizziness/>
+            <n_lower_abdominal_pain/>
+            <n_convulsions/>
+            <n_water_bag_breaks/>
+            <n_constipation/>
+            <n_nausea/>
+            <n_muscle_cramps/>
+            <n_haemorrhoids/>
+            <n_none/>
+            <n_referral_title/>
+            <n_referral/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pregnancy_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/pregnancy_follow_up/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/pregnancy_follow_up/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/pregnancy_follow_up/patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/pregnancy_follow_up/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/pregnancy_follow_up/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/pregnancy_follow_up/patient_name" type="string"/>
+      <bind calculate="instance('contact-summary')/context/edd" nodeset="/pregnancy_follow_up/edd" type="string"/>
+      <bind calculate="instance('contact-summary')/context/anc_visits" nodeset="/pregnancy_follow_up/anc_visits" type="string"/>
+      <bind calculate="format-date-time( /pregnancy_follow_up/edd ,&quot;%b %e, %Y&quot;)" nodeset="/pregnancy_follow_up/c_edd" type="string"/>
+      <bind calculate="instance('contact-summary')/context/pregnancy_uuid" nodeset="/pregnancy_follow_up/pregnancy_uuid" type="string"/>
+      <bind calculate="../pregnancy_uuid" nodeset="/pregnancy_follow_up/pregnancy_id" type="string"/>
+      <bind calculate="if(not(selected(../danger_sign_screening/danger_signs, '')), 'yes', 'no')" nodeset="/pregnancy_follow_up/danger_sign" type="string"/>
+      <bind calculate="../visit_details/attended" nodeset="/pregnancy_follow_up/hf_visit" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/pregnancy_follow_up/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/pregnancy_follow_up/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/pregnancy_follow_up/geolocation" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/follow_up_method" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy_follow_up/pregnancy_status/still_pregnant" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end" relevant="selected(../still_pregnant, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy_follow_up/pregnancy_status/n_delivered" readonly="true()" relevant="selected(../reason_for_pregnancy_end, 'delivered')" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy_follow_up/pregnancy_status/date_of_micarriage:jr:constraintMsg')" nodeset="/pregnancy_follow_up/pregnancy_status/date_of_micarriage" relevant="selected(../reason_for_pregnancy_end, 'miscarried')" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy_follow_up/pregnancy_status/n_death_report:jr:constraintMsg')" nodeset="/pregnancy_follow_up/pregnancy_status/n_death_report" readonly="true()" relevant="selected(../reason_for_pregnancy_end, 'died')" required="true()" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details" relevant="selected(../pregnancy_status/still_pregnant, 'yes')"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details/attended" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details/visit" relevant="selected(../attended, 'yes')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy_follow_up/visit_details/visit_date:jr:constraintMsg')" nodeset="/pregnancy_follow_up/visit_details/visit_date" relevant="selected(../attended, 'yes')" required="true()" type="date"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/pregnancy_follow_up/visit_details/companions:jr:constraintMsg')" nodeset="/pregnancy_follow_up/visit_details/companions" relevant="selected(../visit, '1')" required="true()" type="select"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details/n_encourage_ancv" readonly="true()" relevant="selected(../attended, 'no')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details/n_current_edd" readonly="true()" relevant="../../edd != '' 
+and selected(../attended, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/visit_details/update_edd" relevant="selected(../attended, 'yes')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy_follow_up/visit_details/new_edd:jr:constraintMsg')" nodeset="/pregnancy_follow_up/visit_details/new_edd" relevant="selected(../update_edd, 'yes')" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy_follow_up/visit_details/next_visit:jr:constraintMsg')" nodeset="/pregnancy_follow_up/visit_details/next_visit" relevant="selected(../attended, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/pregnancy_follow_up/danger_sign_screening" relevant="selected(../pregnancy_status/still_pregnant, 'yes')"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs:jr:constraintMsg')" nodeset="/pregnancy_follow_up/danger_sign_screening/danger_signs" required="true()" type="select"/>
+      <bind calculate="if(selected(../danger_signs, 'bleeding')
+or selected(../danger_signs, 'swelling')
+or selected(../danger_signs, 'fever')
+or selected(../danger_signs, 'headache_dizziness')
+or selected(../danger_signs, 'lower_abdominal_pain')
+or selected(../danger_signs, 'convulsions')
+or selected(../danger_signs, 'water_bag_breaks'),
+'yes', 'no')" nodeset="/pregnancy_follow_up/danger_sign_screening/refer_and_accompany" type="string"/>
+      <bind calculate="if(selected(../danger_signs, 'constipation')
+or selected(../danger_signs, 'nausea')
+or selected(../danger_signs, 'muscle_cramps')
+or selected(../danger_signs, 'haemorrhoids') 
+and ../refer_and_accompany = 'no',
+'yes', 'no')" nodeset="/pregnancy_follow_up/danger_sign_screening/refer_only" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/danger_sign_screening/n_ref_and_accompany" readonly="true()" relevant="../refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/danger_sign_screening/n_ref" readonly="true()" relevant="../refer_only = 'yes'
+and ../refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/ref_type" relevant="not(selected(../danger_sign_screening/danger_signs, 'none'))
+and (count-selected(../danger_sign_screening/danger_signs) &gt;= 1)" type="select1"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_findings_title" readonly="true()" relevant="selected(../../pregnancy_information/still_pregnant, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_appreciate" readonly="true()" relevant="selected(../../visit_details/attended, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_danger_signs_title" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_bleeding" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'bleeding')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_swelling" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'swelling')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_fever" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'fever')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_headache_dizziness" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'headache_dizziness')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_lower_abdominal_pain" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'lower_abdominal_pain')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_convulsions" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'convulsions')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_water_bag_breaks" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'water_bag_breaks')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_constipation" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'constipation')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_nausea" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'nausea')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_muscle_cramps" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'muscle_cramps')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_haemorrhoids" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'haemorrhoids')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_none" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'none')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_referral_title" readonly="true()" relevant="not(selected(../../danger_sign_screening/danger_signs, 'none'))
+and (count-selected(../../danger_sign_screening/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_referral" readonly="true()" relevant="not(selected(../../danger_sign_screening/danger_signs, 'none'))
+and (count-selected(../../danger_sign_screening/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_follow_up_title" readonly="true()" relevant="selected(../../pregnancy_information/still_pregnant, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy_follow_up/group_review/n_follow_up" readonly="true()" relevant="selected(../../pregnancy_information/still_pregnant, 'yes')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/pregnancy_follow_up/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pregnancy_follow_up/inputs">
+      <label ref="jr:itext('/pregnancy_follow_up/inputs:label')"/>
+      <group ref="/pregnancy_follow_up/inputs/contact">
+        <label ref="jr:itext('/pregnancy_follow_up/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/pregnancy_follow_up/inputs/contact/_id">
+          <label ref="jr:itext('/pregnancy_follow_up/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/pregnancy_follow_up/inputs/contact/parent">
+          <label ref="jr:itext('/pregnancy_follow_up/inputs/contact/parent:label')"/>
+          <group ref="/pregnancy_follow_up/inputs/contact/parent/parent">
+            <label ref="jr:itext('/pregnancy_follow_up/inputs/contact/parent/parent:label')"/>
+            <group ref="/pregnancy_follow_up/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/pregnancy_follow_up/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <select1 ref="/pregnancy_follow_up/follow_up_method">
+      <label ref="jr:itext('/pregnancy_follow_up/follow_up_method:label')"/>
+      <item>
+        <label ref="jr:itext('/pregnancy_follow_up/follow_up_method/in_person:label')"/>
+        <value>in_person</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/pregnancy_follow_up/follow_up_method/by_phone:label')"/>
+        <value>by_phone</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/pregnancy_follow_up/pregnancy_status">
+      <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status:label')"/>
+      <select1 ref="/pregnancy_follow_up/pregnancy_status/still_pregnant">
+        <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/still_pregnant:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/still_pregnant/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/still_pregnant/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end">
+        <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/delivered:label')"/>
+          <value>delivered</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/miscarried:label')"/>
+          <value>miscarried</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/reason_for_pregnancy_end/died:label')"/>
+          <value>died</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_follow_up/pregnancy_status/n_delivered">
+        <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/n_delivered:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/pregnancy_status/date_of_micarriage">
+        <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/date_of_micarriage:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/pregnancy_status/n_death_report">
+        <label ref="jr:itext('/pregnancy_follow_up/pregnancy_status/n_death_report:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_follow_up/visit_details">
+      <label ref="jr:itext('/pregnancy_follow_up/visit_details:label')"/>
+      <select1 ref="/pregnancy_follow_up/visit_details/attended">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/attended:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/attended/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/attended/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy_follow_up/visit_details/visit">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit/5:label')"/>
+          <value>5</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_follow_up/visit_details/visit_date">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/visit_date:label')"/>
+      </input>
+      <select ref="/pregnancy_follow_up/visit_details/companions">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/parent:label')"/>
+          <value>parent</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/husband:label')"/>
+          <value>husband</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/other_relative:label')"/>
+          <value>other_relative</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/non_family_member:label')"/>
+          <value>non_family_member</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/companions/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_follow_up/visit_details/n_encourage_ancv">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/n_encourage_ancv:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/visit_details/n_current_edd">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/n_current_edd:label')"/>
+      </input>
+      <select1 ref="/pregnancy_follow_up/visit_details/update_edd">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/update_edd:label')"/>
+        <hint ref="jr:itext('/pregnancy_follow_up/visit_details/update_edd:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/update_edd/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/visit_details/update_edd/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy_follow_up/visit_details/new_edd">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/new_edd:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/visit_details/next_visit">
+        <label ref="jr:itext('/pregnancy_follow_up/visit_details/next_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy_follow_up/danger_sign_screening">
+      <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening:label')"/>
+      <select ref="/pregnancy_follow_up/danger_sign_screening/danger_signs">
+        <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs:label')"/>
+        <hint ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/bleeding:label')"/>
+          <value>bleeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/swelling:label')"/>
+          <value>swelling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/headache_dizziness:label')"/>
+          <value>headache_dizziness</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/lower_abdominal_pain:label')"/>
+          <value>lower_abdominal_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/water_bag_breaks:label')"/>
+          <value>water_bag_breaks</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/constipation:label')"/>
+          <value>constipation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/nausea:label')"/>
+          <value>nausea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/muscle_cramps:label')"/>
+          <value>muscle_cramps</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/haemorrhoids:label')"/>
+          <value>haemorrhoids</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/pregnancy_follow_up/danger_sign_screening/n_ref_and_accompany">
+        <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/n_ref_and_accompany:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/danger_sign_screening/n_ref">
+        <label ref="jr:itext('/pregnancy_follow_up/danger_sign_screening/n_ref:label')"/>
+      </input>
+    </group>
+    <select1 ref="/pregnancy_follow_up/ref_type">
+      <label ref="jr:itext('/pregnancy_follow_up/ref_type:label')"/>
+      <item>
+        <label ref="jr:itext('/pregnancy_follow_up/ref_type/chw:label')"/>
+        <value>chw</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/pregnancy_follow_up/ref_type/no_chw:label')"/>
+        <value>no_chw</value>
+      </item>
+    </select1>
+    <group appearance="field-list summary" ref="/pregnancy_follow_up/group_review">
+      <label ref="jr:itext('/pregnancy_follow_up/group_review:label')"/>
+      <input ref="/pregnancy_follow_up/group_review/n_submit">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/pregnancy_follow_up/group_review/n_patient_details_title">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/group_review/n_patient_details">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy_follow_up/group_review/n_findings_title">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/group_review/n_appreciate">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_appreciate:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/group_review/n_danger_signs_title">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_danger_signs_title:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_bleeding">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_bleeding:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_swelling">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_swelling:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_fever">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_fever:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_headache_dizziness">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_headache_dizziness:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_lower_abdominal_pain">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_lower_abdominal_pain:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_convulsions">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_convulsions:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_water_bag_breaks">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_water_bag_breaks:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_constipation">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_constipation:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_nausea">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_nausea:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_muscle_cramps">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_muscle_cramps:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_haemorrhoids">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_haemorrhoids:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy_follow_up/group_review/n_none">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_none:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/pregnancy_follow_up/group_review/n_referral_title">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/group_review/n_referral">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_referral:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/pregnancy_follow_up/group_review/n_follow_up_title">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/pregnancy_follow_up/group_review/n_follow_up">
+        <label ref="jr:itext('/pregnancy_follow_up/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

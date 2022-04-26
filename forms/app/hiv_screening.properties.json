@@ -1,0 +1,15 @@
+{
+    "icon": "icon-disease-hiv-aids",
+    "title": {
+        "en": "HIV screening",
+        "ny": "Kufufuza za kachilombo ka HIV"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+        "patient_uuid"
+    ]
+}

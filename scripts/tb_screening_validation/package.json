@@ -1,0 +1,20 @@
+{
+  "name": "tb_screening",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1",
+    "pouchdb-adapter-http": "^7.2.2",
+    "pouchdb-core": "^7.2.2",
+    "pouchdb-find": "^7.2.2",
+    "pouchdb-mapreduce": "^7.2.2",
+    "request-promise-native": "^1.0.9"
+  }
+}

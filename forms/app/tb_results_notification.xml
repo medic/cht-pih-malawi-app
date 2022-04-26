@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TB results notification</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/tb_results_notification/inputs/client_age_in_years:label">
+            <value>Patient age in years</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_notification/inputs/schw_phone:label">
+            <value>SCHW Phone</value>
+          </text>
+          <text id="/tb_results_notification/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results_notification/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/tb_result:label">
+            <value>TB Result</value>
+          </text>
+          <text id="/tb_results_notification/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_collect:label">
+            <value>_Please collect another sample and submit it to the health facility._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_results:label">
+            <value>_<output value=" /tb_results_notification/patient_name "/> TB results is <output value=" /tb_results_notification/result "/>._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_update:label">
+            <value>_Please update their results on sputum register._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results:label">
+            <value>TB results</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/tb_results_notification/c_patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/c_patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_age_in_years:label">
+            <value>Patient age in years</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/client_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results_notification/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_notification/inputs/schw_phone:label">
+            <value>SCHW Phone</value>
+          </text>
+          <text id="/tb_results_notification/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results_notification/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results_notification/inputs/tb_result:label">
+            <value>TB Result</value>
+          </text>
+          <text id="/tb_results_notification/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results_notification/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_collect:label">
+            <value>_Chonde tenganinso makhololo ena ndikuwatumiza kuchipatala._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_results:label">
+            <value>_<output value=" /tb_results_notification/patient_name "/> zotsatira za TB ndi <output value=" /tb_results_notification/result_ny "/>._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results/n_update:label">
+            <value>_Chonde sinthani zotsatira zawo pa kaundula wa makhololo._</value>
+          </text>
+          <text id="/tb_results_notification/tb_results:label">
+            <value>Zotsatira za TB</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <tb_results_notification delimiter="#" id="tb_results_notification" prefix="J1!tb_results_notification!" version="2021-10-11 12:19:10">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <client_name/>
+            <client_id/>
+            <client_uuid/>
+            <client_age_in_years/>
+            <schw_phone/>
+            <tb_result/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <c_patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <c_patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <date_of_birth/>
+          <chw_phone/>
+          <chw_name/>
+          <result/>
+          <result_ny/>
+          <tb_results>
+            <n_results/>
+            <n_update/>
+            <n_collect/>
+          </tb_results>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </tb_results_notification>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/tb_results_notification/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/tb_results_notification/inputs/source" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/source_id" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/client_name" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/client_id" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/client_uuid" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/client_age_in_years" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/schw_phone" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/tb_result" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/name" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/sex" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/tb_results_notification/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/tb_results_notification/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/tb_results_notification/source_id" type="string"/>
+      <bind calculate="../inputs/client_uuid" nodeset="/tb_results_notification/patient_uuid" type="string"/>
+      <bind calculate="../inputs/client_id" nodeset="/tb_results_notification/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/client_name" nodeset="/tb_results_notification/patient_name" type="string"/>
+      <bind calculate="../patient_name" nodeset="/tb_results_notification/c_patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_results_notification/patient_date_of_birth" type="string"/>
+      <bind calculate="coalesce(floor( difference-in-months(  /tb_results_notification/patient_date_of_birth , today() ) div 12 ), ../inputs/client_age_in_years)" nodeset="/tb_results_notification/patient_age_in_years" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/tb_results_notification/c_patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /tb_results_notification/patient_date_of_birth , today() )" nodeset="/tb_results_notification/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /tb_results_notification/patient_date_of_birth ) )" nodeset="/tb_results_notification/patient_age_in_days" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_results_notification/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/phone" nodeset="/tb_results_notification/chw_phone" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/name" nodeset="/tb_results_notification/chw_name" type="string"/>
+      <bind calculate="../inputs/tb_result" nodeset="/tb_results_notification/result" type="string"/>
+      <bind calculate="if(../result = 'positive', 'Ali ndi chifuwa chachikulu', if(../result='negative', 'Alibe chifuwa chachikulu', 'Makhololo anabwezedwa'))" nodeset="/tb_results_notification/result_ny" type="string"/>
+      <bind nodeset="/tb_results_notification/tb_results/n_results" readonly="true()" type="string"/>
+      <bind nodeset="/tb_results_notification/tb_results/n_update" readonly="true()" relevant=" /tb_results_notification/result  = 'positive' or  /tb_results_notification/result  = 'negative'" type="string"/>
+      <bind nodeset="/tb_results_notification/tb_results/n_collect" readonly="true()" relevant=" /tb_results_notification/result  = 'rejected'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tb_results_notification/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list hidden" ref="/tb_results_notification/inputs">
+      <label ref="jr:itext('/tb_results_notification/inputs:label')"/>
+      <group appearance="hidden" ref="/tb_results_notification/inputs/contact">
+        <label ref="jr:itext('/tb_results_notification/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/tb_results_notification/inputs/contact/_id">
+          <label ref="jr:itext('/tb_results_notification/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/tb_results_notification/inputs/contact/parent">
+          <label ref="jr:itext('/tb_results_notification/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/tb_results_notification/inputs/contact/parent/parent">
+            <label ref="jr:itext('/tb_results_notification/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/tb_results_notification/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/tb_results_notification/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/tb_results_notification/tb_results">
+      <label ref="jr:itext('/tb_results_notification/tb_results:label')"/>
+      <input ref="/tb_results_notification/tb_results/n_results">
+        <label ref="jr:itext('/tb_results_notification/tb_results/n_results:label')"/>
+      </input>
+      <input ref="/tb_results_notification/tb_results/n_update">
+        <label ref="jr:itext('/tb_results_notification/tb_results/n_update:label')"/>
+      </input>
+      <input ref="/tb_results_notification/tb_results/n_collect">
+        <label ref="jr:itext('/tb_results_notification/tb_results/n_collect:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,15 @@
+{
+    "icon": "icon-places-household",
+    "title": {
+        "en": "CHW Home GPS",
+        "ny": "GPS la kunyumba la CHW"
+    },
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact.contact_type === 'chw_area' && user._id != contact._id && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

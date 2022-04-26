@@ -1,0 +1,2979 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Under 5 monthly screening</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/under_5_screening/chw_area_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/under_5_screening/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/under_5_screening/facility_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_follow_up:label">
+            <value>Tasks will appear on <output value=" /under_5_screening/group_review/c_next_monthly_task "/></value>
+          </text>
+          <text id="/under_5_screening/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_hospitalization_title:label">
+            <value>**_Hospitalization screening_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_hospitalized:label">
+            <value><output value=" /under_5_screening/c_patient_name "/> hospitalized</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_ds_not_present:label">
+            <value>No danger signs</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_ds_present:label">
+            <value>Danger signs present</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_signs_title:label">
+            <value>**_IMCI screening_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imm_refer_title:label">
+            <value>_Refer child immediately for immunization appointment_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_immunization_update_title:label">
+            <value>**_Monthly immunization update_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_maln_ref:label">
+            <value>_Refer <output value=" /under_5_screening/c_patient_name "/> to a health facility for further malnutrition assessment._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_ds_not_present:label">
+            <value>No malnutrition danger signs</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_ds_present:label">
+            <value>Malnutrition danger signs present</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_enrolled:label">
+            <value>child is already enrolled in malnutrition program</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_signs_title:label">
+            <value>**_Malnutrition screening_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_muac_measurement:label">
+            <value>MUAC measurement: <output value=" /under_5_screening/malnutrition_screening/muac "/> cm</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_next_immunization:label">
+            <value>Date of next immunization visit: <output value=" /under_5_screening/group_review/c_next_visit "/></value>
+          </text>
+          <text id="/under_5_screening/group_review/n_not_hospitalized:label">
+            <value><output value=" /under_5_screening/c_patient_name "/> not hospitalized</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /under_5_screening/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /under_5_screening/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_refer_and_accomp_imci:label">
+            <value>_Accompany child to the health facility._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_refer_imci:label">
+            <value>_Refer child to the health facility._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_referral:label">
+            <value>_Refer <output value=" /under_5_screening/c_patient_name "/> immediately for danger signs management!_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_summary_title:label">
+            <value>Under 5 screening summary</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred:label">
+            <value>Did you refer <output value=" /under_5_screening/c_patient_name "/> to the health facility?</value>
+          </text>
+          <text id="/under_5_screening/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_date:jr:constraintMsg">
+            <value>Date should be within the last 31 days.</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_date:label">
+            <value>Date of hospitalization</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:jr:constraintMsg">
+            <value>I do not know cannot be selected with any other option!</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:label">
+            <value>Illness that led to hospitilization</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month/no:label">
+            <value>No</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month:label">
+            <value>Was <output value=" /under_5_screening/c_patient_name "/> hospitalized this month?</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields:label">
+            <value>Hospitalization details</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/form:label">
+            <value>Form</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details:label">
+            <value>Hospitalization</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/cough:label">
+            <value>Cough</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fast_breathing:label">
+            <value>Fast breathing</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fever_with_convulsions:label">
+            <value>Fever with convulsions</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:label">
+            <value>Does <output value=" /under_5_screening/c_patient_name "/> have any of the following signs?</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/1:label">
+            <value>One day</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/2:label">
+            <value>Two days</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/3:label">
+            <value>Three days</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/4:label">
+            <value>Four to six days</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/6:label">
+            <value>More than 6 days</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration:label">
+            <value>How long ago did <output value=" /under_5_screening/c_patient_name "/> start having the danger signs?</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/n_refer:label">
+            <value>_Refer child to the health facility._</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/n_refer_and_accomp:label">
+            <value>_Accompany child to the health facility._</value>
+          </text>
+          <text id="/under_5_screening/imci_screening:label">
+            <value>IMCI screening</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/under_5_screening/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/under_5_screening/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/under_5_screening/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled/no:label">
+            <value>No</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled:label">
+            <value>Was <output value=" /under_5_screening/c_patient_name "/> enrolled into malnutrition program since your last visit</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/bilateral_pitting_oedema:label">
+            <value>Bilateral pitting oedema</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/hair_colour_changes:label">
+            <value>Hair colour changes</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/wasting:label">
+            <value>Wasting</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:label">
+            <value>Does <output value=" /under_5_screening/c_patient_name "/>'s have any of these signs?</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:hint">
+            <value>Assess child for malnutrition using Mid Upper Arm Circumference (MUAC) assessment</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:jr:constraintMsg">
+            <value>Should be between 5 and 18 cm!</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:label">
+            <value>What is <output value=" /under_5_screening/c_patient_name "/>'s MUAC measurement?</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_maln:label">
+            <value>_Refer <output value=" /under_5_screening/c_patient_name "/> to a health facility for further malnutrition assessment._</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_muac_covid:label">
+            <value>&lt;span style="color:red;"&gt;**Due to COVID-19 do not take the MUAC measurement at this time.**&lt;/span&gt;</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_no_wasting:label">
+            <value>_Child has no wasting._</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_supplements:label">
+            <value>_Remind care giver the importance of giving supplements only to <output value=" /under_5_screening/c_patient_name "/>_</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/hospitalization:label">
+            <value>Hospitalization [NRU]</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/otp:label">
+            <value>OTP</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/sfp:label">
+            <value>SFP</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program:hint">
+            <value>Confirm from the health passport</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program:label">
+            <value>What treatment program was <output value=" /under_5_screening/c_patient_name "/> enrolled in</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements/no:label">
+            <value>No</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements:label">
+            <value>Was <output value=" /under_5_screening/c_patient_name "/> given supplements</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening:label">
+            <value>Malnutrition screening</value>
+          </text>
+          <text id="/under_5_screening/n_covid:label">
+            <value>&lt;span style="color:red;"&gt;**Protect yourself and others from COVID-19. Wash your hands frequently with soap and water, maintain a distance of 2 meters from others, do not touch clients during household visits, and stay home if you are sick and experiencing fever, cough, or shortness of breath.**&lt;/span&gt;</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_based:label">
+            <value>_Based on <output value=" /under_5_screening/c_patient_name "/> profile, screen them for :_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_hospitalization:label">
+            <value>_Hospitalization_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_imci:label">
+            <value>_IMCI_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_immunization:label">
+            <value>_Monthly immunization update_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_malnutrition:label">
+            <value>_Malnutrition_</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_advise:label">
+            <value>_Please advise the parent to take the child to the health facility._</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_confirm:label">
+            <value>_Please confirm the vaccines information from the child's health passport._</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_refer_for_imm:label">
+            <value>_Refer child immediately for immunization appointment._</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:hint">
+            <value>These are visits done since the last time the CHW visited the child</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:jr:constraintMsg">
+            <value>Can only report one Immunization visit for newborns</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:label">
+            <value>How many immunization visits would you like to report?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/next_visit:label">
+            <value>When is <output value=" /under_5_screening/c_patient_name "/> due for the next immunization?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:hint">
+            <value>These are visits done since the last time the CHW visited the child</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:jr:constraintMsg">
+            <value>Immunization visits must between 1 and 10</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:label">
+            <value>How many immunization visits would you like to report?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/missed_visit:label">
+            <value>Child had a scheduled visit but they did not attend(missed visit)</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/no_health_passport:label">
+            <value>Health passport not available</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/not_scheduled:label">
+            <value>Child had no scheduled immunization visit</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/not_started:label">
+            <value>Child has not started immunization yet</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit:label">
+            <value>Reasons for not reporting any visit</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine/no:label">
+            <value>No</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine:hint">
+            <value>These are visits done since the last time the CHW visited the child</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine:label">
+            <value>Would you like to report any immunization visits?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:jr:constraintMsg">
+            <value>Date cannot be in the future or before the patient's date of birth!</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:label">
+            <value>Date of immunization visit</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:jr:constraintMsg">
+            <value><output value=" /under_5_screening/vaccines_given/visit_details/fields/c_validation_message "/></value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:label">
+            <value>Select the vaccines that were given on <output value=" /under_5_screening/vaccines_given/visit_details/fields/c_vaccine_date "/></value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields:label">
+            <value>Visit</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/form:label">
+            <value>Form</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details:label">
+            <value>Visit details</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given:label">
+            <value>Monthly immunization update</value>
+          </text>
+          <text id="static_instance-danger_signs-0">
+            <value>Fever</value>
+          </text>
+          <text id="static_instance-danger_signs-1">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="static_instance-danger_signs-10">
+            <value>None</value>
+          </text>
+          <text id="static_instance-danger_signs-2">
+            <value>Convulsions</value>
+          </text>
+          <text id="static_instance-danger_signs-3">
+            <value>Jaundice</value>
+          </text>
+          <text id="static_instance-danger_signs-4">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="static_instance-danger_signs-5">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="static_instance-danger_signs-6">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="static_instance-danger_signs-7">
+            <value>Eye discharge</value>
+          </text>
+          <text id="static_instance-danger_signs-8">
+            <value>Failing to feed</value>
+          </text>
+          <text id="static_instance-danger_signs-9">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="static_instance-dpts-0">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="static_instance-dpts-1">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="static_instance-dpts-2">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="static_instance-durations-0">
+            <value>One day</value>
+          </text>
+          <text id="static_instance-durations-1">
+            <value>Two days</value>
+          </text>
+          <text id="static_instance-durations-2">
+            <value>Three days</value>
+          </text>
+          <text id="static_instance-durations-3">
+            <value>Four to six days</value>
+          </text>
+          <text id="static_instance-durations-4">
+            <value>More than 6 days</value>
+          </text>
+          <text id="static_instance-facility_visits-0">
+            <value>1 week facility visit</value>
+          </text>
+          <text id="static_instance-facility_visits-1">
+            <value>6 weeks facility visit</value>
+          </text>
+          <text id="static_instance-facility_visits-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-home_visits-0">
+            <value>3 days home visit</value>
+          </text>
+          <text id="static_instance-home_visits-1">
+            <value>5 days home visit</value>
+          </text>
+          <text id="static_instance-home_visits-2">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-0">
+            <value>HIV related</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-1">
+            <value>TB related</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-2">
+            <value>Malnutrition</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-3">
+            <value>Malaria</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-4">
+            <value>Pneumonia</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-5">
+            <value>I do not know</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-6">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-imci_signs-0">
+            <value>Fever</value>
+          </text>
+          <text id="static_instance-imci_signs-1">
+            <value>Fever with convulsions</value>
+          </text>
+          <text id="static_instance-imci_signs-2">
+            <value>Cough</value>
+          </text>
+          <text id="static_instance-imci_signs-3">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="static_instance-imci_signs-4">
+            <value>Fast breathing</value>
+          </text>
+          <text id="static_instance-imci_signs-5">
+            <value>None</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-0">
+            <value>Hair colour changes</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-1">
+            <value>Bilateral pitting oedema</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-2">
+            <value>Wasting</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-3">
+            <value>None</value>
+          </text>
+          <text id="static_instance-measles-0">
+            <value>Measles 1</value>
+          </text>
+          <text id="static_instance-measles-1">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-nutrition_program-0">
+            <value>SFP</value>
+          </text>
+          <text id="static_instance-nutrition_program-1">
+            <value>OTP</value>
+          </text>
+          <text id="static_instance-nutrition_program-2">
+            <value>Hospitalization [NRU]</value>
+          </text>
+          <text id="static_instance-payment_methods-0">
+            <value>Caregiver</value>
+          </text>
+          <text id="static_instance-payment_methods-1">
+            <value>Borrowed money</value>
+          </text>
+          <text id="static_instance-payment_methods-2">
+            <value>Sold assets</value>
+          </text>
+          <text id="static_instance-payment_methods-3">
+            <value>POSER support</value>
+          </text>
+          <text id="static_instance-payment_methods-4">
+            <value>Relative</value>
+          </text>
+          <text id="static_instance-payment_methods-5">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-pcvs-0">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-pcvs-1">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-pcvs-2">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-polios-0">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-polios-1">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-polios-2">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-ref_types-0">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="static_instance-ref_types-1">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="static_instance-rotas-0">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-rotas-1">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="static_instance-vaccines-10">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="static_instance-vaccines-11">
+            <value>IPV</value>
+          </text>
+          <text id="static_instance-vaccines-12">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-vaccines-13">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-14">
+            <value>Vitamin A</value>
+          </text>
+          <text id="static_instance-vaccines-15">
+            <value>Measles 1</value>
+          </text>
+          <text id="static_instance-vaccines-16">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-vaccines-4">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-vaccines-5">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-vaccines-6">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-vaccines-7">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-vaccines-8">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="static_instance-vaccines-9">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="static_instance-visit_counts-0">
+            <value>Zero</value>
+          </text>
+          <text id="static_instance-visit_counts-1">
+            <value>One</value>
+          </text>
+          <text id="static_instance-visit_counts-2">
+            <value>Two</value>
+          </text>
+          <text id="static_instance-visit_counts-3">
+            <value>Three</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-0">
+            <value>Child had no scheduled immunization visit</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-1">
+            <value>Child has not started immunization yet</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-2">
+            <value>Child had a scheduled visit but they did not attend(missed visit)</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-3">
+            <value>Health passport not available</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/under_5_screening/chw_area_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/chw_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_follow_up:label">
+            <value>Ntchito iyi idzawoneka ku gawo la Zochita pa…..</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_hospitalization_title:label">
+            <value>**_Kufufuza za kugonekedwa m'chipatala_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_hospitalized:label">
+            <value><output value=" /under_5_screening/c_patient_name "/> anagonekedwa m'chipatala</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_ds_not_present:label">
+            <value>Alibe zizindikiro zoopsya</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_ds_present:label">
+            <value>Ali ndi zizindikiro zoopsa</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imci_signs_title:label">
+            <value>**_Kufufuza za matenda osiyanasiyana a ana ang'ono_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_imm_refer_title:label">
+            <value>_Mutumizeni mwana patsiku lake lokatengera katemera wina._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_immunization_update_title:label">
+            <value>**_Nkhani ya Katemera mwezi uliwonse_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_maln_ref:label">
+            <value>_Tumizani${c_patient_name)kuchipatala kuti akamupimenso._</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_ds_not_present:label">
+            <value>Alibe zizindikiro zoopsya za kunyentchera</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_ds_present:label">
+            <value>Ali ndi zizindikiro zoopsa za kunyentchera</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_enrolled:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_malnutrition_signs_title:label">
+            <value>**_Kufufuza kunyentchera_**</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_muac_measurement:label">
+            <value>Zotsatira za kuyeza MUAC: <output value=" /under_5_screening/malnutrition_screening/muac "/> cm</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_next_immunization:label">
+            <value>Tsiku lokatenga katemera wina: <output value=" /under_5_screening/group_review/c_next_visit "/></value>
+          </text>
+          <text id="/under_5_screening/group_review/n_not_hospitalized:label">
+            <value><output value=" /under_5_screening/c_patient_name "/> sanagonekedwe m'chipatala</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /under_5_screening/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /under_5_screening/c_patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Mwanayo &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_refer_and_accomp_imci:label">
+            <value>_Perekezani mwana kuchipatala_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_refer_imci:label">
+            <value>_Tumizani mwana ku chipatala_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_referral:label">
+            <value>_Tumizani <output value=" /under_5_screening/c_patient_name "/> mwansanga kuchipatala akakhala ndi zizizndikiro zoopsa!_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_referral_title:label">
+            <value>Mutumizeni kuchipatala.&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi_</value>
+          </text>
+          <text id="/under_5_screening/group_review/n_summary_title:label">
+            <value>Kufufuza Matenda Pakati pa Ana Ochepera Zaka Zisanu</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type/no_chw:label">
+            <value>Anapita yekha ku chipatala</value>
+          </text>
+          <text id="/under_5_screening/group_review/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/under_5_screening/group_review/referred:label">
+            <value>Kodi munatumiza <output value=" /under_5_screening/c_patient_name "/> kuchipatala?</value>
+          </text>
+          <text id="/under_5_screening/group_review:label">
+            <value>Zotsatira/ Tsamba la zotsatira</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/_id:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_date:jr:constraintMsg">
+            <value>Tsiku likhale la mkatikati mwa masiku 31 apitawo</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_date:label">
+            <value>Tsiku logonekedwa m'chipatala</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:hint">
+            <value>Chongani matenda amene anagonekedwa nawo.</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:jr:constraintMsg">
+            <value>Simungasankhe "Sindikudziwa" ngati mwasankha kale yankho lina</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons:label">
+            <value>Sankhani matenda onse amene anagonekedwa nawo</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalization_reasons_other:label">
+            <value>Gawo ili ndi lofunika</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/hospitalized_this_month:label">
+            <value>Kodi <output value=" /under_5_screening/c_patient_name "/> anagonekedwapo m'chipatala mwezi uno?</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_age_in_years:label">
+            <value>Zaka</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/source:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/fields:label">
+            <value>Tsatanetsatane wogonekedwa m'chipatala</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/form:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details/type:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/hospitalization_details:label">
+            <value>Kugonekedwa m'chipatala</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/cough:label">
+            <value>Kutsokomola</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fast_breathing:label">
+            <value>Kupuma mwachangu</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/fever_with_convulsions:label">
+            <value>Kutentha kwa thupi ndi kukomoka</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs/none:label">
+            <value>Alibe</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:hint">
+            <value>Chongani chizindikiro china chili chonse chomwe ali nacho</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs:label">
+            <value>Kodi <output value=" /under_5_screening/c_patient_name "/> ali ndi zina mwa zizindikiro izi?</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/1:label">
+            <value>Tsiku limodzi</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/2:label">
+            <value>Masiku awiri</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/3:label">
+            <value>Masiku atatu</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/4:label">
+            <value>Masiku 4 mpaka 6</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration/6:label">
+            <value>Kuposera masiku 6</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/imci_signs_duration:label">
+            <value>Kodi padutsa masiku angati <output value=" /under_5_screening/c_patient_name "/> chiyambireni kuona zizindikiro zoopsa</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/n_refer:label">
+            <value>_Tumizani mwana ku chipatala_</value>
+          </text>
+          <text id="/under_5_screening/imci_screening/n_refer_and_accomp:label">
+            <value>_Muperekezeni kuchipatala_</value>
+          </text>
+          <text id="/under_5_screening/imci_screening:label">
+            <value>Kufufuza za matenda osiyanasiyana a ana ang'ono</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/_id:label">
+            <value>Dzina la odwala ndi ndani?</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/date_of_birth:label">
+            <value>Tsiku lobadwa</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/name:label">
+            <value>Dzina la odwala ndi ndani?</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent/parent:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/parent:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact/sex:label">
+            <value>Jenda</value>
+          </text>
+          <text id="/under_5_screening/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/is_in_art_group:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/is_in_tb_group:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/enrolled:label">
+            <value>Kodi <output value=" /under_5_screening/c_patient_name "/> analowetsedwa kale mu pologalamu ya ana onyenthera</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/bilateral_pitting_oedema:label">
+            <value>kutupikana</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/hair_colour_changes:label">
+            <value>Kunyozoloka kwa tsitsi</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/none:label">
+            <value>Alibe</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs/wasting:label">
+            <value>kuwonda</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:hint">
+            <value>Chongani chizindikiro china chili chonse chomwe ali nacho</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/malnutrition_signs:label">
+            <value>Kodi <output value=" /under_5_screening/c_patient_name "/> ali ndi zizindikiro izi</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:hint">
+            <value>Fufuzani za kunyentchera kwa mwana pogwiritsa ntchito MUAC</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:jr:constraintMsg">
+            <value>Zotsatira zakuyeza MUAC zizikhala pakati pa 5 mpaka 18cm</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/muac:label">
+            <value>Kodi MUAC ya <output value=" /under_5_screening/c_patient_name "/> yakwana bwanji?</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_maln:label">
+            <value>_Mtumizeni <output value=" /under_5_screening/c_patient_name "/> kuchipatala kuti akatsimikize ngati ndi wonyentchera_</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_muac_covid:label">
+            <value>&lt;span style="color:red;"&gt;**Chifukwa cha matenda a Covid 19, Mukufunsidwa kuti musamuyeze mwana MUAC.**&lt;/span&gt;</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_no_wasting:label">
+            <value>_Mwana siwoonda._</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/n_supplements:label">
+            <value>_Kumbutsani wopereka chisamaliro kufunika kopereka zowonjezera zowonjezera ku <output value=" /under_5_screening/c_patient_name "/>_</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/hospitalization:label">
+            <value>Hospitalization [NRU]</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/otp:label">
+            <value>OTP</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program/sfp:label">
+            <value>SFP</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program:hint">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/nutrition_program:label">
+            <value>Ndondomeko yamankhwala iti $ {c_patient_name} adalembetsa</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening/supplements:label">
+            <value>Anapatsidwa $ {c_patient_name} kupatsidwa zowonjezera</value>
+          </text>
+          <text id="/under_5_screening/malnutrition_screening:label">
+            <value>Kufufuza za Kunyentchera</value>
+          </text>
+          <text id="/under_5_screening/n_covid:label">
+            <value>&lt;span style="color:red;"&gt;**Zitetezeni inu komanso anzanu ku matenda a Covid 19. Sambani mmanja kawirikawiri ndi madzi komanso sopo, Khalani motalikirana pafupifupi ma mita awiri, Musakhudzane ndi aliyense pamene mukugwira ntchiton yanu, ndipo mukhale kunyumba ngati mwatentha thupi, kutsokomola komanso kubanika kupuma.**&lt;/span&gt;</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_based:label">
+            <value>_Malingani ndi momwe mbiri ya <output value=" /under_5_screening/c_patient_name "/> iliri, Kufufuza pa nkhani ya kunyentchera, matenda osiyanasiyana a ana aang'ono, katemera komanso kugonekedwa m'chipatala._</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_hospitalization:label">
+            <value>_Kugonekedwa m'chipatala_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_imci:label">
+            <value>_Kufufuza za matenda osiyanasiyana a ana ang'ono_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_immunization:label">
+            <value>_Nkhani ya Katemera mwezi uliwonse_</value>
+          </text>
+          <text id="/under_5_screening/note_group/n_malnutrition:label">
+            <value>_Kunyentchera_</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_advise:label">
+            <value>_Chonde limbikitsani makolo zopita ndi mwana wawo kuchipatala kukalandira katemera_</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_confirm:label">
+            <value>_Chonde tsimikizani za ndondomeko ya katemera m'buku la mwana la ku chipatala_</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_refer_for_imm:label">
+            <value>_Onetsetsani mwana mwamsanga kuti apange katemera._</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:hint">
+            <value>Awa ndi ma ulendo omwe anachitika kuchokera pomwe CHW anayendera mwana</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:jr:constraintMsg">
+            <value>Ulendo usapose umodzi pa mwana uyu</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/n_visits_reported:label">
+            <value>Ndi ma ulendo angati a katemera omwe mukufuna kulembera?*</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/next_visit:label">
+            <value>Kodi <output value=" /under_5_screening/c_patient_name "/> alandilanso katemera wina liti?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:hint">
+            <value>Awa ndi ma ulendo omwe anachitika kuchokera pomwe CHW anayendera mwana</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:jr:constraintMsg">
+            <value>Katemera isachepere m'modzi komanso isaposere khumi</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/nn_visits_reported:label">
+            <value>Ndi ma ulendo angati a katemera omwe mukufuna kulembera?*</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/missed_visit:label">
+            <value>Mwana sanapite kuchipatala pa tsiku lake loyikika la katemera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/no_health_passport:label">
+            <value>Bukhu la kuchipatala silikupezeka</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/not_scheduled:label">
+            <value>Mwana analibe ulendo woyikika wa katemera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit/not_started:label">
+            <value>Mwana sanayambe kulandira katemera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/reason_no_visit:label">
+            <value>Zifukwa zolepheretsa kupereka lipoti la ulendo wa katemera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine:hint">
+            <value>Awa ndi ma ulendo omwe anachitika kuchokera pomwe CHW anayendera mwana</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/report_vaccine:label">
+            <value>Kodi mukufuna kupereka lipoti la ulendo wina uliwonse wa katemera?</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/_id:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_age_in_years:label">
+            <value>Zaka</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/source:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la kutsogolo</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:label">
+            <value>Tsiku lomwe analandira katemera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:hint">
+            <value>Chongani katemera yense yemwe analandira.</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:jr:constraintMsg">
+            <value><output value=" /under_5_screening/vaccines_given/visit_details/fields/c_validation_message_ny "/></value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields/vaccines:label">
+            <value>Sankhani katemera yemwe analandira <output value=" /under_5_screening/vaccines_given/visit_details/fields/c_vaccine_date "/></value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/fields:label">
+            <value>Kuyendera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/form:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details/type:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visit_details:label">
+            <value>Tsatanetsatane wa kuyendera</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given/visits_reported:label">
+            <value>-</value>
+          </text>
+          <text id="/under_5_screening/vaccines_given:label">
+            <value>Ndondomeko ya Katemera Mwezi Uliwonse</value>
+          </text>
+          <text id="static_instance-danger_signs-0">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="static_instance-danger_signs-1">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="static_instance-danger_signs-10">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-danger_signs-2">
+            <value>Kukomoka</value>
+          </text>
+          <text id="static_instance-danger_signs-3">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="static_instance-danger_signs-4">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="static_instance-danger_signs-5">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="static_instance-danger_signs-6">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="static_instance-danger_signs-7">
+            <value>Manthongo</value>
+          </text>
+          <text id="static_instance-danger_signs-8">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="static_instance-danger_signs-9">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="static_instance-dpts-0">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="static_instance-dpts-1">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="static_instance-dpts-2">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="static_instance-durations-0">
+            <value>Tsiku limodzi</value>
+          </text>
+          <text id="static_instance-durations-1">
+            <value>Masiku awiri</value>
+          </text>
+          <text id="static_instance-durations-2">
+            <value>Masiku atatu</value>
+          </text>
+          <text id="static_instance-durations-3">
+            <value>Masiku 4 mpaka 6</value>
+          </text>
+          <text id="static_instance-durations-4">
+            <value>Kuposera masiku 6</value>
+          </text>
+          <text id="static_instance-facility_visits-0">
+            <value>Sikelo ya sabata yoyamba</value>
+          </text>
+          <text id="static_instance-facility_visits-1">
+            <value>Sikelo ya sabata yachisanu ndi chimodzi</value>
+          </text>
+          <text id="static_instance-facility_visits-2">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-home_visits-0">
+            <value>Kuyendera kwa tsiku lachitatu</value>
+          </text>
+          <text id="static_instance-home_visits-1">
+            <value>Kuyendera kwa tsiku lachisanu</value>
+          </text>
+          <text id="static_instance-home_visits-2">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-0">
+            <value>HIV</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-1">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-2">
+            <value>Kunyetchera</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-3">
+            <value>Malaria</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-4">
+            <value>Pneumonia</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-5">
+            <value>Sakudziwa</value>
+          </text>
+          <text id="static_instance-hospitalization_reasons-6">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="static_instance-imci_signs-0">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="static_instance-imci_signs-1">
+            <value>Kutentha kwa thupi ndi kukomoka</value>
+          </text>
+          <text id="static_instance-imci_signs-2">
+            <value>Kutsokomola</value>
+          </text>
+          <text id="static_instance-imci_signs-3">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="static_instance-imci_signs-4">
+            <value>Kupuma mwachangu</value>
+          </text>
+          <text id="static_instance-imci_signs-5">
+            <value>Alibe</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-0">
+            <value>Kunyozoloka kwa tsitsi</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-1">
+            <value>kutupikana</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-2">
+            <value>kuwonda</value>
+          </text>
+          <text id="static_instance-malnutrition_signs-3">
+            <value>Alibe</value>
+          </text>
+          <text id="static_instance-measles-0">
+            <value>Measles 1</value>
+          </text>
+          <text id="static_instance-measles-1">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-nutrition_program-0">
+            <value>SFP</value>
+          </text>
+          <text id="static_instance-nutrition_program-1">
+            <value>OTP</value>
+          </text>
+          <text id="static_instance-nutrition_program-2">
+            <value>Hospitalization [NRU]</value>
+          </text>
+          <text id="static_instance-payment_methods-0">
+            <value>Opeleka chisamaliro</value>
+          </text>
+          <text id="static_instance-payment_methods-1">
+            <value>Anangongola</value>
+          </text>
+          <text id="static_instance-payment_methods-2">
+            <value>Anagulitsa katundu</value>
+          </text>
+          <text id="static_instance-payment_methods-3">
+            <value>Anathandizidwa ndi a POSER</value>
+          </text>
+          <text id="static_instance-payment_methods-4">
+            <value>Anathandizidwa ndi achibale</value>
+          </text>
+          <text id="static_instance-payment_methods-5">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="static_instance-pcvs-0">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-pcvs-1">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-pcvs-2">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-polios-0">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-polios-1">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-polios-2">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-ref_types-0">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="static_instance-ref_types-1">
+            <value>Anapita yekha ku chipatala</value>
+          </text>
+          <text id="static_instance-rotas-0">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-rotas-1">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Polio (OPV 0)</value>
+          </text>
+          <text id="static_instance-vaccines-10">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="static_instance-vaccines-11">
+            <value>IPV</value>
+          </text>
+          <text id="static_instance-vaccines-12">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-vaccines-13">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-14">
+            <value>Vitamin A</value>
+          </text>
+          <text id="static_instance-vaccines-15">
+            <value>Measles 1</value>
+          </text>
+          <text id="static_instance-vaccines-16">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-vaccines-4">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-vaccines-5">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-vaccines-6">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-vaccines-7">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-vaccines-8">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="static_instance-vaccines-9">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="static_instance-visit_counts-0">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-visit_counts-1">
+            <value>Umodzi</value>
+          </text>
+          <text id="static_instance-visit_counts-2">
+            <value>Awiri</value>
+          </text>
+          <text id="static_instance-visit_counts-3">
+            <value>Atatu</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Eya</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Ayi</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-0">
+            <value>Mwana analibe ulendo woyikika wa katemera</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-1">
+            <value>Mwana sanayambe kulandira katemera</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-2">
+            <value>Mwana sanapite kuchipatala pa tsiku lake loyikika la katemera</value>
+          </text>
+          <text id="static_instance-zero_visits_reasons-3">
+            <value>Bukhu la kuchipatala silikupezeka</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <under_5_screening delimiter="#" id="under_5_screening" prefix="J1!under_5_screening!" version="2022-03-30 17:33:37">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <chw_id/>
+          <chw_area_id/>
+          <facility_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <c_patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <c_patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <last_visit_next_appointment_date/>
+          <is_in_others_group/>
+          <is_in_art_group>no</is_in_art_group>
+          <is_in_tb_group/>
+          <malnutrition/>
+          <malnutrition_label/>
+          <is_in_malnutrition/>
+          <date_of_birth/>
+          <is_malnutrition/>
+          <immunization/>
+          <iccm/>
+          <malaria_dx/>
+          <pneumonia_dx/>
+          <diarrhea_dx/>
+          <no_symptom/>
+          <fever_duration/>
+          <diarrhea_duration/>
+          <cough_duration/>
+          <fast_breathing_duration/>
+          <danger_sign/>
+          <fu_rec/>
+          <maln_acute/>
+          <muac_score/>
+          <has_maln/>
+          <is_referred_to_hf/>
+          <chw_phone/>
+          <geolocation/>
+          <is_referral_case_maln/>
+          <is_referral_case_imci/>
+          <bcg_group/>
+          <birth_polio_group/>
+          <opv_group/>
+          <pcv_group/>
+          <dpt_hepb_hib_group/>
+          <ipv_group/>
+          <rota_group/>
+          <vitamin_a_group/>
+          <measles_group/>
+          <opv_dose_1_group/>
+          <opv_dose_2_group/>
+          <opv_dose_3_group/>
+          <pcv_dose_1_group/>
+          <pcv_dose_2_group/>
+          <pcv_dose_3_group/>
+          <dpt_hepb_hib_dose_1_group/>
+          <dpt_hepb_hib_dose_2_group/>
+          <dpt_hepb_hib_dose_3_group/>
+          <rota_dose_1_group/>
+          <rota_dose_2_group/>
+          <measles_dose_1_group/>
+          <measles_dose_2_group/>
+          <n_covid/>
+          <is_fully_immunized/>
+          <visited_contact_uuid/>
+          <note_group>
+            <n_based/>
+            <n_imci/>
+            <n_malnutrition/>
+            <n_immunization/>
+            <n_hospitalization/>
+          </note_group>
+          <malnutrition_screening>
+            <enrolled/>
+            <nutrition_program/>
+            <supplements/>
+            <n_supplements/>
+            <n_muac_covid/>
+            <muac/>
+            <malnutrition_signs/>
+            <c_refer_for_maln/>
+            <n_no_wasting/>
+            <n_maln/>
+          </malnutrition_screening>
+          <imci_screening>
+            <imci_signs/>
+            <imci_signs_duration/>
+            <c_refer/>
+            <c_refer_and_accomp/>
+            <n_refer/>
+            <n_refer_and_accomp/>
+          </imci_screening>
+          <vaccines_given>
+            <n_confirm/>
+            <report_vaccine/>
+            <nn_visits_reported/>
+            <n_visits_reported/>
+            <visits_reported/>
+            <reason_no_visit/>
+            <n_refer_for_imm/>
+            <n_advise/>
+            <visit_details_count/>
+            <visit_details db-doc="true" jr:template="">
+              <fields>
+                <vaccine_date/>
+                <c_vaccine_date/>
+                <received_vaccines/>
+                <received_vaccines_detail/>
+                <received_bcg/>
+                <received_polio0/>
+                <received_dpt1/>
+                <received_dpt3/>
+                <c_validation_message/>
+                <c_validation_message_ny/>
+                <vaccines/>
+                <patient_id/>
+                <patient_age_in_years/>
+                <source/>
+                <source_id/>
+                <patient_uuid/>
+                <patient_name/>
+              </fields>
+              <created_by_doc db-doc-ref="/under_5_screening"/>
+              <content_type>xml</content_type>
+              <type>data_record</type>
+              <form>immunization</form>
+              <contact>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </contact>
+            </visit_details>
+            <next_visit/>
+          </vaccines_given>
+          <hospitalization_details db-doc="true">
+            <fields>
+              <hospitalized_this_month/>
+              <hospitalization_date/>
+              <hospitalization_reasons/>
+              <hospitalization_reasons_other/>
+              <patient_id/>
+              <patient_age_in_years/>
+              <source/>
+              <source_id/>
+              <patient_uuid/>
+              <patient_name/>
+            </fields>
+            <child_doc db-doc-ref=" /under_5_screening/hospitalization_details "/>
+            <created_by_doc db-doc-ref="/under_5_screening"/>
+            <content_type>xml</content_type>
+            <type>data_record</type>
+            <form>hospitalization</form>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+            </contact>
+          </hospitalization_details>
+          <group_review>
+            <n_summary_title/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_malnutrition_signs_title/>
+            <n_muac_measurement/>
+            <n_malnutrition_enrolled/>
+            <n_malnutrition_ds_present/>
+            <n_malnutrition_ds_not_present/>
+            <n_maln_ref/>
+            <n_imci_signs_title/>
+            <n_imci_ds_present/>
+            <n_imci_ds_not_present/>
+            <n_refer_imci/>
+            <n_refer_and_accomp_imci/>
+            <n_immunization_update_title/>
+            <c_next_visit/>
+            <n_next_immunization/>
+            <n_imm_refer_title/>
+            <n_hospitalization_title/>
+            <n_hospitalized/>
+            <n_not_hospitalized/>
+            <n_referral_title/>
+            <n_referral/>
+            <referred/>
+            <ref_type/>
+            <n_follow_up_title/>
+            <c_next_monthly_task/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </under_5_screening>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="zero_visits_reasons">
+        <root>
+          <item>
+            <itextId>static_instance-zero_visits_reasons-0</itextId>
+            <name>not_scheduled</name>
+          </item>
+          <item>
+            <itextId>static_instance-zero_visits_reasons-1</itextId>
+            <name>not_started</name>
+          </item>
+          <item>
+            <itextId>static_instance-zero_visits_reasons-2</itextId>
+            <name>missed_visit</name>
+          </item>
+          <item>
+            <itextId>static_instance-zero_visits_reasons-3</itextId>
+            <name>no_health_passport</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="rotas">
+        <root>
+          <item>
+            <itextId>static_instance-rotas-0</itextId>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-rotas-1</itextId>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="hospitalization_reasons">
+        <root>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-0</itextId>
+            <is_in_art_group>1</is_in_art_group>
+            <name>hiv</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-1</itextId>
+            <is_in_tb_group>1</is_in_tb_group>
+            <name>tb</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-2</itextId>
+            <is_in_others_group>1</is_in_others_group>
+            <name>malnutrition</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-3</itextId>
+            <is_in_others_group>1</is_in_others_group>
+            <name>malaria</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-4</itextId>
+            <is_in_others_group>1</is_in_others_group>
+            <name>pneumonia</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-5</itextId>
+            <is_in_others_group>1</is_in_others_group>
+            <name>unknown</name>
+          </item>
+          <item>
+            <itextId>static_instance-hospitalization_reasons-6</itextId>
+            <is_in_others_group>1</is_in_others_group>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="imci_signs">
+        <root>
+          <item>
+            <itextId>static_instance-imci_signs-0</itextId>
+            <name>fever</name>
+          </item>
+          <item>
+            <itextId>static_instance-imci_signs-1</itextId>
+            <name>fever_with_convulsions</name>
+          </item>
+          <item>
+            <itextId>static_instance-imci_signs-2</itextId>
+            <name>cough</name>
+          </item>
+          <item>
+            <itextId>static_instance-imci_signs-3</itextId>
+            <name>diarrhoea</name>
+          </item>
+          <item>
+            <itextId>static_instance-imci_signs-4</itextId>
+            <name>fast_breathing</name>
+          </item>
+          <item>
+            <itextId>static_instance-imci_signs-5</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="nutrition_program">
+        <root>
+          <item>
+            <itextId>static_instance-nutrition_program-0</itextId>
+            <name>sfp</name>
+          </item>
+          <item>
+            <itextId>static_instance-nutrition_program-1</itextId>
+            <name>otp</name>
+          </item>
+          <item>
+            <itextId>static_instance-nutrition_program-2</itextId>
+            <name>hospitalization</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="facility_visits">
+        <root>
+          <item>
+            <itextId>static_instance-facility_visits-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-facility_visits-1</itextId>
+            <name>6</name>
+          </item>
+          <item>
+            <itextId>static_instance-facility_visits-2</itextId>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="durations">
+        <root>
+          <item>
+            <itextId>static_instance-durations-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-durations-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-durations-2</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-durations-3</itextId>
+            <name>4</name>
+          </item>
+          <item>
+            <itextId>static_instance-durations-4</itextId>
+            <name>6</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ref_types">
+        <root>
+          <item>
+            <itextId>static_instance-ref_types-0</itextId>
+            <name>chw</name>
+          </item>
+          <item>
+            <itextId>static_instance-ref_types-1</itextId>
+            <name>no_chw</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="visit_counts">
+        <root>
+          <item>
+            <itextId>static_instance-visit_counts-0</itextId>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_counts-1</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_counts-2</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-visit_counts-3</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="malnutrition_signs">
+        <root>
+          <item>
+            <itextId>static_instance-malnutrition_signs-0</itextId>
+            <name>hair_colour_changes</name>
+          </item>
+          <item>
+            <itextId>static_instance-malnutrition_signs-1</itextId>
+            <name>bilateral_pitting_oedema</name>
+          </item>
+          <item>
+            <itextId>static_instance-malnutrition_signs-2</itextId>
+            <name>wasting</name>
+          </item>
+          <item>
+            <itextId>static_instance-malnutrition_signs-3</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-vaccines-0</itextId>
+            <name>bcg</name>
+            <age_limit_lower>0</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <bcg_group>1</bcg_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-1</itextId>
+            <name>birth_polio</name>
+            <age_limit_lower>0</age_limit_lower>
+            <age_limit_upper>2</age_limit_upper>
+            <birth_polio_group>1</birth_polio_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-2</itextId>
+            <name>opv_1</name>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <opv_1_group>1</opv_1_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-3</itextId>
+            <opv_2_group>1</opv_2_group>
+            <name>opv_2</name>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-4</itextId>
+            <opv_3_group>1</opv_3_group>
+            <name>opv_3</name>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-5</itextId>
+            <pcv_1_group>1</pcv_1_group>
+            <name>pcv_1</name>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-6</itextId>
+            <age_limit_upper>261</age_limit_upper>
+            <name>pcv_2</name>
+            <age_limit_lower>10</age_limit_lower>
+            <pcv_2_group>1</pcv_2_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-7</itextId>
+            <name>pcv_3</name>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <pcv_3_group>1</pcv_3_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-8</itextId>
+            <name>dpt_hepb_hib_1</name>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <dpt_hepb_hib_1_group>1</dpt_hepb_hib_1_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-9</itextId>
+            <name>dpt_hepb_hib_2</name>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <dpt_hepb_hib_2_group>1</dpt_hepb_hib_2_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-10</itextId>
+            <name>dpt_hepb_hib_3</name>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <dpt_hepb_hib_3_group>1</dpt_hepb_hib_3_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-11</itextId>
+            <ipv_group>1</ipv_group>
+            <name>ipv</name>
+            <age_limit_lower>0</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-12</itextId>
+            <rota_1_group>1</rota_1_group>
+            <name>rota_1</name>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-13</itextId>
+            <name>rota_2</name>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <rota_2_group>1</rota_2_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-14</itextId>
+            <name>vitamin_a</name>
+            <age_limit_lower>26</age_limit_lower>
+            <vitamin_a_group>1</vitamin_a_group>
+            <age_limit_upper>261</age_limit_upper>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-15</itextId>
+            <name>measles_1</name>
+            <age_limit_lower>39</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <measles_1_group>1</measles_1_group>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-16</itextId>
+            <name>measles_2</name>
+            <age_limit_lower>65</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <measles_2_group>1</measles_2_group>
+          </item>
+        </root>
+      </instance>
+      <instance id="payment_methods">
+        <root>
+          <item>
+            <itextId>static_instance-payment_methods-0</itextId>
+            <name>self</name>
+          </item>
+          <item>
+            <itextId>static_instance-payment_methods-1</itextId>
+            <name>borrowed</name>
+          </item>
+          <item>
+            <itextId>static_instance-payment_methods-2</itextId>
+            <name>sold_assets</name>
+          </item>
+          <item>
+            <itextId>static_instance-payment_methods-3</itextId>
+            <name>poser_support</name>
+          </item>
+          <item>
+            <itextId>static_instance-payment_methods-4</itextId>
+            <name>relative</name>
+          </item>
+          <item>
+            <itextId>static_instance-payment_methods-5</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="polios">
+        <root>
+          <item>
+            <itextId>static_instance-polios-0</itextId>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-polios-1</itextId>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-polios-2</itextId>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="dpts">
+        <root>
+          <item>
+            <itextId>static_instance-dpts-0</itextId>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-dpts-1</itextId>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-dpts-2</itextId>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pcvs">
+        <root>
+          <item>
+            <itextId>static_instance-pcvs-0</itextId>
+            <age_limit_lower>6</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-pcvs-1</itextId>
+            <age_limit_lower>10</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-pcvs-2</itextId>
+            <age_limit_lower>14</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="home_visits">
+        <root>
+          <item>
+            <itextId>static_instance-home_visits-0</itextId>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-home_visits-1</itextId>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>static_instance-home_visits-2</itextId>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="danger_signs">
+        <root>
+          <item>
+            <itextId>static_instance-danger_signs-0</itextId>
+            <name>fever</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-1</itextId>
+            <name>diarrhoea</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-2</itextId>
+            <name>convulsions</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-3</itextId>
+            <name>jaundice</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-4</itextId>
+            <name>umbilical_infection</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-5</itextId>
+            <name>abdominal_distension</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-6</itextId>
+            <name>crying_continuously</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-7</itextId>
+            <name>eye_discharge</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-8</itextId>
+            <name>not_feeding</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-9</itextId>
+            <name>skin_rash</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-10</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="measles">
+        <root>
+          <item>
+            <itextId>static_instance-measles-0</itextId>
+            <age_limit_lower>39</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-measles-1</itextId>
+            <age_limit_lower>60</age_limit_lower>
+            <age_limit_upper>261</age_limit_upper>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/under_5_screening/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/under_5_screening/inputs/source" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/source_id" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/under_5_screening/inputs/contact/name" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/sex" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/under_5_screening/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/under_5_screening/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/under_5_screening/source_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/_id" nodeset="/under_5_screening/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/under_5_screening/chw_area_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/under_5_screening/facility_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/under_5_screening/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/under_5_screening/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/under_5_screening/patient_name" type="string"/>
+      <bind calculate="../patient_name" nodeset="/under_5_screening/c_patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/under_5_screening/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /under_5_screening/patient_date_of_birth , today() ) div 12 )" nodeset="/under_5_screening/patient_age_in_years" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/under_5_screening/c_patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /under_5_screening/patient_date_of_birth , today() )" nodeset="/under_5_screening/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /under_5_screening/patient_date_of_birth ) )" nodeset="/under_5_screening/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /under_5_screening/patient_date_of_birth )) div 7)" nodeset="/under_5_screening/patient_age_in_weeks" type="string"/>
+      <bind calculate="instance('contact-summary')/context/last_visit_next_appointment_date" nodeset="/under_5_screening/last_visit_next_appointment_date" type="string"/>
+      <bind calculate="1" nodeset="/under_5_screening/is_in_others_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/is_in_art = 'yes', 1, 0)" nodeset="/under_5_screening/is_in_art_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/is_in_tb = 'yes', 1, 0)" nodeset="/under_5_screening/is_in_tb_group" type="string"/>
+      <bind calculate="if(../malnutrition_screening/muac &gt;= 11.5 and ../malnutrition_screening/muac &lt; 12.5, 'moderate', if(./malnutrition_screening/muac &lt; 11.5, 'severe', 'none'))" nodeset="/under_5_screening/malnutrition" type="string"/>
+      <bind calculate="if(../malnutrition = 'moderate', 'Moderate wasting', if(../malnutrition = 'severe', 'Severe wasting', 'No wasting'))" nodeset="/under_5_screening/malnutrition_label" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_malnutrition" nodeset="/under_5_screening/is_in_malnutrition" type="string"/>
+      <bind calculate="../patient_date_of_birth" nodeset="/under_5_screening/date_of_birth" type="string"/>
+      <bind calculate="if(../../patient_age_in_months &gt; 6 and ../../is_in_malnutrition != 'yes', 'yes', 'no')" nodeset="/under_5_screening/is_malnutrition" type="string"/>
+      <bind calculate="true()" nodeset="/under_5_screening/immunization" type="string"/>
+      <bind calculate="true()" nodeset="/under_5_screening/iccm" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'fever') or selected(../imci_screening/imci_signs, 'fever_with_convulsions'), 'yes', 'no')" nodeset="/under_5_screening/malaria_dx" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'cough') and selected(../imci_screening/imci_signs, 'fast_breathing'), 'yes', 'no')" nodeset="/under_5_screening/pneumonia_dx" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'diarrhea'), 'yes', 'no')" nodeset="/under_5_screening/diarrhea_dx" type="string"/>
+      <bind calculate="if(../imci_screening/imci_signs = '', 'yes', 'no')" nodeset="/under_5_screening/no_symptom" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'fever') or selected(../imci_screening/imci_signs, 'fever_with_convulsions'), ../imci_screening/imci_signs_duration, '')" nodeset="/under_5_screening/fever_duration" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'diarrhea'), ../imci_screening/imci_signs_duration, '')" nodeset="/under_5_screening/diarrhea_duration" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'cough'), ../imci_screening/imci_signs_duration, '')" nodeset="/under_5_screening/cough_duration" type="string"/>
+      <bind calculate="if(selected(../imci_screening/imci_signs, 'cough'), ../imci_screening/imci_signs_duration, '')" nodeset="/under_5_screening/fast_breathing_duration" type="string"/>
+      <bind calculate="if(../imci_screening/imci_signs != '', 'yes', 'no')" nodeset="/under_5_screening/danger_sign" type="string"/>
+      <bind calculate="if(../imci_screening/c_refer = 'yes' or ../imci_screening/c_refer_and_accomp = 'yes', 'yes', 'no')" nodeset="/under_5_screening/fu_rec" type="string"/>
+      <bind calculate="if(number(../malnutrition_screening/muac) &lt; 11.5, 'yes', 'no')" nodeset="/under_5_screening/maln_acute" type="string"/>
+      <bind calculate="number(../malnutrition_screening/muac)" nodeset="/under_5_screening/muac_score" type="string"/>
+      <bind calculate="if(number(../malnutrition_screening/muac) &lt; 12.5, 'yes', 'no')" nodeset="/under_5_screening/has_maln" type="string"/>
+      <bind calculate="if(number(../malnutrition_screening/muac) &lt; 12.5, 'yes', 'no')" nodeset="/under_5_screening/is_referred_to_hf" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/under_5_screening/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/under_5_screening/geolocation" type="string"/>
+      <bind calculate="if(../malnutrition_screening/muac &lt;= 12.5, 'yes', 'no')" nodeset="/under_5_screening/is_referral_case_maln" type="string"/>
+      <bind calculate="if(../imci_screening/c_refer = 'yes' or ../imci_screening/c_refer_and_accomp = 'yes', 'yes', 'no')" nodeset="/under_5_screening/is_referral_case_imci" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_bcg = 'yes', 0, 1)" nodeset="/under_5_screening/bcg_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_birth_polio = 'yes', 0, 1)" nodeset="/under_5_screening/birth_polio_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_opv = 'yes' and instance('contact-summary')/context/was_given_opv_1 = 'yes' and instance('contact-summary')/context/was_given_opv_2 = 'yes' and instance('contact-summary')/context/was_given_opv_3 = 'yes', 0, 1)" nodeset="/under_5_screening/opv_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_pcv = 'yes' and instance('contact-summary')/context/was_given_pcv_1 = 'yes' and instance('contact-summary')/context/was_given_pcv_2 = 'yes' and instance('contact-summary')/context/was_given_pcv_3 = 'yes', 0, 1)" nodeset="/under_5_screening/pcv_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_dpt_hepb_hib = 'yes' and instance('contact-summary')/context/was_given_dpt_hepb_hib_1 = 'yes' and instance('contact-summary')/context/was_given_dpt_hepb_hib_2 = 'yes' and instance('contact-summary')/context/was_given_dpt_hepb_hib_3 = 'yes', 0, 1)" nodeset="/under_5_screening/dpt_hepb_hib_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_ipv = 'yes', 0, 1)" nodeset="/under_5_screening/ipv_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_rota = 'yes' and instance('contact-summary')/context/was_given_rota_1 = 'yes' and instance('contact-summary')/context/was_given_rota_2 = 'yes' and instance('contact-summary')/context/was_given_rota_3 = 'yes', 0, 1)" nodeset="/under_5_screening/rota_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_vitamin_a = 'yes', 0, 1)" nodeset="/under_5_screening/vitamin_a_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_measles = 'yes' and instance('contact-summary')/context/was_given_measles_1 = 'yes' and instance('contact-summary')/context/was_given_measles_2 = 'yes' and instance('contact-summary')/context/was_given_measles_3 = 'yes', 0, 1)" nodeset="/under_5_screening/measles_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_opv_1 = 'yes', 0, 1)" nodeset="/under_5_screening/opv_dose_1_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_opv_2 = 'yes', 0, 1)" nodeset="/under_5_screening/opv_dose_2_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_opv_3 = 'yes', 0, 1)" nodeset="/under_5_screening/opv_dose_3_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_pcv_1 = 'yes', 0, 1)" nodeset="/under_5_screening/pcv_dose_1_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_pcv_2 = 'yes', 0, 1)" nodeset="/under_5_screening/pcv_dose_2_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_pcv_3 = 'yes', 0, 1)" nodeset="/under_5_screening/pcv_dose_3_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_dpt_hepb_hib_1 = 'yes', 0, 1)" nodeset="/under_5_screening/dpt_hepb_hib_dose_1_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_dpt_hepb_hib_2 = 'yes', 0, 1)" nodeset="/under_5_screening/dpt_hepb_hib_dose_2_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_dpt_hepb_hib_3 = 'yes', 0, 1)" nodeset="/under_5_screening/dpt_hepb_hib_dose_3_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_rota_1 = 'yes', 0, 1)" nodeset="/under_5_screening/rota_dose_1_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_rota_2 = 'yes', 0, 1)" nodeset="/under_5_screening/rota_dose_2_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_measles_1 = 'yes', 0, 1)" nodeset="/under_5_screening/measles_dose_1_group" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/was_given_measles_2 = 'yes', 0, 1)" nodeset="/under_5_screening/measles_dose_2_group" type="string"/>
+      <bind nodeset="/under_5_screening/n_covid" readonly="true()" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_fully_immunized" nodeset="/under_5_screening/is_fully_immunized" type="string"/>
+      <bind calculate="../inputs/contact/parent/_id" nodeset="/under_5_screening/visited_contact_uuid" type="string"/>
+      <bind nodeset="/under_5_screening/note_group/n_based" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/note_group/n_imci" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/note_group/n_malnutrition" readonly="true()" relevant="../../patient_age_in_months &gt;= 6 and ../../is_in_malnutrition != 'yes'" type="string"/>
+      <bind nodeset="/under_5_screening/note_group/n_immunization" readonly="true()" relevant=" /under_5_screening/is_fully_immunized  != 'true'" type="string"/>
+      <bind nodeset="/under_5_screening/note_group/n_hospitalization" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening" relevant="../patient_age_in_months &gt;= 6 and ../is_in_malnutrition != 'yes'"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/enrolled" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/nutrition_program" relevant=" /under_5_screening/malnutrition_screening/enrolled  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/supplements" relevant="selected(../nutrition_program, 'sfp') or selected(../nutrition_program, 'otp')" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/n_supplements" readonly="true()" relevant=" /under_5_screening/malnutrition_screening/supplements  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/n_muac_covid" readonly="true()" relevant=" /under_5_screening/malnutrition_screening/enrolled  = 'no'" type="string"/>
+      <bind constraint=". &gt;= 5 and . &lt;= 18" jr:constraintMsg="jr:itext('/under_5_screening/malnutrition_screening/muac:jr:constraintMsg')" nodeset="/under_5_screening/malnutrition_screening/muac" relevant=" /under_5_screening/malnutrition_screening/enrolled  = 'no'" required="true()" type="decimal"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs:jr:constraintMsg')" nodeset="/under_5_screening/malnutrition_screening/malnutrition_signs" relevant=" /under_5_screening/malnutrition_screening/enrolled  = 'no'" required="true()" type="select"/>
+      <bind calculate="if((../muac != '' and ../muac &lt;= 12.5) or (not(selected(../malnutrition_signs, 'none')) and count-selected(../malnutrition_signs) &gt; 0), 'yes', 'no')" nodeset="/under_5_screening/malnutrition_screening/c_refer_for_maln" type="string"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/n_no_wasting" readonly="true()" relevant="../muac &gt;= 12.5 and selected(../malnutrition_signs, 'none')" type="string"/>
+      <bind nodeset="/under_5_screening/malnutrition_screening/n_maln" readonly="true()" relevant="(../muac != '' and ../muac &lt; 12.5) or (not(selected(../malnutrition_signs, 'none')) and count-selected(../malnutrition_signs) &gt; 0)" type="string"/>
+      <bind nodeset="/under_5_screening/imci_screening" relevant="../patient_age_in_years &lt; 5"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/under_5_screening/imci_screening/imci_signs:jr:constraintMsg')" nodeset="/under_5_screening/imci_screening/imci_signs" required="true()" type="select"/>
+      <bind nodeset="/under_5_screening/imci_screening/imci_signs_duration" relevant="not(selected(../imci_signs, 'none')) 
+and count-selected(../imci_signs) &gt;= 1" required="true()" type="select1"/>
+      <bind calculate="if(selected(../imci_signs, 'fever')
+or selected(../imci_signs, 'cough')
+or selected(../imci_signs, 'fast_breathing'),
+'yes', 'no')" nodeset="/under_5_screening/imci_screening/c_refer" type="string"/>
+      <bind calculate="if(selected(../imci_signs, 'fever_with_convulsions')
+or selected(../imci_signs, 'diarrhoea'),
+'yes', 'no')" nodeset="/under_5_screening/imci_screening/c_refer_and_accomp" type="string"/>
+      <bind nodeset="/under_5_screening/imci_screening/n_refer" readonly="true()" relevant="../c_refer = 'yes' and ../c_refer_and_accomp = 'no'" type="string"/>
+      <bind nodeset="/under_5_screening/imci_screening/n_refer_and_accomp" readonly="true()" relevant="../c_refer_and_accomp = 'yes'" type="string"/>
+      <bind nodeset="/under_5_screening/vaccines_given" relevant="../patient_age_in_years &lt; 5
+and  /under_5_screening/is_fully_immunized  != 'true'"/>
+      <bind nodeset="/under_5_screening/vaccines_given/n_confirm" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/vaccines_given/report_vaccine" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 1 and . &lt;= 10" jr:constraintMsg="jr:itext('/under_5_screening/vaccines_given/nn_visits_reported:jr:constraintMsg')" nodeset="/under_5_screening/vaccines_given/nn_visits_reported" relevant="selected(../report_vaccine, 'yes') and  /under_5_screening/patient_age_in_days  &gt; 1" required="true()" type="int"/>
+      <bind constraint=". = 1" jr:constraintMsg="jr:itext('/under_5_screening/vaccines_given/n_visits_reported:jr:constraintMsg')" nodeset="/under_5_screening/vaccines_given/n_visits_reported" relevant="selected(../report_vaccine, 'yes') and  /under_5_screening/patient_age_in_days  &lt;= 1" required="true()" type="int"/>
+      <bind calculate="if( /under_5_screening/patient_age_in_days  &lt;= 1, ../n_visits_reported, ../nn_visits_reported)" nodeset="/under_5_screening/vaccines_given/visits_reported" relevant="selected(../report_vaccine, 'yes')" type="string"/>
+      <bind nodeset="/under_5_screening/vaccines_given/reason_no_visit" relevant="selected(../report_vaccine, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/vaccines_given/n_refer_for_imm" readonly="true()" relevant="../reason_no_visit = 'not_started' and ../reason_no_visit != '' and ../reason_no_visit = 'missed_visit'" type="string"/>
+      <bind nodeset="/under_5_screening/vaccines_given/n_advise" readonly="true()" relevant="selected(../reason_no_visit, 'missed_visit') or selected(../reason_no_visit, 'not_started')" type="string"/>
+      <bind calculate="int(../visits_reported)" nodeset="/under_5_screening/vaccines_given/visit_details_count" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/vaccines_given/visit_details" relevant="../visits_reported &gt;= 1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today()) and decimal-date-time(.) &gt;= decimal-date-time( /under_5_screening/patient_date_of_birth )" jr:constraintMsg="jr:itext('/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:jr:constraintMsg')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date" required="true()" type="date"/>
+      <bind calculate="format-date-time(../vaccine_date,&quot;%d/%m/%Y&quot;)" nodeset="/under_5_screening/vaccines_given/visit_details/fields/c_vaccine_date" type="string"/>
+      <bind calculate="if(count-selected(../vaccines) &gt; 0, 'yes', 'no')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_vaccines" type="string"/>
+      <bind calculate="../vaccines" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_vaccines_detail" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'bcg'), 'yes', 'no')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_bcg" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'birth_polio'), 'yes', 'no')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_polio0" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'dpt_hepb_hib') and selected(../dpt_hepb_hib, '1'), 'yes', 'no')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_dpt1" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'dpt_hepb_hib') and selected(../dpt_hepb_hib, '3'), 'yes', 'no')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/received_dpt3" type="string"/>
+      <bind calculate="if((selected(../vaccines, 'opv_1') and (selected(../vaccines, 'opv_2') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_2') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_3') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_2')))
+or (selected(../vaccines, 'pcv_1') and (selected(../vaccines, 'pcv_2') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_2') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_3') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_2')))
+or (selected(../vaccines, 'dpt_hepb_hib_1') and (selected(../vaccines, 'dpt_hepb_hib_2') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_2') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_3') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_2')))
+or (selected(../vaccines, 'rota_1') and selected(../vaccines, 'rota_2'))
+or (selected(../vaccines, 'measles_1') and selected(../vaccines, 'measles_2')), 'Please select a vaccine dose at a time', '')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/c_validation_message" type="string"/>
+      <bind calculate="if((selected(../vaccines, 'opv_1') and (selected(../vaccines, 'opv_2') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_2') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_3') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_2')))
+or (selected(../vaccines, 'pcv_1') and (selected(../vaccines, 'pcv_2') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_2') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_3') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_2')))
+or (selected(../vaccines, 'dpt_hepb_hib_1') and (selected(../vaccines, 'dpt_hepb_hib_2') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_2') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_3') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_2')))
+or (selected(../vaccines, 'rota_1') and selected(../vaccines, 'rota_2'))
+or (selected(../vaccines, 'measles_1') and selected(../vaccines, 'measles_2')), 'Chonde sankhani mlingo wa katemera nthawi imodzi', '')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/c_validation_message_ny" type="string"/>
+      <bind constraint="not((selected(../vaccines, 'opv_1') and (selected(../vaccines, 'opv_2') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_2') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_3')))
+or (selected(../vaccines, 'opv_3') and (selected(../vaccines, 'opv_1') or selected(../vaccines, 'opv_2')))
+or (selected(../vaccines, 'pcv_1') and (selected(../vaccines, 'pcv_2') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_2') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_3')))
+or (selected(../vaccines, 'pcv_3') and (selected(../vaccines, 'pcv_1') or selected(../vaccines, 'pcv_2')))
+or (selected(../vaccines, 'dpt_hepb_hib_1') and (selected(../vaccines, 'dpt_hepb_hib_2') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_2') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_3')))
+or (selected(../vaccines, 'dpt_hepb_hib_3') and (selected(../vaccines, 'dpt_hepb_hib_1') or selected(../vaccines, 'dpt_hepb_hib_2')))
+or (selected(../vaccines, 'rota_1') and selected(../vaccines, 'rota_2'))
+or (selected(../vaccines, 'measles_1') and selected(../vaccines, 'measles_2')))" jr:constraintMsg="jr:itext('/under_5_screening/vaccines_given/visit_details/fields/vaccines:jr:constraintMsg')" nodeset="/under_5_screening/vaccines_given/visit_details/fields/vaccines" required="true()" type="select"/>
+      <bind calculate="../../../../patient_id" nodeset="/under_5_screening/vaccines_given/visit_details/fields/patient_id" type="string"/>
+      <bind calculate="../../../../patient_age_in_years" nodeset="/under_5_screening/vaccines_given/visit_details/fields/patient_age_in_years" type="string"/>
+      <bind calculate="../../../../source" nodeset="/under_5_screening/vaccines_given/visit_details/fields/source" type="string"/>
+      <bind calculate="../../../../source_id" nodeset="/under_5_screening/vaccines_given/visit_details/fields/source_id" type="string"/>
+      <bind calculate="../../../../patient_uuid" nodeset="/under_5_screening/vaccines_given/visit_details/fields/patient_uuid" type="string"/>
+      <bind calculate="../../../../patient_name" nodeset="/under_5_screening/vaccines_given/visit_details/fields/patient_name" type="string"/>
+      <bind calculate="." nodeset="/under_5_screening/vaccines_given/visit_details/created_by_doc" type="string"/>
+      <bind calculate="&quot;xml&quot;" nodeset="/under_5_screening/vaccines_given/visit_details/content_type" type="string"/>
+      <bind calculate="&quot;data_record&quot;" nodeset="/under_5_screening/vaccines_given/visit_details/type" type="string"/>
+      <bind calculate="&quot;immunization&quot;" nodeset="/under_5_screening/vaccines_given/visit_details/form" type="string"/>
+      <bind calculate=" /under_5_screening/chw_id " nodeset="/under_5_screening/vaccines_given/visit_details/contact/_id" type="string"/>
+      <bind calculate=" /under_5_screening/chw_area_id " nodeset="/under_5_screening/vaccines_given/visit_details/contact/parent/_id" type="string"/>
+      <bind calculate=" /under_5_screening/facility_id " nodeset="/under_5_screening/vaccines_given/visit_details/contact/parent/parent/_id" type="string"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/under_5_screening/vaccines_given/next_visit:jr:constraintMsg')" nodeset="/under_5_screening/vaccines_given/next_visit" relevant="../visits_reported != 0" required="true()" type="date"/>
+      <bind nodeset="/under_5_screening/hospitalization_details" relevant="../patient_age_in_years &lt; 5"/>
+      <bind nodeset="/under_5_screening/hospitalization_details/fields/hospitalized_this_month" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= (decimal-date-time(today()) - 31) and decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_date:jr:constraintMsg')" nodeset="/under_5_screening/hospitalization_details/fields/hospitalization_date" relevant="selected(../hospitalized_this_month, 'yes')" required="true()" type="date"/>
+      <bind constraint="not(selected(., 'unknown') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_reasons:jr:constraintMsg')" nodeset="/under_5_screening/hospitalization_details/fields/hospitalization_reasons" relevant="selected(../hospitalized_this_month, 'yes')" required="true()" type="select"/>
+      <bind nodeset="/under_5_screening/hospitalization_details/fields/hospitalization_reasons_other" relevant="selected(../hospitalization_reasons, 'other')" required="true()" type="string"/>
+      <bind calculate="../../../patient_id" nodeset="/under_5_screening/hospitalization_details/fields/patient_id" type="string"/>
+      <bind calculate="../../../patient_age_in_years" nodeset="/under_5_screening/hospitalization_details/fields/patient_age_in_years" type="string"/>
+      <bind calculate="../../../source" nodeset="/under_5_screening/hospitalization_details/fields/source" type="string"/>
+      <bind calculate="../../../source_id" nodeset="/under_5_screening/hospitalization_details/fields/source_id" type="string"/>
+      <bind calculate="../../../patient_uuid" nodeset="/under_5_screening/hospitalization_details/fields/patient_uuid" type="string"/>
+      <bind calculate="../../../patient_name" nodeset="/under_5_screening/hospitalization_details/fields/patient_name" type="string"/>
+      <bind calculate=" /under_5_screening/hospitalization_details " nodeset="/under_5_screening/hospitalization_details/child_doc" type="string"/>
+      <bind calculate="." nodeset="/under_5_screening/hospitalization_details/created_by_doc" type="string"/>
+      <bind calculate="&quot;xml&quot;" nodeset="/under_5_screening/hospitalization_details/content_type" type="string"/>
+      <bind calculate="&quot;data_record&quot;" nodeset="/under_5_screening/hospitalization_details/type" type="string"/>
+      <bind calculate="&quot;hospitalization&quot;" nodeset="/under_5_screening/hospitalization_details/form" type="string"/>
+      <bind calculate=" /under_5_screening/chw_id " nodeset="/under_5_screening/hospitalization_details/contact/_id" type="string"/>
+      <bind calculate=" /under_5_screening/chw_area_id " nodeset="/under_5_screening/hospitalization_details/contact/parent/_id" type="string"/>
+      <bind calculate=" /under_5_screening/facility_id " nodeset="/under_5_screening/hospitalization_details/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_summary_title" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/under_5_screening/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;=5, 
+concat( /under_5_screening/c_patient_age_in_years , ' years ',  /under_5_screening/group_review/c_patient_mod_mnths , ' months old'),
+concat( /under_5_screening/c_patient_age_in_years , ' years old'))" nodeset="/under_5_screening/group_review/c_age_string" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_findings_title" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_malnutrition_signs_title" readonly="true()" relevant="../../patient_age_in_months &gt; 6 and ../../is_in_malnutrition != 'yes'" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_muac_measurement" readonly="true()" relevant="../../patient_age_in_months &gt; 6 and ../../is_in_malnutrition != 'yes' and not(selected(../../malnutrition_screening/enrolled, 'yes'))" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_malnutrition_enrolled" readonly="true()" relevant="selected(../../malnutrition_screening/enrolled, 'yes')" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_malnutrition_ds_present" readonly="true()" relevant="not(selected(../../malnutrition_screening/malnutrition_signs, 'none'))
+and count-selected(../../malnutrition_screening/malnutrition_signs) &gt;= 1" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_malnutrition_ds_not_present" readonly="true()" relevant="selected(../../malnutrition_screening/malnutrition_signs, 'none')" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_maln_ref" readonly="true()" relevant="(../../malnutrition_screening/muac != '' and ../../malnutrition_screening/muac &lt;= 12.5) or (not(selected(../../malnutrition_screening/malnutrition_signs, 'none')) and count-selected(../../malnutrition_screening/malnutrition_signs) &gt; 0)" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_imci_signs_title" readonly="true()" relevant="../../patient_age_in_years &lt; 5" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_imci_ds_present" readonly="true()" relevant="not(selected(../../imci_screening/imci_signs, 'none'))
+and count-selected(../../imci_screening/imci_signs) &gt;= 1" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_imci_ds_not_present" readonly="true()" relevant="selected(../../imci_screening/imci_signs, 'none')" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_refer_imci" readonly="true()" relevant="../../imci_screening/c_refer = 'yes' and ../../imci_screening/c_refer_and_accomp = 'no'" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_refer_and_accomp_imci" readonly="true()" relevant="../../imci_screening/c_refer_and_accomp = 'yes'" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_immunization_update_title" readonly="true()" type="string"/>
+      <bind calculate="format-date(../../vaccines_given/next_visit, &quot;%d/%m/%Y&quot;)" nodeset="/under_5_screening/group_review/c_next_visit" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_next_immunization" readonly="true()" relevant="../../vaccines_given/next_visit != ''" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_imm_refer_title" readonly="true()" relevant=" /under_5_screening/vaccines_given/report_vaccine  != 'yes' and  /under_5_screening/vaccines_given/report_vaccine  != ''" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_hospitalization_title" readonly="true()" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_hospitalized" readonly="true()" relevant="selected(../../hospitalization_details/fields/hospitalized_this_month, 'yes')" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_not_hospitalized" readonly="true()" relevant="selected(../../hospitalization_details/fields/hospitalized_this_month, 'no')" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_referral_title" readonly="true()" relevant="number(../../malnutrition_screening/muac) &lt; 12.5
+or (not(selected(../../malnutrition_screening/malnutrition_signs, 'none')) 
+and count-selected(../../malnutrition_screening/malnutrition_signs) &gt;= 1)
+or (not(selected(../../imci_screening/imci_signs, 'none')) 
+and count-selected(../../imci_screening/imci_signs) &gt;= 1)
+or (not(selected(../../pnc_visit_details/fields/danger_signs, 'none') 
+and count-selected(../../pnc_visit_details/fields/danger_signs) &gt;= 1))" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_referral" readonly="true()" relevant="number(../../malnutrition_screening/muac) &lt; 12.5
+or (not(selected(../../malnutrition_screening/malnutrition_signs, 'none')) 
+and count-selected(../../malnutrition_screening/malnutrition_signs) &gt;= 1)
+or (not(selected(../../imci_screening/imci_signs, 'none')) 
+and count-selected(../../imci_screening/imci_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/referred" relevant="number(../../malnutrition_screening/muac) &lt; 12.5
+or (not(selected(../../malnutrition_screening/malnutrition_signs, 'none')) 
+and count-selected(../../malnutrition_screening/malnutrition_signs) &gt;= 1)
+or (not(selected(../../imci_screening/imci_signs, 'none')) 
+and count-selected(../../imci_screening/imci_signs) &gt;= 1)
+or (not(selected(../../pnc_visit_details/fields/danger_signs, 'none') 
+and count-selected(../../pnc_visit_details/fields/danger_signs) &gt;= 1))" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/group_review/ref_type" relevant="selected(../referred, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/under_5_screening/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind calculate="format-date(date-time(decimal-date-time(today())+32), &quot;01/%m/%Y&quot;)" nodeset="/under_5_screening/group_review/c_next_monthly_task" type="string"/>
+      <bind nodeset="/under_5_screening/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/under_5_screening/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/under_5_screening/inputs">
+      <label ref="jr:itext('/under_5_screening/inputs:label')"/>
+      <group ref="/under_5_screening/inputs/contact">
+        <label ref="jr:itext('/under_5_screening/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/under_5_screening/inputs/contact/_id">
+          <label ref="jr:itext('/under_5_screening/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/under_5_screening/inputs/contact/parent">
+          <label ref="jr:itext('/under_5_screening/inputs/contact/parent:label')"/>
+          <group ref="/under_5_screening/inputs/contact/parent/parent">
+            <label ref="jr:itext('/under_5_screening/inputs/contact/parent/parent:label')"/>
+            <group ref="/under_5_screening/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/under_5_screening/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+            <group ref="/under_5_screening/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/under_5_screening/inputs/contact/parent/parent/parent:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <input ref="/under_5_screening/n_covid">
+      <label ref="jr:itext('/under_5_screening/n_covid:label')"/>
+    </input>
+    <group appearance="field-list" ref="/under_5_screening/note_group">
+      <input ref="/under_5_screening/note_group/n_based">
+        <label ref="jr:itext('/under_5_screening/note_group/n_based:label')"/>
+      </input>
+      <input appearance="li" ref="/under_5_screening/note_group/n_imci">
+        <label ref="jr:itext('/under_5_screening/note_group/n_imci:label')"/>
+      </input>
+      <input appearance="li" ref="/under_5_screening/note_group/n_malnutrition">
+        <label ref="jr:itext('/under_5_screening/note_group/n_malnutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/under_5_screening/note_group/n_immunization">
+        <label ref="jr:itext('/under_5_screening/note_group/n_immunization:label')"/>
+      </input>
+      <input appearance="li" ref="/under_5_screening/note_group/n_hospitalization">
+        <label ref="jr:itext('/under_5_screening/note_group/n_hospitalization:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/under_5_screening/malnutrition_screening">
+      <label ref="jr:itext('/under_5_screening/malnutrition_screening:label')"/>
+      <select1 ref="/under_5_screening/malnutrition_screening/enrolled">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/enrolled:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/enrolled/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/enrolled/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/under_5_screening/malnutrition_screening/nutrition_program">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/nutrition_program:label')"/>
+        <hint ref="jr:itext('/under_5_screening/malnutrition_screening/nutrition_program:hint')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/nutrition_program/sfp:label')"/>
+          <value>sfp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/nutrition_program/otp:label')"/>
+          <value>otp</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/nutrition_program/hospitalization:label')"/>
+          <value>hospitalization</value>
+        </item>
+      </select1>
+      <select1 ref="/under_5_screening/malnutrition_screening/supplements">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/supplements:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/supplements/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/supplements/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/under_5_screening/malnutrition_screening/n_supplements">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/n_supplements:label')"/>
+      </input>
+      <input appearance="hidden" ref="/under_5_screening/malnutrition_screening/n_muac_covid">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/n_muac_covid:label')"/>
+      </input>
+      <input ref="/under_5_screening/malnutrition_screening/muac">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/muac:label')"/>
+        <hint ref="jr:itext('/under_5_screening/malnutrition_screening/muac:hint')"/>
+      </input>
+      <select ref="/under_5_screening/malnutrition_screening/malnutrition_signs">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs:label')"/>
+        <hint ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs:hint')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs/hair_colour_changes:label')"/>
+          <value>hair_colour_changes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs/bilateral_pitting_oedema:label')"/>
+          <value>bilateral_pitting_oedema</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs/wasting:label')"/>
+          <value>wasting</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/malnutrition_screening/malnutrition_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/under_5_screening/malnutrition_screening/n_no_wasting">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/n_no_wasting:label')"/>
+      </input>
+      <input ref="/under_5_screening/malnutrition_screening/n_maln">
+        <label ref="jr:itext('/under_5_screening/malnutrition_screening/n_maln:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/under_5_screening/imci_screening">
+      <label ref="jr:itext('/under_5_screening/imci_screening:label')"/>
+      <select ref="/under_5_screening/imci_screening/imci_signs">
+        <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs:label')"/>
+        <hint ref="jr:itext('/under_5_screening/imci_screening/imci_signs:hint')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/fever_with_convulsions:label')"/>
+          <value>fever_with_convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/cough:label')"/>
+          <value>cough</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/diarrhoea:label')"/>
+          <value>diarrhoea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/fast_breathing:label')"/>
+          <value>fast_breathing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <select1 ref="/under_5_screening/imci_screening/imci_signs_duration">
+        <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/imci_screening/imci_signs_duration/6:label')"/>
+          <value>6</value>
+        </item>
+      </select1>
+      <input ref="/under_5_screening/imci_screening/n_refer">
+        <label ref="jr:itext('/under_5_screening/imci_screening/n_refer:label')"/>
+      </input>
+      <input ref="/under_5_screening/imci_screening/n_refer_and_accomp">
+        <label ref="jr:itext('/under_5_screening/imci_screening/n_refer_and_accomp:label')"/>
+      </input>
+    </group>
+    <group ref="/under_5_screening/vaccines_given">
+      <label ref="jr:itext('/under_5_screening/vaccines_given:label')"/>
+      <input ref="/under_5_screening/vaccines_given/n_confirm">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/n_confirm:label')"/>
+      </input>
+      <select1 ref="/under_5_screening/vaccines_given/report_vaccine">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/report_vaccine:label')"/>
+        <hint ref="jr:itext('/under_5_screening/vaccines_given/report_vaccine:hint')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/report_vaccine/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/report_vaccine/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/under_5_screening/vaccines_given/nn_visits_reported">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/nn_visits_reported:label')"/>
+        <hint ref="jr:itext('/under_5_screening/vaccines_given/nn_visits_reported:hint')"/>
+      </input>
+      <input ref="/under_5_screening/vaccines_given/n_visits_reported">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/n_visits_reported:label')"/>
+        <hint ref="jr:itext('/under_5_screening/vaccines_given/n_visits_reported:hint')"/>
+      </input>
+      <select1 ref="/under_5_screening/vaccines_given/reason_no_visit">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/reason_no_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/reason_no_visit/not_scheduled:label')"/>
+          <value>not_scheduled</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/reason_no_visit/not_started:label')"/>
+          <value>not_started</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/reason_no_visit/missed_visit:label')"/>
+          <value>missed_visit</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/vaccines_given/reason_no_visit/no_health_passport:label')"/>
+          <value>no_health_passport</value>
+        </item>
+      </select1>
+      <input ref="/under_5_screening/vaccines_given/n_refer_for_imm">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/n_refer_for_imm:label')"/>
+      </input>
+      <input ref="/under_5_screening/vaccines_given/n_advise">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/n_advise:label')"/>
+      </input>
+      <group ref="/under_5_screening/vaccines_given/visit_details">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/visit_details:label')"/>
+        <repeat appearance="field-list" jr:count=" /under_5_screening/vaccines_given/visit_details_count " nodeset="/under_5_screening/vaccines_given/visit_details">
+          <group ref="/under_5_screening/vaccines_given/visit_details/fields">
+            <label ref="jr:itext('/under_5_screening/vaccines_given/visit_details/fields:label')"/>
+            <input ref="/under_5_screening/vaccines_given/visit_details/fields/vaccine_date">
+              <label ref="jr:itext('/under_5_screening/vaccines_given/visit_details/fields/vaccine_date:label')"/>
+            </input>
+            <select ref="/under_5_screening/vaccines_given/visit_details/fields/vaccines">
+              <label ref="jr:itext('/under_5_screening/vaccines_given/visit_details/fields/vaccines:label')"/>
+              <hint ref="jr:itext('/under_5_screening/vaccines_given/visit_details/fields/vaccines:hint')"/>
+              <itemset nodeset="instance('vaccines')/root/item[age_limit_lower &lt;=  /under_5_screening/patient_age_in_weeks 
+and age_limit_upper &gt;  /under_5_screening/patient_age_in_weeks  and (bcg_group =  /under_5_screening/bcg_group  or birth_polio_group =  /under_5_screening/birth_polio_group  or opv_1_group =  /under_5_screening/opv_dose_1_group  or opv_2_group =  /under_5_screening/opv_dose_2_group  or opv_3_group =  /under_5_screening/opv_dose_3_group  or pcv_1_group =  /under_5_screening/pcv_dose_1_group  or pcv_2_group =  /under_5_screening/pcv_dose_2_group  or pcv_3_group =  /under_5_screening/pcv_dose_3_group  or dpt_hepb_hib_1_group =  /under_5_screening/dpt_hepb_hib_dose_1_group  or dpt_hepb_hib_2_group =  /under_5_screening/dpt_hepb_hib_dose_2_group  or dpt_hepb_hib_3_group =  /under_5_screening/dpt_hepb_hib_dose_3_group  or ipv_group =  /under_5_screening/ipv_group  or rota_1_group =  /under_5_screening/rota_dose_1_group  or rota_2_group =  /under_5_screening/rota_dose_2_group  or vitamin_a_group =  /under_5_screening/vitamin_a_group  or measles_1_group =  /under_5_screening/measles_dose_1_group  or measles_2_group =  /under_5_screening/measles_dose_2_group )]">
+                <value ref="name"/>
+                <label ref="jr:itext(itextId)"/>
+              </itemset>
+            </select>
+          </group>
+          <group appearance="hidden" ref="/under_5_screening/vaccines_given/visit_details/contact">
+            <group appearance="hidden" ref="/under_5_screening/vaccines_given/visit_details/contact/parent">
+              <group appearance="hidden" ref="/under_5_screening/vaccines_given/visit_details/contact/parent/parent"/>
+            </group>
+          </group>
+        </repeat>
+      </group>
+      <input ref="/under_5_screening/vaccines_given/next_visit">
+        <label ref="jr:itext('/under_5_screening/vaccines_given/next_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/under_5_screening/hospitalization_details">
+      <label ref="jr:itext('/under_5_screening/hospitalization_details:label')"/>
+      <group ref="/under_5_screening/hospitalization_details/fields">
+        <label ref="jr:itext('/under_5_screening/hospitalization_details/fields:label')"/>
+        <select1 ref="/under_5_screening/hospitalization_details/fields/hospitalized_this_month">
+          <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalized_this_month:label')"/>
+          <item>
+            <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalized_this_month/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalized_this_month/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+        <input ref="/under_5_screening/hospitalization_details/fields/hospitalization_date">
+          <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_date:label')"/>
+        </input>
+        <select ref="/under_5_screening/hospitalization_details/fields/hospitalization_reasons">
+          <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_reasons:label')"/>
+          <hint ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_reasons:hint')"/>
+          <itemset nodeset="instance('hospitalization_reasons')/root/item[is_in_art_group =  /under_5_screening/is_in_art_group  or is_in_tb_group =  /under_5_screening/is_in_tb_group  or is_in_others_group =  /under_5_screening/is_in_others_group ]">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select>
+        <input ref="/under_5_screening/hospitalization_details/fields/hospitalization_reasons_other">
+          <label ref="jr:itext('/under_5_screening/hospitalization_details/fields/hospitalization_reasons_other:label')"/>
+        </input>
+      </group>
+      <group appearance="hidden" ref="/under_5_screening/hospitalization_details/contact">
+        <group appearance="hidden" ref="/under_5_screening/hospitalization_details/contact/parent">
+          <group appearance="hidden" ref="/under_5_screening/hospitalization_details/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/under_5_screening/group_review">
+      <label ref="jr:itext('/under_5_screening/group_review:label')"/>
+      <input appearance="h1 blue" ref="/under_5_screening/group_review/n_summary_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_summary_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_submit">
+        <label ref="jr:itext('/under_5_screening/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/under_5_screening/group_review/n_patient_details_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_patient_details">
+        <label ref="jr:itext('/under_5_screening/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/under_5_screening/group_review/n_findings_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_malnutrition_signs_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_malnutrition_signs_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_muac_measurement">
+        <label ref="jr:itext('/under_5_screening/group_review/n_muac_measurement:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_malnutrition_enrolled">
+        <label ref="jr:itext('/under_5_screening/group_review/n_malnutrition_enrolled:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_malnutrition_ds_present">
+        <label ref="jr:itext('/under_5_screening/group_review/n_malnutrition_ds_present:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_malnutrition_ds_not_present">
+        <label ref="jr:itext('/under_5_screening/group_review/n_malnutrition_ds_not_present:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_maln_ref">
+        <label ref="jr:itext('/under_5_screening/group_review/n_maln_ref:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_imci_signs_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_imci_signs_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_imci_ds_present">
+        <label ref="jr:itext('/under_5_screening/group_review/n_imci_ds_present:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_imci_ds_not_present">
+        <label ref="jr:itext('/under_5_screening/group_review/n_imci_ds_not_present:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_refer_imci">
+        <label ref="jr:itext('/under_5_screening/group_review/n_refer_imci:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_refer_and_accomp_imci">
+        <label ref="jr:itext('/under_5_screening/group_review/n_refer_and_accomp_imci:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_immunization_update_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_immunization_update_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_next_immunization">
+        <label ref="jr:itext('/under_5_screening/group_review/n_next_immunization:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_imm_refer_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_imm_refer_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_hospitalization_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_hospitalization_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_hospitalized">
+        <label ref="jr:itext('/under_5_screening/group_review/n_hospitalized:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_not_hospitalized">
+        <label ref="jr:itext('/under_5_screening/group_review/n_not_hospitalized:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/under_5_screening/group_review/n_referral_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_referral">
+        <label ref="jr:itext('/under_5_screening/group_review/n_referral:label')"/>
+      </input>
+      <select1 ref="/under_5_screening/group_review/referred">
+        <label ref="jr:itext('/under_5_screening/group_review/referred:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/group_review/referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/group_review/referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/under_5_screening/group_review/ref_type">
+        <label ref="jr:itext('/under_5_screening/group_review/ref_type:label')"/>
+        <item>
+          <label ref="jr:itext('/under_5_screening/group_review/ref_type/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/under_5_screening/group_review/ref_type/no_chw:label')"/>
+          <value>no_chw</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/under_5_screening/group_review/n_follow_up_title">
+        <label ref="jr:itext('/under_5_screening/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/under_5_screening/group_review/n_follow_up">
+        <label ref="jr:itext('/under_5_screening/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

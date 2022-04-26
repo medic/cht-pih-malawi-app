@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CHW Home GPS</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/chw_household_gps/inputs/contact/_id:label">
+            <value>Which household are you visiting?</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/chw_household_gps/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/chw_household_gps/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/chw_household_gps/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/chw_household_gps/introduction/gps_activated/yes:label">
+            <value>Proceed only if checkbox is checked</value>
+          </text>
+          <text id="/chw_household_gps/introduction/gps_activated:label">
+            <value>Have you activated your GPS location?</value>
+          </text>
+          <text id="/chw_household_gps/introduction/n_intro_1:label">
+            <value>_Please use this form to capture the location of your household location. Ensure you are at your home when completing this form_</value>
+          </text>
+          <text id="/chw_household_gps/introduction/n_intro_2:label">
+            <value>_Please ensure that GPS is turned enabled on your phone before you proceed_</value>
+          </text>
+          <text id="/chw_household_gps/introduction:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/chw_household_gps/location/hh_gps:label">
+            <value>Please press the button below to capture the GPS location</value>
+          </text>
+          <text id="/chw_household_gps/location:label">
+            <value>Location</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/chw_household_gps/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/introduction/gps_activated/yes:label">
+            <value>Pitilizani pokhapokha ngati mu bokosimu mwachongeka</value>
+          </text>
+          <text id="/chw_household_gps/introduction/gps_activated:label">
+            <value>Kodi mwayatsa GPS pa foni panu?</value>
+          </text>
+          <text id="/chw_household_gps/introduction/n_intro_1:label">
+            <value>_Chonde gwiritsani ntchito fomu iyi pofuna kutenga GPS ya pa khomo lanu inuyo ngati a CHW. Wonetsetsani kuti muli pakhomo panu pamene mukutumiza fomu iyi_</value>
+          </text>
+          <text id="/chw_household_gps/introduction/n_intro_2:label">
+            <value>_Chonde wonetsetsani kuti GPS ndiyoyatsa pa foni panu musanapitilize_</value>
+          </text>
+          <text id="/chw_household_gps/introduction:label">
+            <value>Mau Oyamba</value>
+          </text>
+          <text id="/chw_household_gps/location/hh_gps:label">
+            <value>Chonde dinikizani batani lili m'munsili kuti muthe kutenga GPS ya yapakhomo lino</value>
+          </text>
+          <text id="/chw_household_gps/location:label">
+            <value>Malo</value>
+          </text>
+          <text id="/chw_household_gps/place_id:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/source:label">
+            <value>-</value>
+          </text>
+          <text id="/chw_household_gps/source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <chw_household_gps delimiter="#" id="chw_household_gps" prefix="J1!chw_household_gps!" version="2021-03-10 17:28:20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <place_id/>
+          <geolocation/>
+          <introduction>
+            <n_intro_1/>
+            <n_intro_2/>
+            <gps_activated/>
+          </introduction>
+          <location>
+            <hh_gps/>
+          </location>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </chw_household_gps>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/chw_household_gps/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/chw_household_gps/inputs/source" type="string"/>
+      <bind nodeset="/chw_household_gps/inputs/source_id" type="string"/>
+      <bind nodeset="/chw_household_gps/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/chw_household_gps/inputs/contact/name" type="string"/>
+      <bind nodeset="/chw_household_gps/inputs/contact/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/chw_household_gps/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/chw_household_gps/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/chw_household_gps/place_id" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/chw_household_gps/geolocation" type="string"/>
+      <bind nodeset="/chw_household_gps/introduction/n_intro_1" readonly="true()" type="string"/>
+      <bind nodeset="/chw_household_gps/introduction/n_intro_2" readonly="true()" type="string"/>
+      <bind nodeset="/chw_household_gps/introduction/gps_activated" required="true()" type="select"/>
+      <bind nodeset="/chw_household_gps/location/hh_gps" required="true()" type="geopoint"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/chw_household_gps/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/chw_household_gps/inputs">
+      <label ref="jr:itext('/chw_household_gps/inputs:label')"/>
+      <group ref="/chw_household_gps/inputs/contact">
+        <label ref="jr:itext('/chw_household_gps/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/chw_household_gps/inputs/contact/_id">
+          <label ref="jr:itext('/chw_household_gps/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/chw_household_gps/inputs/contact/parent">
+          <label ref="jr:itext('/chw_household_gps/inputs/contact/parent:label')"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/chw_household_gps/introduction">
+      <label ref="jr:itext('/chw_household_gps/introduction:label')"/>
+      <input ref="/chw_household_gps/introduction/n_intro_1">
+        <label ref="jr:itext('/chw_household_gps/introduction/n_intro_1:label')"/>
+      </input>
+      <input ref="/chw_household_gps/introduction/n_intro_2">
+        <label ref="jr:itext('/chw_household_gps/introduction/n_intro_2:label')"/>
+      </input>
+      <select accuracyThreshold="100" ref="/chw_household_gps/introduction/gps_activated">
+        <label ref="jr:itext('/chw_household_gps/introduction/gps_activated:label')"/>
+        <item>
+          <label ref="jr:itext('/chw_household_gps/introduction/gps_activated/yes:label')"/>
+          <value>yes</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/chw_household_gps/location">
+      <label ref="jr:itext('/chw_household_gps/location:label')"/>
+      <input appearance="maps" ref="/chw_household_gps/location/hh_gps">
+        <label ref="jr:itext('/chw_household_gps/location/hh_gps:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

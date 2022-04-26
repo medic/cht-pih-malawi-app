@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TRACE</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/trace/group_review/n_art:label">
+            <value>ART missed visit</value>
+          </text>
+          <text id="/trace/group_review/n_due_for_lab:label">
+            <value>Due for lab work</value>
+          </text>
+          <text id="/trace/group_review/n_lab_results:label">
+            <value>Lab results ready</value>
+          </text>
+          <text id="/trace/group_review/n_linkage_to_care:label">
+            <value>Linkage to care referral: Must attend IC3 for screening</value>
+          </text>
+          <text id="/trace/group_review/n_malnutrition:label">
+            <value>Malnutrition missed visit</value>
+          </text>
+          <text id="/trace/group_review/n_ncd:label">
+            <value>NCD missed visit</value>
+          </text>
+          <text id="/trace/group_review/n_next_appointment:label">
+            <value>_Next appointment date: <output value=" /trace/group_review/c_next_visit "/>_</value>
+          </text>
+          <text id="/trace/group_review/n_other:label">
+            <value>Other</value>
+          </text>
+          <text id="/trace/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /trace/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /trace/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/trace/group_review/n_patient_details_title:label">
+            <value>Person details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace/group_review/n_reason_title:label">
+            <value>TRACE reasons&lt;I class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/trace/group_review/n_tb:label">
+            <value>TB missed visit</value>
+          </text>
+          <text id="/trace/group_review:label">
+            <value>Summary page</value>
+          </text>
+          <text id="/trace/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/trace/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/trace/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/trace/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/trace/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/trace/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/trace/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/trace/trace_details/missed_appointment_date:jr:constraintMsg">
+            <value>Date must be in the past</value>
+          </text>
+          <text id="/trace/trace_details/missed_appointment_date:label">
+            <value>Date of recent missed appointment</value>
+          </text>
+          <text id="/trace/trace_details/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/trace/trace_details/next_visit:label">
+            <value>Date</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/art:label">
+            <value>ART missed visit</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/due_for_lab:label">
+            <value>Due for lab work</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/lab_results:label">
+            <value>Lab results ready</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/linkage_to_care:label">
+            <value>Linkage to care referral: Must attend IC3 for screening</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/malnutrition:label">
+            <value>Malnutrition missed visit</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/ncd:label">
+            <value>NCD missed visit</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/tb:label">
+            <value>TB missed visit</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons:label">
+            <value>TRACE reasons</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons_other:label">
+            <value>Specify</value>
+          </text>
+          <text id="/trace/trace_details/visit/ic3_clinic_date:label">
+            <value>Nearest IC3 clinic date</value>
+          </text>
+          <text id="/trace/trace_details/visit/immediately:label">
+            <value>Immediately</value>
+          </text>
+          <text id="/trace/trace_details/visit/next_appt_date:label">
+            <value>Next appointment date</value>
+          </text>
+          <text id="/trace/trace_details/visit:label">
+            <value>When should <output value=" /trace/patient_name "/> go to the health facility</value>
+          </text>
+          <text id="/trace/trace_details:label">
+            <value>TRACE details</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/trace/group_review/n_art:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a ART</value>
+          </text>
+          <text id="/trace/group_review/n_due_for_lab:label">
+            <value>Akufunika kupita ku lab</value>
+          </text>
+          <text id="/trace/group_review/n_lab_results:label">
+            <value>Zotsatira za ku Lab zatuluka</value>
+          </text>
+          <text id="/trace/group_review/n_linkage_to_care:label">
+            <value>Kulumikizitsa anthu omwe apezeka ndi vuto ku chipatala: Akuyenera kupita ku IC3 kuti akafufuzidwebe</value>
+          </text>
+          <text id="/trace/group_review/n_malnutrition:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a kunyetchera</value>
+          </text>
+          <text id="/trace/group_review/n_ncd:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala amatenda amgonagona</value>
+          </text>
+          <text id="/trace/group_review/n_next_appointment:label">
+            <value>_Tsiku lina lokawonana ndi adotolo ndi <output value=" /trace/group_review/c_next_visit "/>_</value>
+          </text>
+          <text id="/trace/group_review/n_other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/trace/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /trace/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /trace/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/trace/group_review/n_patient_details_title:label">
+            <value>Mbiri ya wodwala &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace/group_review/n_reason_title:label">
+            <value>Zifukwa zotulukira pa lipoti ya TRACE</value>
+          </text>
+          <text id="/trace/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/trace/group_review/n_tb:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a chifuwa chachikulu</value>
+          </text>
+          <text id="/trace/group_review:label">
+            <value>Tsamba lolembedwa mwachidule</value>
+          </text>
+          <text id="/trace/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/trace/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/trace/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/trace/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/trace/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/trace/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/trace/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/trace/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/trace/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/trace/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/trace/trace_details/missed_appointment_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/trace/trace_details/missed_appointment_date:label">
+            <value>Tsiku lomwe walephera kupita ku chipatala- la pompano</value>
+          </text>
+          <text id="/trace/trace_details/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/trace/trace_details/next_visit:label">
+            <value>Tsiku</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/art:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a ART</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/due_for_lab:label">
+            <value>Akufunika kupita ku lab</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/lab_results:label">
+            <value>Zotsatira za ku Lab zatuluka</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/linkage_to_care:label">
+            <value>Kulumikizitsa anthu omwe apezeka ndi vuto ku chipatala: Akuyenera kupita ku IC3  kuti akafufuzidwebe</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/malnutrition:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a kunyetchera</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/ncd:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala amatenda amgonagona</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons/tb:label">
+            <value>Sanafike kuchipatala kukalandira mankhwala a chifuwa chachikulu</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons:hint">
+            <value>Chongani chizindikiro china chiri chonse chomwe chiri chofunika</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons:label">
+            <value>Zifukwa zotulukira pa lipoti ya TRACE</value>
+          </text>
+          <text id="/trace/trace_details/trace_reasons_other:label">
+            <value>Fotokozani</value>
+          </text>
+          <text id="/trace/trace_details/visit/ic3_clinic_date:label">
+            <value>Tsiku latsamba loyandikira la IC3</value>
+          </text>
+          <text id="/trace/trace_details/visit/immediately:label">
+            <value>Nthawi yomweyo</value>
+          </text>
+          <text id="/trace/trace_details/visit/next_appt_date:label">
+            <value>Tsiku lotsatila</value>
+          </text>
+          <text id="/trace/trace_details/visit:label">
+            <value>Kodi <output value=" /trace/patient_name "/> adzapita liti kuchipatala?</value>
+          </text>
+          <text id="/trace/trace_details:label">
+            <value>Tsatanetsatane wa TRACE</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <trace delimiter="#" id="trace" prefix="J1!trace!" version="2021-03-08 19:04:56">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <trace_details>
+            <trace_reasons/>
+            <trace_reasons_other/>
+            <missed_appointment_date/>
+            <visit/>
+            <next_visit/>
+            <c_trace_ncd/>
+            <c_trace_art/>
+            <c_trace_tb/>
+            <c_trace_malnutrition/>
+            <c_trace_lab_results/>
+            <c_trace_due_for_lab/>
+            <c_trace_linkage_to_care/>
+            <c_trace_other/>
+            <c_trace_ic3/>
+            <c_trace_reasons/>
+          </trace_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_reason_title/>
+            <n_ncd/>
+            <n_art/>
+            <n_tb/>
+            <n_malnutrition/>
+            <n_lab_results/>
+            <n_due_for_lab/>
+            <n_linkage_to_care/>
+            <n_other/>
+            <c_next_visit/>
+            <n_next_appointment/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </trace>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/trace/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/trace/inputs/source" type="string"/>
+      <bind nodeset="/trace/inputs/source_id" type="string"/>
+      <bind nodeset="/trace/inputs/contact/_id" required="true()" type="db:person"/>
+      <bind nodeset="/trace/inputs/contact/name" type="string"/>
+      <bind nodeset="/trace/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/trace/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/trace/inputs/contact/sex" type="string"/>
+      <bind nodeset="/trace/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/trace/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/trace/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/trace/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/trace/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/trace/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/trace/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/trace/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/patient_id" nodeset="/trace/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/trace/patient_name" type="string"/>
+      <bind calculate="floor( difference-in-months( ../date_of_birth, today() ) div 12 )" nodeset="/trace/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months( ../date_of_birth, today() )" nodeset="/trace/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/trace/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/phone" nodeset="/trace/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/trace/geolocation" type="string"/>
+      <bind nodeset="/trace/trace_details/trace_reasons" required="true()" type="select"/>
+      <bind nodeset="/trace/trace_details/trace_reasons_other" relevant="selected(../trace_reasons, 'other')" required="true()" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt; decimal-date-time(today())" jr:constraintMsg="jr:itext('/trace/trace_details/missed_appointment_date:jr:constraintMsg')" nodeset="/trace/trace_details/missed_appointment_date" relevant="selected(../trace_reasons, 'ic3') or
+selected(../trace_reasons, 'tb') or 
+selected(../trace_reasons, 'malnutrition') or 
+selected(../trace_reasons, 'art') or 
+selected(../trace_reasons, 'ncd')" required="true()" type="date"/>
+      <bind nodeset="/trace/trace_details/visit" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/trace/trace_details/next_visit:jr:constraintMsg')" nodeset="/trace/trace_details/next_visit" relevant="../visit != '' and ../visit != 'immediately'" required="true()" type="date"/>
+      <bind calculate="if(selected(../trace_reasons, 'ncd'), 'NCD missed visit','')" nodeset="/trace/trace_details/c_trace_ncd" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'art'), 'ART missed visit','')" nodeset="/trace/trace_details/c_trace_art" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'tb'), 'TB missed visit','')" nodeset="/trace/trace_details/c_trace_tb" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'malnutrition'), 'Malnutrition missed visit','')" nodeset="/trace/trace_details/c_trace_malnutrition" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'lab_results'), 'Lab results ready','')" nodeset="/trace/trace_details/c_trace_lab_results" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'due_for_lab'), 'Due for lab work','')" nodeset="/trace/trace_details/c_trace_due_for_lab" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'linkage_to_care'), 'Linkage to care referral: Must attend IC3 for screening','')" nodeset="/trace/trace_details/c_trace_linkage_to_care" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'other'), 'Other','')" nodeset="/trace/trace_details/c_trace_other" type="string"/>
+      <bind calculate="if(selected(../trace_reasons, 'ncd') or selected(../trace_reasons, 'ncd'), 'IC3 clinic missed visit','')" nodeset="/trace/trace_details/c_trace_ic3" type="string"/>
+      <bind calculate="concat( /trace/trace_details/c_trace_ic3 , ', ',  /trace/trace_details/c_trace_tb , ', ',  /trace/trace_details/c_trace_malnutrition , ', ',  /trace/trace_details/c_trace_lab_results , ', ',  /trace/trace_details/c_trace_due_for_lab , ', ',  /trace/trace_details/c_trace_linkage_to_care , ', ',  /trace/trace_details/c_trace_other )" nodeset="/trace/trace_details/c_trace_reasons" type="string"/>
+      <bind nodeset="/trace/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/trace/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/trace/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /trace/patient_age_in_years , ' years ',  /trace/group_review/c_patient_mod_mnths , ' months old'),
+concat( /trace/patient_age_in_years , ' years old'))" nodeset="/trace/group_review/c_age_string" type="string"/>
+      <bind nodeset="/trace/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/trace/group_review/n_reason_title" readonly="true()" type="string"/>
+      <bind nodeset="/trace/group_review/n_ncd" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'ncd')" type="string"/>
+      <bind nodeset="/trace/group_review/n_art" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'art')" type="string"/>
+      <bind nodeset="/trace/group_review/n_tb" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'tb')" type="string"/>
+      <bind nodeset="/trace/group_review/n_malnutrition" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'malnutrition')" type="string"/>
+      <bind nodeset="/trace/group_review/n_lab_results" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'lab_results')" type="string"/>
+      <bind nodeset="/trace/group_review/n_due_for_lab" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'due_for_lab')" type="string"/>
+      <bind nodeset="/trace/group_review/n_linkage_to_care" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'linkage_to_care')" type="string"/>
+      <bind nodeset="/trace/group_review/n_other" readonly="true()" relevant="selected(../../trace_details/trace_reasons, 'other')" type="string"/>
+      <bind calculate="format-date(../../trace_details/next_visit, &quot;%d/%m/%Y&quot;)" nodeset="/trace/group_review/c_next_visit" type="string"/>
+      <bind nodeset="/trace/group_review/n_next_appointment" readonly="true()" relevant=" /trace/group_review/c_next_visit  !=''" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/trace/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/trace/inputs">
+      <label ref="jr:itext('/trace/inputs:label')"/>
+      <group ref="/trace/inputs/contact">
+        <input appearance="db-object" ref="/trace/inputs/contact/_id">
+          <label ref="jr:itext('/trace/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/trace/inputs/contact/parent">
+          <label ref="jr:itext('/trace/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/trace/inputs/contact/parent/parent">
+            <label ref="jr:itext('/trace/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/trace/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/trace/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/trace/trace_details">
+      <label ref="jr:itext('/trace/trace_details:label')"/>
+      <select ref="/trace/trace_details/trace_reasons">
+        <label ref="jr:itext('/trace/trace_details/trace_reasons:label')"/>
+        <hint ref="jr:itext('/trace/trace_details/trace_reasons:hint')"/>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/ncd:label')"/>
+          <value>ncd</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/art:label')"/>
+          <value>art</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/tb:label')"/>
+          <value>tb</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/malnutrition:label')"/>
+          <value>malnutrition</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/lab_results:label')"/>
+          <value>lab_results</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/due_for_lab:label')"/>
+          <value>due_for_lab</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/linkage_to_care:label')"/>
+          <value>linkage_to_care</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/trace_reasons/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/trace/trace_details/trace_reasons_other">
+        <label ref="jr:itext('/trace/trace_details/trace_reasons_other:label')"/>
+      </input>
+      <input ref="/trace/trace_details/missed_appointment_date">
+        <label ref="jr:itext('/trace/trace_details/missed_appointment_date:label')"/>
+      </input>
+      <select1 ref="/trace/trace_details/visit">
+        <label ref="jr:itext('/trace/trace_details/visit:label')"/>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/visit/immediately:label')"/>
+          <value>immediately</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/visit/next_appt_date:label')"/>
+          <value>next_appt_date</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace/trace_details/visit/ic3_clinic_date:label')"/>
+          <value>ic3_clinic_date</value>
+        </item>
+      </select1>
+      <input ref="/trace/trace_details/next_visit">
+        <label ref="jr:itext('/trace/trace_details/next_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/trace/group_review">
+      <label ref="jr:itext('/trace/group_review:label')"/>
+      <input ref="/trace/group_review/n_submit">
+        <label ref="jr:itext('/trace/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/trace/group_review/n_patient_details_title">
+        <label ref="jr:itext('/trace/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/trace/group_review/n_patient_details">
+        <label ref="jr:itext('/trace/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/trace/group_review/n_reason_title">
+        <label ref="jr:itext('/trace/group_review/n_reason_title:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_ncd">
+        <label ref="jr:itext('/trace/group_review/n_ncd:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_art">
+        <label ref="jr:itext('/trace/group_review/n_art:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_tb">
+        <label ref="jr:itext('/trace/group_review/n_tb:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_malnutrition">
+        <label ref="jr:itext('/trace/group_review/n_malnutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_lab_results">
+        <label ref="jr:itext('/trace/group_review/n_lab_results:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_due_for_lab">
+        <label ref="jr:itext('/trace/group_review/n_due_for_lab:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_linkage_to_care">
+        <label ref="jr:itext('/trace/group_review/n_linkage_to_care:label')"/>
+      </input>
+      <input appearance="li" ref="/trace/group_review/n_other">
+        <label ref="jr:itext('/trace/group_review/n_other:label')"/>
+      </input>
+      <input ref="/trace/group_review/n_next_appointment">
+        <label ref="jr:itext('/trace/group_review/n_next_appointment:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,2258 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Visit Verification</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/visit_verification/art_visit_details/art_side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/art_side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/art_side_effects:label">
+            <value>Side Effects</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee/guardian:label">
+            <value>Guardian</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee:label">
+            <value>ARVS issued to</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_no:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_no:label">
+            <value>ARVs No</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/cpt:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/cpt:label">
+            <value>CPT (No of tablets)</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/doses_missed:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/doses_missed:label">
+            <value>Doses missed</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/months_on_art:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/months_on_art:label">
+            <value>Months on ART</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/n_viral_load:label">
+            <value>&lt;span style="color:green;"&gt;**Viral load**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/n_viral_load_result:label">
+            <value>**_Lower than Detection Limit (LDL)_**</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pill_count:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pill_count:label">
+            <value>Pill count</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care/breastfeeding:label">
+            <value>Breastfeeding</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care/pregnant:label">
+            <value>Pregnant</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care:label">
+            <value>Tick what applies for <output value=" /visit_verification/patient_name "/></value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/0a:label">
+            <value>0A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/0p:label">
+            <value>0P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/10a:label">
+            <value>10A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/11a:label">
+            <value>11A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/11p:label">
+            <value>11P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/12a:label">
+            <value>12A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/13a:label">
+            <value>13A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/14a:label">
+            <value>14A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/14p:label">
+            <value>14P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/15a:label">
+            <value>15A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/15p:label">
+            <value>15P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/16a:label">
+            <value>16A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/16p:label">
+            <value>16P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/17a:label">
+            <value>17A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/17p:label">
+            <value>17P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/1a:label">
+            <value>1A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/1p:label">
+            <value>1P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/2a:label">
+            <value>2A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/2p:label">
+            <value>2P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/3a:label">
+            <value>3A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/3p:label">
+            <value>3P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/4a:label">
+            <value>4A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/4p:label">
+            <value>4P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/5a:label">
+            <value>5A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/6a:label">
+            <value>6A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/7a:label">
+            <value>7A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/8a:label">
+            <value>8A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/9a:label">
+            <value>9A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/9p:label">
+            <value>9P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/non_standard:label">
+            <value>Non-Standard</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen:label">
+            <value>Regimen</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status:label">
+            <value>TB status</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load:label">
+            <value>Viral Load Result</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load_cutoff:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load_cutoff:label">
+            <value>Viral Load Result (&lt;)</value>
+          </text>
+          <text id="/visit_verification/art_visit_details:label">
+            <value>ART visit details</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/intermittent:label">
+            <value>Intermittent</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/mild:label">
+            <value>Mild Persistent</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/moderate:label">
+            <value>Moderate Persistent</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/severe:label">
+            <value>Severe Persistent</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/uncontrolled:label">
+            <value>Uncontrolled</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity:label">
+            <value>Asthma severity</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:label">
+            <value>Beclomethasone Inhaler dose</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/beclomethasone:label">
+            <value>Beclomethasone Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/salbutamol:label">
+            <value>Salbutamol Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication:label">
+            <value>Medication</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd:label">
+            <value>COPD</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today:label">
+            <value>Exacerbation today</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:label">
+            <value>Salbutamol Inhaler dose</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details:label">
+            <value>Chronic lung disease visit details</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:label">
+            <value>Amlodipine dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:label">
+            <value>Atenolol dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:label">
+            <value>Diastolic</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_systolic:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_systolic:label">
+            <value>Systolic</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/captopril_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/captopril_dose:label">
+            <value>Captopril dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/amlodipine:label">
+            <value>Amlodipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/atenolol:label">
+            <value>Atenolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/captopril:label">
+            <value>Captopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/enalapril:label">
+            <value>EnalApril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/glibenclamide:label">
+            <value>Glibenclamide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/hydrochlorothiazide:label">
+            <value>Hydrochlorothiazide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/lisinopril:label">
+            <value>Lisinopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/long_acting_insulin:label">
+            <value>Long-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/metformin:label">
+            <value>Metformin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/nifedipine:label">
+            <value>Nifedipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/propanolol:label">
+            <value>Propanolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/short_acting_insulin:label">
+            <value>Short-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication:label">
+            <value>Medication</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:label">
+            <value>EnalApril dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick/fasting:label">
+            <value>Fasting</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick/random:label">
+            <value>Random</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick:label">
+            <value>Fingerstick (mg/dl)</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:label">
+            <value>Glibenclamide dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hba1c:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hba1c:label">
+            <value>HbA1C (%)</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:label">
+            <value>Hydrochlorothiazide dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:label">
+            <value>Lisinopril dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:label">
+            <value>Long-acting Insulin dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/metformin_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/metformin_dose:label">
+            <value>Metformin dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/n_bp:label">
+            <value>&lt;span style="color:green;"&gt;**Blood Pressure (BP)**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/n_glucose:label">
+            <value>&lt;span style="color:green;"&gt;**Glucose Monitoring**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:label">
+            <value>Nifedipine dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:label">
+            <value>Propanolol dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:label">
+            <value>Short-acting Insulin dose</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details:label">
+            <value>Diabetes/Hypertension visit details</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/carbamazepine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/carbamazepine_dose:label">
+            <value>Carbamazepine dose</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/carbamazepine:label">
+            <value>Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/phenobarbital:label">
+            <value>Phenobarbital</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/phenytoin:label">
+            <value>Phenytoin</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication:label">
+            <value>Medication</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenobarbital_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenobarbital_dose:label">
+            <value>Phenobarbital dose</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenytoin_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenytoin_dose:label">
+            <value>Phenytoin dose</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/seizure_no:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/seizure_no:label">
+            <value>Seizure No</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details:label">
+            <value>Epilepsy visit details</value>
+          </text>
+          <text id="/visit_verification/group_review/n_next_appointment_date:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Next Appointment Date: <output value=" /visit_verification/group_review/c_next_visit "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /visit_verification/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /visit_verification/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_patient_details_title:label">
+            <value>Person details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_date:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Visit Date: <output value=" /visit_verification/group_review/c_visit_date "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_title:label">
+            <value>Findings&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_type:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;
+Visit Type: <output value=" /visit_verification/group_review/c_visit "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review:label">
+            <value>Visit Verification</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/visit_verification/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/visit_verification/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/visit_verification/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/carbamazepine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/carbamazepine_dose:label">
+            <value>Carbamazepine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/chloropromazine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/chloropromazine_dose:label">
+            <value>Chloropromazine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clopixol_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clopixol_dose:label">
+            <value>Clopixol dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clozapine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clozapine_dose:label">
+            <value>Clozapine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluoxetine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluoxetine_dose:label">
+            <value>Fluoxetine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluphenazine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluphenazine_dose:label">
+            <value>Fluphenazine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/haleperidol_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/haleperidol_dose:label">
+            <value>Haleperidol dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/carbamazepine:label">
+            <value>Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/chloropromazine:label">
+            <value>Chloropromazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/clopixol:label">
+            <value>Clopixol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/clozapine:label">
+            <value>Clozapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/fluoxetine:label">
+            <value>Fluoxetine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/fluphenazine:label">
+            <value>Fluphenazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/haleperidol:label">
+            <value>Haleperidol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/olanzapine:label">
+            <value>Olanzapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/other:label">
+            <value>Others (specify)</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/risperidone:label">
+            <value>Risperidone</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/sodium_valproate:label">
+            <value>Sodium Valproate</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/trifluoperazine:label">
+            <value>Trifluoperazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication:label">
+            <value>Medication</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:label">
+            <value><output value=" /visit_verification/mental_health_visit_details/mental_health_medication_other "/> dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects:label">
+            <value>Side Effects</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/olanzapine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/olanzapine_dose:label">
+            <value>Olanzapine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/risperidone_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/risperidone_dose:label">
+            <value>Risperidone dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/sodium_valproate_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/sodium_valproate_dose:label">
+            <value>Sodium Valproate dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/trifluoperazine_dose:jr:constraintMsg">
+            <value>Has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/trifluoperazine_dose:label">
+            <value>Trifluoperazine dose</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details:label">
+            <value>Mental health visit details</value>
+          </text>
+          <text id="/visit_verification/visit_details/height:jr:constraintMsg">
+            <value>Height has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/visit_details/height:label">
+            <value>Height</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized/no:label">
+            <value>No</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized:label">
+            <value>Hospitalized?</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/chronic_lung_disease:label">
+            <value>Asthma/chronic lung disease</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/diabetes_hypertension:label">
+            <value>Diabetes/Hypertension</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/epilepsy:label">
+            <value>Epilepsy</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/mental_health:label">
+            <value>Mental health</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds:label">
+            <value>Specify NCD Type</value>
+          </text>
+          <text id="/visit_verification/visit_details/next_appointment_date:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/visit_verification/visit_details/next_appointment_date:label">
+            <value>Next Appointment Date</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit/art:label">
+            <value>ART</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit/ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit:label">
+            <value>What visit would you like to confirm?</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit_date:label">
+            <value>Visit Date</value>
+          </text>
+          <text id="/visit_verification/visit_details/weight:jr:constraintMsg">
+            <value>Weight has to be greater than 0!</value>
+          </text>
+          <text id="/visit_verification/visit_details/weight:label">
+            <value>Weight</value>
+          </text>
+          <text id="/visit_verification/visit_details:label">
+            <value>Visit details</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/visit_verification/art_visit_details/art_side_effects/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/art_side_effects/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/art_side_effects:label">
+            <value>Zotsatira zoyipa</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee/guardian:label">
+            <value>Wosamalira</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee/patient:label">
+            <value>Wodwala</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_issuee:label">
+            <value>Ma ARV aperekedwa kwa</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_no:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/arvs_no:label">
+            <value>Nambala ya ARV</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/cpt:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/cpt:label">
+            <value>CPT (Chiwerengero cha mapiritsi)</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/doses_missed:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/doses_missed:label">
+            <value>Mlingo waphonya</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/months_on_art:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/months_on_art:label">
+            <value>Miyezi pa ART</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/n_viral_load:label">
+            <value>&lt;span style="color:green;"&gt;**Katundu wambiri**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/n_viral_load_result:label">
+            <value>**_Ochepera pozindikira Malire (LDL)_**</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pill_count:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pill_count:label">
+            <value>Kuwerengera mapiritsi</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care/breastfeeding:label">
+            <value>Kuyamwitsa</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care/pregnant:label">
+            <value>Woyembekezera</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/pregnancy_care:label">
+            <value>Chongani zomwe zikugwira ntchito kwa <output value=" /visit_verification/patient_name "/></value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/0a:label">
+            <value>0A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/0p:label">
+            <value>0P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/10a:label">
+            <value>10A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/11a:label">
+            <value>11A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/11p:label">
+            <value>11P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/12a:label">
+            <value>12A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/13a:label">
+            <value>13A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/14a:label">
+            <value>14A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/14p:label">
+            <value>14P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/15a:label">
+            <value>15A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/15p:label">
+            <value>15P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/16a:label">
+            <value>16A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/16p:label">
+            <value>16P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/17a:label">
+            <value>17A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/17p:label">
+            <value>17P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/1a:label">
+            <value>1A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/1p:label">
+            <value>1P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/2a:label">
+            <value>2A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/2p:label">
+            <value>2P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/3a:label">
+            <value>3A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/3p:label">
+            <value>3P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/4a:label">
+            <value>4A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/4p:label">
+            <value>4P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/5a:label">
+            <value>5A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/6a:label">
+            <value>6A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/7a:label">
+            <value>7A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/8a:label">
+            <value>8A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/9a:label">
+            <value>9A</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/9p:label">
+            <value>9P</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen/non_standard:label">
+            <value>Osati muyezo</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/regimen:label">
+            <value>Malangizo</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/tb_status:label">
+            <value>Chifuwa chachikulu</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load:label">
+            <value>Zotsatira Za Katundu Wamagulu</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load_cutoff:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/art_visit_details/viral_load_cutoff:label">
+            <value>Zotsatira Za Katundu Wamagulu (&lt;)</value>
+          </text>
+          <text id="/visit_verification/art_visit_details:label">
+            <value>Tsatanetsatane wa ulendo wa ART</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/intermittent:label">
+            <value>Wapakatikati</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/mild:label">
+            <value>Wofatsa</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/moderate:label">
+            <value>Wasaizi</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/severe:label">
+            <value>Kwambiri</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity/uncontrolled:label">
+            <value>Wosalamulirika</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/asthma_severity:label">
+            <value>Kuuma Kwa Mphumu</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:label">
+            <value>Mlingo wa Beclomethasone Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/beclomethasone:label">
+            <value>Beclomethasone Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/salbutamol:label">
+            <value>Salbutamol Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication:label">
+            <value>Mankhwala</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/copd:label">
+            <value>COPD</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today:label">
+            <value>Kuchuluka lero</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:label">
+            <value>Mlingo wa Salbutamol Inhaler</value>
+          </text>
+          <text id="/visit_verification/chronic_lung_disease_visit_details:label">
+            <value>Tsatanetsatane wa ulendo wa mphumu/matenda a m'mapapo</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:label">
+            <value>Mlingo wa Amlodipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:label">
+            <value>Mlingo wa Atenolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:label">
+            <value>Diastolic</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_systolic:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/bp_systolic:label">
+            <value>Systolic</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/captopril_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/captopril_dose:label">
+            <value>Mlingo wa Captopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/amlodipine:label">
+            <value>Amlodipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/atenolol:label">
+            <value>Atenolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/captopril:label">
+            <value>Captopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/enalapril:label">
+            <value>EnalApril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/glibenclamide:label">
+            <value>Glibenclamide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/hydrochlorothiazide:label">
+            <value>Hydrochlorothiazide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/lisinopril:label">
+            <value>Lisinopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/long_acting_insulin:label">
+            <value>Long-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/metformin:label">
+            <value>Metformin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/nifedipine:label">
+            <value>Nifedipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/propanolol:label">
+            <value>Propanolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/short_acting_insulin:label">
+            <value>Short-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication:label">
+            <value>Mankhwala</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:label">
+            <value>Mlingo wa EnalApril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick/fasting:label">
+            <value>Kusala shuga wamagazi</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick/random:label">
+            <value>Shuga wosasintha mwazi</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/fingerstick:label">
+            <value>Fingerstick (mg/dl)</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:label">
+            <value>Mlingo wa Glibenclamide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hba1c:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hba1c:label">
+            <value>HbA1C (%)</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:label">
+            <value>Mlingo wa Hydrochlorothiazide</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:label">
+            <value>Mlingo wa Lisinopril</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:label">
+            <value>Mlingo wa Long-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/metformin_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/metformin_dose:label">
+            <value>Mlingo wa Metformin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/n_bp:label">
+            <value>&lt;span style="color:green;"&gt;**Kuthamanga kwa Magazi (BP)**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/n_glucose:label">
+            <value>&lt;span style="color:green;"&gt;**Kuwunika Glucose**&lt;/span&gt;</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:label">
+            <value>Mlingo wa Nifedipine</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:label">
+            <value>Mlingo wa Propanolol</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:label">
+            <value>Mlingo wa Short-acting Insulin</value>
+          </text>
+          <text id="/visit_verification/diabetes_hypertension_visit_details:label">
+            <value>Tsatanetsatane wa ulendo wa matenda a Shuga/Kuthamanga kwa magazi</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/carbamazepine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/carbamazepine_dose:label">
+            <value>Mlingo wa Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/carbamazepine:label">
+            <value>Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/phenobarbital:label">
+            <value>Phenobarbital</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication/phenytoin:label">
+            <value>Phenytoin</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/epilepsy_medication:label">
+            <value>Mankhwala</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenobarbital_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenobarbital_dose:label">
+            <value>Mlingo wa Phenobarbital</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenytoin_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/phenytoin_dose:label">
+            <value>Mlingo wa Phenytoin</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/seizure_no:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details/seizure_no:label">
+            <value>Chiwerengero cha kugwidwa</value>
+          </text>
+          <text id="/visit_verification/epilepsy_visit_details:label">
+            <value>Tsatanetsatane wa ulendo wa khunyu</value>
+          </text>
+          <text id="/visit_verification/group_review/n_next_appointment_date:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Tsiku lina loti apite ku chipatala: <output value=" /visit_verification/group_review/c_next_visit "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /visit_verification/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /visit_verification/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_patient_details_title:label">
+            <value>Mbiri ya wodwala &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_date:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Tsiku: <output value=" /visit_verification/group_review/c_visit_date "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_title:label">
+            <value>Zotsatira&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review/n_visit_type:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Ulendo: <output value=" /visit_verification/group_review/c_visit_ny "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/visit_verification/group_review:label">
+            <value>Pitani kutsimikizira</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/visit_verification/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/visit_verification/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/visit_verification/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/visit_verification/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/carbamazepine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/carbamazepine_dose:label">
+            <value>Mlingo wa Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/chloropromazine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/chloropromazine_dose:label">
+            <value>Mlingo wa Chloropromazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clopixol_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clopixol_dose:label">
+            <value>Mlingo wa Clopixol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clozapine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/clozapine_dose:label">
+            <value>Mlingo wa Clozapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluoxetine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluoxetine_dose:label">
+            <value>Mlingo wa Fluoxetine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluphenazine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/fluphenazine_dose:label">
+            <value>Mlingo wa Fluphenazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/haleperidol_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/haleperidol_dose:label">
+            <value>Mlingo wa Haleperidol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/carbamazepine:label">
+            <value>Carbamazepine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/chloropromazine:label">
+            <value>Chloropromazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/clopixol:label">
+            <value>Clopixol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/clozapine:label">
+            <value>Clozapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/fluoxetine:label">
+            <value>Fluoxetine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/fluphenazine:label">
+            <value>Fluphenazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/haleperidol:label">
+            <value>Haleperidol</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/olanzapine:label">
+            <value>Olanzapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/other:label">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/risperidone:label">
+            <value>Risperidone</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/sodium_valproate:label">
+            <value>Sodium Valproate</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication/trifluoperazine:label">
+            <value>Trifluoperazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication:label">
+            <value>Mankhwala</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:label">
+            <value>Mlingo wa <output value=" /visit_verification/mental_health_visit_details/mental_health_medication_other "/></value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/ncd_side_effects:label">
+            <value>Zotsatira zoyipa</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/olanzapine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/olanzapine_dose:label">
+            <value>Mlingo wa Olanzapine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/risperidone_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/risperidone_dose:label">
+            <value>Mlingo wa Risperidone</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/sodium_valproate_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/sodium_valproate_dose:label">
+            <value>Mlingo wa Sodium Valproate</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/trifluoperazine_dose:jr:constraintMsg">
+            <value>Oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details/trifluoperazine_dose:label">
+            <value>Mlingo wa Trifluoperazine</value>
+          </text>
+          <text id="/visit_verification/mental_health_visit_details:label">
+            <value>Tsatanetsatane wa ulendo wa matenda a mu ubongo</value>
+          </text>
+          <text id="/visit_verification/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/visit_verification/visit_details/height:jr:constraintMsg">
+            <value>Utali oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/visit_details/height:label">
+            <value>Utali</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/visit_verification/visit_details/hospitalized:label">
+            <value>Anagonekedwapo m'chipatala?</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/chronic_lung_disease:label">
+            <value>Mphumu/matenda a m'mapapo</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/diabetes_hypertension:label">
+            <value>Matenda a Shuga/Kuthamanga kwa magazi</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/epilepsy:label">
+            <value>Khunyu</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds/mental_health:label">
+            <value>Matenda a mu ubongo</value>
+          </text>
+          <text id="/visit_verification/visit_details/ncds:label">
+            <value>Mtundu wa NCD</value>
+          </text>
+          <text id="/visit_verification/visit_details/next_appointment_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/visit_verification/visit_details/next_appointment_date:label">
+            <value>Tsiku lina loti apite ku chipatala</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit/art:label">
+            <value>ART</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit/ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit:label">
+            <value>Ndiulendo uti womwe mukufuna kutsimikizira?</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/visit_verification/visit_details/visit_date:label">
+            <value>Tsiku lokaona</value>
+          </text>
+          <text id="/visit_verification/visit_details/weight:jr:constraintMsg">
+            <value>Ulemera oyendera aposele 0!</value>
+          </text>
+          <text id="/visit_verification/visit_details/weight:label">
+            <value>Kulemera</value>
+          </text>
+          <text id="/visit_verification/visit_details:label">
+            <value>Tsatanetsatane wa ulendo</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <visit_verification delimiter="#" id="visit_verification" prefix="J1!visit_verification!" version="2021-03-19 11:55:55">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <patient_sex/>
+          <visit_details>
+            <visit/>
+            <ncds/>
+            <visit_date/>
+            <height/>
+            <weight/>
+            <hospitalized/>
+            <next_appointment_date/>
+          </visit_details>
+          <art_visit_details>
+            <pregnancy_care/>
+            <tb_status/>
+            <art_side_effects/>
+            <pill_count/>
+            <doses_missed/>
+            <regimen/>
+            <arvs_no/>
+            <arvs_issuee/>
+            <cpt/>
+            <months_on_art/>
+            <n_viral_load/>
+            <viral_load/>
+            <viral_load_cutoff/>
+            <ldl/>
+            <n_viral_load_result/>
+          </art_visit_details>
+          <diabetes_hypertension_visit_details>
+            <n_bp/>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <n_glucose/>
+            <hba1c/>
+            <fingerstick/>
+            <diabetes_hypertension_medication/>
+            <hydrochlorothiazide_dose/>
+            <captopril_dose/>
+            <amlodipine_dose/>
+            <enalapril_dose/>
+            <nifedipine_dose/>
+            <atenolol_dose/>
+            <lisinopril_dose/>
+            <propanolol_dose/>
+            <long_acting_insulin_dose/>
+            <short_acting_insulin_dose/>
+            <metformin_dose/>
+            <glibenclamide_dose/>
+          </diabetes_hypertension_visit_details>
+          <chronic_lung_disease_visit_details>
+            <exacerbation_today/>
+            <asthma_severity/>
+            <copd/>
+            <chronic_lung_disease_medication/>
+            <salbutamol_dose/>
+            <beclomethasone_dose/>
+          </chronic_lung_disease_visit_details>
+          <epilepsy_visit_details>
+            <seizure_no/>
+            <epilepsy_medication/>
+            <phenobarbital_dose/>
+            <phenytoin_dose/>
+            <carbamazepine_dose/>
+          </epilepsy_visit_details>
+          <mental_health_visit_details>
+            <ncd_side_effects/>
+            <mental_health_medication/>
+            <mental_health_medication_other/>
+            <chloropromazine_dose/>
+            <haleperidol_dose/>
+            <fluphenazine_dose/>
+            <carbamazepine_dose/>
+            <sodium_valproate_dose/>
+            <risperidone_dose/>
+            <fluoxetine_dose/>
+            <olanzapine_dose/>
+            <clozapine_dose/>
+            <trifluoperazine_dose/>
+            <clopixol_dose/>
+            <mental_health_medication_other_dose/>
+          </mental_health_visit_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_visit_title/>
+            <c_visit/>
+            <c_visit_ny/>
+            <c_visit_date/>
+            <c_next_visit/>
+            <n_visit_type/>
+            <n_visit_date/>
+            <n_next_appointment_date/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </visit_verification>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/visit_verification/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/visit_verification/inputs/source" type="string"/>
+      <bind nodeset="/visit_verification/inputs/source_id" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/_id" required="true()" type="db:person"/>
+      <bind nodeset="/visit_verification/inputs/contact/name" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/sex" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/visit_verification/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/visit_verification/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/visit_verification/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/visit_verification/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/patient_id" nodeset="/visit_verification/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/visit_verification/patient_name" type="string"/>
+      <bind calculate="floor( difference-in-months( ../date_of_birth, today() ) div 12 )" nodeset="/visit_verification/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months( ../date_of_birth, today() )" nodeset="/visit_verification/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/visit_verification/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/phone" nodeset="/visit_verification/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/visit_verification/geolocation" type="string"/>
+      <bind calculate="../inputs/contact/sex" nodeset="/visit_verification/patient_sex" type="string"/>
+      <bind nodeset="/visit_verification/visit_details/visit" required="true()" type="select"/>
+      <bind nodeset="/visit_verification/visit_details/ncds" relevant="selected( /visit_verification/visit_details/visit , 'ncd')" required="true()" type="select"/>
+      <bind constraint="decimal-date-time(.) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/visit_verification/visit_details/visit_date:jr:constraintMsg')" nodeset="/visit_verification/visit_details/visit_date" required="true()" type="date"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/visit_details/height:jr:constraintMsg')" nodeset="/visit_verification/visit_details/height" required="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/visit_details/weight:jr:constraintMsg')" nodeset="/visit_verification/visit_details/weight" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/visit_details/hospitalized" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/visit_verification/visit_details/next_appointment_date:jr:constraintMsg')" nodeset="/visit_verification/visit_details/next_appointment_date" required="true()" type="date"/>
+      <bind nodeset="/visit_verification/art_visit_details" relevant="selected( /visit_verification/visit_details/visit , 'art')"/>
+      <bind nodeset="/visit_verification/art_visit_details/pregnancy_care" relevant=" /visit_verification/patient_sex ='female'" type="select1"/>
+      <bind nodeset="/visit_verification/art_visit_details/tb_status" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/art_visit_details/art_side_effects" required="true()" type="select1"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/pill_count:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/pill_count" required="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/doses_missed:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/doses_missed" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/art_visit_details/regimen" required="true()" type="select1"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/arvs_no:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/arvs_no" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/art_visit_details/arvs_issuee" required="true()" type="select1"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/cpt:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/cpt" required="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/months_on_art:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/months_on_art" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/art_visit_details/n_viral_load" readonly="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/viral_load:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/viral_load" required="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/art_visit_details/viral_load_cutoff:jr:constraintMsg')" nodeset="/visit_verification/art_visit_details/viral_load_cutoff" required="true()" type="string"/>
+      <bind calculate="if(number( /visit_verification/art_visit_details/viral_load ) &lt; number( /visit_verification/art_visit_details/viral_load_cutoff ), 'true', 'false')" nodeset="/visit_verification/art_visit_details/ldl" type="string"/>
+      <bind nodeset="/visit_verification/art_visit_details/n_viral_load_result" readonly="true()" relevant=" /visit_verification/art_visit_details/ldl ='true'" type="string"/>
+      <bind nodeset="/visit_verification/diabetes_hypertension_visit_details" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')"/>
+      <bind nodeset="/visit_verification/diabetes_hypertension_visit_details/n_bp" readonly="true()" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/bp_systolic:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/bp_systolic" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" required="true()" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/diabetes_hypertension_visit_details/n_glucose" readonly="true()" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" type="string"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/hba1c:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/hba1c" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/diabetes_hypertension_visit_details/fingerstick" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication" relevant="selected( /visit_verification/visit_details/ncds , 'diabetes_hypertension')" required="true()" type="select"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'hydrochlorothiazide')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/captopril_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/captopril_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'captopril')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'amlodipine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'enalapril')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'nifedipine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'atenolol')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'lisinopril')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'propanolol')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'long_acting_insulin')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'short_acting_insulin')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/metformin_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/metformin_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'metformin')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:jr:constraintMsg')" nodeset="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose" relevant="selected( /visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication , 'glibenclamide')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/chronic_lung_disease_visit_details" relevant="selected( /visit_verification/visit_details/ncds , 'chronic_lung_disease')"/>
+      <bind nodeset="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today" relevant="selected( /visit_verification/visit_details/ncds , 'chronic_lung_disease')" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/chronic_lung_disease_visit_details/asthma_severity" relevant="selected( /visit_verification/visit_details/ncds , 'chronic_lung_disease')" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/chronic_lung_disease_visit_details/copd" relevant="selected( /visit_verification/visit_details/ncds , 'chronic_lung_disease')" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication" relevant="selected( /visit_verification/visit_details/ncds , 'chronic_lung_disease')" required="true()" type="select"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:jr:constraintMsg')" nodeset="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose" relevant="selected( /visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication , 'salbutamol')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:jr:constraintMsg')" nodeset="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose" relevant="selected( /visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication , 'beclomethasone')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/epilepsy_visit_details" relevant="selected( /visit_verification/visit_details/ncds , 'epilepsy')"/>
+      <bind constraint=". &gt; 0" jr:constraintMsg="jr:itext('/visit_verification/epilepsy_visit_details/seizure_no:jr:constraintMsg')" nodeset="/visit_verification/epilepsy_visit_details/seizure_no" relevant="selected( /visit_verification/visit_details/ncds , 'epilepsy')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/epilepsy_visit_details/epilepsy_medication" relevant="selected( /visit_verification/visit_details/ncds , 'epilepsy')" required="true()" type="select"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/epilepsy_visit_details/phenobarbital_dose:jr:constraintMsg')" nodeset="/visit_verification/epilepsy_visit_details/phenobarbital_dose" relevant="selected( /visit_verification/epilepsy_visit_details/epilepsy_medication , 'phenobarbital')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/epilepsy_visit_details/phenytoin_dose:jr:constraintMsg')" nodeset="/visit_verification/epilepsy_visit_details/phenytoin_dose" relevant="selected( /visit_verification/epilepsy_visit_details/epilepsy_medication , 'phenytoin')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/epilepsy_visit_details/carbamazepine_dose:jr:constraintMsg')" nodeset="/visit_verification/epilepsy_visit_details/carbamazepine_dose" relevant="selected( /visit_verification/epilepsy_visit_details/epilepsy_medication , 'carbamazepine')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/mental_health_visit_details" relevant="selected( /visit_verification/visit_details/ncds , 'mental_health')"/>
+      <bind nodeset="/visit_verification/mental_health_visit_details/ncd_side_effects" relevant="selected( /visit_verification/visit_details/ncds , 'mental_health')" required="true()" type="select1"/>
+      <bind nodeset="/visit_verification/mental_health_visit_details/mental_health_medication" relevant="selected( /visit_verification/visit_details/ncds , 'mental_health')" required="true()" type="select"/>
+      <bind nodeset="/visit_verification/mental_health_visit_details/mental_health_medication_other" relevant="selected(../mental_health_medication, 'other')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/chloropromazine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/chloropromazine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'chloropromazine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/haleperidol_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/haleperidol_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'haleperidol')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/fluphenazine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/fluphenazine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'fluphenazine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/carbamazepine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/carbamazepine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'carbamazepine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/sodium_valproate_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/sodium_valproate_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'sodium_valproate')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/risperidone_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/risperidone_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'risperidone')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/fluoxetine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/fluoxetine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'fluoxetine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/olanzapine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/olanzapine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'olanzapine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/clozapine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/clozapine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'clozapine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/trifluoperazine_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/trifluoperazine_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'trifluoperazine')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/clopixol_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/clopixol_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'clopixol')" required="true()" type="string"/>
+      <bind constraint=". &gt;0" jr:constraintMsg="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:jr:constraintMsg')" nodeset="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose" relevant="selected( /visit_verification/mental_health_visit_details/mental_health_medication , 'other')" required="true()" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/visit_verification/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /visit_verification/patient_age_in_years , ' years ',  /visit_verification/group_review/c_patient_mod_mnths , ' months old'),
+concat( /visit_verification/patient_age_in_years , ' years old'))" nodeset="/visit_verification/group_review/c_age_string" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_visit_title" readonly="true()" type="string"/>
+      <bind calculate="if(count-selected( /visit_verification/visit_details/visit )=1 and selected( /visit_verification/visit_details/visit , 'ncd'), 'NCD', if(count-selected( /visit_verification/visit_details/visit )=1 and selected( /visit_verification/visit_details/visit , 'art'), 'ART', if(count-selected( /visit_verification/visit_details/visit )=2, 'ART and NCD', '')))" nodeset="/visit_verification/group_review/c_visit" type="string"/>
+      <bind calculate="if(count-selected( /visit_verification/visit_details/visit )=1 and selected( /visit_verification/visit_details/visit , 'ncd'), 'NCD', if(count-selected( /visit_verification/visit_details/visit )=1 and selected( /visit_verification/visit_details/visit , 'art'), 'ART', if(count-selected( /visit_verification/visit_details/visit )=2, 'ART ndi NCD', '')))" nodeset="/visit_verification/group_review/c_visit_ny" type="string"/>
+      <bind calculate="format-date( /visit_verification/visit_details/visit_date , &quot;%d/%m/%Y&quot;)" nodeset="/visit_verification/group_review/c_visit_date" type="string"/>
+      <bind calculate="format-date( /visit_verification/visit_details/next_appointment_date , &quot;%d/%m/%Y&quot;)" nodeset="/visit_verification/group_review/c_next_visit" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_visit_type" readonly="true()" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_visit_date" readonly="true()" type="string"/>
+      <bind nodeset="/visit_verification/group_review/n_next_appointment_date" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/visit_verification/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/visit_verification/inputs">
+      <label ref="jr:itext('/visit_verification/inputs:label')"/>
+      <group ref="/visit_verification/inputs/contact">
+        <input appearance="db-object" ref="/visit_verification/inputs/contact/_id">
+          <label ref="jr:itext('/visit_verification/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/visit_verification/inputs/contact/parent">
+          <label ref="jr:itext('/visit_verification/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/visit_verification/inputs/contact/parent/parent">
+            <label ref="jr:itext('/visit_verification/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/visit_verification/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/visit_verification/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/visit_details">
+      <label ref="jr:itext('/visit_verification/visit_details:label')"/>
+      <select ref="/visit_verification/visit_details/visit">
+        <label ref="jr:itext('/visit_verification/visit_details/visit:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/visit/ncd:label')"/>
+          <value>ncd</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/visit/art:label')"/>
+          <value>art</value>
+        </item>
+      </select>
+      <select ref="/visit_verification/visit_details/ncds">
+        <label ref="jr:itext('/visit_verification/visit_details/ncds:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/ncds/diabetes_hypertension:label')"/>
+          <value>diabetes_hypertension</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/ncds/chronic_lung_disease:label')"/>
+          <value>chronic_lung_disease</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/ncds/epilepsy:label')"/>
+          <value>epilepsy</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/ncds/mental_health:label')"/>
+          <value>mental_health</value>
+        </item>
+      </select>
+      <input ref="/visit_verification/visit_details/visit_date">
+        <label ref="jr:itext('/visit_verification/visit_details/visit_date:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/visit_details/height">
+        <label ref="jr:itext('/visit_verification/visit_details/height:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/visit_details/weight">
+        <label ref="jr:itext('/visit_verification/visit_details/weight:label')"/>
+      </input>
+      <select1 ref="/visit_verification/visit_details/hospitalized">
+        <label ref="jr:itext('/visit_verification/visit_details/hospitalized:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/hospitalized/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/visit_details/hospitalized/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/visit_verification/visit_details/next_appointment_date">
+        <label ref="jr:itext('/visit_verification/visit_details/next_appointment_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/art_visit_details">
+      <label ref="jr:itext('/visit_verification/art_visit_details:label')"/>
+      <select1 ref="/visit_verification/art_visit_details/pregnancy_care">
+        <label ref="jr:itext('/visit_verification/art_visit_details/pregnancy_care:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/pregnancy_care/pregnant:label')"/>
+          <value>pregnant</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/pregnancy_care/breastfeeding:label')"/>
+          <value>breastfeeding</value>
+        </item>
+      </select1>
+      <select1 ref="/visit_verification/art_visit_details/tb_status">
+        <label ref="jr:itext('/visit_verification/art_visit_details/tb_status:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/tb_status/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/tb_status/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/visit_verification/art_visit_details/art_side_effects">
+        <label ref="jr:itext('/visit_verification/art_visit_details/art_side_effects:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/art_side_effects/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/art_side_effects/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="number" ref="/visit_verification/art_visit_details/pill_count">
+        <label ref="jr:itext('/visit_verification/art_visit_details/pill_count:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/art_visit_details/doses_missed">
+        <label ref="jr:itext('/visit_verification/art_visit_details/doses_missed:label')"/>
+      </input>
+      <select1 appearance="minimal" ref="/visit_verification/art_visit_details/regimen">
+        <label ref="jr:itext('/visit_verification/art_visit_details/regimen:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/0a:label')"/>
+          <value>0a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/0p:label')"/>
+          <value>0p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/1a:label')"/>
+          <value>1a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/1p:label')"/>
+          <value>1p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/2a:label')"/>
+          <value>2a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/2p:label')"/>
+          <value>2p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/3a:label')"/>
+          <value>3a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/3p:label')"/>
+          <value>3p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/4a:label')"/>
+          <value>4a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/4p:label')"/>
+          <value>4p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/5a:label')"/>
+          <value>5a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/6a:label')"/>
+          <value>6a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/7a:label')"/>
+          <value>7a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/8a:label')"/>
+          <value>8a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/9a:label')"/>
+          <value>9a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/9p:label')"/>
+          <value>9p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/10a:label')"/>
+          <value>10a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/11a:label')"/>
+          <value>11a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/11p:label')"/>
+          <value>11p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/12a:label')"/>
+          <value>12a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/13a:label')"/>
+          <value>13a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/14a:label')"/>
+          <value>14a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/14p:label')"/>
+          <value>14p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/15a:label')"/>
+          <value>15a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/15p:label')"/>
+          <value>15p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/16a:label')"/>
+          <value>16a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/16p:label')"/>
+          <value>16p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/17a:label')"/>
+          <value>17a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/17p:label')"/>
+          <value>17p</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/regimen/non_standard:label')"/>
+          <value>non_standard</value>
+        </item>
+      </select1>
+      <input appearance="number" ref="/visit_verification/art_visit_details/arvs_no">
+        <label ref="jr:itext('/visit_verification/art_visit_details/arvs_no:label')"/>
+      </input>
+      <select1 ref="/visit_verification/art_visit_details/arvs_issuee">
+        <label ref="jr:itext('/visit_verification/art_visit_details/arvs_issuee:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/arvs_issuee/patient:label')"/>
+          <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/art_visit_details/arvs_issuee/guardian:label')"/>
+          <value>guardian</value>
+        </item>
+      </select1>
+      <input appearance="number" ref="/visit_verification/art_visit_details/cpt">
+        <label ref="jr:itext('/visit_verification/art_visit_details/cpt:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/art_visit_details/months_on_art">
+        <label ref="jr:itext('/visit_verification/art_visit_details/months_on_art:label')"/>
+      </input>
+      <input ref="/visit_verification/art_visit_details/n_viral_load">
+        <label ref="jr:itext('/visit_verification/art_visit_details/n_viral_load:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/art_visit_details/viral_load">
+        <label ref="jr:itext('/visit_verification/art_visit_details/viral_load:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/art_visit_details/viral_load_cutoff">
+        <label ref="jr:itext('/visit_verification/art_visit_details/viral_load_cutoff:label')"/>
+      </input>
+      <input ref="/visit_verification/art_visit_details/n_viral_load_result">
+        <label ref="jr:itext('/visit_verification/art_visit_details/n_viral_load_result:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/diabetes_hypertension_visit_details">
+      <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details:label')"/>
+      <input ref="/visit_verification/diabetes_hypertension_visit_details/n_bp">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/n_bp:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/bp_systolic">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/bp_systolic:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/bp_diastolic">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/bp_diastolic:label')"/>
+      </input>
+      <input ref="/visit_verification/diabetes_hypertension_visit_details/n_glucose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/n_glucose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/hba1c">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/hba1c:label')"/>
+      </input>
+      <select1 ref="/visit_verification/diabetes_hypertension_visit_details/fingerstick">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/fingerstick:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/fingerstick/fasting:label')"/>
+          <value>fasting</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/fingerstick/random:label')"/>
+          <value>random</value>
+        </item>
+      </select1>
+      <select ref="/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/hydrochlorothiazide:label')"/>
+          <value>hydrochlorothiazide</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/captopril:label')"/>
+          <value>captopril</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/amlodipine:label')"/>
+          <value>amlodipine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/enalapril:label')"/>
+          <value>enalapril</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/nifedipine:label')"/>
+          <value>nifedipine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/atenolol:label')"/>
+          <value>atenolol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/lisinopril:label')"/>
+          <value>lisinopril</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/propanolol:label')"/>
+          <value>propanolol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/long_acting_insulin:label')"/>
+          <value>long_acting_insulin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/short_acting_insulin:label')"/>
+          <value>short_acting_insulin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/metformin:label')"/>
+          <value>metformin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/diabetes_hypertension_medication/glibenclamide:label')"/>
+          <value>glibenclamide</value>
+        </item>
+      </select>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/hydrochlorothiazide_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/captopril_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/captopril_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/amlodipine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/enalapril_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/enalapril_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/nifedipine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/atenolol_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/atenolol_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/lisinopril_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/propanolol_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/propanolol_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/long_acting_insulin_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/short_acting_insulin_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/metformin_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/metformin_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose">
+        <label ref="jr:itext('/visit_verification/diabetes_hypertension_visit_details/glibenclamide_dose:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/chronic_lung_disease_visit_details">
+      <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details:label')"/>
+      <select1 ref="/visit_verification/chronic_lung_disease_visit_details/exacerbation_today">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/exacerbation_today:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/exacerbation_today/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/visit_verification/chronic_lung_disease_visit_details/asthma_severity">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity/intermittent:label')"/>
+          <value>intermittent</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity/mild:label')"/>
+          <value>mild</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity/moderate:label')"/>
+          <value>moderate</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity/severe:label')"/>
+          <value>severe</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/asthma_severity/uncontrolled:label')"/>
+          <value>uncontrolled</value>
+        </item>
+      </select1>
+      <select1 ref="/visit_verification/chronic_lung_disease_visit_details/copd">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/copd:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/copd/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/copd/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/salbutamol:label')"/>
+          <value>salbutamol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/chronic_lung_disease_medication/beclomethasone:label')"/>
+          <value>beclomethasone</value>
+        </item>
+      </select>
+      <input appearance="number" ref="/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/salbutamol_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose">
+        <label ref="jr:itext('/visit_verification/chronic_lung_disease_visit_details/beclomethasone_dose:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/epilepsy_visit_details">
+      <label ref="jr:itext('/visit_verification/epilepsy_visit_details:label')"/>
+      <input appearance="number" ref="/visit_verification/epilepsy_visit_details/seizure_no">
+        <label ref="jr:itext('/visit_verification/epilepsy_visit_details/seizure_no:label')"/>
+      </input>
+      <select ref="/visit_verification/epilepsy_visit_details/epilepsy_medication">
+        <label ref="jr:itext('/visit_verification/epilepsy_visit_details/epilepsy_medication:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/epilepsy_visit_details/epilepsy_medication/phenobarbital:label')"/>
+          <value>phenobarbital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/epilepsy_visit_details/epilepsy_medication/phenytoin:label')"/>
+          <value>phenytoin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/epilepsy_visit_details/epilepsy_medication/carbamazepine:label')"/>
+          <value>carbamazepine</value>
+        </item>
+      </select>
+      <input appearance="number" ref="/visit_verification/epilepsy_visit_details/phenobarbital_dose">
+        <label ref="jr:itext('/visit_verification/epilepsy_visit_details/phenobarbital_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/epilepsy_visit_details/phenytoin_dose">
+        <label ref="jr:itext('/visit_verification/epilepsy_visit_details/phenytoin_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/epilepsy_visit_details/carbamazepine_dose">
+        <label ref="jr:itext('/visit_verification/epilepsy_visit_details/carbamazepine_dose:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/visit_verification/mental_health_visit_details">
+      <label ref="jr:itext('/visit_verification/mental_health_visit_details:label')"/>
+      <select1 ref="/visit_verification/mental_health_visit_details/ncd_side_effects">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/ncd_side_effects:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/ncd_side_effects/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/ncd_side_effects/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/visit_verification/mental_health_visit_details/mental_health_medication">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication:label')"/>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/chloropromazine:label')"/>
+          <value>chloropromazine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/haleperidol:label')"/>
+          <value>haleperidol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/fluphenazine:label')"/>
+          <value>fluphenazine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/carbamazepine:label')"/>
+          <value>carbamazepine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/sodium_valproate:label')"/>
+          <value>sodium_valproate</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/risperidone:label')"/>
+          <value>risperidone</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/fluoxetine:label')"/>
+          <value>fluoxetine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/olanzapine:label')"/>
+          <value>olanzapine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/clozapine:label')"/>
+          <value>clozapine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/trifluoperazine:label')"/>
+          <value>trifluoperazine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/clopixol:label')"/>
+          <value>clopixol</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/visit_verification/mental_health_visit_details/mental_health_medication_other">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication_other:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/chloropromazine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/chloropromazine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/haleperidol_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/haleperidol_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/fluphenazine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/fluphenazine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/carbamazepine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/carbamazepine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/sodium_valproate_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/sodium_valproate_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/risperidone_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/risperidone_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/fluoxetine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/fluoxetine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/olanzapine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/olanzapine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/clozapine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/clozapine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/trifluoperazine_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/trifluoperazine_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/clopixol_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/clopixol_dose:label')"/>
+      </input>
+      <input appearance="number" ref="/visit_verification/mental_health_visit_details/mental_health_medication_other_dose">
+        <label ref="jr:itext('/visit_verification/mental_health_visit_details/mental_health_medication_other_dose:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/visit_verification/group_review">
+      <label ref="jr:itext('/visit_verification/group_review:label')"/>
+      <input ref="/visit_verification/group_review/n_submit">
+        <label ref="jr:itext('/visit_verification/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/visit_verification/group_review/n_patient_details_title">
+        <label ref="jr:itext('/visit_verification/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/visit_verification/group_review/n_patient_details">
+        <label ref="jr:itext('/visit_verification/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/visit_verification/group_review/n_visit_title">
+        <label ref="jr:itext('/visit_verification/group_review/n_visit_title:label')"/>
+      </input>
+      <input ref="/visit_verification/group_review/n_visit_type">
+        <label ref="jr:itext('/visit_verification/group_review/n_visit_type:label')"/>
+      </input>
+      <input ref="/visit_verification/group_review/n_visit_date">
+        <label ref="jr:itext('/visit_verification/group_review/n_visit_date:label')"/>
+      </input>
+      <input ref="/visit_verification/group_review/n_next_appointment_date">
+        <label ref="jr:itext('/visit_verification/group_review/n_next_appointment_date:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

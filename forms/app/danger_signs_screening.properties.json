@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-generic-2",
+    "title": {
+        "en": "Danger signs screening",
+        "ny": "Kufufuza zizindikiro zoopsa"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && !contact.date_of_death && !contact.muted && (summary.pregnant === 'yes' || (summary.days_since_delivery >= 0 && summary.days_since_delivery <= 42) || ageInDays(contact) <= 42) && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

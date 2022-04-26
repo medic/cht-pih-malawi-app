@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Unmute household request</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/unmute_clinic/group_review/n_contact:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /unmute_clinic/place_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_muting_activated:label">
+            <value>_Tasks for <output value=" /unmute_clinic/place_name "/> will now start showing after submission of this form._</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_name:label">
+            <value>Household name</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason:label">
+            <value>Reason why the family was unmuted</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason_mute:label">
+            <value><output value=" /unmute_clinic/unmute_choice "/></value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason_mute_other:label">
+            <value><output value=" /unmute_clinic/unmute_request/reason_other "/></value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_title:label">
+            <value>Family Details &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/unmute_clinic/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/unmute_clinic/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/unmute_clinic/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/unmute_clinic/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/unmute_clinic/place_id:label">
+            <value>Place ID</value>
+          </text>
+          <text id="/unmute_clinic/place_name:label">
+            <value>Place Name</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/accepted_service:label">
+            <value>The family now accept PIH service</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/moved_back:label">
+            <value>Moved back</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/other:label">
+            <value>Others (specify)</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason:label">
+            <value>Reasons for unmute request</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request:label">
+            <value>Unmute request</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/unmute_clinic/group_review/n_contact:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /unmute_clinic/place_name "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_muting_activated:label">
+            <value>_Zotsatira za <output value=" /unmute_clinic/place_name "/> sidzisiya kuoneka pokhapokha mutatumiza uthenga wosalingalira pempho._</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_name:label">
+            <value>Household name</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason:label">
+            <value>Chifukwa chomwe banja analisiya pa chete</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason_mute:label">
+            <value><output value=" /unmute_clinic/unmute_choice "/></value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_reason_mute_other:label">
+            <value><output value=" /unmute_clinic/unmute_request/reason_other "/></value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/unmute_clinic/group_review/n_title:label">
+            <value>Family Details &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/unmute_clinic/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/unmute_clinic/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/unmute_clinic/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/unmute_clinic/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/unmute_clinic/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/accepted_service:label">
+            <value>Banja lavomereza tsopano kulandira upangiri wochokera ku bungwe la PIH</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/moved_back:label">
+            <value>Wabwerako</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason/other:label">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason:label">
+            <value>Zifukwa zochotsera pempholi</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request/reason_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/unmute_clinic/unmute_request:label">
+            <value>Kuchotsa pempho loyimitsa uthenga wokhudzana ndi munthuyi</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <unmute_clinic delimiter="#" id="unmute_clinic" prefix="J1!unmute_clinic!" version="2019-05-23 14:20:34">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <place_id/>
+          <place_name/>
+          <unmute_choice>0</unmute_choice>
+          <hh_contact/>
+          <geolocation/>
+          <unmute_request>
+            <reason/>
+            <reason_other/>
+          </unmute_request>
+          <group_review>
+            <n_submit/>
+            <n_title/>
+            <n_name/>
+            <n_contact/>
+            <n_reason/>
+            <n_reason_mute/>
+            <n_reason_mute_other/>
+            <n_muting_activated/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </unmute_clinic>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/unmute_clinic/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/unmute_clinic/inputs/source" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/source_id" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/_id" type="db:clinic"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/name" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/sex" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/unmute_clinic/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/unmute_clinic/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/unmute_clinic/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/unmute_clinic/place_id" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/unmute_clinic/place_name" type="string"/>
+      <bind calculate="if(string-length( /unmute_clinic/unmute_request/reason ) !=0,jr:choice-name( /unmute_clinic/unmute_request/reason , ' /unmute_clinic/unmute_request/reason '), 'None')" nodeset="/unmute_clinic/unmute_choice" type="string"/>
+      <bind calculate="../inputs/contact/contact/name" nodeset="/unmute_clinic/hh_contact" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/unmute_clinic/geolocation" type="string"/>
+      <bind nodeset="/unmute_clinic/unmute_request/reason" required="true()" type="select1"/>
+      <bind nodeset="/unmute_clinic/unmute_request/reason_other" relevant="selected(../reason, 'other')" required="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_title" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_name" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_contact" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_reason" readonly="true()" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_reason_mute" readonly="true()" relevant="not(selected(../../unmute_request/reason, 'other'))" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_reason_mute_other" readonly="true()" relevant="selected(../../unmute_request/reason, 'other')" type="string"/>
+      <bind nodeset="/unmute_clinic/group_review/n_muting_activated" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/unmute_clinic/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/unmute_clinic/inputs">
+      <label ref="jr:itext('/unmute_clinic/inputs:label')"/>
+      <group ref="/unmute_clinic/inputs/contact">
+        <label ref="jr:itext('/unmute_clinic/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/unmute_clinic/inputs/contact/_id">
+          <label ref="jr:itext('/unmute_clinic/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/unmute_clinic/inputs/contact/parent">
+          <label ref="jr:itext('/unmute_clinic/inputs/contact/parent:label')"/>
+          <group ref="/unmute_clinic/inputs/contact/parent/parent">
+            <label ref="jr:itext('/unmute_clinic/inputs/contact/parent/parent:label')"/>
+            <group ref="/unmute_clinic/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/unmute_clinic/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/unmute_clinic/unmute_request">
+      <label ref="jr:itext('/unmute_clinic/unmute_request:label')"/>
+      <select1 ref="/unmute_clinic/unmute_request/reason">
+        <label ref="jr:itext('/unmute_clinic/unmute_request/reason:label')"/>
+        <item>
+          <label ref="jr:itext('/unmute_clinic/unmute_request/reason/accepted_service:label')"/>
+          <value>accepted_service</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/unmute_clinic/unmute_request/reason/moved_back:label')"/>
+          <value>moved_back</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/unmute_clinic/unmute_request/reason/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/unmute_clinic/unmute_request/reason_other">
+        <label ref="jr:itext('/unmute_clinic/unmute_request/reason_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/unmute_clinic/group_review">
+      <label ref="jr:itext('/unmute_clinic/group_review:label')"/>
+      <input ref="/unmute_clinic/group_review/n_submit">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/unmute_clinic/group_review/n_title">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_title:label')"/>
+      </input>
+      <input appearance="h1" ref="/unmute_clinic/group_review/n_name">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_name:label')"/>
+      </input>
+      <input ref="/unmute_clinic/group_review/n_contact">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_contact:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/unmute_clinic/group_review/n_reason">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_reason:label')"/>
+      </input>
+      <input appearance="li" ref="/unmute_clinic/group_review/n_reason_mute">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_reason_mute:label')"/>
+      </input>
+      <input appearance="li" ref="/unmute_clinic/group_review/n_reason_mute_other">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_reason_mute_other:label')"/>
+      </input>
+      <input appearance="li" ref="/unmute_clinic/group_review/n_muting_activated">
+        <label ref="jr:itext('/unmute_clinic/group_review/n_muting_activated:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

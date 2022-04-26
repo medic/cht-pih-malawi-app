@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit household</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/clinic/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/data/clinic/geolocation:label">
+            <value>Location</value>
+          </text>
+          <text id="/data/clinic/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/clinic/parent:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/data/clinic:label">
+            <value>Edit Family</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>Inputs</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/data/clinic/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/clinic/geolocation:label">
+            <value>-</value>
+          </text>
+          <text id="/data/clinic/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/clinic/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/clinic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Facility ID for the parent user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:clinic:edit" prefix="J1!contact:clinic:edit!" version="2019-07-03 14:09:12">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <clinic>
+            <parent/>
+            <name/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </clinic>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/clinic/parent" relevant="false()" type="db:health_center"/>
+      <bind nodeset="/data/clinic/name" required="true()" type="string"/>
+      <bind nodeset="/data/clinic/contact" type="db:person"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/clinic/geolocation" type="string"/>
+      <bind nodeset="/data/clinic/meta/created_by" type="string"/>
+      <bind nodeset="/data/clinic/meta/created_by_person_uuid" type="string"/>
+      <bind nodeset="/data/clinic/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/clinic/meta/last_edited_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/clinic/meta/last_edited_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/clinic/meta/last_edited_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/data/clinic">
+      <label ref="jr:itext('/data/clinic:label')"/>
+      <input appearance="db-object bind-id-only hidden" ref="/data/clinic/parent">
+        <label ref="jr:itext('/data/clinic/parent:label')"/>
+      </input>
+      <input ref="/data/clinic/name">
+        <label ref="jr:itext('/data/clinic/name:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only hidden" ref="/data/clinic/contact">
+        <label ref="jr:itext('/data/clinic/contact:label')"/>
+      </input>
+      <group ref="/data/clinic/meta"/>
+    </group>
+  </h:body>
+</h:html>

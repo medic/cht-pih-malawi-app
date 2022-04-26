@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New Site</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/contact/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Full Name</value>
+          </text>
+          <text id="/data/contact/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/contact/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>New Person</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>Create a new person</value>
+          </text>
+          <text id="/data/init/create_new_person/none:label">
+            <value>Skip this step</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Set the Primary Contact</value>
+          </text>
+          <text id="/data/site/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/site/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/site/notes:label">
+            <value>Notes</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/contact/external_id:label">
+            <value>Kitambulisho cha nje</value>
+          </text>
+          <text id="/data/contact/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/contact/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/contact/notes:label">
+            <value>Maelezo</value>
+          </text>
+          <text id="/data/contact/phone:label">
+            <value>Namba ya Simi</value>
+          </text>
+          <text id="/data/contact/phone_alternate:label">
+            <value>Namba Ya</value>
+          </text>
+          <text id="/data/contact/sex/female:label">
+            <value>Kike</value>
+          </text>
+          <text id="/data/contact/sex/male:label">
+            <value>Kiume</value>
+          </text>
+          <text id="/data/contact/sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/contact:label">
+            <value>Mtu Mpya</value>
+          </text>
+          <text id="/data/init/create_new_person/new_person:label">
+            <value>Ongeza mtumizi mpya</value>
+          </text>
+          <text id="/data/init/create_new_person/none:label">
+            <value>Ruka hatua ii</value>
+          </text>
+          <text id="/data/init/create_new_person:label">
+            <value>Weka mwasiliwa mkuu</value>
+          </text>
+          <text id="/data/site/external_id:label">
+            <value>Namba ya nje</value>
+          </text>
+          <text id="/data/site/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/site/notes:label">
+            <value>Maelezo</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:site:create" prefix="J1!contact:site:create!" version="2020-02-11_07-52">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <site>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>site</contact_type>
+            <name/>
+            <external_id/>
+            <notes/>
+            <contact/>
+            <geolocation/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </site>
+          <init>
+            <create_new_person/>
+            <name/>
+          </init>
+          <contact>
+            <parent>PARENT</parent>
+            <type>contact</type>
+            <contact_type>site_supervisor</contact_type>
+            <name/>
+            <phone/>
+            <phone_alternate/>
+            <sex/>
+            <external_id/>
+            <notes/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </contact>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind nodeset="/data/init/create_new_person" required="true()" type="select1"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/contact" relevant="selected( /data/init/create_new_person ,'new_person')"/>
+      <bind nodeset="/data/contact/parent" type="string"/>
+      <bind nodeset="/data/contact/type" type="string"/>
+      <bind nodeset="/data/contact/contact_type" type="string"/>
+      <bind nodeset="/data/contact/name" required="true()" type="string"/>
+      <bind constraint="true()" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" nodeset="/data/contact/phone" relevant="selected( /data/init/create_new_person ,'new_person')" type="tel"/>
+      <bind constraint="true()" jr:constraintMsg="Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678" nodeset="/data/contact/phone_alternate" relevant="selected( /data/init/create_new_person ,'new_person')" type="tel"/>
+      <bind nodeset="/data/contact/sex" relevant="selected( /data/init/create_new_person ,'new_person')" required="true()" type="select1"/>
+      <bind nodeset="/data/contact/external_id" relevant="selected( /data/init/create_new_person ,'new_person')" type="string"/>
+      <bind nodeset="/data/contact/notes" relevant="selected( /data/init/create_new_person ,'new_person')" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/contact/meta/created_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/contact/meta/created_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/contact/meta/created_by_place_uuid" type="string"/>
+      <bind nodeset="/data/site/parent" type="string"/>
+      <bind nodeset="/data/site/type" type="string"/>
+      <bind nodeset="/data/site/contact_type" type="string"/>
+      <bind nodeset="/data/site/name" required="true()" type="string"/>
+      <bind nodeset="/data/site/external_id" type="string"/>
+      <bind nodeset="/data/site/notes" type="string"/>
+      <bind calculate="if(selected( /data/init/create_new_person ,'none'), &quot;&quot;, &quot;NEW&quot;)" nodeset="/data/site/contact" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/data/site/geolocation" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/site/meta/created_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/site/meta/created_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/site/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id"/>
+        <input ref="/data/inputs/user/facility_id"/>
+        <input ref="/data/inputs/user/name"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <select1 appearance="horizontal-compact" ref="/data/init/create_new_person">
+        <label ref="jr:itext('/data/init/create_new_person:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/new_person:label')"/>
+          <value>new_person</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/create_new_person/none:label')"/>
+          <value>none</value>
+        </item>
+      </select1>
+      <input appearance="hidden" ref="/data/init/name"/>
+      <group appearance="field-list" ref="/data/contact">
+        <label ref="jr:itext('/data/contact:label')"/>
+        <input ref="/data/contact/name">
+          <label ref="jr:itext('/data/contact/name:label')"/>
+        </input>
+        <input ref="/data/contact/phone">
+          <label ref="jr:itext('/data/contact/phone:label')"/>
+        </input>
+        <input ref="/data/contact/phone_alternate">
+          <label ref="jr:itext('/data/contact/phone_alternate:label')"/>
+        </input>
+        <select1 appearance="horizontal" ref="/data/contact/sex">
+          <label ref="jr:itext('/data/contact/sex:label')"/>
+          <item>
+            <label ref="jr:itext('/data/contact/sex/female:label')"/>
+            <value>female</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/contact/sex/male:label')"/>
+            <value>male</value>
+          </item>
+        </select1>
+        <input ref="/data/contact/external_id">
+          <label ref="jr:itext('/data/contact/external_id:label')"/>
+        </input>
+        <input appearance="multiline" ref="/data/contact/notes">
+          <label ref="jr:itext('/data/contact/notes:label')"/>
+        </input>
+        <group appearance="hidden" ref="/data/contact/meta"/>
+        </group>
+      </group>
+    <group appearance="field-list" ref="/data/site">
+      <input ref="/data/site/name">
+        <label ref="jr:itext('/data/site/name:label')"/>
+      </input>
+      <input ref="/data/site/external_id">
+        <label ref="jr:itext('/data/site/external_id:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/site/notes">
+        <label ref="jr:itext('/data/site/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/site/meta"/>
+    </group>
+  </h:body>
+</h:html>

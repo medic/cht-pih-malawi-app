@@ -1,0 +1,15 @@
+{
+    "icon": "icon-followup-general",
+    "title": {
+        "en": "Monthly treatment follow up",
+        "ny": "Kalondolondo wa pa mwezi"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && (summary.pregnant === 'yes' || (summary.is_in_art === 'yes' && summary.art_duration_years > 1) || (summary.is_in_malnutrition === 'yes' && ageInYears(contact) < 5) || summary.is_in_ncd === 'yes') && !contact.date_of_death && !contact.muted && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

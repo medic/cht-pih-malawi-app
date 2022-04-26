@@ -1,0 +1,900 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Facility reports</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/facility_reports/cmam/cmam_patients_facility:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_facility:label">
+            <value>Number of &lt;5 clients enrolled in the CMAM program at the facility in the month (SFP and OTP)</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_program:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_program:label">
+            <value>Total number of clients active in the CMAM program (SFP and OTP) (cumulative for the catchment area)</value>
+          </text>
+          <text id="/facility_reports/cmam:label">
+            <value>CMAM: &lt;5 only</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/aeho:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/aeho:label">
+            <value>AEHO</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/chn:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/chn:label">
+            <value>CHN</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/cma:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/cma:label">
+            <value>CMA</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/hsa:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/hsa:label">
+            <value>HSAs</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/shsa:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/shsa:label">
+            <value>SHSAs</value>
+          </text>
+          <text id="/facility_reports/health_worker_count:label">
+            <value>Indicate how many of the following health workers you have in your catchment area</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_facility:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_facility:label">
+            <value>Number of HIV clients enrolled at the facility in the month</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_program:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_program:label">
+            <value>Total number of clients active in the HIV program (cumulative for the catchment area)—Facility Data</value>
+          </text>
+          <text id="/facility_reports/hiv:label">
+            <value>HIV</value>
+          </text>
+          <text id="/facility_reports/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/facility_reports/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/facility_reports/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:hint">
+            <value>Source from Maternity in-charge at the facility</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:label">
+            <value>Number of first ANC visits to the clinic in the month</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:hint">
+            <value>Source from Maternity in-charge at the facility</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:label">
+            <value>Number of live births in the facility in the month</value>
+          </text>
+          <text id="/facility_reports/maternity:label">
+            <value>Maternity</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_facility:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_facility:label">
+            <value>Number of mental health clients enrolled at the facility in the month</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_program:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_program:label">
+            <value>Total number of clients active in the mental health program (cumulative for the catchment area)</value>
+          </text>
+          <text id="/facility_reports/mh:label">
+            <value>Mental health</value>
+          </text>
+          <text id="/facility_reports/month/april:label">
+            <value>April</value>
+          </text>
+          <text id="/facility_reports/month/august:label">
+            <value>August</value>
+          </text>
+          <text id="/facility_reports/month/december:label">
+            <value>December</value>
+          </text>
+          <text id="/facility_reports/month/february:label">
+            <value>February</value>
+          </text>
+          <text id="/facility_reports/month/january:label">
+            <value>January</value>
+          </text>
+          <text id="/facility_reports/month/july:label">
+            <value>July</value>
+          </text>
+          <text id="/facility_reports/month/june:label">
+            <value>June</value>
+          </text>
+          <text id="/facility_reports/month/march:label">
+            <value>March</value>
+          </text>
+          <text id="/facility_reports/month/may:label">
+            <value>May</value>
+          </text>
+          <text id="/facility_reports/month/november:label">
+            <value>November</value>
+          </text>
+          <text id="/facility_reports/month/october:label">
+            <value>October</value>
+          </text>
+          <text id="/facility_reports/month/september:label">
+            <value>September</value>
+          </text>
+          <text id="/facility_reports/month:label">
+            <value>Select reporting month</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_facility:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_facility:label">
+            <value>Total number of NCD clients enrolled at the facility in the month</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_program:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_program:label">
+            <value>Total number of clients active in the NCD program (cumulative for the catchment area)</value>
+          </text>
+          <text id="/facility_reports/ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/facility_reports/other/palliative_patients:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/other/palliative_patients:label">
+            <value>Total number of palliative care patients in the HSA catchment area</value>
+          </text>
+          <text id="/facility_reports/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_collection_points_expected:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_collection_points_expected:label">
+            <value>How many community sputum collection points were expected to submit samples during the month?</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:hint">
+            <value>Source from Facility Microscopy Report</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:label">
+            <value>Total number of sputum samples collected by CHWs during the month—Facility Data</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community:label">
+            <value>Number of positive TB cases identified at the community level in the month (community submitted sputum)</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community_facility:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community_facility:label">
+            <value>Number of positive TB cases identified at the health facility in the month (from both community and facility submitted sputum)</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_patients:jr:constraintMsg">
+            <value>Cannot be negative!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_patients:label">
+            <value>Total number of TB clients in care (cumulative for the catchment area)—Facility Data</value>
+          </text>
+          <text id="/facility_reports/sputum_collection:label">
+            <value>Sputum collection</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/reasons_for_no_hsa_meetings:label">
+            <value>Reasons for not having the HSA-SS meetings.</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/0:label">
+            <value>Zero</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/1:label">
+            <value>One</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/2:label">
+            <value>Two</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/3:label">
+            <value>Three</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/4:label">
+            <value>Four</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings:label">
+            <value>How many HSA-SS meetings were conducted this month (TB/CMAM review)?</value>
+          </text>
+          <text id="/facility_reports/ss_hsa:label">
+            <value>SS-HSA meeting</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/reasons_for_no_mic_meetings:label">
+            <value>Reasons for not having the SS-Midwife in Charge meetings.</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/0:label">
+            <value>Zero</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/1:label">
+            <value>One</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/2:label">
+            <value>Two</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/3:label">
+            <value>Three</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/4:label">
+            <value>Four</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings:label">
+            <value>How many SS-Midwife in Charge meetings were conducted this month?</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings:label">
+            <value>SS-Midwife in Charge meeting</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/chws:jr:constraintMsg">
+            <value>Cannot be less than 1!</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/chws:label">
+            <value>Number of Senior CHWs present during Site Supervisor - SCHW monthly review meetings</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/reasons_for_no_review:label">
+            <value>Reasons for not having the review meeting.</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting/no:label">
+            <value>No</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting:label">
+            <value>Did you have the Supervisor - SCHW meeting this month?</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw:label">
+            <value>Supervisor-SCHW monthly meeting</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/facility_reports/cmam/cmam_patients_facility:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_program:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/cmam/cmam_patients_program:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/cmam:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/aeho:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/aeho:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/chn:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/chn:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/cma:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/cma:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/hsa:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/hsa:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/shsa:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/health_worker_count/shsa:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/health_worker_count:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_facility:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_program:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/hiv/hiv_patients_program:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/hiv:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:hint">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/maternity/anc_visits:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:hint">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/maternity/live_births:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/maternity:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_facility:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_program:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/mh/mh_patients_program:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/mh:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/month/april:label">
+            <value>April</value>
+          </text>
+          <text id="/facility_reports/month/august:label">
+            <value>August</value>
+          </text>
+          <text id="/facility_reports/month/december:label">
+            <value>December</value>
+          </text>
+          <text id="/facility_reports/month/february:label">
+            <value>February</value>
+          </text>
+          <text id="/facility_reports/month/january:label">
+            <value>January</value>
+          </text>
+          <text id="/facility_reports/month/july:label">
+            <value>July</value>
+          </text>
+          <text id="/facility_reports/month/june:label">
+            <value>June</value>
+          </text>
+          <text id="/facility_reports/month/march:label">
+            <value>March</value>
+          </text>
+          <text id="/facility_reports/month/may:label">
+            <value>May</value>
+          </text>
+          <text id="/facility_reports/month/november:label">
+            <value>November</value>
+          </text>
+          <text id="/facility_reports/month/october:label">
+            <value>October</value>
+          </text>
+          <text id="/facility_reports/month/september:label">
+            <value>September</value>
+          </text>
+          <text id="/facility_reports/month:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_facility:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_program:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/ncd/ncd_patients_program:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/ncd:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/other/palliative_patients:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/other/palliative_patients:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/other:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_collection_points_expected:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_collection_points_expected:label">
+            <value>Ndi angati omwe mayenera kutumiza makhololo?</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:hint">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/sputum_samples:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community_facility:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_cases_community_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_patients:jr:constraintMsg">
+            <value>Sizingakhale zochepera 0!</value>
+          </text>
+          <text id="/facility_reports/sputum_collection/tb_patients:label">
+            <value>-</value>
+          </text>
+          <text id="/facility_reports/sputum_collection:label">
+            <value>Kutolera Makhololo</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/reasons_for_no_hsa_meetings:label">
+            <value>Zifukwa zomwe zapangitsa kuti mkumano wa HSA ndi SS usachitike.</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/0:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/1:label">
+            <value>Kamodzi</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/2:label">
+            <value>Kawiri</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/3:label">
+            <value>Katatu</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings/4:label">
+            <value>Kanayi</value>
+          </text>
+          <text id="/facility_reports/ss_hsa/ss_hsa_meetings:label">
+            <value>Kodi mkumano wa pakati pa HSA ndi SS wachitika kangati mwezi uno (kuwunika TB/ana onyetchera)?</value>
+          </text>
+          <text id="/facility_reports/ss_hsa:label">
+            <value>Nkumano wa pakati pa SS ndi a HSAs</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/reasons_for_no_mic_meetings:label">
+            <value>Zifukwa zomwe zapangitsa kuti mkumano wa Midwife in Charge ndi SS usachitike.</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/0:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/1:label">
+            <value>Kamodzi</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/2:label">
+            <value>Kawiri</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/3:label">
+            <value>Katatu</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings/4:label">
+            <value>Kanayi</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings/ss_mic_meetings:label">
+            <value>Kodi mkumano wa pakati pa Midwife in Charge ndi SS wachitika kangati mwezi uno?</value>
+          </text>
+          <text id="/facility_reports/ss_mic_meetings:label">
+            <value>Nkumano wa pakati pa SS ndi a Midwife in Charge</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/chws:jr:constraintMsg">
+            <value>Sizingakhale zochepera 1!</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/chws:label">
+            <value>Nambala ya ma SCHW omwe anakhala nawo pa nkumano wa pa mwezi wa pakati pa SS ndi SCHW</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/reasons_for_no_review:label">
+            <value>Zifukwa zimene nkumano sunachitikire</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw/supervisor_schw_meeting:label">
+            <value>kodi nkumano wa pa mwezi wa pakati pa SS ndi SCHW unachitika mwezi uno?</value>
+          </text>
+          <text id="/facility_reports/supervisor_schw:label">
+            <value>Nkumano wa pamwezi wa pakati pa SS ndi SCHW</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <facility_reports delimiter="#" id="facility_reports" prefix="J1!facility_reports!" version="2020-06-09 10:09:40">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+          </inputs>
+          <source/>
+          <source_id/>
+          <geolocation/>
+          <month/>
+          <supervisor_schw>
+            <supervisor_schw_meeting/>
+            <chws/>
+            <reasons_for_no_review/>
+          </supervisor_schw>
+          <ss_hsa>
+            <ss_hsa_meetings/>
+            <reasons_for_no_hsa_meetings/>
+          </ss_hsa>
+          <ss_mic_meetings>
+            <ss_mic_meetings/>
+            <reasons_for_no_mic_meetings/>
+          </ss_mic_meetings>
+          <health_worker_count>
+            <hsa/>
+            <shsa/>
+            <chn/>
+            <aeho/>
+            <cma/>
+          </health_worker_count>
+          <sputum_collection>
+            <sputum_collection_points_expected/>
+            <sputum_samples/>
+            <tb_cases_community_facility/>
+            <tb_cases_community/>
+            <tb_patients/>
+          </sputum_collection>
+          <maternity>
+            <live_births/>
+            <anc_visits/>
+          </maternity>
+          <hiv>
+            <hiv_patients_facility/>
+            <hiv_patients_program/>
+          </hiv>
+          <ncd>
+            <ncd_patients_facility/>
+            <ncd_patients_program/>
+          </ncd>
+          <mh>
+            <mh_patients_facility/>
+            <mh_patients_program/>
+          </mh>
+          <cmam>
+            <cmam_patients_facility/>
+            <cmam_patients_program/>
+          </cmam>
+          <other>
+            <palliative_patients/>
+          </other>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </facility_reports>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/facility_reports/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/facility_reports/inputs/source" type="string"/>
+      <bind nodeset="/facility_reports/inputs/source_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/facility_reports/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/facility_reports/source_id" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/facility_reports/geolocation" type="string"/>
+      <bind nodeset="/facility_reports/month" type="select1"/>
+      <bind nodeset="/facility_reports/supervisor_schw/supervisor_schw_meeting" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 1" jr:constraintMsg="jr:itext('/facility_reports/supervisor_schw/chws:jr:constraintMsg')" nodeset="/facility_reports/supervisor_schw/chws" relevant="selected(../supervisor_schw_meeting, 'yes')" required="true()" type="int"/>
+      <bind nodeset="/facility_reports/supervisor_schw/reasons_for_no_review" relevant="selected(../supervisor_schw_meeting, 'no')" required="true()" type="string"/>
+      <bind nodeset="/facility_reports/ss_hsa/ss_hsa_meetings" required="true()" type="select1"/>
+      <bind nodeset="/facility_reports/ss_hsa/reasons_for_no_hsa_meetings" relevant="selected(../ss_hsa_meetings, '0')" required="true()" type="string"/>
+      <bind nodeset="/facility_reports/ss_mic_meetings/ss_mic_meetings" required="true()" type="select1"/>
+      <bind nodeset="/facility_reports/ss_mic_meetings/reasons_for_no_mic_meetings" relevant="selected(../ss_mic_meetings, '0')" required="true()" type="string"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/health_worker_count/hsa:jr:constraintMsg')" nodeset="/facility_reports/health_worker_count/hsa" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/health_worker_count/shsa:jr:constraintMsg')" nodeset="/facility_reports/health_worker_count/shsa" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/health_worker_count/chn:jr:constraintMsg')" nodeset="/facility_reports/health_worker_count/chn" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/health_worker_count/aeho:jr:constraintMsg')" nodeset="/facility_reports/health_worker_count/aeho" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/health_worker_count/cma:jr:constraintMsg')" nodeset="/facility_reports/health_worker_count/cma" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/sputum_collection/sputum_collection_points_expected:jr:constraintMsg')" nodeset="/facility_reports/sputum_collection/sputum_collection_points_expected" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/sputum_collection/sputum_samples:jr:constraintMsg')" nodeset="/facility_reports/sputum_collection/sputum_samples" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/sputum_collection/tb_cases_community_facility:jr:constraintMsg')" nodeset="/facility_reports/sputum_collection/tb_cases_community_facility" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/sputum_collection/tb_cases_community:jr:constraintMsg')" nodeset="/facility_reports/sputum_collection/tb_cases_community" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/sputum_collection/tb_patients:jr:constraintMsg')" nodeset="/facility_reports/sputum_collection/tb_patients" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/maternity/live_births:jr:constraintMsg')" nodeset="/facility_reports/maternity/live_births" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/maternity/anc_visits:jr:constraintMsg')" nodeset="/facility_reports/maternity/anc_visits" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/hiv/hiv_patients_facility:jr:constraintMsg')" nodeset="/facility_reports/hiv/hiv_patients_facility" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/hiv/hiv_patients_program:jr:constraintMsg')" nodeset="/facility_reports/hiv/hiv_patients_program" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/ncd/ncd_patients_facility:jr:constraintMsg')" nodeset="/facility_reports/ncd/ncd_patients_facility" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/ncd/ncd_patients_program:jr:constraintMsg')" nodeset="/facility_reports/ncd/ncd_patients_program" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/mh/mh_patients_facility:jr:constraintMsg')" nodeset="/facility_reports/mh/mh_patients_facility" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/mh/mh_patients_program:jr:constraintMsg')" nodeset="/facility_reports/mh/mh_patients_program" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/cmam/cmam_patients_facility:jr:constraintMsg')" nodeset="/facility_reports/cmam/cmam_patients_facility" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/cmam/cmam_patients_program:jr:constraintMsg')" nodeset="/facility_reports/cmam/cmam_patients_program" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/facility_reports/other/palliative_patients:jr:constraintMsg')" nodeset="/facility_reports/other/palliative_patients" required="true()" type="int"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/facility_reports/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/facility_reports/inputs">
+      <label ref="jr:itext('/facility_reports/inputs:label')"/>
+    </group>
+    <select1 ref="/facility_reports/month">
+      <label ref="jr:itext('/facility_reports/month:label')"/>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/january:label')"/>
+        <value>january</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/february:label')"/>
+        <value>february</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/march:label')"/>
+        <value>march</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/april:label')"/>
+        <value>april</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/may:label')"/>
+        <value>may</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/june:label')"/>
+        <value>june</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/july:label')"/>
+        <value>july</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/august:label')"/>
+        <value>august</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/september:label')"/>
+        <value>september</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/october:label')"/>
+        <value>october</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/november:label')"/>
+        <value>november</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/facility_reports/month/december:label')"/>
+        <value>december</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/facility_reports/supervisor_schw">
+      <label ref="jr:itext('/facility_reports/supervisor_schw:label')"/>
+      <select1 ref="/facility_reports/supervisor_schw/supervisor_schw_meeting">
+        <label ref="jr:itext('/facility_reports/supervisor_schw/supervisor_schw_meeting:label')"/>
+        <item>
+          <label ref="jr:itext('/facility_reports/supervisor_schw/supervisor_schw_meeting/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/supervisor_schw/supervisor_schw_meeting/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/facility_reports/supervisor_schw/chws">
+        <label ref="jr:itext('/facility_reports/supervisor_schw/chws:label')"/>
+      </input>
+      <input ref="/facility_reports/supervisor_schw/reasons_for_no_review">
+        <label ref="jr:itext('/facility_reports/supervisor_schw/reasons_for_no_review:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/ss_hsa">
+      <label ref="jr:itext('/facility_reports/ss_hsa:label')"/>
+      <select1 ref="/facility_reports/ss_hsa/ss_hsa_meetings">
+        <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings:label')"/>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_hsa/ss_hsa_meetings/4:label')"/>
+          <value>4</value>
+        </item>
+      </select1>
+      <input ref="/facility_reports/ss_hsa/reasons_for_no_hsa_meetings">
+        <label ref="jr:itext('/facility_reports/ss_hsa/reasons_for_no_hsa_meetings:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/ss_mic_meetings">
+      <label ref="jr:itext('/facility_reports/ss_mic_meetings:label')"/>
+      <select1 ref="/facility_reports/ss_mic_meetings/ss_mic_meetings">
+        <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings:label')"/>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/facility_reports/ss_mic_meetings/ss_mic_meetings/4:label')"/>
+          <value>4</value>
+        </item>
+      </select1>
+      <input ref="/facility_reports/ss_mic_meetings/reasons_for_no_mic_meetings">
+        <label ref="jr:itext('/facility_reports/ss_mic_meetings/reasons_for_no_mic_meetings:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/health_worker_count">
+      <label ref="jr:itext('/facility_reports/health_worker_count:label')"/>
+      <input ref="/facility_reports/health_worker_count/hsa">
+        <label ref="jr:itext('/facility_reports/health_worker_count/hsa:label')"/>
+      </input>
+      <input ref="/facility_reports/health_worker_count/shsa">
+        <label ref="jr:itext('/facility_reports/health_worker_count/shsa:label')"/>
+      </input>
+      <input ref="/facility_reports/health_worker_count/chn">
+        <label ref="jr:itext('/facility_reports/health_worker_count/chn:label')"/>
+      </input>
+      <input ref="/facility_reports/health_worker_count/aeho">
+        <label ref="jr:itext('/facility_reports/health_worker_count/aeho:label')"/>
+      </input>
+      <input ref="/facility_reports/health_worker_count/cma">
+        <label ref="jr:itext('/facility_reports/health_worker_count/cma:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/sputum_collection">
+      <label ref="jr:itext('/facility_reports/sputum_collection:label')"/>
+      <input ref="/facility_reports/sputum_collection/sputum_collection_points_expected">
+        <label ref="jr:itext('/facility_reports/sputum_collection/sputum_collection_points_expected:label')"/>
+      </input>
+      <input ref="/facility_reports/sputum_collection/sputum_samples">
+        <label ref="jr:itext('/facility_reports/sputum_collection/sputum_samples:label')"/>
+        <hint ref="jr:itext('/facility_reports/sputum_collection/sputum_samples:hint')"/>
+      </input>
+      <input ref="/facility_reports/sputum_collection/tb_cases_community_facility">
+        <label ref="jr:itext('/facility_reports/sputum_collection/tb_cases_community_facility:label')"/>
+      </input>
+      <input ref="/facility_reports/sputum_collection/tb_cases_community">
+        <label ref="jr:itext('/facility_reports/sputum_collection/tb_cases_community:label')"/>
+      </input>
+      <input ref="/facility_reports/sputum_collection/tb_patients">
+        <label ref="jr:itext('/facility_reports/sputum_collection/tb_patients:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/maternity">
+      <label ref="jr:itext('/facility_reports/maternity:label')"/>
+      <input ref="/facility_reports/maternity/live_births">
+        <label ref="jr:itext('/facility_reports/maternity/live_births:label')"/>
+        <hint ref="jr:itext('/facility_reports/maternity/live_births:hint')"/>
+      </input>
+      <input ref="/facility_reports/maternity/anc_visits">
+        <label ref="jr:itext('/facility_reports/maternity/anc_visits:label')"/>
+        <hint ref="jr:itext('/facility_reports/maternity/anc_visits:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/hiv">
+      <label ref="jr:itext('/facility_reports/hiv:label')"/>
+      <input ref="/facility_reports/hiv/hiv_patients_facility">
+        <label ref="jr:itext('/facility_reports/hiv/hiv_patients_facility:label')"/>
+      </input>
+      <input ref="/facility_reports/hiv/hiv_patients_program">
+        <label ref="jr:itext('/facility_reports/hiv/hiv_patients_program:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/ncd">
+      <label ref="jr:itext('/facility_reports/ncd:label')"/>
+      <input ref="/facility_reports/ncd/ncd_patients_facility">
+        <label ref="jr:itext('/facility_reports/ncd/ncd_patients_facility:label')"/>
+      </input>
+      <input ref="/facility_reports/ncd/ncd_patients_program">
+        <label ref="jr:itext('/facility_reports/ncd/ncd_patients_program:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/mh">
+      <label ref="jr:itext('/facility_reports/mh:label')"/>
+      <input ref="/facility_reports/mh/mh_patients_facility">
+        <label ref="jr:itext('/facility_reports/mh/mh_patients_facility:label')"/>
+      </input>
+      <input ref="/facility_reports/mh/mh_patients_program">
+        <label ref="jr:itext('/facility_reports/mh/mh_patients_program:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/cmam">
+      <label ref="jr:itext('/facility_reports/cmam:label')"/>
+      <input ref="/facility_reports/cmam/cmam_patients_facility">
+        <label ref="jr:itext('/facility_reports/cmam/cmam_patients_facility:label')"/>
+      </input>
+      <input ref="/facility_reports/cmam/cmam_patients_program">
+        <label ref="jr:itext('/facility_reports/cmam/cmam_patients_program:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/facility_reports/other">
+      <label ref="jr:itext('/facility_reports/other:label')"/>
+      <input ref="/facility_reports/other/palliative_patients">
+        <label ref="jr:itext('/facility_reports/other/palliative_patients:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

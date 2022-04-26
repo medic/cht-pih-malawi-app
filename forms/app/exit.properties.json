@@ -1,0 +1,15 @@
+{
+    "icon": "icon-people-man",
+    "title": {
+        "en": "Exit",
+        "ny": "Fomu yotulutsila mundondomeko"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+        "patient_uuid"
+    ]
+}

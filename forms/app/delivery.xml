@@ -1,0 +1,1013 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Delivery report</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/delivery/chw_area_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/delivery/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/husband:label">
+            <value>Husband</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/non_family_member:label">
+            <value>Non family member</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/none:label">
+            <value>Was not accompanied</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/other_relative:label">
+            <value>Other relative</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:jr:constraintMsg">
+            <value>You cannot select 'Was not accompanied' if you have selected another option!</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:label">
+            <value>Who accompanied <output value=" /delivery/c_patient_name "/> for delivery?</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_date:label">
+            <value>Enter delivery date</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/facility:label">
+            <value>Facility</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/home:label">
+            <value>Home</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/on_the_way:label">
+            <value>On the way to the health facility</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place:label">
+            <value>Place of delivery</value>
+          </text>
+          <text id="/delivery/delivery_details/n_refer_to_hf:label">
+            <value>_Refer the mother and baby to health facility immediately_</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home:label">
+            <value>Did <output value=" /delivery/c_patient_name "/> go to the waiting home?</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf:label">
+            <value>Did <output value=" /delivery/c_patient_name "/> go to the health facility after delivery</value>
+          </text>
+          <text id="/delivery/delivery_details:label">
+            <value>Delivery details</value>
+          </text>
+          <text id="/delivery/delivery_outcome/babies_delivered:jr:constraintMsg">
+            <value>Please enter the correct value which must be equal to 1, 2, 3, or 4!</value>
+          </text>
+          <text id="/delivery/delivery_outcome/babies_delivered:label">
+            <value>How many babies did <output value=" /delivery/c_patient_name "/> deliver during this delivery?</value>
+          </text>
+          <text id="/delivery/delivery_outcome/live_births:jr:constraintMsg">
+            <value>Please enter the correct number of babies born alive during this delivery!</value>
+          </text>
+          <text id="/delivery/delivery_outcome/live_births:label">
+            <value>How many babies are still alive?</value>
+          </text>
+          <text id="/delivery/delivery_outcome:label">
+            <value>Delivery outcome</value>
+          </text>
+          <text id="/delivery/facility_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/delivery/family_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/delivery/group_review/n_babies_delivered:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;_Number of babies delivered: <output value=" /delivery/delivery_outcome/babies_delivered "/>_&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_date:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;Date of delivery <output value=" /delivery/group_review/c_delivery_date "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_place:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;_Place of delivery: <output value=" /delivery/delivery_details/delivery_place "/>_&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_report_title:label">
+            <value>Delivery Report</value>
+          </text>
+          <text id="/delivery/group_review/n_findings:label">
+            <value>Findings&lt;I class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/delivery/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_live_births:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;_Number of live births: <output value=" /delivery/delivery_outcome/live_births "/>_&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/c_patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/delivery/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/delivery/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/delivery/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/delivery/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/delivery/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/delivery/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/delivery/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/delivery/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/delivery/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender:label">
+            <value>Gender</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_name:label">
+            <value>Name</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/contact_type:label">
+            <value>Contact type</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/_id:label">
+            <value>Household</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/_id:label">
+            <value>SCHW Region</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/n_remind_mother_to_enrol:label">
+            <value>_Remind the mother to enroll the child to EID programme._</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid/no:label">
+            <value>No</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid:label">
+            <value>Did you refer <output value=" /delivery/repeat/child_repeat/child_name "/> for EID enrollment</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat:label">
+            <value>Please add the details of newborns who are live births.</value>
+          </text>
+          <text id="/delivery/repeat:label">
+            <value>Babies born</value>
+          </text>
+          <text id="/delivery/schw_region_id:label">
+            <value>Facility ID</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/delivery/c_patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/c_patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/chw_area_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/chw_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/husband:label">
+            <value>Mwamuna wake</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/non_family_member:label">
+            <value>Mzake</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/none:label">
+            <value>Sanapelekezedwe</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/other_relative:label">
+            <value>Wachibale</value>
+          </text>
+          <text id="/delivery/delivery_details/companions/parent:label">
+            <value>Kholo</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:hint">
+            <value>Sankhani munthu amene ali olondola</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:jr:constraintMsg">
+            <value>Simungasankhe "sanaperekezedwe" ngati mwasankha kale zina</value>
+          </text>
+          <text id="/delivery/delivery_details/companions:label">
+            <value>Anapelekezedwa ndi ndani kuchipatala?</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la kutsogolo</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_date:label">
+            <value>Ikani Tsiku lomwe anachilira</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/facility:label">
+            <value>Chipatala</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/home:label">
+            <value>Pankhomo</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place/on_the_way:label">
+            <value>Munjira popita kuchipatala</value>
+          </text>
+          <text id="/delivery/delivery_details/delivery_place:label">
+            <value>Malo omwe anachilira</value>
+          </text>
+          <text id="/delivery/delivery_details/n_refer_to_hf:label">
+            <value>_Tumizani mayi ndi mwana wake kuchipatala mwansanga_</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/delivery/delivery_details/waiting_home:label">
+            <value>Kodi <output value=" /delivery/c_patient_name "/> anapita ku chidikiliro</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/delivery/delivery_details/went_to_hf:label">
+            <value>Kodi <output value=" /delivery/c_patient_name "/> anapita kuchipatala atachira?</value>
+          </text>
+          <text id="/delivery/delivery_details:label">
+            <value>Tsatanetsatane Wakuchira</value>
+          </text>
+          <text id="/delivery/delivery_outcome/babies_delivered:jr:constraintMsg">
+            <value>Chonde sankhani nambala yolondola yomwe ili yolingana ndi 1,2,3 kapena 4</value>
+          </text>
+          <text id="/delivery/delivery_outcome/babies_delivered:label">
+            <value>Kodi mai wabadwitsa ana angati?</value>
+          </text>
+          <text id="/delivery/delivery_outcome/live_births:jr:constraintMsg">
+            <value>Chonde lowetsani nambala yolondola ya ana amoyo omwe angobadwa kumene</value>
+          </text>
+          <text id="/delivery/delivery_outcome/live_births:label">
+            <value>Ndi ana angati amene ali moyo?</value>
+          </text>
+          <text id="/delivery/delivery_outcome:label">
+            <value>Zotsatira za Kuchila</value>
+          </text>
+          <text id="/delivery/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/family_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/group_review/n_babies_delivered:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;Kuchuluka kwa ana obadwa: <output value=" /delivery/delivery_outcome/babies_delivered "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_date:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;Tsiku lomwe anachilira <output value=" /delivery/group_review/c_delivery_date "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_place:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;_Malo omwe anachilira: <output value=" /delivery/delivery_details/delivery_place "/>_&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_delivery_report_title:label">
+            <value>Lipoti la kuchira</value>
+          </text>
+          <text id="/delivery/group_review/n_findings:label">
+            <value>Findings&lt;I class="fa fa-medkit"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_follow_up:label">
+            <value>Ntchito iyi idzawoneka ku gawo la Zochita pa…..</value>
+          </text>
+          <text id="/delivery/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_live_births:label">
+            <value>&lt;h5 style=&quot;text-align:center;&quot;&gt;_Nambala ya ana amene abadwa amoyo: <output value=" /delivery/delivery_outcome/live_births "/>_&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /delivery/c_patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/delivery/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/delivery/group_review:label">
+            <value>Tsamba La Zotsatira</value>
+          </text>
+          <text id="/delivery/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/pregnancy_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender/female:label">
+            <value>Mkazi</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender/male:label">
+            <value>Wam'muna</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_gender:label">
+            <value>Jenda</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_name:label">
+            <value>Dzina</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/c_referred_eid:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/contact_type:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/created_by_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/name:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/place_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile/type:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/child_profile:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/n_remind_mother_to_enrol:label">
+            <value>_Kumbutsani mayi zomulembetsa mwana mu pologalamu ya EID_.</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type/no_chw:label">
+            <value>Anapita yekha ku chipatala</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/ref_type:label">
+            <value>Mtundu wakutumiza</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat/referred_eid:label">
+            <value>Kodi munatumiza <output value=" /delivery/repeat/child_repeat/child_name "/> kuchipatala</value>
+          </text>
+          <text id="/delivery/repeat/child_repeat:label">
+            <value>Chonde lembani dzina/maina a ana amene ali moyo</value>
+          </text>
+          <text id="/delivery/repeat:label">
+            <value>Ana obadwa</value>
+          </text>
+          <text id="/delivery/schw_region_id:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/source:label">
+            <value>-</value>
+          </text>
+          <text id="/delivery/source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <delivery delimiter="#" id="delivery" prefix="J1!delivery!" version="2022-01-25 04:44:02">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                    </parent>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <family_id/>
+          <chw_id/>
+          <chw_area_id/>
+          <schw_region_id/>
+          <facility_id/>
+          <patient_age_in_years/>
+          <c_patient_age_in_years/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <c_patient_name/>
+          <pregnancy_uuid/>
+          <is_in_art/>
+          <pregnancy_id/>
+          <delivery_date/>
+          <pregnancy_outcome/>
+          <at_health_facility/>
+          <with_skilled_care/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <is_in_malnutrition/>
+          <is_in_fp/>
+          <c_art_duration/>
+          <c_tb_treatment_duration/>
+          <art_duration/>
+          <tb_treatment_duration/>
+          <art_duration_months/>
+          <is_in_tb/>
+          <is_in_ncd/>
+          <delivery_details>
+            <delivery_date/>
+            <delivery_place/>
+            <went_to_hf/>
+            <n_refer_to_hf/>
+            <waiting_home/>
+            <companions/>
+          </delivery_details>
+          <delivery_outcome>
+            <babies_delivered/>
+            <live_births/>
+          </delivery_outcome>
+          <repeat>
+            <child_repeat_count/>
+            <child_repeat jr:template="">
+              <child_name/>
+              <child_gender/>
+              <n_remind_mother_to_enrol/>
+              <referred_eid/>
+              <ref_type/>
+              <child_profile db-doc="true">
+                <name/>
+                <sex/>
+                <date_of_birth/>
+                <place_of_birth/>
+                <c_referred_eid/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                    <parent>
+                      <_id/>
+                      <parent>
+                        <_id/>
+                      </parent>
+                    </parent>
+                  </parent>
+                </parent>
+                <type/>
+                <contact_type/>
+                <created_by_doc db-doc-ref="/delivery"/>
+              </child_profile>
+              <child_doc db-doc-ref=" /delivery/repeat/child_repeat/child_profile "/>
+            </child_repeat>
+          </repeat>
+          <group_review>
+            <n_delivery_report_title/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_delivery_date/>
+            <n_patient_details/>
+            <n_findings/>
+            <n_delivery_date/>
+            <n_delivery_place/>
+            <n_babies_delivered/>
+            <n_live_births/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </delivery>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/delivery/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/delivery/inputs/source" type="string"/>
+      <bind nodeset="/delivery/inputs/source_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/delivery/inputs/contact/name" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/sex" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind nodeset="/delivery/inputs/contact/parent/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/delivery/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/delivery/source_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/_id" nodeset="/delivery/family_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/_id" nodeset="/delivery/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/delivery/chw_area_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/delivery/schw_region_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/parent/_id" nodeset="/delivery/facility_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/delivery/patient_age_in_years" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/delivery/c_patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/delivery/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/delivery/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/delivery/patient_name" type="string"/>
+      <bind calculate="../patient_name" nodeset="/delivery/c_patient_name" type="string"/>
+      <bind calculate="instance('contact-summary')/context/pregnancy_uuid" nodeset="/delivery/pregnancy_uuid" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_art" nodeset="/delivery/is_in_art" type="string"/>
+      <bind calculate="../pregnancy_uuid" nodeset="/delivery/pregnancy_id" type="string"/>
+      <bind calculate="../delivery_details/delivery_date" nodeset="/delivery/delivery_date" type="string"/>
+      <bind calculate="if(../delivery_outcome/live_births &gt; int(0), 'healthy', 'stillbirth')" nodeset="/delivery/pregnancy_outcome" type="string"/>
+      <bind calculate="if(selected(../delivery_details/delivery_place, 'facility'), 'yes', 'no')" nodeset="/delivery/at_health_facility" type="string"/>
+      <bind calculate="../at_health_facility" nodeset="/delivery/with_skilled_care" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/delivery/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/delivery/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/delivery/geolocation" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_malnutrition" nodeset="/delivery/is_in_malnutrition" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_fp" nodeset="/delivery/is_in_fp" type="string"/>
+      <bind calculate="instance('contact-summary')/context/art_duration" nodeset="/delivery/c_art_duration" type="string"/>
+      <bind calculate="instance('contact-summary')/context/tb_treatment_duration" nodeset="/delivery/c_tb_treatment_duration" type="string"/>
+      <bind calculate="round(../c_art_duration div 365, 0)" nodeset="/delivery/art_duration" type="string"/>
+      <bind calculate="round(../c_tb_treatment_duration div 365, 0)" nodeset="/delivery/tb_treatment_duration" type="string"/>
+      <bind calculate="round((../c_art_duaration mod 365) div 30.5, 0)" nodeset="/delivery/art_duration_months" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_tb" nodeset="/delivery/is_in_tb" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_ncd" nodeset="/delivery/is_in_ncd" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/delivery/delivery_details/delivery_date:jr:constraintMsg')" nodeset="/delivery/delivery_details/delivery_date" required="true()" type="date"/>
+      <bind nodeset="/delivery/delivery_details/delivery_place" required="true()" type="select1"/>
+      <bind nodeset="/delivery/delivery_details/went_to_hf" relevant="selected(../delivery_place, 'home') or selected(../delivery_place, 'on_the_way')" required="true()" type="select1"/>
+      <bind nodeset="/delivery/delivery_details/n_refer_to_hf" readonly="true()" relevant="selected(../went_to_hf, 'no')" type="string"/>
+      <bind nodeset="/delivery/delivery_details/waiting_home" relevant="selected(../delivery_place, 'facility')" required="true()" type="select1"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/delivery/delivery_details/companions:jr:constraintMsg')" nodeset="/delivery/delivery_details/companions" relevant="selected(../waiting_home, 'yes')" required="true()" type="select"/>
+      <bind constraint="(. &gt; 0) and (. &lt;= 4)" jr:constraintMsg="jr:itext('/delivery/delivery_outcome/babies_delivered:jr:constraintMsg')" nodeset="/delivery/delivery_outcome/babies_delivered" required="true()" type="int"/>
+      <bind constraint="(. &gt;= 0) and (. &lt;= ../babies_delivered)" jr:constraintMsg="jr:itext('/delivery/delivery_outcome/live_births:jr:constraintMsg')" nodeset="/delivery/delivery_outcome/live_births" required="true()" type="int"/>
+      <bind nodeset="/delivery/repeat" relevant="int(../delivery_outcome/live_births) &gt; 0"/>
+      <bind calculate=" /delivery/delivery_outcome/live_births " nodeset="/delivery/repeat/child_repeat_count" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/repeat/child_repeat/child_name" required="true()" type="string"/>
+      <bind nodeset="/delivery/repeat/child_repeat/child_gender" required="true()" type="select1"/>
+      <bind nodeset="/delivery/repeat/child_repeat/n_remind_mother_to_enrol" readonly="true()" relevant="../../../is_in_art = 'yes'" type="string"/>
+      <bind nodeset="/delivery/repeat/child_repeat/referred_eid" relevant="../../../is_in_art = 'yes'" type="select1"/>
+      <bind nodeset="/delivery/repeat/child_repeat/ref_type" relevant="selected(../referred_eid, 'yes')" required="true()" type="select1"/>
+      <bind calculate="../../child_name" nodeset="/delivery/repeat/child_repeat/child_profile/name" type="string"/>
+      <bind calculate="../../child_gender" nodeset="/delivery/repeat/child_repeat/child_profile/sex" type="string"/>
+      <bind calculate="../../../../delivery_details/delivery_date" nodeset="/delivery/repeat/child_repeat/child_profile/date_of_birth" type="string"/>
+      <bind calculate="../../../../delivery_details/delivery_place" nodeset="/delivery/repeat/child_repeat/child_profile/place_of_birth" type="string"/>
+      <bind calculate="../../referred_eid" nodeset="/delivery/repeat/child_repeat/child_profile/c_referred_eid" type="string"/>
+      <bind calculate=" /delivery/family_id " nodeset="/delivery/repeat/child_repeat/child_profile/parent/_id" type="string"/>
+      <bind calculate=" /delivery/chw_area_id " nodeset="/delivery/repeat/child_repeat/child_profile/parent/parent/_id" type="string"/>
+      <bind calculate=" /delivery/schw_region_id " nodeset="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/_id" type="string"/>
+      <bind calculate=" /delivery/facility_id " nodeset="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/parent/_id" type="string"/>
+      <bind calculate="&quot;person&quot;" nodeset="/delivery/repeat/child_repeat/child_profile/type" type="string"/>
+      <bind calculate="&quot;person&quot;" nodeset="/delivery/repeat/child_repeat/child_profile/contact_type" type="string"/>
+      <bind calculate="." nodeset="/delivery/repeat/child_repeat/child_profile/created_by_doc" type="string"/>
+      <bind calculate=" /delivery/repeat/child_repeat " nodeset="/delivery/repeat/child_repeat/child_doc" type="string"/>
+      <bind nodeset="/delivery/group_review/n_delivery_report_title" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="format-date(../../delivery_details/delivery_date,&quot;%d/%m/%Y&quot;)" nodeset="/delivery/group_review/c_delivery_date" type="string"/>
+      <bind nodeset="/delivery/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_findings" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_delivery_date" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_delivery_place" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_babies_delivered" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_live_births" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind nodeset="/delivery/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/delivery/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/delivery/inputs">
+      <label ref="jr:itext('/delivery/inputs:label')"/>
+      <group ref="/delivery/inputs/contact">
+        <label ref="jr:itext('/delivery/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/delivery/inputs/contact/_id">
+          <label ref="jr:itext('/delivery/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/delivery/inputs/contact/parent">
+          <label ref="jr:itext('/delivery/inputs/contact/parent:label')"/>
+          <input appearance="hidden" ref="/delivery/inputs/contact/parent/_id">
+            <label ref="jr:itext('/delivery/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/delivery/inputs/contact/parent/parent">
+            <label ref="jr:itext('/delivery/inputs/contact/parent/parent:label')"/>
+            <input appearance="hidden" ref="/delivery/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/delivery/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/delivery/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/delivery/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+            <group appearance="hidden" ref="/delivery/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/delivery/inputs/contact/parent/parent/parent:label')"/>
+              <input appearance="hidden" ref="/delivery/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/delivery/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+              <group appearance="hidden" ref="/delivery/inputs/contact/parent/parent/parent/parent">
+                <label ref="jr:itext('/delivery/inputs/contact/parent/parent/parent/parent:label')"/>
+                <input appearance="hidden" ref="/delivery/inputs/contact/parent/parent/parent/parent/_id">
+                  <label ref="jr:itext('/delivery/inputs/contact/parent/parent/parent/parent/_id:label')"/>
+                </input>
+              </group>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/delivery/delivery_details">
+      <label ref="jr:itext('/delivery/delivery_details:label')"/>
+      <input ref="/delivery/delivery_details/delivery_date">
+        <label ref="jr:itext('/delivery/delivery_details/delivery_date:label')"/>
+      </input>
+      <select1 ref="/delivery/delivery_details/delivery_place">
+        <label ref="jr:itext('/delivery/delivery_details/delivery_place:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/delivery_place/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/delivery_place/facility:label')"/>
+          <value>facility</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/delivery_place/on_the_way:label')"/>
+          <value>on_the_way</value>
+        </item>
+      </select1>
+      <select1 ref="/delivery/delivery_details/went_to_hf">
+        <label ref="jr:itext('/delivery/delivery_details/went_to_hf:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/went_to_hf/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/went_to_hf/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/delivery/delivery_details/n_refer_to_hf">
+        <label ref="jr:itext('/delivery/delivery_details/n_refer_to_hf:label')"/>
+      </input>
+      <select1 ref="/delivery/delivery_details/waiting_home">
+        <label ref="jr:itext('/delivery/delivery_details/waiting_home:label')"/>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/waiting_home/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/waiting_home/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/delivery/delivery_details/companions">
+        <label ref="jr:itext('/delivery/delivery_details/companions:label')"/>
+        <hint ref="jr:itext('/delivery/delivery_details/companions:hint')"/>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/parent:label')"/>
+          <value>parent</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/husband:label')"/>
+          <value>husband</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/other_relative:label')"/>
+          <value>other_relative</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/non_family_member:label')"/>
+          <value>non_family_member</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/delivery/delivery_details/companions/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/delivery/delivery_outcome">
+      <label ref="jr:itext('/delivery/delivery_outcome:label')"/>
+      <input ref="/delivery/delivery_outcome/babies_delivered">
+        <label ref="jr:itext('/delivery/delivery_outcome/babies_delivered:label')"/>
+      </input>
+      <input ref="/delivery/delivery_outcome/live_births">
+        <label ref="jr:itext('/delivery/delivery_outcome/live_births:label')"/>
+      </input>
+    </group>
+    <group ref="/delivery/repeat">
+      <label ref="jr:itext('/delivery/repeat:label')"/>
+      <group ref="/delivery/repeat/child_repeat">
+        <label ref="jr:itext('/delivery/repeat/child_repeat:label')"/>
+        <repeat appearance="field-list" jr:count=" /delivery/repeat/child_repeat_count " nodeset="/delivery/repeat/child_repeat">
+          <input ref="/delivery/repeat/child_repeat/child_name">
+            <label ref="jr:itext('/delivery/repeat/child_repeat/child_name:label')"/>
+          </input>
+          <select1 ref="/delivery/repeat/child_repeat/child_gender">
+            <label ref="jr:itext('/delivery/repeat/child_repeat/child_gender:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/child_gender/male:label')"/>
+              <value>male</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/child_gender/female:label')"/>
+              <value>female</value>
+            </item>
+          </select1>
+          <input ref="/delivery/repeat/child_repeat/n_remind_mother_to_enrol">
+            <label ref="jr:itext('/delivery/repeat/child_repeat/n_remind_mother_to_enrol:label')"/>
+          </input>
+          <select1 ref="/delivery/repeat/child_repeat/referred_eid">
+            <label ref="jr:itext('/delivery/repeat/child_repeat/referred_eid:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/referred_eid/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/referred_eid/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/delivery/repeat/child_repeat/ref_type">
+            <label ref="jr:itext('/delivery/repeat/child_repeat/ref_type:label')"/>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/ref_type/chw:label')"/>
+              <value>chw</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/delivery/repeat/child_repeat/ref_type/no_chw:label')"/>
+              <value>no_chw</value>
+            </item>
+          </select1>
+          <group ref="/delivery/repeat/child_repeat/child_profile">
+            <group appearance="hidden" ref="/delivery/repeat/child_repeat/child_profile/parent">
+              <group appearance="hidden" ref="/delivery/repeat/child_repeat/child_profile/parent/parent">
+                <group appearance="hidden" ref="/delivery/repeat/child_repeat/child_profile/parent/parent/parent">
+                  <group appearance="hidden" ref="/delivery/repeat/child_repeat/child_profile/parent/parent/parent/parent"/>
+                </group>
+              </group>
+            </group>
+          </group>
+        </repeat>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/delivery/group_review">
+      <label ref="jr:itext('/delivery/group_review:label')"/>
+      <input appearance="h1 blue" ref="/delivery/group_review/n_delivery_report_title">
+        <label ref="jr:itext('/delivery/group_review/n_delivery_report_title:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_submit">
+        <label ref="jr:itext('/delivery/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/delivery/group_review/n_patient_details_title">
+        <label ref="jr:itext('/delivery/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_patient_details">
+        <label ref="jr:itext('/delivery/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/delivery/group_review/n_findings">
+        <label ref="jr:itext('/delivery/group_review/n_findings:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_delivery_date">
+        <label ref="jr:itext('/delivery/group_review/n_delivery_date:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_delivery_place">
+        <label ref="jr:itext('/delivery/group_review/n_delivery_place:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_babies_delivered">
+        <label ref="jr:itext('/delivery/group_review/n_babies_delivered:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_live_births">
+        <label ref="jr:itext('/delivery/group_review/n_live_births:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/delivery/group_review/n_follow_up_title">
+        <label ref="jr:itext('/delivery/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/delivery/group_review/n_follow_up">
+        <label ref="jr:itext('/delivery/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

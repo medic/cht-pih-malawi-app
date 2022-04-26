@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>New Site Supervisor</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/n_none_hh_member:label">
+            <value>&lt;span style="color:red;font-weight: bold"&gt;You are trying to register a person outside a household. Please exit the form and choose the correct household.&lt;/span&gt;</value>
+          </text>
+          <text id="/data/person/alternate_phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/person/alternate_phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/alternate_phone:label">
+            <value>Secondary phone number</value>
+          </text>
+          <text id="/data/person/c_name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/person/contact_type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/contact_type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/person/name:jr:constraintMsg">
+            <value>Name can only have alphabetic characters</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Notes (optional)</value>
+          </text>
+          <text id="/data/person/parent:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/person/phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Primary phone number</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/person/type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Person details</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Namba ya Usajili ya mtumiaji wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Kitambulisho cha mahali cha mtumizi wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Jina ya mtumizi</value>
+          </text>
+          <text id="/data/n_none_hh_member:label">
+            <value>&lt;span style="color:red;font-weight: bold"&gt;Unajaribu mkumsajili mtu asiye na kaya. Tafadhali ondoka kwenye fomu hii na uchague kaya sahihi.&lt;/span&gt;</value>
+          </text>
+          <text id="/data/person/alternate_phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/person/alternate_phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/alternate_phone:label">
+            <value>Nambari nyingine ya simu</value>
+          </text>
+          <text id="/data/person/c_name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/person/contact_type:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/person/contact_type:label">
+            <value>Aina ya mtu</value>
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/name:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Maelezo ya ziada</value>
+          </text>
+          <text id="/data/person/parent:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>nambari ya mzazi</value>
+          </text>
+          <text id="/data/person/phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Nambari ya simu</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Mke</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Mume</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/person/type:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Aina ya mtu</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Maelezo ya mtu</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:site_supervisor:create" prefix="J1!contact:site_supervisor:create!" version="2020-02-11 07:57:01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <facility_id/>
+          <n_none_hh_member/>
+          <none_hh_member_flag/>
+          <person>
+            <type>contact</type>
+            <contact_type>site_supervisor</contact_type>
+            <parent>PARENT</parent>
+            <name/>
+            <sex/>
+            <c_name/>
+            <phone/>
+            <alternate_phone/>
+            <notes/>
+            <external_id/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </person>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind calculate="../inputs/user/facility_id" nodeset="/data/facility_id" type="string"/>
+      <bind nodeset="/data/n_none_hh_member" readonly="true()" relevant="starts-with( /data/person/parent , ../facility_id)" type="string"/>
+      <bind calculate="if(starts-with( /data/person/parent , ../facility_id),1,0)" nodeset="/data/none_hh_member_flag" type="string"/>
+      <bind nodeset="/data/person" relevant=" /data/none_hh_member_flag  = 0"/>
+      <bind nodeset="/data/person/type" type="string"/>
+      <bind nodeset="/data/person/contact_type" type="string"/>
+      <bind nodeset="/data/person/parent" type="string"/>
+      <bind constraint="regex(.,'[a-zA-Z]{1,50}[ ]{0,1}[a-zA-Z]{1,50}')" jr:constraintMsg="jr:itext('/data/person/name:jr:constraintMsg')" nodeset="/data/person/name" required="true()" type="string"/>
+      <bind nodeset="/data/person/sex" required="true()" type="select1"/>
+      <bind calculate="../name" nodeset="/data/person/c_name" type="string"/>
+      <bind jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" nodeset="/data/person/phone" required="false()" type="string"/>
+      <bind jr:constraintMsg="jr:itext('/data/person/alternate_phone:jr:constraintMsg')" nodeset="/data/person/alternate_phone" required="false()" type="string"/>
+      <bind nodeset="/data/person/notes" type="string"/>
+      <bind nodeset="/data/person/external_id" type="string"/>
+      <bind nodeset="/data/person/meta/created_by" type="string"/>
+      <bind nodeset="/data/person/meta/created_by_person_uuid" type="string"/>
+      <bind nodeset="/data/person/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/data/n_none_hh_member">
+      <label ref="jr:itext('/data/n_none_hh_member:label')"/>
+    </input>
+    <group appearance="field-list" ref="/data/person">
+      <label ref="jr:itext('/data/person:label')"/>
+      <input appearance="hidden" ref="/data/person/type">
+        <label ref="jr:itext('/data/person/type:label')"/>
+        <hint ref="jr:itext('/data/person/type:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/contact_type">
+        <label ref="jr:itext('/data/person/contact_type:label')"/>
+        <hint ref="jr:itext('/data/person/contact_type:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/parent">
+        <label ref="jr:itext('/data/person/parent:label')"/>
+        <hint ref="jr:itext('/data/person/parent:hint')"/>
+      </input>
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
+      </input>
+      <select1 ref="/data/person/sex">
+        <label ref="jr:itext('/data/person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+      </select1>
+      <input appearance="numbers" ref="/data/person/phone">
+        <label ref="jr:itext('/data/person/phone:label')"/>
+        <hint ref="jr:itext('/data/person/phone:hint')"/>
+      </input>
+      <input appearance="numbers" ref="/data/person/alternate_phone">
+        <label ref="jr:itext('/data/person/alternate_phone:label')"/>
+        <hint ref="jr:itext('/data/person/alternate_phone:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/person/notes">
+        <label ref="jr:itext('/data/person/notes:label')"/>
+      </input>
+      <input ref="/data/person/external_id">
+        <label ref="jr:itext('/data/person/external_id:label')"/>
+      </input>
+      <group ref="/data/person/meta"/>
+    </group>
+  </h:body>
+</h:html>

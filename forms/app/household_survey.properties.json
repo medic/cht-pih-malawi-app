@@ -1,0 +1,15 @@
+{
+    "icon": "icon-form-general",
+    "title": {
+        "en": "Household survey",
+        "ny": "Kafukufuku wa pa banja"
+    },
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "false"
+    },
+    "hidden_fields": [
+
+    ]
+}

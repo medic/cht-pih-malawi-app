@@ -1,0 +1,15 @@
+{
+    "icon": "icon-people-baby",
+    "title": {
+        "en": "Newborn postnatal follow up",
+        "ny": "Kuyendera mwana akabadwa"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && (!contact.date_of_birth || ageInMonths(contact) < 2) && !contact.date_of_death && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Sputum Collection</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/sputum_collection/group_review/n_findings_title:label">
+            <value>Sputum Collection details&lt;I class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /sputum_collection/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /sputum_collection/c_patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_samples_collected:label">
+            <value>**Samples Collected:** <output value=" /sputum_collection/sputum_collection/samples_collected "/></value>
+          </text>
+          <text id="/sputum_collection/group_review/n_samples_submitted:label">
+            <value>**Samples submitted at health facility:** <output value=" /sputum_collection/sputum_collection/samples_dropped_at_facility "/></value>
+          </text>
+          <text id="/sputum_collection/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_summary_title:label">
+            <value>Sputum Collection</value>
+          </text>
+          <text id="/sputum_collection/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_age_in_years:label">
+            <value>Patient age in years</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/sputum_collection/inputs/schw_phone:label">
+            <value>SCHW Phone</value>
+          </text>
+          <text id="/sputum_collection/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/sputum_collection/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/sputum_collection/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/n_inform:label">
+            <value>_Inform CHW that <output value=" /sputum_collection/c_patient_name "/> does not have TB symptoms_</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/n_refer:label">
+            <value>_Refer <output value=" /sputum_collection/c_patient_name "/> to the health facility for further management_</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reason_no_sample_dropped:label">
+            <value>Reasons for not dropping all the collected samples</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected/no_sample_with_tb_symptoms:label">
+            <value>Patient fails to submit sample but has TB symptom</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected:label">
+            <value>Reasons for not collecting TB sample</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected_other:label">
+            <value>Other (specify):</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/0:label">
+            <value>Zero</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/1:label">
+            <value>One</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/2:label">
+            <value>Two</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected:label">
+            <value>Number of samples collected</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_dropped_at_facility:jr:constraintMsg">
+            <value>Enter the correct number of samples dropped at the health facility</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_dropped_at_facility:label">
+            <value>Number of samples dropped at the health facility</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection:label">
+            <value>Sputum collection</value>
+          </text>
+          <text id="static_instance-reasons_no_samples-0">
+            <value>Patient fails to submit sample but has TB symptom</value>
+          </text>
+          <text id="static_instance-reasons_no_samples-1">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-sample_counts-0">
+            <value>Zero</value>
+          </text>
+          <text id="static_instance-sample_counts-1">
+            <value>One</value>
+          </text>
+          <text id="static_instance-sample_counts-2">
+            <value>Two</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/sputum_collection/c_patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/c_patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_findings_title:label">
+            <value>Tsatanetsatane wa makhololo otoleledwa &lt;I class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /sputum_collection/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /sputum_collection/c_patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_samples_collected:label">
+            <value>**Makhololo otoleledwa:** <output value=" /sputum_collection/sputum_collection/samples_collected "/></value>
+          </text>
+          <text id="/sputum_collection/group_review/n_samples_submitted:label">
+            <value>**Makhololo omwe apelekedwa ku chipatala:.:** <output value=" /sputum_collection/sputum_collection/samples_dropped_at_facility "/></value>
+          </text>
+          <text id="/sputum_collection/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/sputum_collection/group_review/n_summary_title:label">
+            <value>Kutolera Makhololo</value>
+          </text>
+          <text id="/sputum_collection/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_age_in_years:label">
+            <value>Patient age in years</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/sputum_collection/inputs/client_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/sputum_collection/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/sputum_collection/inputs/schw_phone:label">
+            <value>SCHW Phone</value>
+          </text>
+          <text id="/sputum_collection/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/sputum_collection/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/sputum_collection/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/sputum_collection/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/n_inform:label">
+            <value>_Dziwitsana CHW kuti <output value=" /sputum_collection/c_patient_name "/> alibe zizindikiro za matenda a chifuwa chachikulu._</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/n_refer:label">
+            <value>_Mutumizeni <output value=" /sputum_collection/c_patient_name "/> ku chipatala kuti akawonedwenso</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reason_no_sample_dropped:label">
+            <value>Zifukwa zomwe sanakapelekere ma botolo onse a makhololo</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected/no_sample_with_tb_symptoms:label">
+            <value>Akulephera kupeleka makhololo koma ali nazo zizindikiro za TB</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected:label">
+            <value>Zifukwa zopangitsa kuti makhololo asapelekedwe</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/reasons_no_sample_collected_other:label">
+            <value>Fotokozani za zina:</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/0:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/1:label">
+            <value>Limodzi</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected/2:label">
+            <value>Awiri</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_collected:label">
+            <value>Nambala ya botolo omwe atoleledwa</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_dropped_at_facility:jr:constraintMsg">
+            <value>Lowetsani nambala yolondola ya ma botolo a makhololo omwe aperekedwa ku chipatala</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection/samples_dropped_at_facility:label">
+            <value>Nambala ya mabotolo omwe aperekedwa ku chipatala</value>
+          </text>
+          <text id="/sputum_collection/sputum_collection:label">
+            <value>Chikalata chotumizira makhololo</value>
+          </text>
+          <text id="static_instance-reasons_no_samples-0">
+            <value>Akulephera kupeleka makhololo koma ali nazo zizindikiro za TB</value>
+          </text>
+          <text id="static_instance-reasons_no_samples-1">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-sample_counts-0">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-sample_counts-1">
+            <value>Limodzi</value>
+          </text>
+          <text id="static_instance-sample_counts-2">
+            <value>Awiri</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <sputum_collection delimiter="#" id="sputum_collection" prefix="J1!sputum_collection!" version="2021-01-14 22:24:59">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <client_name/>
+            <client_id/>
+            <client_uuid/>
+            <client_age_in_years/>
+            <schw_phone/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <c_patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <c_patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <samples_count/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <needs_signoff>true</needs_signoff>
+          <sputum_collection>
+            <samples_collected/>
+            <reasons_no_sample_collected/>
+            <reasons_no_sample_collected_other/>
+            <n_refer/>
+            <n_inform/>
+            <samples_dropped_at_facility/>
+            <reason_no_sample_dropped/>
+          </sputum_collection>
+          <group_review>
+            <n_summary_title/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_samples_collected/>
+            <n_samples_submitted/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </sputum_collection>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="sample_counts">
+        <root>
+          <item>
+            <itextId>static_instance-sample_counts-0</itextId>
+            <samples_count>0</samples_count>
+            <name>0</name>
+          </item>
+          <item>
+            <itextId>static_instance-sample_counts-1</itextId>
+            <samples_count>1</samples_count>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-sample_counts-2</itextId>
+            <samples_count>1</samples_count>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="reasons_no_samples">
+        <root>
+          <item>
+            <itextId>static_instance-reasons_no_samples-0</itextId>
+            <name>no_sample_with_tb_symptoms</name>
+          </item>
+          <item>
+            <itextId>static_instance-reasons_no_samples-1</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/sputum_collection/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/sputum_collection/inputs/source" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/source_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/client_name" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/client_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/client_uuid" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/client_age_in_years" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/schw_phone" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/sputum_collection/inputs/contact/name" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/sex" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/sputum_collection/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/sputum_collection/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/sputum_collection/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/sputum_collection/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/sputum_collection/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/client_name" nodeset="/sputum_collection/patient_name" type="string"/>
+      <bind calculate="../patient_name" nodeset="/sputum_collection/c_patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/sputum_collection/patient_date_of_birth" type="string"/>
+      <bind calculate="coalesce(floor( difference-in-months(  /sputum_collection/patient_date_of_birth , today() ) div 12 ), ../inputs/client_age_in_years)" nodeset="/sputum_collection/patient_age_in_years" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/sputum_collection/c_patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /sputum_collection/patient_date_of_birth , today() )" nodeset="/sputum_collection/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /sputum_collection/patient_date_of_birth ) )" nodeset="/sputum_collection/patient_age_in_days" type="string"/>
+      <bind calculate="1" nodeset="/sputum_collection/samples_count" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/sputum_collection/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/sputum_collection/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/sputum_collection/geolocation" type="string"/>
+      <bind calculate="true()" nodeset="/sputum_collection/needs_signoff" type="string"/>
+      <bind nodeset="/sputum_collection/sputum_collection/samples_collected" required="true()" type="select1"/>
+      <bind nodeset="/sputum_collection/sputum_collection/reasons_no_sample_collected" relevant="selected(../samples_collected, '0')" required="true()" type="select1"/>
+      <bind nodeset="/sputum_collection/sputum_collection/reasons_no_sample_collected_other" relevant="selected(../reasons_no_sample_collected, 'other')" type="string"/>
+      <bind nodeset="/sputum_collection/sputum_collection/n_refer" readonly="true()" relevant="selected(../reasons_no_sample_collected, 'no_sample_with_tb_symptoms') and not(selected(../reasons_no_sample_collected, 'other'))" type="string"/>
+      <bind nodeset="/sputum_collection/sputum_collection/n_inform" readonly="true()" relevant="selected(../reasons_no_sample_collected, 'no_tb_symptoms_confirmed') and not(selected(../reasons_no_sample_collected, 'other'))" type="string"/>
+      <bind constraint=". &lt;=  /sputum_collection/sputum_collection/samples_collected " jr:constraintMsg="jr:itext('/sputum_collection/sputum_collection/samples_dropped_at_facility:jr:constraintMsg')" nodeset="/sputum_collection/sputum_collection/samples_dropped_at_facility" relevant="not(selected(../samples_collected, '0'))" required="true()" type="select1"/>
+      <bind nodeset="/sputum_collection/sputum_collection/reason_no_sample_dropped" relevant=" /sputum_collection/sputum_collection/samples_dropped_at_facility  !='' and  /sputum_collection/sputum_collection/samples_dropped_at_facility  &lt;  /sputum_collection/sputum_collection/samples_collected " required="true()" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_summary_title" readonly="true()" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_patient_details_title" readonly="true()" relevant="../../inputs/contact/patient_id != ''" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_patient_details" readonly="true()" relevant="../../inputs/contact/patient_id != ''" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_findings_title" readonly="true()" relevant=" /sputum_collection/sputum_collection/samples_collected  != ''" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_samples_collected" readonly="true()" relevant=" /sputum_collection/sputum_collection/samples_collected  != ''" type="string"/>
+      <bind nodeset="/sputum_collection/group_review/n_samples_submitted" readonly="true()" relevant=" /sputum_collection/sputum_collection/samples_collected  != ''" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/sputum_collection/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list hidden" ref="/sputum_collection/inputs">
+      <label ref="jr:itext('/sputum_collection/inputs:label')"/>
+      <group appearance="hidden" ref="/sputum_collection/inputs/contact">
+        <input appearance="db-object" ref="/sputum_collection/inputs/contact/_id">
+          <label ref="jr:itext('/sputum_collection/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/sputum_collection/inputs/contact/parent">
+          <label ref="jr:itext('/sputum_collection/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/sputum_collection/inputs/contact/parent/parent">
+            <label ref="jr:itext('/sputum_collection/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/sputum_collection/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/sputum_collection/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/sputum_collection/sputum_collection">
+      <label ref="jr:itext('/sputum_collection/sputum_collection:label')"/>
+      <select1 ref="/sputum_collection/sputum_collection/samples_collected">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/samples_collected:label')"/>
+        <item>
+          <label ref="jr:itext('/sputum_collection/sputum_collection/samples_collected/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/sputum_collection/sputum_collection/samples_collected/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/sputum_collection/sputum_collection/samples_collected/2:label')"/>
+          <value>2</value>
+        </item>
+      </select1>
+      <select1 ref="/sputum_collection/sputum_collection/reasons_no_sample_collected">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/reasons_no_sample_collected:label')"/>
+        <item>
+          <label ref="jr:itext('/sputum_collection/sputum_collection/reasons_no_sample_collected/no_sample_with_tb_symptoms:label')"/>
+          <value>no_sample_with_tb_symptoms</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/sputum_collection/sputum_collection/reasons_no_sample_collected/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/sputum_collection/sputum_collection/reasons_no_sample_collected_other">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/reasons_no_sample_collected_other:label')"/>
+      </input>
+      <input ref="/sputum_collection/sputum_collection/n_refer">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/n_refer:label')"/>
+      </input>
+      <input ref="/sputum_collection/sputum_collection/n_inform">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/n_inform:label')"/>
+      </input>
+      <select1 ref="/sputum_collection/sputum_collection/samples_dropped_at_facility">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/samples_dropped_at_facility:label')"/>
+        <itemset nodeset="instance('sample_counts')/root/item[samples_count =  /sputum_collection/samples_count 
+or samples_count = 0]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/sputum_collection/sputum_collection/reason_no_sample_dropped">
+        <label ref="jr:itext('/sputum_collection/sputum_collection/reason_no_sample_dropped:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/sputum_collection/group_review">
+      <label ref="jr:itext('/sputum_collection/group_review:label')"/>
+      <input appearance="h1 blue" ref="/sputum_collection/group_review/n_summary_title">
+        <label ref="jr:itext('/sputum_collection/group_review/n_summary_title:label')"/>
+      </input>
+      <input ref="/sputum_collection/group_review/n_submit">
+        <label ref="jr:itext('/sputum_collection/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/sputum_collection/group_review/n_patient_details_title">
+        <label ref="jr:itext('/sputum_collection/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/sputum_collection/group_review/n_patient_details">
+        <label ref="jr:itext('/sputum_collection/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/sputum_collection/group_review/n_findings_title">
+        <label ref="jr:itext('/sputum_collection/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/sputum_collection/group_review/n_samples_collected">
+        <label ref="jr:itext('/sputum_collection/group_review/n_samples_collected:label')"/>
+      </input>
+      <input ref="/sputum_collection/group_review/n_samples_submitted">
+        <label ref="jr:itext('/sputum_collection/group_review/n_samples_submitted:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

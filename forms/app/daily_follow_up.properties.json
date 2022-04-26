@@ -1,0 +1,15 @@
+{
+    "icon": "icon-followup-general",
+    "title": {
+        "en": "Patient Daily follow up",
+        "ny": "Kuyendera odwala tsiku lirilonse"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && (summary.is_in_tb === 'yes' || (summary.is_in_art === 'yes' && summary.art_duration_years < 1)) && !contact.date_of_death && !contact.muted && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

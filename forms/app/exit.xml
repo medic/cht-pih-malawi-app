@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Exit</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/exit/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/exit/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/exit/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/exit/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/exit/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/exit/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/exit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/exit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/exit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/exit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/exit/n_refer:label">
+            <value>_Refer <output value=" /exit/patient_name "/> to health facility for further management_</value>
+          </text>
+          <text id="/exit/patient_outcome/cured:label">
+            <value>Cured</value>
+          </text>
+          <text id="/exit/patient_outcome/not_cured:label">
+            <value>Not cured</value>
+          </text>
+          <text id="/exit/patient_outcome:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/exit/patient_outcome:label">
+            <value>Patient outcome</value>
+          </text>
+          <text id="/exit/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/exit/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/exit/referred:label">
+            <value>Did you refer <output value=" /exit/patient_name "/> to health facility</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/exit/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/exit/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/exit/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/exit/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/exit/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/exit/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/exit/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/exit/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/exit/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/exit/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/exit/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/exit/n_refer:label">
+            <value>_Mtumizeni $patient_name} kuchipatala kuti akathandizidwe_</value>
+          </text>
+          <text id="/exit/patient_outcome/cured:label">
+            <value>Anachira</value>
+          </text>
+          <text id="/exit/patient_outcome/not_cured:label">
+            <value>Sanachire</value>
+          </text>
+          <text id="/exit/patient_outcome:hint">
+            <value>Sankhani chifukwa china chili chonse chomwe chili choyenera</value>
+          </text>
+          <text id="/exit/patient_outcome:label">
+            <value>Zotsatira za wodwala</value>
+          </text>
+          <text id="/exit/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/exit/referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/exit/referred:label">
+            <value>Kodi munatumiza <output value=" /exit/patient_name "/> kuchipatala</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <exit delimiter="#" id="exit" prefix="J1!exit!" version="2019-05-28 17:52:19">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_uuid tag="hidden"/>
+          <patient_id/>
+          <patient_name/>
+          <patient_better/>
+          <patient_recovered/>
+          <is_in_tb>'</is_in_tb>
+          <is_in_malnutrition/>
+          <exited_tb/>
+          <exited_malnutrition/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <patient_outcome/>
+          <n_refer/>
+          <referred/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </exit>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/exit/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/exit/inputs/source" type="string"/>
+      <bind nodeset="/exit/inputs/source_id" type="string"/>
+      <bind nodeset="/exit/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/exit/inputs/contact/name" type="string"/>
+      <bind nodeset="/exit/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/exit/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/exit/inputs/contact/sex" type="string"/>
+      <bind nodeset="/exit/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/exit/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/exit/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/exit/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/exit/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months( ../inputs/contact/date_of_birth, today() )" nodeset="/exit/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/exit/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/exit/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/exit/patient_name" type="string"/>
+      <bind calculate="if(selected(../patient_outcome, 'cured'), 'yes', 'no')" nodeset="/exit/patient_better" type="string"/>
+      <bind calculate="if(selected(../patient_outcome, 'cured'), 'yes', 'no')" nodeset="/exit/patient_recovered" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_tb" nodeset="/exit/is_in_tb" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_malnutrition" nodeset="/exit/is_in_malnutrition" type="string"/>
+      <bind calculate="if(../is_in_tb = 'yes', 'yes', '')" nodeset="/exit/exited_tb" type="string"/>
+      <bind calculate="if(../is_in_malnutrition = 'yes', 'yes', '')" nodeset="/exit/exited_malnutrition" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/exit/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/exit/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/exit/geolocation" type="string"/>
+      <bind nodeset="/exit/patient_outcome" required="true()" type="select1"/>
+      <bind nodeset="/exit/n_refer" readonly="true()" relevant="selected(../patient_outcome, 'not_cured')" required="true()" type="string"/>
+      <bind nodeset="/exit/referred" relevant="selected(../patient_outcome, 'not_cured')" required="true()" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/exit/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/exit/inputs">
+      <label ref="jr:itext('/exit/inputs:label')"/>
+      <group ref="/exit/inputs/contact">
+        <label ref="jr:itext('/exit/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/exit/inputs/contact/_id">
+          <label ref="jr:itext('/exit/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/exit/inputs/contact/parent">
+          <label ref="jr:itext('/exit/inputs/contact/parent:label')"/>
+          <group ref="/exit/inputs/contact/parent/parent">
+            <label ref="jr:itext('/exit/inputs/contact/parent/parent:label')"/>
+            <group ref="/exit/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/exit/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <select1 ref="/exit/patient_outcome">
+      <label ref="jr:itext('/exit/patient_outcome:label')"/>
+      <hint ref="jr:itext('/exit/patient_outcome:hint')"/>
+      <item>
+        <label ref="jr:itext('/exit/patient_outcome/cured:label')"/>
+        <value>cured</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/exit/patient_outcome/not_cured:label')"/>
+        <value>not_cured</value>
+      </item>
+    </select1>
+    <input ref="/exit/n_refer">
+      <label ref="jr:itext('/exit/n_refer:label')"/>
+    </input>
+    <select1 ref="/exit/referred">
+      <label ref="jr:itext('/exit/referred:label')"/>
+      <item>
+        <label ref="jr:itext('/exit/referred/yes:label')"/>
+        <value>yes</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/exit/referred/no:label')"/>
+        <value>no</value>
+      </item>
+    </select1>
+  </h:body>
+</h:html>

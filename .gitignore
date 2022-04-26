@@ -1,0 +1,11 @@
+node_modules
+backups
+.hashes
+._revs
+playstore
+.~lock*
+app_settings.json
+csv
+json_docs
+upload-docs*
+users.csv

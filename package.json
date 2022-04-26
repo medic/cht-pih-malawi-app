@@ -1,0 +1,30 @@
+{
+  "name": "pih-malawi-config",
+  "version": "v3.10.3r1",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "eslint": "npx eslint *.json *.js 'test/**/*.js'",
+    "test": "npm run eslint && npm run compile-app-settings && npm run test-unit",
+    "compile-app-settings": "npx cht --no-check compile-app-settings",
+    "test-unit": "mocha --reporter spec 'test/**/*.spec.js' --timeout 20000 --slow 2000"
+  },
+  "devDependencies": {
+    "@medic/contact-summary-testing": "^2.0.1",
+    "@medic/eslint-config": "^1.1.0",
+    "chai": "^4.1.2",
+    "chai-datetime": "^1.7.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
+    "cht-conf": "^3.9.1",
+    "cht-conf-test-harness": "^2.3.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^1.3.2",
+    "luxon": "^2.1.1",
+    "medic-nootils": "^2.0.0",
+    "mocha": "^5.1.1",
+    "sinon": "^9.2.0"
+  }
+}

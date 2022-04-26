@@ -1,0 +1,15 @@
+{
+    "icon": "icon-people-manager-crop",
+    "title": {
+        "en": "Spot check",
+        "ny": "Kuyendera mwadzidzidzi"
+    },
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact.contact_type === 'household' && user._id != contact._id && (user.contact_type === 'schw' || user.contact_type === 'site_supervisor') && !contact.muted"
+    },
+    "hidden_fields": [
+
+    ]
+}

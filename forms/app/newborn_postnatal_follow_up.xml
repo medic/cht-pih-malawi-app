@@ -1,0 +1,1357 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Newborn postnatal follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/abdominal_distension:label">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/crying_continuously:label">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/eye_discharge:label">
+            <value>Eye discharge</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/jaundice:label">
+            <value>Jaundice</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/not_feeding:label">
+            <value>Failing to feed</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/skin_rash:label">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/umbilical_infection:label">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs:label">
+            <value>Does <output value=" /newborn_postnatal_follow_up/patient_name "/> have any of the following danger signs?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery:label">
+            <value>Has <output value=" /newborn_postnatal_follow_up/patient_name "/> had any health facility PNC visit since delivery?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/n_encourage_pnc:label">
+            <value>_Encourage care giver to take baby to the health facility for PNC visit._</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/note_refer:label">
+            <value>_Accompany <output value=" /newborn_postnatal_follow_up/patient_name "/> to the health facility_</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit:label">
+            <value>Which facility PNC visit are you reporting?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:jr:constraintMsg">
+            <value>Visit cannot be less than 0!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit:label">
+            <value>Which day are you visiting the baby at home?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:hint">
+            <value>Indicate which day you visited the baby</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:jr:constraintMsg">
+            <value>Day cannot be less than 0!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_visit_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_visit_date:label">
+            <value>Enter date when PNC visit was attended</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/visit_delay_reason:jr:constraintMsg">
+            <value>Please enter text only.</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/visit_delay_reason:label">
+            <value>Reason for the delayed visit</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields:label">
+            <value>Visit details</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied/no:label">
+            <value>No</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied:label">
+            <value>Did you refer and accompany <output value=" /newborn_postnatal_follow_up/patient_name "/> to the health facility?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_danger_signs_display:label">
+            <value>_<output value=" /newborn_postnatal_follow_up/group_review/c_danger_signs_screening "/>_</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_danger_signs_title:label">
+            <value>**_Danger signs_**</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_ds_follow_up:label">
+            <value>Follow up task will appear on <output value=" /newborn_postnatal_follow_up/group_review/c_ds_follow_up_date "/></value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_postnatal_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_postnatal_follow_up/patient_age_in_days "/> days old&lt;/h5&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_pnc:label">
+            <value>Newborn PNC follow up</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_referral:label">
+            <value>_Accompany <output value=" /newborn_postnatal_follow_up/patient_name "/> immediately for danger signs management!_</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type/no_chw:label">
+            <value>Without CHW</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/pregnancy_id:label">
+            <value>Pregnancy uuid</value>
+          </text>
+          <text id="static_instance-conditions-0">
+            <value>Alive</value>
+          </text>
+          <text id="static_instance-conditions-1">
+            <value>Dead</value>
+          </text>
+          <text id="static_instance-danger_signs-0">
+            <value>Fever</value>
+          </text>
+          <text id="static_instance-danger_signs-1">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="static_instance-danger_signs-10">
+            <value>None</value>
+          </text>
+          <text id="static_instance-danger_signs-2">
+            <value>Convulsions</value>
+          </text>
+          <text id="static_instance-danger_signs-3">
+            <value>Jaundice</value>
+          </text>
+          <text id="static_instance-danger_signs-4">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="static_instance-danger_signs-5">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="static_instance-danger_signs-6">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="static_instance-danger_signs-7">
+            <value>Eye discharge</value>
+          </text>
+          <text id="static_instance-danger_signs-8">
+            <value>Failing to feed</value>
+          </text>
+          <text id="static_instance-danger_signs-9">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="static_instance-dpts-0">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="static_instance-dpts-1">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="static_instance-dpts-2">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="static_instance-facility_visits-0">
+            <value>1 week facility visit</value>
+          </text>
+          <text id="static_instance-facility_visits-1">
+            <value>6 weeks facility visit</value>
+          </text>
+          <text id="static_instance-facility_visits-2">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-follow_up_methods-0">
+            <value>In person</value>
+          </text>
+          <text id="static_instance-follow_up_methods-1">
+            <value>By phone</value>
+          </text>
+          <text id="static_instance-home_visits-0">
+            <value>3 days home visit</value>
+          </text>
+          <text id="static_instance-home_visits-1">
+            <value>5 days home visit</value>
+          </text>
+          <text id="static_instance-home_visits-2">
+            <value>Other (specify)</value>
+          </text>
+          <text id="static_instance-measles-0">
+            <value>Measles 1</value>
+          </text>
+          <text id="static_instance-measles-1">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-pcvs-0">
+            <value>PCV 1</value>
+          </text>
+          <text id="static_instance-pcvs-1">
+            <value>PCV 2</value>
+          </text>
+          <text id="static_instance-pcvs-2">
+            <value>PCV 3</value>
+          </text>
+          <text id="static_instance-polios-0">
+            <value>OPV 1</value>
+          </text>
+          <text id="static_instance-polios-1">
+            <value>OPV 2</value>
+          </text>
+          <text id="static_instance-polios-2">
+            <value>OPV 3</value>
+          </text>
+          <text id="static_instance-ref_types-0">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="static_instance-ref_types-1">
+            <value>Without CHW</value>
+          </text>
+          <text id="static_instance-rotas-0">
+            <value>Rota 1</value>
+          </text>
+          <text id="static_instance-rotas-1">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>OPV</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>PCV</value>
+          </text>
+          <text id="static_instance-vaccines-4">
+            <value>DPT-HepB-Hib</value>
+          </text>
+          <text id="static_instance-vaccines-5">
+            <value>IPV</value>
+          </text>
+          <text id="static_instance-vaccines-6">
+            <value>Rota</value>
+          </text>
+          <text id="static_instance-vaccines-7">
+            <value>Vitamin A</value>
+          </text>
+          <text id="static_instance-vaccines-8">
+            <value>Measles</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/newborn_postnatal_follow_up/at_health_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/danger_sign:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/delivered_at_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/delivery_date:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/delivery_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/delivery_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/facility_visits_group:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/abdominal_distension:label">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/crying_continuously:label">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/eye_discharge:label">
+            <value>Manthongo</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/not_feeding:label">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/skin_rash:label">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs/umbilical_infection:label">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/danger_signs:label">
+            <value>Kodi <output value=" /newborn_postnatal_follow_up/patient_name "/> ali ndi zina mwa zizindikilo izi</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery:label">
+            <value>Kodi <output value=" /newborn_postnatal_follow_up/patient_name "/> anapita ku sikelo atangochira?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/n_encourage_pnc:label">
+            <value>_Limbikitsani makolo zopita ndi mwana wawo ku sikelo._</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/note_refer:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /newborn_postnatal_follow_up/patient_name "/> kuchipatala kuti akalndire thandizo!_</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit:label">
+            <value>Kodi ulendo wa kusikelo mukulemberawu ndi wa liti?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:jr:constraintMsg">
+            <value>Ulendo usachepere 0!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit:label">
+            <value>Ndi tsiku liti lomwe mukukayendera mwana ku nyumba?</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:hint">
+            <value>Lembani tsiku lomwe munamuyendera mwana</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:jr:constraintMsg">
+            <value>Tsiku likhale losachepera 0!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_home_visit_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_visit_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/pnc_visit_date:label">
+            <value>Lowetsani tsiku lomwe mayi anapita kuchipatala atangochira</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/visit_delay_reason:jr:constraintMsg">
+            <value>Tsiku likhale losachepera 0!</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields/visit_delay_reason:label">
+            <value>Chifukwa chokamuyendera mai mochedwa</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/fields:label">
+            <value>Tsatanetsatane wa kuyendera</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/accompanied:label">
+            <value>Kodi munatumiza <output value=" /newborn_postnatal_follow_up/patient_name "/> kuchipatala</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_danger_signs_display:label">
+            <value><output value=" /newborn_postnatal_follow_up/group_review/c_danger_signs_screening "/></value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_danger_signs_title:label">
+            <value>**_Zizindikiro zoopysa_**</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_ds_follow_up:label">
+            <value>Mudzalandira uthenga wokudziwitsani ntchito yoti mugwire pa <output value=" /newborn_postnatal_follow_up/group_review/c_ds_follow_up_date "/></value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_follow_up_title:label">
+            <value>Kalondolondo &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_postnatal_follow_up/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /newborn_postnatal_follow_up/patient_age_in_days "/> days old&lt;/h5&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_patient_details_title:label">
+            <value>Mbiri ya odwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_pnc:label">
+            <value>Kalondolondo wa mwana amene wangobadwa kumene</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_referral:label">
+            <value>_Pelekezani<output value=" /newborn_postnatal_follow_up/patient_name "/> ku chipatala kuti akalandire chithandizo china._</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_referral_title:label">
+            <value>Tumizani kuchipatala&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type/no_chw:label">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/group_review:label">
+            <value>Zotsatira/ Tsamba la zotsatira</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/hf_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/pnc_home_visit_group:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/pnc_visit_date:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/pnc_visit_number:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/pregnancy_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/source:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/newborn_postnatal_follow_up/with_skilled_care:label">
+            <value>-</value>
+          </text>
+          <text id="static_instance-conditions-0">
+            <value>Ali moyo</value>
+          </text>
+          <text id="static_instance-conditions-1">
+            <value>Wa mwalira</value>
+          </text>
+          <text id="static_instance-danger_signs-0">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="static_instance-danger_signs-1">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="static_instance-danger_signs-10">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-danger_signs-2">
+            <value>Kukomoka</value>
+          </text>
+          <text id="static_instance-danger_signs-3">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="static_instance-danger_signs-4">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="static_instance-danger_signs-5">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="static_instance-danger_signs-6">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="static_instance-danger_signs-7">
+            <value>Manthongo</value>
+          </text>
+          <text id="static_instance-danger_signs-8">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="static_instance-danger_signs-9">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="static_instance-dpts-0">
+            <value>DPT-HepB-Hib1</value>
+          </text>
+          <text id="static_instance-dpts-1">
+            <value>DPT-HepB-Hib2</value>
+          </text>
+          <text id="static_instance-dpts-2">
+            <value>DPT-HepB-Hib3</value>
+          </text>
+          <text id="static_instance-facility_visits-0">
+            <value>Tsabata 1</value>
+          </text>
+          <text id="static_instance-facility_visits-1">
+            <value>Tsabata 6</value>
+          </text>
+          <text id="static_instance-facility_visits-2">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-follow_up_methods-0">
+            <value>Pa maso</value>
+          </text>
+          <text id="static_instance-follow_up_methods-1">
+            <value>Pa lamya</value>
+          </text>
+          <text id="static_instance-home_visits-0">
+            <value>Tsiku 3</value>
+          </text>
+          <text id="static_instance-home_visits-1">
+            <value>Tsiku 5</value>
+          </text>
+          <text id="static_instance-home_visits-2">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-measles-0">
+            <value>Measles 2</value>
+          </text>
+          <text id="static_instance-measles-1">
+            <value>Measles 3</value>
+          </text>
+          <text id="static_instance-pcvs-0">
+            <value>PCV1</value>
+          </text>
+          <text id="static_instance-pcvs-1">
+            <value>PCV2</value>
+          </text>
+          <text id="static_instance-pcvs-2">
+            <value>PCV3</value>
+          </text>
+          <text id="static_instance-polios-0">
+            <value>OPV1</value>
+          </text>
+          <text id="static_instance-polios-1">
+            <value>OPV2</value>
+          </text>
+          <text id="static_instance-polios-2">
+            <value>OPV3</value>
+          </text>
+          <text id="static_instance-ref_types-0">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="static_instance-ref_types-1">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="static_instance-rotas-0">
+            <value>Rota 2</value>
+          </text>
+          <text id="static_instance-rotas-1">
+            <value>Rota 3</value>
+          </text>
+          <text id="static_instance-vaccines-0">
+            <value>BCG</value>
+          </text>
+          <text id="static_instance-vaccines-1">
+            <value>Polio (OPV 0)</value>
+          </text>
+          <text id="static_instance-vaccines-2">
+            <value>OPV</value>
+          </text>
+          <text id="static_instance-vaccines-3">
+            <value>PCV</value>
+          </text>
+          <text id="static_instance-vaccines-4">
+            <value>DPT-HepB-Hib</value>
+          </text>
+          <text id="static_instance-vaccines-5">
+            <value>IPV</value>
+          </text>
+          <text id="static_instance-vaccines-6">
+            <value>Rota</value>
+          </text>
+          <text id="static_instance-vaccines-7">
+            <value>Vitamin A</value>
+          </text>
+          <text id="static_instance-vaccines-8">
+            <value>Measles</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Eya</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Ayi</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <newborn_postnatal_follow_up delimiter="#" id="newborn_postnatal_follow_up" prefix="J1!newborn_postnatal_follow_up!" version="2022-03-19 22:17:09">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <pnc_home_visit_group/>
+          <facility_visits_group/>
+          <delivery_uuid/>
+          <delivered_at_facility/>
+          <pregnancy_uuid/>
+          <pnc_visit_date/>
+          <pnc_visit_number/>
+          <danger_sign/>
+          <delivery_date/>
+          <at_health_facility/>
+          <with_skilled_care/>
+          <pregnancy_id/>
+          <delivery_id/>
+          <hf_visit/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <is_referral_case/>
+          <fields>
+            <pnc_home_visit/>
+            <pnc_home_visit_other/>
+            <visit_delay_reason/>
+            <facility_visit_since_delivery/>
+            <pnc_facility_visit/>
+            <pnc_facility_visit_other/>
+            <pnc_visit_date/>
+            <c_next_visit/>
+            <c_next_visit_display/>
+            <n_encourage_pnc/>
+            <danger_signs/>
+            <note_refer/>
+          </fields>
+          <group_review>
+            <n_pnc/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_danger_signs_title/>
+            <c_danger_signs_screening/>
+            <n_danger_signs_display/>
+            <n_referral_title/>
+            <n_referral/>
+            <accompanied/>
+            <ref_type/>
+            <n_follow_up_title/>
+            <c_ds_follow_up_date/>
+            <n_ds_follow_up/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </newborn_postnatal_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="rotas">
+        <root>
+          <item>
+            <itextId>static_instance-rotas-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-rotas-1</itextId>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="facility_visits">
+        <root>
+          <item>
+            <itextId>static_instance-facility_visits-0</itextId>
+            <name>1</name>
+            <facility_visits_group>0</facility_visits_group>
+          </item>
+          <item>
+            <itextId>static_instance-facility_visits-1</itextId>
+            <name>6</name>
+            <facility_visits_group>1</facility_visits_group>
+          </item>
+          <item>
+            <itextId>static_instance-facility_visits-2</itextId>
+            <name>0</name>
+            <facility_visits_group>2</facility_visits_group>
+          </item>
+        </root>
+      </instance>
+      <instance id="dpts">
+        <root>
+          <item>
+            <itextId>static_instance-dpts-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-dpts-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-dpts-2</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="ref_types">
+        <root>
+          <item>
+            <itextId>static_instance-ref_types-0</itextId>
+            <name>chw</name>
+          </item>
+          <item>
+            <itextId>static_instance-ref_types-1</itextId>
+            <name>no_chw</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="vaccines">
+        <root>
+          <item>
+            <itextId>static_instance-vaccines-0</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>0</age_lower>
+            <name>bcg</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-1</itextId>
+            <age_upper>2</age_upper>
+            <age_lower>0</age_lower>
+            <name>birth_polio</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-2</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>5</age_lower>
+            <name>opv</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-3</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>5</age_lower>
+            <name>pcv</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-4</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>5</age_lower>
+            <name>dpt_hepb_hib</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-5</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>0</age_lower>
+            <name>ipv</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-6</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>5</age_lower>
+            <name>rota</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-7</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>25</age_lower>
+            <name>vitamin_a</name>
+          </item>
+          <item>
+            <itextId>static_instance-vaccines-8</itextId>
+            <age_upper>261</age_upper>
+            <age_lower>38</age_lower>
+            <name>measles</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="polios">
+        <root>
+          <item>
+            <itextId>static_instance-polios-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-polios-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-polios-2</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="follow_up_methods">
+        <root>
+          <item>
+            <itextId>static_instance-follow_up_methods-0</itextId>
+            <name>in_person</name>
+          </item>
+          <item>
+            <itextId>static_instance-follow_up_methods-1</itextId>
+            <name>by_phone</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pcvs">
+        <root>
+          <item>
+            <itextId>static_instance-pcvs-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-pcvs-1</itextId>
+            <name>2</name>
+          </item>
+          <item>
+            <itextId>static_instance-pcvs-2</itextId>
+            <name>3</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="home_visits">
+        <root>
+          <item>
+            <itextId>static_instance-home_visits-0</itextId>
+            <pnc_home_visit_group>0</pnc_home_visit_group>
+            <name>3</name>
+          </item>
+          <item>
+            <itextId>static_instance-home_visits-1</itextId>
+            <pnc_home_visit_group>1</pnc_home_visit_group>
+            <name>5</name>
+          </item>
+          <item>
+            <itextId>static_instance-home_visits-2</itextId>
+            <pnc_home_visit_group>2</pnc_home_visit_group>
+            <name>0</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="conditions">
+        <root>
+          <item>
+            <itextId>static_instance-conditions-0</itextId>
+            <name>alive</name>
+          </item>
+          <item>
+            <itextId>static_instance-conditions-1</itextId>
+            <name>dead</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="danger_signs">
+        <root>
+          <item>
+            <itextId>static_instance-danger_signs-0</itextId>
+            <name>fever</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-1</itextId>
+            <name>diarrhoea</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-2</itextId>
+            <name>convulsions</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-3</itextId>
+            <name>jaundice</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-4</itextId>
+            <name>umbilical_infection</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-5</itextId>
+            <name>abdominal_distension</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-6</itextId>
+            <name>crying_continuously</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-7</itextId>
+            <name>eye_discharge</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-8</itextId>
+            <name>not_feeding</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-9</itextId>
+            <name>skin_rash</name>
+          </item>
+          <item>
+            <itextId>static_instance-danger_signs-10</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="measles">
+        <root>
+          <item>
+            <itextId>static_instance-measles-0</itextId>
+            <name>1</name>
+          </item>
+          <item>
+            <itextId>static_instance-measles-1</itextId>
+            <name>2</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/newborn_postnatal_follow_up/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/newborn_postnatal_follow_up/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/newborn_postnatal_follow_up/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/newborn_postnatal_follow_up/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/newborn_postnatal_follow_up/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/newborn_postnatal_follow_up/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /newborn_postnatal_follow_up/patient_date_of_birth , today() ) div 12 )" nodeset="/newborn_postnatal_follow_up/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /newborn_postnatal_follow_up/patient_date_of_birth , today() )" nodeset="/newborn_postnatal_follow_up/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /newborn_postnatal_follow_up/patient_date_of_birth ) )" nodeset="/newborn_postnatal_follow_up/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /newborn_postnatal_follow_up/patient_date_of_birth )) div 7)" nodeset="/newborn_postnatal_follow_up/patient_age_in_weeks" type="string"/>
+      <bind calculate="if(../patient_age_in_days &lt; 5, 0, if(../patient_age_in_days &gt;= 5 and ../patient_age_in_days &lt; 7, 1, 2))" nodeset="/newborn_postnatal_follow_up/pnc_home_visit_group" type="string"/>
+      <bind calculate="if(../patient_age_in_days &lt;= 7, 0, if(../patient_age_in_days &gt; 7 and ../patient_age_in_days &lt;= 42, 1, 2))" nodeset="/newborn_postnatal_follow_up/facility_visits_group" type="string"/>
+      <bind calculate="instance('contact-summary')/context/delivery_uuid" nodeset="/newborn_postnatal_follow_up/delivery_uuid" type="string"/>
+      <bind calculate="instance('contact-summary')/context/delivered_at_facility" nodeset="/newborn_postnatal_follow_up/delivered_at_facility" type="string"/>
+      <bind calculate="instance('contact-summary')/context/pregnancy_uuid" nodeset="/newborn_postnatal_follow_up/pregnancy_uuid" type="string"/>
+      <bind calculate="../visit_details/visit_date" nodeset="/newborn_postnatal_follow_up/pnc_visit_date" type="string"/>
+      <bind calculate="../inputs/pnc_visit_number" nodeset="/newborn_postnatal_follow_up/pnc_visit_number" type="string"/>
+      <bind calculate="if(../fields/danger_signs != '', 'yes', 'no')" nodeset="/newborn_postnatal_follow_up/danger_sign" type="string"/>
+      <bind calculate="instance('contact-summary')/context/delivery_date" nodeset="/newborn_postnatal_follow_up/delivery_date" type="string"/>
+      <bind calculate="instance('contact-summary')/context/at_health_facility" nodeset="/newborn_postnatal_follow_up/at_health_facility" type="string"/>
+      <bind calculate="instance('contact-summary')/context/with_skilled_care" nodeset="/newborn_postnatal_follow_up/with_skilled_care" type="string"/>
+      <bind calculate="../../../pregnancy_uuid" nodeset="/newborn_postnatal_follow_up/pregnancy_id" type="string"/>
+      <bind calculate="../delivery_uuid" nodeset="/newborn_postnatal_follow_up/delivery_id" type="string"/>
+      <bind calculate="../visit_details/facility_visit_since_delivery" nodeset="/newborn_postnatal_follow_up/hf_visit" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/newborn_postnatal_follow_up/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/newborn_postnatal_follow_up/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/newborn_postnatal_follow_up/geolocation" type="string"/>
+      <bind calculate="if((count-selected(../fields/danger_signs) &gt;= 1
+and not(selected(../ields/danger_signs, 'none'))), 'yes', 'no')" nodeset="/newborn_postnatal_follow_up/is_referral_case" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/fields/pnc_home_visit" relevant="int(../../patient_age_in_days) &lt;= 5" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/newborn_postnatal_follow_up/fields/pnc_home_visit_other:jr:constraintMsg')" nodeset="/newborn_postnatal_follow_up/fields/pnc_home_visit_other" relevant="selected(../pnc_home_visit, '0')" required="true()" type="int"/>
+      <bind constraint="regex(.,'^[a-zA-Z]$')" jr:constraintMsg="jr:itext('/newborn_postnatal_follow_up/fields/visit_delay_reason:jr:constraintMsg')" nodeset="/newborn_postnatal_follow_up/fields/visit_delay_reason" relevant="selected(../pnc_home_visit, '0')" required="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery" relevant="int(../../patient_age_in_days) &gt; 7 and int(../../patient_age_in_days) &lt;= 56" required="true()" type="select1"/>
+      <bind nodeset="/newborn_postnatal_follow_up/fields/pnc_facility_visit" relevant="selected(../facility_visit_since_delivery, 'yes')" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:jr:constraintMsg')" nodeset="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other" relevant="selected(../pnc_facility_visit, '0')" required="true()" type="int"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/newborn_postnatal_follow_up/fields/pnc_visit_date:jr:constraintMsg')" nodeset="/newborn_postnatal_follow_up/fields/pnc_visit_date" relevant="selected(../facility_visit_since_delivery, 'yes')" required="true()" type="date"/>
+      <bind calculate="if( /newborn_postnatal_follow_up/patient_age_in_days  &lt; 7, decimal-date-time(../pnc_visit_date) + 2, if(../patient_age_in_days &gt; 7, decimal-date-time(../pnc_visit_date) + 35, 0))" nodeset="/newborn_postnatal_follow_up/fields/c_next_visit" type="string"/>
+      <bind calculate="format-date-time(../pnc_visit_date,&quot;%d/%m/%Y&quot;)" nodeset="/newborn_postnatal_follow_up/fields/c_next_visit_display" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/fields/n_encourage_pnc" readonly="true()" relevant="selected(../facility_visit_since_delivery, 'no')" type="string"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs:jr:constraintMsg')" nodeset="/newborn_postnatal_follow_up/fields/danger_signs" required="true()" type="select"/>
+      <bind nodeset="/newborn_postnatal_follow_up/fields/note_refer" readonly="true()" relevant="(count-selected(../danger_signs) &gt;= 1
+and not(selected(../danger_signs, 'none')))" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_pnc" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_findings_title" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_danger_signs_title" readonly="true()" relevant="not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1)" type="string"/>
+      <bind calculate="if(not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1), 'Newborn Danger signs present', 'No Newborn Danger signs')" nodeset="/newborn_postnatal_follow_up/group_review/c_danger_signs_screening" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_danger_signs_display" readonly="true()" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_referral_title" readonly="true()" relevant="not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_referral" readonly="true()" relevant="not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/accompanied" relevant="not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1)" required="true()" type="select1"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/ref_type" relevant="selected(../accompanied, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind calculate="format-date-time(decimal-date-time(today())+2, &quot;%d/%m/%Y&quot;)" nodeset="/newborn_postnatal_follow_up/group_review/c_ds_follow_up_date" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_ds_follow_up" readonly="true()" relevant="not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/newborn_postnatal_follow_up/group_review/n_follow_up" readonly="true()" relevant="not(not(selected(../../fields/danger_signs, 'none'))
+and (count-selected(../../fields/danger_signs) &gt;= 1))" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/newborn_postnatal_follow_up/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/newborn_postnatal_follow_up/inputs">
+      <label ref="jr:itext('/newborn_postnatal_follow_up/inputs:label')"/>
+      <group ref="/newborn_postnatal_follow_up/inputs/contact">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/newborn_postnatal_follow_up/inputs/contact/_id">
+          <label ref="jr:itext('/newborn_postnatal_follow_up/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/newborn_postnatal_follow_up/inputs/contact/parent">
+          <label ref="jr:itext('/newborn_postnatal_follow_up/inputs/contact/parent:label')"/>
+          <group ref="/newborn_postnatal_follow_up/inputs/contact/parent/parent">
+            <label ref="jr:itext('/newborn_postnatal_follow_up/inputs/contact/parent/parent:label')"/>
+            <group ref="/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/newborn_postnatal_follow_up/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/newborn_postnatal_follow_up/fields">
+      <label ref="jr:itext('/newborn_postnatal_follow_up/fields:label')"/>
+      <select1 ref="/newborn_postnatal_follow_up/fields/pnc_home_visit">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_home_visit:label')"/>
+        <itemset nodeset="instance('home_visits')/root/item[pnc_home_visit_group =  /newborn_postnatal_follow_up/pnc_home_visit_group  or pnc_home_visit_group = 2]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/newborn_postnatal_follow_up/fields/pnc_home_visit_other">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_home_visit_other:label')"/>
+        <hint ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_home_visit_other:hint')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/fields/visit_delay_reason">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/visit_delay_reason:label')"/>
+      </input>
+      <select1 ref="/newborn_postnatal_follow_up/fields/facility_visit_since_delivery">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/facility_visit_since_delivery:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/facility_visit_since_delivery/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/newborn_postnatal_follow_up/fields/pnc_facility_visit">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_facility_visit:label')"/>
+        <itemset nodeset="instance('facility_visits')/root/item[facility_visits_group =  /newborn_postnatal_follow_up/facility_visits_group  or facility_visits_group = 2]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/newborn_postnatal_follow_up/fields/pnc_facility_visit_other">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_facility_visit_other:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/fields/pnc_visit_date">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/pnc_visit_date:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/fields/n_encourage_pnc">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/n_encourage_pnc:label')"/>
+      </input>
+      <select ref="/newborn_postnatal_follow_up/fields/danger_signs">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/diarrhoea:label')"/>
+          <value>diarrhoea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/jaundice:label')"/>
+          <value>jaundice</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/umbilical_infection:label')"/>
+          <value>umbilical_infection</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/abdominal_distension:label')"/>
+          <value>abdominal_distension</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/crying_continuously:label')"/>
+          <value>crying_continuously</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/eye_discharge:label')"/>
+          <value>eye_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/not_feeding:label')"/>
+          <value>not_feeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/skin_rash:label')"/>
+          <value>skin_rash</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/fields/danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/newborn_postnatal_follow_up/fields/note_refer">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/fields/note_refer:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/newborn_postnatal_follow_up/group_review">
+      <label ref="jr:itext('/newborn_postnatal_follow_up/group_review:label')"/>
+      <input appearance="h1 blue" ref="/newborn_postnatal_follow_up/group_review/n_pnc">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_pnc:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_submit">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/newborn_postnatal_follow_up/group_review/n_patient_details_title">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_patient_details">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/newborn_postnatal_follow_up/group_review/n_findings_title">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_danger_signs_title">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_danger_signs_title:label')"/>
+      </input>
+      <input appearance="li" ref="/newborn_postnatal_follow_up/group_review/n_danger_signs_display">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_danger_signs_display:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/newborn_postnatal_follow_up/group_review/n_referral_title">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_referral">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_referral:label')"/>
+      </input>
+      <select1 ref="/newborn_postnatal_follow_up/group_review/accompanied">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/accompanied:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/accompanied/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/accompanied/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/newborn_postnatal_follow_up/group_review/ref_type">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/ref_type:label')"/>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/ref_type/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/ref_type/no_chw:label')"/>
+          <value>no_chw</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/newborn_postnatal_follow_up/group_review/n_follow_up_title">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_ds_follow_up">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_ds_follow_up:label')"/>
+      </input>
+      <input ref="/newborn_postnatal_follow_up/group_review/n_follow_up">
+        <label ref="jr:itext('/newborn_postnatal_follow_up/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-immunization",
+    "title": {
+        "en": "Immunization visit",
+        "ny": "Kalondolondo wa katemera"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && (!contact.date_of_birth || (ageInYears(contact) < 5))"
+    },
+    "hidden_fields": [
+
+    ]
+}

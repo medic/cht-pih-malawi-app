@@ -1,0 +1,15 @@
+{
+    "icon": "icon-followup-general",
+    "title": {
+        "en": "Referral follow up",
+        "ny": "Kalondolondo mukatumiza"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && !contact.date_of_death"
+    },
+    "hidden_fields": [
+
+    ]
+}

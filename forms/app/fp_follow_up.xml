@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Family planning follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method:label">
+            <value>Has <output value=" /fp_follow_up/patient_name "/> changed their family planning method?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/expiry_date:label">
+            <value>Date of expiry</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date:label">
+            <value>Was <output value=" /fp_follow_up/patient_name "/> given next appointment date</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_cousel_and_ref:label">
+            <value>_Please counsel <output value=" /fp_follow_up/patient_name "/> and refer them to the health facility._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_fp_method:label">
+            <value>_<output value=" /fp_follow_up/patient_name "/> is on <output value=" /fp_follow_up/fp_follow_up/fp_method_display "/>._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_next_visit:label">
+            <value>_Next appointment date is <output value=" /fp_follow_up/fp_follow_up/fp_next_visit "/>_</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_no_condoms:label">
+            <value>_Inform <output value=" /fp_follow_up/patient_name "/> to talk to their health provider on usage of back up method during their next clinic appointment_</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_ref_for_renewal:label">
+            <value>_Refer <output value=" /fp_follow_up/patient_name "/> to the health facility for FP renewal._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/depo_provera:label">
+            <value>Injection/Depo-Provera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/implant:label">
+            <value>Implant</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/iucd:label">
+            <value>Intrauterine Device (IUCD)</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/pills:label">
+            <value>Pills</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/tubal_ligation:label">
+            <value>Tubal Ligation</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method:label">
+            <value>Which method has <output value=" /fp_follow_up/patient_name "/> switched to?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/next_visit:label">
+            <value>When is the next appointment date?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp:label">
+            <value>Is <output value=" /fp_follow_up/patient_name "/> still on family planning?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/cultural:label">
+            <value>Cultural reasons</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/husband_refused:label">
+            <value>Husband/partner doesn't want her to use FP</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/pregnant:label">
+            <value>The woman is pregnant</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/religion:label">
+            <value>Religious reasons</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/side_effects:label">
+            <value>Experiencing side effects</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp:label">
+            <value>Why is <output value=" /fp_follow_up/patient_name "/> no longer on family planning?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects:label">
+            <value>Are there any side effects?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms:label">
+            <value>Is <output value=" /fp_follow_up/patient_name "/> using condoms as a back up method?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp:label">
+            <value>Would <output value=" /fp_follow_up/patient_name "/> want to change the FP method she is currently using?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up:label">
+            <value>FP follow up</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/fp_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/fp_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/fp_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/changed_fp_method:label">
+            <value>Kodi <output value=" /fp_follow_up/patient_name "/> wasintha njira yakulera?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/expiry_date:label">
+            <value>Tsiku lokutha mphamvu za njira yakulerayo</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/fp_method_display:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/fp_next_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/has_appointment_date:label">
+            <value>Kodi <output value=" /fp_follow_up/patient_name "/> anapatsidwa tsiku lotsatira lomwe akuyenera kupita ku chipatala?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_cousel_and_ref:label">
+            <value>_Langizani <output value=" /fp_follow_up/patient_name "/> ndipo mutumizeni ku chipatala._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_fp_method:label">
+            <value>_<output value=" /fp_follow_up/patient_name "/> ali pa <output value=" /fp_follow_up/fp_follow_up/fp_method_display "/>._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_next_visit:label">
+            <value>_Tsiku lopitanso kuchipatala ndi <output value=" /fp_follow_up/fp_follow_up/fp_next_visit "/>_</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_no_condoms:label">
+            <value>_Dziwitsani <output value=" /fp_follow_up/patient_name "/> kuti akadziwitse adotolo za zizindikiro zimenezi akadzapitanso kukawonana ndi adotolo._</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/n_ref_for_renewal:label">
+            <value>_Tumizani (dzina) kuchipatala kuti akatengenso njira ya kulera_</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/depo_provera:label">
+            <value>Njira ya kulera ya jakiseni</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/implant:label">
+            <value>Njira yolera ya pa nkono</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/iucd:label">
+            <value>Njira yakulera ya koyilo</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/pills:label">
+            <value>Ma pilisi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method/tubal_ligation:label">
+            <value>Kutseka kwa mai</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/new_fp_method:label">
+            <value>Ndi njira yanji ya kulera yomwe (( dzina) akutenga?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/next_visit:label">
+            <value>Tsiku lina loti apite ku chipatala ndi liti?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/on_fp:label">
+            <value>Kodi <output value=" /fp_follow_up/patient_name "/> akutsatirabe njira za kulera?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/cultural:label">
+            <value>Chifukwa chazikhulupiliro za makolo</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/husband_refused:label">
+            <value>Abambo akunyumba sakufuna kuti azigwiritsa ntchito njira zakulera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/pregnant:label">
+            <value>Mayi ndi woyembekezera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/religion:label">
+            <value>Chifukwa cha chipembezo</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp/side_effects:label">
+            <value>Akuwona zizindikilo zachilendo kamba kogwiritsa ntchito njira za kulera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp:hint">
+            <value>Chongani chilichonse chimene chili choyenera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp:label">
+            <value>Kodi n'chifukwa chiyani <output value=" /fp_follow_up/patient_name "/> sakutsatira njira zakulera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/reasons_for_no_fp_other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/side_effects:label">
+            <value>Pali zovuta zodza kamba ka kugwiritsa ntchito njira ya kulerayi?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/using_condoms:label">
+            <value>Kodi <output value=" /fp_follow_up/patient_name "/> akugwilitsa ntchito makondomu ngati njira ina yothandizira kulera</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up/wants_to_change_fp:label">
+            <value>Kodi <output value=" /fp_follow_up/patient_name "/> akufuna atasintha njira yakulera yomwe akugwilitsa ntchito?</value>
+          </text>
+          <text id="/fp_follow_up/fp_follow_up:label">
+            <value>Kalondolondo wa njira zakulera</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/source:label">
+            <value>-</value>
+          </text>
+          <text id="/fp_follow_up/source_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <fp_follow_up delimiter="#" id="fp_follow_up" prefix="J1!fp_follow_up!" version="2019-05-02 10:23:28">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid tag="hidden"/>
+          <patient_id/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <is_in_fp/>
+          <fp_method/>
+          <is_in_art>'</is_in_art>
+          <source_uuid/>
+          <fu_type>fp'</fu_type>
+          <side_effects/>
+          <gave_fp_method/>
+          <gave_fp_method_type/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <fp_follow_up>
+            <fp_method_display/>
+            <on_fp/>
+            <n_fp_method/>
+            <changed_fp_method/>
+            <new_fp_method/>
+            <expiry_date/>
+            <n_ref_for_renewal/>
+            <using_condoms/>
+            <n_no_condoms/>
+            <side_effects/>
+            <n_cousel_and_ref/>
+            <reasons_for_no_fp/>
+            <reasons_for_no_fp_other/>
+            <wants_to_change_fp/>
+            <has_appointment_date/>
+            <next_visit/>
+            <fp_next_visit/>
+            <n_next_visit/>
+          </fp_follow_up>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </fp_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/fp_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/fp_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/fp_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/fp_follow_up/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/fp_follow_up/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/fp_follow_up/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/fp_follow_up/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/fp_follow_up/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/fp_follow_up/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /fp_follow_up/patient_date_of_birth , today() ) div 12 )" nodeset="/fp_follow_up/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /fp_follow_up/patient_date_of_birth , today() )" nodeset="/fp_follow_up/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /fp_follow_up/patient_date_of_birth ) )" nodeset="/fp_follow_up/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /fp_follow_up/patient_date_of_birth )) div 7)" nodeset="/fp_follow_up/patient_age_in_weeks" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_fp" nodeset="/fp_follow_up/is_in_fp" type="string"/>
+      <bind calculate="instance('contact-summary')/context/fp_method" nodeset="/fp_follow_up/fp_method" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_art" nodeset="/fp_follow_up/is_in_art" type="string"/>
+      <bind calculate="../source_id" nodeset="/fp_follow_up/source_uuid" type="string"/>
+      <bind calculate="fp'" nodeset="/fp_follow_up/fu_type" type="string"/>
+      <bind calculate="../side_effects" nodeset="/fp_follow_up/side_effects" type="string"/>
+      <bind calculate="if(../new_fp_method !='', 'yes', 'no')" nodeset="/fp_follow_up/gave_fp_method" type="string"/>
+      <bind calculate="../new_fp_method" nodeset="/fp_follow_up/gave_fp_method_type" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/fp_follow_up/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/fp_follow_up/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/fp_follow_up/geolocation" type="string"/>
+      <bind calculate="if( /fp_follow_up/fp_method  = 'pills', 'Pills', if( /fp_follow_up/fp_method  = 'iucd', 'Intrauterine Device (IUCD)', if( /fp_follow_up/fp_method  = 'implant', 'Implant', if( /fp_follow_up/fp_method  = 'tubal_ligation', 'Tubal Ligation', if( /fp_follow_up/fp_method  = 'depo_provera', 'Injection/Depo-Provera')))))" nodeset="/fp_follow_up/fp_follow_up/fp_method_display" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/on_fp" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/n_fp_method" readonly="true()" relevant="selected(../on_fp, 'yes')" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/changed_fp_method" relevant="../../fp_method != 'tubal_ligation'" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/new_fp_method" relevant="selected(../changed_fp_method, 'yes')" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/expiry_date" relevant="(selected(../changed_fp_method, 'no') and (../../fp_method = 'implant' or ../../fp_method = 'iucd' or ../../fp_method = 'depo_provera' )) or (selected(../changed_fp_method, 'yes') and (../new_fp_method = 'implant' or ../new_fp_method = 'iucd' or ../new_fp_method = 'depo_provera'))" required="false()" type="date"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/n_ref_for_renewal" readonly="true()" relevant="decimal-date-time(../expiry_date) &lt;= decimal-date-time(today())" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/using_condoms" relevant="../../fp_method = 'implant' or ../new_fp_method = 'implant'
+and ../../is_in_art = 'yes'" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/n_no_condoms" readonly="true()" relevant="selected(../using_condoms, 'no')" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/side_effects" relevant="selected(../on_fp, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/n_cousel_and_ref" readonly="true()" relevant="selected(../side_effects, 'yes')" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/reasons_for_no_fp" relevant="selected(../on_fp, 'no')" required="true()" type="select"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/reasons_for_no_fp_other" relevant="selected(../reasons_for_no_fp, 'other')" required="true()" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/wants_to_change_fp" relevant="selected(../on_fp, 'yes') and ../../fp_method != 'tubal_ligation' and ../new_fp_method != 'tubal_ligation'" type="select1"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/has_appointment_date" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/fp_follow_up/fp_follow_up/next_visit:jr:constraintMsg')" nodeset="/fp_follow_up/fp_follow_up/next_visit" relevant="selected(../has_appointment_date, 'yes')" required="true()" type="date"/>
+      <bind calculate="format-date-time(../next_visit,&quot;%d-%m-%Y&quot;)" nodeset="/fp_follow_up/fp_follow_up/fp_next_visit" relevant="../next_visit != ''" type="string"/>
+      <bind nodeset="/fp_follow_up/fp_follow_up/n_next_visit" readonly="true()" relevant="../next_visit != ''" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/fp_follow_up/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/fp_follow_up/inputs">
+      <label ref="jr:itext('/fp_follow_up/inputs:label')"/>
+      <group ref="/fp_follow_up/inputs/contact">
+        <label ref="jr:itext('/fp_follow_up/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/fp_follow_up/inputs/contact/_id">
+          <label ref="jr:itext('/fp_follow_up/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/fp_follow_up/inputs/contact/parent">
+          <label ref="jr:itext('/fp_follow_up/inputs/contact/parent:label')"/>
+          <group ref="/fp_follow_up/inputs/contact/parent/parent">
+            <label ref="jr:itext('/fp_follow_up/inputs/contact/parent/parent:label')"/>
+            <group ref="/fp_follow_up/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/fp_follow_up/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/fp_follow_up/fp_follow_up">
+      <label ref="jr:itext('/fp_follow_up/fp_follow_up:label')"/>
+      <select1 ref="/fp_follow_up/fp_follow_up/on_fp">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/on_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/on_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/on_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up/fp_follow_up/n_fp_method">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/n_fp_method:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up/fp_follow_up/changed_fp_method">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/changed_fp_method:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/changed_fp_method/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/changed_fp_method/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_follow_up/fp_follow_up/new_fp_method">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method/pills:label')"/>
+          <value>pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method/iucd:label')"/>
+          <value>iucd</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method/implant:label')"/>
+          <value>implant</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method/tubal_ligation:label')"/>
+          <value>tubal_ligation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/new_fp_method/depo_provera:label')"/>
+          <value>depo_provera</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up/fp_follow_up/expiry_date">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/expiry_date:label')"/>
+      </input>
+      <input ref="/fp_follow_up/fp_follow_up/n_ref_for_renewal">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/n_ref_for_renewal:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up/fp_follow_up/using_condoms">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/using_condoms:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/using_condoms/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/using_condoms/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up/fp_follow_up/n_no_condoms">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/n_no_condoms:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up/fp_follow_up/side_effects">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/side_effects:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/side_effects/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/side_effects/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up/fp_follow_up/n_cousel_and_ref">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/n_cousel_and_ref:label')"/>
+      </input>
+      <select ref="/fp_follow_up/fp_follow_up/reasons_for_no_fp">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp:label')"/>
+        <hint ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp:hint')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/pregnant:label')"/>
+          <value>pregnant</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/side_effects:label')"/>
+          <value>side_effects</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/religion:label')"/>
+          <value>religion</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/cultural:label')"/>
+          <value>cultural</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/husband_refused:label')"/>
+          <value>husband_refused</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/fp_follow_up/fp_follow_up/reasons_for_no_fp_other">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/reasons_for_no_fp_other:label')"/>
+      </input>
+      <select1 ref="/fp_follow_up/fp_follow_up/wants_to_change_fp">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/wants_to_change_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/wants_to_change_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/wants_to_change_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/fp_follow_up/fp_follow_up/has_appointment_date">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/has_appointment_date:label')"/>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/has_appointment_date/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/fp_follow_up/fp_follow_up/has_appointment_date/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/fp_follow_up/fp_follow_up/next_visit">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/next_visit:label')"/>
+      </input>
+      <input ref="/fp_follow_up/fp_follow_up/n_next_visit">
+        <label ref="jr:itext('/fp_follow_up/fp_follow_up/n_next_visit:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

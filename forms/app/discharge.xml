@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Discharge</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/discharge/discharge_details/discharge_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_date:label">
+            <value>Discharge date</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses:label">
+            <value>Client being discharged is: <output value=" /discharge/patient_name "/></value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses_other:hint">
+            <value>Customized clinical instructions</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/discharge/discharge_details:label">
+            <value>Discharge details</value>
+          </text>
+          <text id="/discharge/group_review/n_delivery:label">
+            <value>Delivery Discharge</value>
+          </text>
+          <text id="/discharge/group_review/n_discharge_reasons_title:label">
+            <value>Discharge reasons&lt;I class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/discharge/group_review/n_other_discharge:label">
+            <value><output value=" /discharge/discharge_details/discharge_diagnoses_other "/></value>
+          </text>
+          <text id="/discharge/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /discharge/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /discharge/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_patient_details_title:label">
+            <value>Patient details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/discharge/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/discharge/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/discharge/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/discharge/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/discharge/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/discharge/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/discharge/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/discharge/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/discharge/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/discharge/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="static_instance-discharge_reasons-0">
+            <value>Just delivered</value>
+          </text>
+          <text id="static_instance-discharge_reasons-1">
+            <value>Enrolled in malnutrition</value>
+          </text>
+          <text id="static_instance-discharge_reasons-2">
+            <value>Enrolled in TB program</value>
+          </text>
+          <text id="static_instance-discharge_reasons-3">
+            <value>Other (specify)</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/discharge/discharge_details/discharge_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_date:label">
+            <value>Tsiku lotulutsa</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses:hint">
+            <value>Chongani nthenda ina iliyonse yomwe munthuyi ali nayo</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses:label">
+            <value>Wodwala woturutsidwa ndi: <output value=" /discharge/patient_name "/></value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses_other:hint">
+            <value>Uthenga wa a chipatala</value>
+          </text>
+          <text id="/discharge/discharge_details/discharge_diagnoses_other:label">
+            <value>Zina (Fotokozani)</value>
+          </text>
+          <text id="/discharge/discharge_details:label">
+            <value>Tsatanetsatane wotulutsidwira</value>
+          </text>
+          <text id="/discharge/group_review/n_delivery:label">
+            <value>Wabeleka</value>
+          </text>
+          <text id="/discharge/group_review/n_discharge_reasons_title:label">
+            <value>Zifukwa zomutulutsira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_malnutrition:label">
+            <value>Kunyentchera</value>
+          </text>
+          <text id="/discharge/group_review/n_other_discharge:label">
+            <value><output value=" /discharge/discharge_details/discharge_diagnoses_other "/></value>
+          </text>
+          <text id="/discharge/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /discharge/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /discharge/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/discharge/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/discharge/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/discharge/group_review:label">
+            <value>Tsamba la zotsatira</value>
+          </text>
+          <text id="/discharge/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/discharge/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/discharge/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/discharge/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/discharge/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/discharge/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/discharge/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/discharge/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/discharge/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/discharge/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="static_instance-discharge_reasons-0">
+            <value>Wangochira kumene</value>
+          </text>
+          <text id="static_instance-discharge_reasons-1">
+            <value>Ali mu pologalamu yonyentchera</value>
+          </text>
+          <text id="static_instance-discharge_reasons-2">
+            <value>Ali mu pologalamu ya TB</value>
+          </text>
+          <text id="static_instance-discharge_reasons-3">
+            <value>Zina (Fotokozani)</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <discharge delimiter="#" id="discharge" prefix="J1!discharge!" version="2021-10-08 04:54:11">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <pregnant/>
+          <needs_signoff>true</needs_signoff>
+          <discharge_details>
+            <discharge_date/>
+            <discharge_diagnoses/>
+            <discharge_diagnoses_other/>
+          </discharge_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_discharge_reasons_title/>
+            <n_delivery/>
+            <n_malnutrition/>
+            <n_tb/>
+            <n_other_discharge/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </discharge>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="discharge_reasons">
+        <root>
+          <item>
+            <itextId>static_instance-discharge_reasons-0</itextId>
+            <name>delivery</name>
+            <pregnant>1</pregnant>
+          </item>
+          <item>
+            <itextId>static_instance-discharge_reasons-1</itextId>
+            <name>malnutrition</name>
+            <pregnant>0</pregnant>
+          </item>
+          <item>
+            <itextId>static_instance-discharge_reasons-2</itextId>
+            <name>tb</name>
+            <pregnant>0</pregnant>
+          </item>
+          <item>
+            <itextId>static_instance-discharge_reasons-3</itextId>
+            <name>other</name>
+            <pregnant>0</pregnant>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/discharge/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/discharge/inputs/source" type="string"/>
+      <bind nodeset="/discharge/inputs/source_id" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/_id" required="true()" type="db:person"/>
+      <bind nodeset="/discharge/inputs/contact/name" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/sex" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/discharge/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/discharge/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/discharge/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/discharge/patient_uuid" type="string"/>
+      <bind calculate="if(../inputs/contact/patient_id != '', 
+../inputs/contact/patient_id, 
+../discharge_details/patient_id)" nodeset="/discharge/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/discharge/patient_name" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/discharge/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(../inputs/contact/date_of_birth, today() )" nodeset="/discharge/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/discharge/date_of_birth" type="string"/>
+      <bind calculate="instance('contact-summary')/context/chw_phone" nodeset="/discharge/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/discharge/geolocation" type="string"/>
+      <bind calculate="if(instance('contact-summary')/context/pregnant, 1, 0)" nodeset="/discharge/pregnant" type="string"/>
+      <bind calculate="true()" nodeset="/discharge/needs_signoff" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/discharge/discharge_details/discharge_date:jr:constraintMsg')" nodeset="/discharge/discharge_details/discharge_date" required="true()" type="date"/>
+      <bind nodeset="/discharge/discharge_details/discharge_diagnoses" required="true()" type="select"/>
+      <bind nodeset="/discharge/discharge_details/discharge_diagnoses_other" relevant="selected(../discharge_diagnoses, 'other')" required="true()" type="string"/>
+      <bind nodeset="/discharge/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/discharge/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/discharge/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /discharge/patient_age_in_years , ' years ',  /discharge/group_review/c_patient_mod_mnths , ' months old'),
+concat( /discharge/patient_age_in_years , ' years old'))" nodeset="/discharge/group_review/c_age_string" type="string"/>
+      <bind nodeset="/discharge/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/discharge/group_review/n_discharge_reasons_title" readonly="true()" type="string"/>
+      <bind nodeset="/discharge/group_review/n_delivery" readonly="true()" relevant="selected(../../discharge_details/discharge_diagnoses, 'delivery')" type="string"/>
+      <bind nodeset="/discharge/group_review/n_malnutrition" readonly="true()" relevant="selected(../../discharge_details/discharge_diagnoses, 'malnutrition')" type="string"/>
+      <bind nodeset="/discharge/group_review/n_tb" readonly="true()" relevant="selected(../../discharge_details/discharge_diagnoses, 'tb')" type="string"/>
+      <bind nodeset="/discharge/group_review/n_other_discharge" readonly="true()" relevant="selected(../../discharge_details/discharge_diagnoses, 'other')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/discharge/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/discharge/inputs">
+      <label ref="jr:itext('/discharge/inputs:label')"/>
+      <group ref="/discharge/inputs/contact">
+        <input appearance="db-object" ref="/discharge/inputs/contact/_id">
+          <label ref="jr:itext('/discharge/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/discharge/inputs/contact/parent">
+          <label ref="jr:itext('/discharge/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/discharge/inputs/contact/parent/parent">
+            <label ref="jr:itext('/discharge/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/discharge/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/discharge/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/discharge/discharge_details">
+      <label ref="jr:itext('/discharge/discharge_details:label')"/>
+      <input ref="/discharge/discharge_details/discharge_date">
+        <label ref="jr:itext('/discharge/discharge_details/discharge_date:label')"/>
+      </input>
+      <select ref="/discharge/discharge_details/discharge_diagnoses">
+        <label ref="jr:itext('/discharge/discharge_details/discharge_diagnoses:label')"/>
+        <hint ref="jr:itext('/discharge/discharge_details/discharge_diagnoses:hint')"/>
+        <itemset nodeset="instance('discharge_reasons')/root/item[pregnant =  /discharge/pregnant  or pregnant = '0']">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/discharge/discharge_details/discharge_diagnoses_other">
+        <label ref="jr:itext('/discharge/discharge_details/discharge_diagnoses_other:label')"/>
+        <hint ref="jr:itext('/discharge/discharge_details/discharge_diagnoses_other:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/discharge/group_review">
+      <label ref="jr:itext('/discharge/group_review:label')"/>
+      <input ref="/discharge/group_review/n_submit">
+        <label ref="jr:itext('/discharge/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/discharge/group_review/n_patient_details_title">
+        <label ref="jr:itext('/discharge/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/discharge/group_review/n_patient_details">
+        <label ref="jr:itext('/discharge/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/discharge/group_review/n_discharge_reasons_title">
+        <label ref="jr:itext('/discharge/group_review/n_discharge_reasons_title:label')"/>
+      </input>
+      <input appearance="li" ref="/discharge/group_review/n_delivery">
+        <label ref="jr:itext('/discharge/group_review/n_delivery:label')"/>
+      </input>
+      <input appearance="li" ref="/discharge/group_review/n_malnutrition">
+        <label ref="jr:itext('/discharge/group_review/n_malnutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/discharge/group_review/n_tb">
+        <label ref="jr:itext('/discharge/group_review/n_tb:label')"/>
+      </input>
+      <input appearance="li" ref="/discharge/group_review/n_other_discharge">
+        <label ref="jr:itext('/discharge/group_review/n_other_discharge:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

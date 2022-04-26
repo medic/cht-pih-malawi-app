@@ -1,0 +1,1751 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Trace follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/trace_follow_up/chw_area_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/trace_follow_up/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/trace_follow_up/facility_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/trace_follow_up/family_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_bad:label">
+            <value>Bad</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_fair:label">
+            <value>Fair</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_follow_up:label">
+            <value>Client to go to the health facility on: <output value=" /trace_follow_up/group_review/n_next_visit "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_good:label">
+            <value>Good</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_complaints_title:label">
+            <value>**_Health complaints_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_fine:label">
+            <value>Fine</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_multiple:label">
+            <value>Multiple Conditions</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_na:label">
+            <value>Not applicable</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_no_problems:label">
+            <value>No problems raised</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_none:label">
+            <value>None</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_old_age:label">
+            <value>Old age</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_other:label">
+            <value><output value=" /trace_follow_up/trace_details/health_complaints_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_unwell:label">
+            <value>Not feeling well</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_weak:label">
+            <value>Physically weak</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_died:label">
+            <value>Patient Died</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_has_medication:label">
+            <value>Patient still has medication in hand</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_missed_appointment:label">
+            <value>Patient forgot appointment</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_moved:label">
+            <value>Patient moved to away</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_other:label">
+            <value><output value=" /trace_follow_up/trace_details/trace_outcomes_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_receiving_care_outside_neno:label">
+            <value>Patient comes from outside Neno</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_stopped_treatment:label">
+            <value>Patient stopped taking treatment</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_traveled:label">
+            <value>Patient has travelled</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_visited:label">
+            <value>Patient visited but not documented</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_visited_card_missing:label">
+            <value>Patient visited but master card is missing</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_behavior_title:label">
+            <value>Patient Behaviour&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /trace_follow_up/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /trace_follow_up/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_basic_needs:label">
+            <value>Struggles for basic needs</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_complaints_title:label">
+            <value>**_Social complaints_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_feedback:label">
+            <value>Reached out to POSER but has received no feedback</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_food:label">
+            <value>No food</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_other:label">
+            <value><output value=" /trace_follow_up/trace_details/social_complaints_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_shelter:label">
+            <value>No shelter</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_support:label">
+            <value>Social support</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_unemployment:label">
+            <value>Unemployment</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_water:label">
+            <value>No water</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_outcomes_title:label">
+            <value>**_TRACE outcomes_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_reasons:label">
+            <value>_<output value=" /trace_follow_up/c_trace_reasons "/>_</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_reasons_title:label">
+            <value>**_TRACE reasons_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/trace_follow_up/inputs/appt_date:label">
+            <value>Last visit next appointment date</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/trace_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/trace_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/trace_follow_up/inputs/trace_reasons:label">
+            <value>Trace reasons</value>
+          </text>
+          <text id="/trace_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return/no:label">
+            <value>No</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return:label">
+            <value>Agreed to return to clinic</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_given:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_given:label">
+            <value>Date given</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_moved:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_moved:label">
+            <value>Date of moving</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/fine:label">
+            <value>Fine</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/multiple:label">
+            <value>Multiple Conditions</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/na:label">
+            <value>Not applicable</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/no_problems:label">
+            <value>No problems raised</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/none:label">
+            <value>None</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/old_age:label">
+            <value>Old age</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/other:label">
+            <value>Other(specify)</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/unwell:label">
+            <value>Not feeling well</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/weak:label">
+            <value>Physically weak</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints:label">
+            <value>Health Complaints</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/n_fill_death_report:label">
+            <value>Please fill a death report after submission of this form.</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/n_trace_reasons:label">
+            <value>_Trace Reasons: <output value=" /trace_follow_up/c_trace_reasons "/>_</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/next_attempt_date:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/next_attempt_date:label">
+            <value>Next Attempt date</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/bad:label">
+            <value>Bad</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/fair:label">
+            <value>Fair</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/good:label">
+            <value>Good</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior:label">
+            <value>Patient behavior</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found/no:label">
+            <value>No</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found:label">
+            <value>Patient Found</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/pill_count:label">
+            <value>Pill Count</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/place_transferred_out:label">
+            <value>Place of transfer out</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/remarks:label">
+            <value>Remarks</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/basic_needs:label">
+            <value>Struggles for basic needs</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/feedback:label">
+            <value>Reached out to POSER but has received no feedback</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/food:label">
+            <value>No food</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/other:label">
+            <value>Other(specify)</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/shelter:label">
+            <value>No shelter</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/social_support:label">
+            <value>Social support</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/unemployment:label">
+            <value>Unemployment</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/water:label">
+            <value>No water</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints:label">
+            <value>Social Complaints</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:jr:constraintMsg">
+            <value>Died cannot be selected with any other option!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:label">
+            <value>TRACE outcomes</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/trace_follow_up/trace_details:label">
+            <value>TRACE details</value>
+          </text>
+          <text id="static_instance-death_places-0">
+            <value>Health facility</value>
+          </text>
+          <text id="static_instance-death_places-1">
+            <value>Outside health facility</value>
+          </text>
+          <text id="static_instance-health_complaints-0">
+            <value>Fine</value>
+          </text>
+          <text id="static_instance-health_complaints-1">
+            <value>Multiple Conditions</value>
+          </text>
+          <text id="static_instance-health_complaints-2">
+            <value>No problems raised</value>
+          </text>
+          <text id="static_instance-health_complaints-3">
+            <value>Not feeling well</value>
+          </text>
+          <text id="static_instance-health_complaints-4">
+            <value>Old age</value>
+          </text>
+          <text id="static_instance-health_complaints-5">
+            <value>Physically weak</value>
+          </text>
+          <text id="static_instance-health_complaints-6">
+            <value>Other(specify)</value>
+          </text>
+          <text id="static_instance-health_complaints-7">
+            <value>None</value>
+          </text>
+          <text id="static_instance-health_complaints-8">
+            <value>Not applicable</value>
+          </text>
+          <text id="static_instance-patient_behavior-0">
+            <value>Good</value>
+          </text>
+          <text id="static_instance-patient_behavior-1">
+            <value>Bad</value>
+          </text>
+          <text id="static_instance-patient_behavior-2">
+            <value>Fair</value>
+          </text>
+          <text id="static_instance-social_complaints-0">
+            <value>No food</value>
+          </text>
+          <text id="static_instance-social_complaints-1">
+            <value>Reached out to POSER but has received no feedback</value>
+          </text>
+          <text id="static_instance-social_complaints-2">
+            <value>Struggles for basic needs</value>
+          </text>
+          <text id="static_instance-social_complaints-3">
+            <value>No water</value>
+          </text>
+          <text id="static_instance-social_complaints-4">
+            <value>No shelter</value>
+          </text>
+          <text id="static_instance-social_complaints-5">
+            <value>Unemployment</value>
+          </text>
+          <text id="static_instance-social_complaints-6">
+            <value>Social support</value>
+          </text>
+          <text id="static_instance-social_complaints-7">
+            <value>Other(specify)</value>
+          </text>
+          <text id="static_instance-trace_outcomes-0">
+            <value>Patient moved to away</value>
+          </text>
+          <text id="static_instance-trace_outcomes-1">
+            <value>Patient still has medication in hand</value>
+          </text>
+          <text id="static_instance-trace_outcomes-2">
+            <value>Patient visited but not documented</value>
+          </text>
+          <text id="static_instance-trace_outcomes-3">
+            <value>Patient visited but master card is missing</value>
+          </text>
+          <text id="static_instance-trace_outcomes-4">
+            <value>Patient forgot appointment</value>
+          </text>
+          <text id="static_instance-trace_outcomes-5">
+            <value>Patient stopped taking treatment</value>
+          </text>
+          <text id="static_instance-trace_outcomes-6">
+            <value>Patient has travelled</value>
+          </text>
+          <text id="static_instance-trace_outcomes-7">
+            <value>Patient comes from outside Neno</value>
+          </text>
+          <text id="static_instance-trace_outcomes-8">
+            <value>Patient Died</value>
+          </text>
+          <text id="static_instance-trace_outcomes-9">
+            <value>Other(specify)</value>
+          </text>
+          <text id="static_instance-trace_reasons-0">
+            <value>IC3 clinic missed visit</value>
+          </text>
+          <text id="static_instance-trace_reasons-1">
+            <value>TB missed visit</value>
+          </text>
+          <text id="static_instance-trace_reasons-2">
+            <value>Malnutrition missed visit</value>
+          </text>
+          <text id="static_instance-trace_reasons-3">
+            <value>Lab results ready</value>
+          </text>
+          <text id="static_instance-trace_reasons-4">
+            <value>Due for lab work</value>
+          </text>
+          <text id="static_instance-trace_reasons-5">
+            <value>Linkage to care referral: Must attend IC3 for screening</value>
+          </text>
+          <text id="static_instance-trace_reasons-6">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-treatment_programs-0">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-treatment_programs-1">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-treatment_programs-2">
+            <value>Malnutrition</value>
+          </text>
+          <text id="static_instance-treatment_programs-3">
+            <value>NCD</value>
+          </text>
+          <text id="static_instance-treatment_programs-4">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-treatment_programs-5">
+            <value>None</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/trace_follow_up/chw_area_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/chw_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/family_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_bad:label">
+            <value>Zoipa</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_fair:label">
+            <value>Chilungamo</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_follow_up:label">
+            <value>Tsiku lomwe munthuyo akufunika kupita kuchipatala: <output value=" /trace_follow_up/group_review/n_next_visit "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_good:label">
+            <value>Chabwino</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_complaints_title:label">
+            <value>**_Madandaulo azaumoyo_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_fine:label">
+            <value>Chabwino</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_multiple:label">
+            <value>Zinthu Zambiri</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_na:label">
+            <value>Zosafunika</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_no_problems:label">
+            <value>Palibe mavuto omwe adakwezedwa</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_old_age:label">
+            <value>Ukalamba</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_other:label">
+            <value><output value=" /trace_follow_up/trace_details/health_complaints_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_unwell:label">
+            <value>Sindikumva bwino</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_health_weak:label">
+            <value>Kufooka kwakuthupi</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_died:label">
+            <value>Amwalira Wodwala</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_has_medication:label">
+            <value>Wodwala akadali ndi mankhwala m'manja</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_missed_appointment:label">
+            <value>Sanapite kuchipatala</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_moved:label">
+            <value>Wodwala adasamukira kudera lina</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_other:label">
+            <value><output value=" /trace_follow_up/trace_details/trace_outcomes_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_receiving_care_outside_neno:label">
+            <value>Wodwala amachokera kunja kwa Neno</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_stopped_treatment:label">
+            <value>Wodwala anaiwala kusankhidwa</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_traveled:label">
+            <value>Wodwala wayenda</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_visited:label">
+            <value>Odwala anapita kuchipatala</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_outcomes_visited_card_missing:label">
+            <value>Wodwala yemwe adayendera koma khadi yayikulu ikusowa</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_behavior_title:label">
+            <value>Khalidwe Lodwala&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /trace_follow_up/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /trace_follow_up/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_patient_details_title:label">
+            <value>Mbiri ya wodwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_basic_needs:label">
+            <value>Kulimbana ndi zosowa zofunika</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_complaints_title:label">
+            <value>**_Madandaulo Aanthu_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_feedback:label">
+            <value>Afikira POSER koma sanalandire mayankho</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_food:label">
+            <value>Palibe chakudya</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_other:label">
+            <value><output value=" /trace_follow_up/trace_details/social_complaints_other "/></value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_shelter:label">
+            <value>Palibe pogona</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_support:label">
+            <value>Thandizo pamagulu</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_unemployment:label">
+            <value>Ulova</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_social_water:label">
+            <value>Palibe madzi</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_submit:label">
+            <value>_Tumizani kuti mutsirize ntchitoyi._</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_outcomes_title:label">
+            <value>**_Zotsatira za TRACE_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_reasons:label">
+            <value>_<output value=" /trace_follow_up/c_trace_reasons "/>_</value>
+          </text>
+          <text id="/trace_follow_up/group_review/n_trace_reasons_title:label">
+            <value>**_Zifukwa zotulukira pa TRACE_**</value>
+          </text>
+          <text id="/trace_follow_up/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/trace_follow_up/inputs/appt_date:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs/trace_reasons:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/agreed_to_return:label">
+            <value>Tinagwirizana zobwerera kuchipatala</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_given:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_given:label">
+            <value>Tsiku</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_moved:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/date_moved:label">
+            <value>Tsiku losuntha</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/fine:label">
+            <value>Chabwino</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/multiple:label">
+            <value>Zinthu Zambiri</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/na:label">
+            <value>Zosafunika</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/no_problems:label">
+            <value>Palibe mavuto omwe adakwezedwa</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/old_age:label">
+            <value>Ukalamba</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/unwell:label">
+            <value>Sindikumva bwino</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints/weak:label">
+            <value>Kufooka kwakuthupi</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints:label">
+            <value>Madandaulo azaumoyo</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/health_complaints_other:label">
+            <value>Zina(fotokozani)</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/n_fill_death_report:label">
+            <value>Chonde lembani lipoti lakufa mukatumiza fomu iyi.</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/n_trace_reasons:label">
+            <value>_Zifukwa zotulukira pa lipoti ya TRACE: <output value=" /trace_follow_up/c_trace_reasons "/>_</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/next_attempt_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/next_attempt_date:label">
+            <value>Tsiku lotsatira loyesera</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/bad:label">
+            <value>Zoipa</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/fair:label">
+            <value>Chilungamo</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior/good:label">
+            <value>Chabwino</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_behavior:label">
+            <value>Khalidwe la wodwala</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/patient_found:label">
+            <value>Wodwala Wapezeka</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/pill_count:label">
+            <value>Kuwerengera mapiritsi</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/place_transferred_out:label">
+            <value>Malo osamutsira kunja</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/remarks:label">
+            <value>Ndemanga</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/basic_needs:label">
+            <value>Kulimbana ndi zosowa zofunika</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/feedback:label">
+            <value>Afikira POSER koma sanalandire mayankho</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/food:label">
+            <value>Palibe chakudya</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/shelter:label">
+            <value>Palibe pogona</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/social_support:label">
+            <value>Thandizo pamagulu</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/unemployment:label">
+            <value>Ulova</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints/water:label">
+            <value>Palibe madzi</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints:label">
+            <value>Madandaulo Aanthu</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/social_complaints_other:label">
+            <value>Zina(fotokozani)</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:hint">
+            <value>Chongani chilichonse chimene chili choyenera</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:jr:constraintMsg">
+            <value>Simungasankhe akufa ngati mwasankha kale china!</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes:label">
+            <value>Zotsatira za TRACE</value>
+          </text>
+          <text id="/trace_follow_up/trace_details/trace_outcomes_other:label">
+            <value>Zina(fotokozani)</value>
+          </text>
+          <text id="/trace_follow_up/trace_details:label">
+            <value>Tsatanetsatane wa TRACE</value>
+          </text>
+          <text id="static_instance-death_places-0">
+            <value>Kuchipatala</value>
+          </text>
+          <text id="static_instance-death_places-1">
+            <value>Kunja kwa chipatala</value>
+          </text>
+          <text id="static_instance-health_complaints-0">
+            <value>Chabwino</value>
+          </text>
+          <text id="static_instance-health_complaints-1">
+            <value>Zinthu Zambiri</value>
+          </text>
+          <text id="static_instance-health_complaints-2">
+            <value>Palibe mavuto omwe adakwezedwa</value>
+          </text>
+          <text id="static_instance-health_complaints-3">
+            <value>Sindikumva bwino</value>
+          </text>
+          <text id="static_instance-health_complaints-4">
+            <value>Ukalamba</value>
+          </text>
+          <text id="static_instance-health_complaints-5">
+            <value>Kufooka kwakuthupi</value>
+          </text>
+          <text id="static_instance-health_complaints-6">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-health_complaints-7">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-health_complaints-8">
+            <value>Zosafunika</value>
+          </text>
+          <text id="static_instance-patient_behavior-0">
+            <value>Chabwino</value>
+          </text>
+          <text id="static_instance-patient_behavior-1">
+            <value>Zoipa</value>
+          </text>
+          <text id="static_instance-patient_behavior-2">
+            <value>Chilungamo</value>
+          </text>
+          <text id="static_instance-social_complaints-0">
+            <value>Palibe chakudya</value>
+          </text>
+          <text id="static_instance-social_complaints-1">
+            <value>Afikira POSER koma sanalandire mayankho</value>
+          </text>
+          <text id="static_instance-social_complaints-2">
+            <value>Kulimbana ndi zosowa zofunika</value>
+          </text>
+          <text id="static_instance-social_complaints-3">
+            <value>Palibe madzi</value>
+          </text>
+          <text id="static_instance-social_complaints-4">
+            <value>Palibe pogona</value>
+          </text>
+          <text id="static_instance-social_complaints-5">
+            <value>Ulova</value>
+          </text>
+          <text id="static_instance-social_complaints-6">
+            <value>Thandizo pamagulu</value>
+          </text>
+          <text id="static_instance-social_complaints-7">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-trace_outcomes-0">
+            <value>Wodwala adasamukira kudera lina</value>
+          </text>
+          <text id="static_instance-trace_outcomes-1">
+            <value>Wodwala akadali ndi mankhwala m'manja</value>
+          </text>
+          <text id="static_instance-trace_outcomes-2">
+            <value>Odwala anapita kuchipatala</value>
+          </text>
+          <text id="static_instance-trace_outcomes-3">
+            <value>Wodwala yemwe adayendera koma khadi yayikulu ikusowa</value>
+          </text>
+          <text id="static_instance-trace_outcomes-4">
+            <value>Sanapite kuchipatala</value>
+          </text>
+          <text id="static_instance-trace_outcomes-5">
+            <value>Wodwala anaiwala kusankhidwa</value>
+          </text>
+          <text id="static_instance-trace_outcomes-6">
+            <value>Wodwala wayenda</value>
+          </text>
+          <text id="static_instance-trace_outcomes-7">
+            <value>Wodwala amachokera kunja kwa Neno</value>
+          </text>
+          <text id="static_instance-trace_outcomes-8">
+            <value>Amwalira Wodwala</value>
+          </text>
+          <text id="static_instance-trace_outcomes-9">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-trace_reasons-0">
+            <value>-</value>
+          </text>
+          <text id="static_instance-trace_reasons-1">
+            <value>Sanafike kuchipatala kukalandira mankhwala a chifuwa chachikulu</value>
+          </text>
+          <text id="static_instance-trace_reasons-2">
+            <value>Sanafike kuchipatala kukalandira mankhwala a kunyetchera</value>
+          </text>
+          <text id="static_instance-trace_reasons-3">
+            <value>Zotsatira za ku Lab zatuluka</value>
+          </text>
+          <text id="static_instance-trace_reasons-4">
+            <value>Akufunika kupita ku lab</value>
+          </text>
+          <text id="static_instance-trace_reasons-5">
+            <value>Kulumikizitsa anthu omwe apezeka ndi vuto ku chipatala: Akuyenera kupita ku IC3  kuti akafufuzidwebe</value>
+          </text>
+          <text id="static_instance-trace_reasons-6">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-treatment_programs-0">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-treatment_programs-1">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-treatment_programs-2">
+            <value>Kunyentchera</value>
+          </text>
+          <text id="static_instance-treatment_programs-3">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="static_instance-treatment_programs-4">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-treatment_programs-5">
+            <value>Palibe</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Eya</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Ayi</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <trace_follow_up delimiter="#" id="trace_follow_up" prefix="J1!trace_follow_up!" version="2021-03-09 15:43:57">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <appt_date/>
+            <trace_reasons/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <family_id/>
+          <chw_id/>
+          <chw_area_id/>
+          <facility_id/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <c_patient_name/>
+          <c_patient_age_in_years/>
+          <trace_reasons>other</trace_reasons>
+          <appt_date/>
+          <c_patient_mod_mnths/>
+          <c_age_string/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <is_referral_case/>
+          <c_trace_reasons/>
+          <trace_details>
+            <n_trace_reasons/>
+            <patient_found/>
+            <trace_outcomes/>
+            <trace_outcomes_other/>
+            <date_moved/>
+            <place_transferred_out/>
+            <n_fill_death_report/>
+            <health_complaints/>
+            <health_complaints_other/>
+            <social_complaints/>
+            <social_complaints_other/>
+            <agreed_to_return/>
+            <date_given/>
+            <patient_behavior/>
+            <pill_count/>
+            <remarks/>
+            <next_attempt_date/>
+            <c_appt_date/>
+          </trace_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_trace_reasons_title/>
+            <n_trace_reasons/>
+            <n_trace_outcomes_title/>
+            <n_outcomes_moved/>
+            <n_outcomes_has_medication/>
+            <n_outcomes_visited/>
+            <n_outcomes_visited_card_missing/>
+            <n_outcomes_missed_appointment/>
+            <n_outcomes_stopped_treatment/>
+            <n_outcomes_traveled/>
+            <n_outcomes_receiving_care_outside_neno/>
+            <n_outcomes_died/>
+            <n_outcomes_other/>
+            <n_health_complaints_title/>
+            <n_health_fine/>
+            <n_health_multiple/>
+            <n_health_no_problems/>
+            <n_health_unwell/>
+            <n_health_old_age/>
+            <n_health_weak/>
+            <n_health_other/>
+            <n_health_none/>
+            <n_health_na/>
+            <n_social_complaints_title/>
+            <n_social_food/>
+            <n_social_feedback/>
+            <n_social_basic_needs/>
+            <n_social_water/>
+            <n_social_shelter/>
+            <n_social_unemployment/>
+            <n_social_support/>
+            <n_social_other/>
+            <n_patient_behavior_title/>
+            <n_good/>
+            <n_bad/>
+            <n_fair/>
+            <n_next_visit/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </trace_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="trace_reasons">
+        <root>
+          <item>
+            <itextId>static_instance-trace_reasons-0</itextId>
+            <name>ic3</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-1</itextId>
+            <name>tb</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-2</itextId>
+            <name>malnutrition</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-3</itextId>
+            <name>lab_results</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-4</itextId>
+            <name>due_for_lab</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-5</itextId>
+            <name>linkage_to_care</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_reasons-6</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="health_complaints">
+        <root>
+          <item>
+            <itextId>static_instance-health_complaints-0</itextId>
+            <name>fine</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-1</itextId>
+            <name>multiple</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-2</itextId>
+            <name>no_problems</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-3</itextId>
+            <name>unwell</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-4</itextId>
+            <name>old_age</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-5</itextId>
+            <name>weak</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-6</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-7</itextId>
+            <name>none</name>
+          </item>
+          <item>
+            <itextId>static_instance-health_complaints-8</itextId>
+            <name>na</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="treatment_programs">
+        <root>
+          <item>
+            <itextId>static_instance-treatment_programs-0</itextId>
+            <name>art</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-1</itextId>
+            <name>tb</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-2</itextId>
+            <name>malnutrition</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-3</itextId>
+            <name>ncd</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-4</itextId>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-5</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="social_complaints">
+        <root>
+          <item>
+            <itextId>static_instance-social_complaints-0</itextId>
+            <name>food</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-1</itextId>
+            <name>feedback</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-2</itextId>
+            <name>basic_needs</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-3</itextId>
+            <name>water</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-4</itextId>
+            <name>shelter</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-5</itextId>
+            <name>unemployment</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-6</itextId>
+            <name>social_support</name>
+          </item>
+          <item>
+            <itextId>static_instance-social_complaints-7</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="death_places">
+        <root>
+          <item>
+            <itextId>static_instance-death_places-0</itextId>
+            <name>health_facility</name>
+          </item>
+          <item>
+            <itextId>static_instance-death_places-1</itextId>
+            <name>outside_health_facility</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="trace_outcomes">
+        <root>
+          <item>
+            <itextId>static_instance-trace_outcomes-0</itextId>
+            <reasons>all</reasons>
+            <name>moved</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-1</itextId>
+            <reasons>all</reasons>
+            <name>has_medication</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-2</itextId>
+            <reasons>all</reasons>
+            <name>visited</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-3</itextId>
+            <reasons>all</reasons>
+            <name>visited_card_missing</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-4</itextId>
+            <reasons>all</reasons>
+            <name>missed_appointment</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-5</itextId>
+            <reasons>all</reasons>
+            <name>stopped_treatment</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-6</itextId>
+            <reasons>all</reasons>
+            <name>traveled</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-7</itextId>
+            <reasons>linkage_to_care</reasons>
+            <name>receiving_care_outside_neno</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-8</itextId>
+            <reasons>all</reasons>
+            <name>died</name>
+          </item>
+          <item>
+            <itextId>static_instance-trace_outcomes-9</itextId>
+            <reasons>all</reasons>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="patient_behavior">
+        <root>
+          <item>
+            <itextId>static_instance-patient_behavior-0</itextId>
+            <name>good</name>
+          </item>
+          <item>
+            <itextId>static_instance-patient_behavior-1</itextId>
+            <name>bad</name>
+          </item>
+          <item>
+            <itextId>static_instance-patient_behavior-2</itextId>
+            <name>fair</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>static_instance-yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>static_instance-yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/trace_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/trace_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/appt_date" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/trace_reasons" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/trace_follow_up/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/trace_follow_up/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/trace_follow_up/source_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/_id" nodeset="/trace_follow_up/family_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/_id" nodeset="/trace_follow_up/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/trace_follow_up/chw_area_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/trace_follow_up/facility_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/trace_follow_up/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(../inputs/contact/date_of_birth, today() )" nodeset="/trace_follow_up/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/trace_follow_up/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/trace_follow_up/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/trace_follow_up/patient_name" type="string"/>
+      <bind calculate="../patient_name" nodeset="/trace_follow_up/c_patient_name" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/trace_follow_up/c_patient_age_in_years" type="string"/>
+      <bind calculate="coalesce(instance('contact-summary')/context/trace_reasons, ../inputs/trace_reasons)" nodeset="/trace_follow_up/trace_reasons" type="string"/>
+      <bind calculate="coalesce(instance('contact-summary')/context/appt_date, ../inputs/appt_date)" nodeset="/trace_follow_up/appt_date" type="string"/>
+      <bind calculate="../patient_age_in_months mod 12" nodeset="/trace_follow_up/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../c_patient_age_in_years &lt;= 5, 
+concat( /trace_follow_up/c_patient_age_in_years , ' years ',  /trace_follow_up/c_patient_mod_mnths , ' months old'),
+concat( /trace_follow_up/c_patient_age_in_years , ' years old'))" nodeset="/trace_follow_up/c_age_string" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/trace_follow_up/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/trace_follow_up/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/trace_follow_up/geolocation" type="string"/>
+      <bind calculate="if(../trace_details/trace_outcomes != '' and not(selected(../trace_details/trace_outcomes, 'not_found') or selected(../trace_details/trace_outcomes, 'moved') or selected(../trace_details/trace_outcomes, 'receiving_care_outside_neno') or selected(../trace_details/trace_outcomes, 'died')), 'yes', 'no')" nodeset="/trace_follow_up/is_referral_case" type="string"/>
+      <bind calculate="../trace_reasons" nodeset="/trace_follow_up/c_trace_reasons" type="string"/>
+      <bind nodeset="/trace_follow_up/trace_details/n_trace_reasons" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/trace_details/patient_found" relevant="regex( /trace_follow_up/c_trace_reasons , 'TB') or regex( /trace_follow_up/c_trace_reasons , 'Malnutrition') or regex( /trace_follow_up/c_trace_reasons , 'Lab') or regex( /trace_follow_up/c_trace_reasons , 'Due') or regex( /trace_follow_up/c_trace_reasons , 'Linkage') or regex( /trace_follow_up/c_trace_reasons , 'Other')" required="true()" type="select1"/>
+      <bind constraint="not(selected(., 'died')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/trace_outcomes:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/trace_outcomes" relevant="regex( /trace_follow_up/c_trace_reasons , 'IC3')" required="true()" type="select"/>
+      <bind nodeset="/trace_follow_up/trace_details/trace_outcomes_other" relevant="selected(../trace_outcomes, 'other')" required="true()" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/date_moved:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/date_moved" relevant="../trace_outcomes != '' and selected(../trace_outcomes, 'moved')" required="true()" type="date"/>
+      <bind nodeset="/trace_follow_up/trace_details/place_transferred_out" relevant="../trace_outcomes != '' and selected(../trace_outcomes, 'traveled')" required="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/trace_details/n_fill_death_report" readonly="true()" relevant="../trace_outcomes != '' and selected(../trace_outcomes, 'died')" required="true()" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/health_complaints:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/health_complaints" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="select"/>
+      <bind nodeset="/trace_follow_up/trace_details/health_complaints_other" relevant="selected(../health_complaints, 'other')" required="true()" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/social_complaints:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/social_complaints" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="select"/>
+      <bind nodeset="/trace_follow_up/trace_details/social_complaints_other" relevant="selected(../social_complaints, 'other')" required="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/trace_details/agreed_to_return" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/date_given:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/date_given" relevant=" /trace_follow_up/trace_details/agreed_to_return  = 'yes'" required="true()" type="date"/>
+      <bind nodeset="/trace_follow_up/trace_details/patient_behavior" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="select1"/>
+      <bind nodeset="/trace_follow_up/trace_details/pill_count" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/trace_details/remarks" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" type="string"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/trace_follow_up/trace_details/next_attempt_date:jr:constraintMsg')" nodeset="/trace_follow_up/trace_details/next_attempt_date" relevant="../trace_outcomes != '' and not(selected(../trace_outcomes, 'moved') or selected(../trace_outcomes, 'traveled') or selected(../trace_outcomes, 'died'))" required="true()" type="date"/>
+      <bind calculate="format-date(../date_given, &quot;%d/%m/%Y&quot;)" nodeset="/trace_follow_up/trace_details/c_appt_date" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_trace_reasons_title" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_trace_reasons" readonly="true()" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_trace_outcomes_title" readonly="true()" relevant="regex(../../trace_reasons, 'ic3')
+or regex(../../trace_reasons, 'tb')
+or regex(../../trace_reasons, 'malnutrition')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_moved" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'moved')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_has_medication" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'has_medication')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_visited" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'visited')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_visited_card_missing" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'visited_card_missing')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_missed_appointment" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'missed_appointment')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_stopped_treatment" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'stopped_treatment')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_traveled" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'traveled')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_receiving_care_outside_neno" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'receiving_care_outside_neno')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_died" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'died')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_outcomes_other" readonly="true()" relevant="selected(../../trace_details/trace_outcomes, 'other')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_complaints_title" readonly="true()" relevant="count-selected(../../trace_details/health_complaints) &gt; 0" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_fine" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'fine')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_multiple" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'multiple')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_no_problems" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'no_problems')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_unwell" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'unwell')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_old_age" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'old_age')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_weak" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'weak')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_other" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'other')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_none" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'none')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_health_na" readonly="true()" relevant="selected(../../trace_details/health_complaints, 'na')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_complaints_title" readonly="true()" relevant="count-selected(../../trace_details/social_complaints) &gt; 0" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_food" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'food')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_feedback" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'feedback')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_basic_needs" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'basic_needs')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_water" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'water')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_shelter" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'shelter')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_unemployment" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'unemployment')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_support" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'social_support')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_social_other" readonly="true()" relevant="selected(../../trace_details/social_complaints, 'other')" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_patient_behavior_title" readonly="true()" relevant=" /trace_follow_up/trace_details/patient_behavior  != ''" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_good" readonly="true()" relevant=" /trace_follow_up/trace_details/patient_behavior  = 'good'" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_bad" readonly="true()" relevant=" /trace_follow_up/trace_details/patient_behavior  = 'bad'" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_fair" readonly="true()" relevant=" /trace_follow_up/trace_details/patient_behavior  = 'fair'" type="string"/>
+      <bind calculate=" /trace_follow_up/trace_details/c_appt_date " nodeset="/trace_follow_up/group_review/n_next_visit" type="string"/>
+      <bind nodeset="/trace_follow_up/group_review/n_follow_up" readonly="true()" relevant=" /trace_follow_up/trace_details/c_appt_date  != ''" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/trace_follow_up/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/trace_follow_up/inputs">
+      <label ref="jr:itext('/trace_follow_up/inputs:label')"/>
+      <group ref="/trace_follow_up/inputs/contact">
+        <label ref="jr:itext('/trace_follow_up/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/trace_follow_up/inputs/contact/_id">
+          <label ref="jr:itext('/trace_follow_up/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/trace_follow_up/inputs/contact/parent">
+          <label ref="jr:itext('/trace_follow_up/inputs/contact/parent:label')"/>
+          <group ref="/trace_follow_up/inputs/contact/parent/parent">
+            <label ref="jr:itext('/trace_follow_up/inputs/contact/parent/parent:label')"/>
+            <group ref="/trace_follow_up/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/trace_follow_up/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+            <group ref="/trace_follow_up/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/trace_follow_up/inputs/contact/parent/parent/parent:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/trace_follow_up/trace_details">
+      <label ref="jr:itext('/trace_follow_up/trace_details:label')"/>
+      <input ref="/trace_follow_up/trace_details/n_trace_reasons">
+        <label ref="jr:itext('/trace_follow_up/trace_details/n_trace_reasons:label')"/>
+      </input>
+      <select1 ref="/trace_follow_up/trace_details/patient_found">
+        <label ref="jr:itext('/trace_follow_up/trace_details/patient_found:label')"/>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/patient_found/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/patient_found/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select ref="/trace_follow_up/trace_details/trace_outcomes">
+        <label ref="jr:itext('/trace_follow_up/trace_details/trace_outcomes:label')"/>
+        <hint ref="jr:itext('/trace_follow_up/trace_details/trace_outcomes:hint')"/>
+        <itemset nodeset="instance('trace_outcomes')/root/item[reasons = 'all'
+or reasons =  /trace_follow_up/c_trace_reasons ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/trace_follow_up/trace_details/trace_outcomes_other">
+        <label ref="jr:itext('/trace_follow_up/trace_details/trace_outcomes_other:label')"/>
+      </input>
+      <input ref="/trace_follow_up/trace_details/date_moved">
+        <label ref="jr:itext('/trace_follow_up/trace_details/date_moved:label')"/>
+      </input>
+      <input ref="/trace_follow_up/trace_details/place_transferred_out">
+        <label ref="jr:itext('/trace_follow_up/trace_details/place_transferred_out:label')"/>
+      </input>
+      <input ref="/trace_follow_up/trace_details/n_fill_death_report">
+        <label ref="jr:itext('/trace_follow_up/trace_details/n_fill_death_report:label')"/>
+      </input>
+      <select ref="/trace_follow_up/trace_details/health_complaints">
+        <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints:label')"/>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/fine:label')"/>
+          <value>fine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/multiple:label')"/>
+          <value>multiple</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/no_problems:label')"/>
+          <value>no_problems</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/unwell:label')"/>
+          <value>unwell</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/old_age:label')"/>
+          <value>old_age</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/weak:label')"/>
+          <value>weak</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/other:label')"/>
+          <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/none:label')"/>
+          <value>none</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints/na:label')"/>
+          <value>na</value>
+        </item>
+      </select>
+      <input ref="/trace_follow_up/trace_details/health_complaints_other">
+        <label ref="jr:itext('/trace_follow_up/trace_details/health_complaints_other:label')"/>
+      </input>
+      <select ref="/trace_follow_up/trace_details/social_complaints">
+        <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints:label')"/>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/food:label')"/>
+          <value>food</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/feedback:label')"/>
+          <value>feedback</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/basic_needs:label')"/>
+          <value>basic_needs</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/water:label')"/>
+          <value>water</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/shelter:label')"/>
+          <value>shelter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/unemployment:label')"/>
+          <value>unemployment</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/social_support:label')"/>
+          <value>social_support</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints/other:label')"/>
+          <value>other</value>
+        </item>
+      </select>
+      <input ref="/trace_follow_up/trace_details/social_complaints_other">
+        <label ref="jr:itext('/trace_follow_up/trace_details/social_complaints_other:label')"/>
+      </input>
+      <select1 ref="/trace_follow_up/trace_details/agreed_to_return">
+        <label ref="jr:itext('/trace_follow_up/trace_details/agreed_to_return:label')"/>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/agreed_to_return/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/agreed_to_return/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/trace_follow_up/trace_details/date_given">
+        <label ref="jr:itext('/trace_follow_up/trace_details/date_given:label')"/>
+      </input>
+      <select1 ref="/trace_follow_up/trace_details/patient_behavior">
+        <label ref="jr:itext('/trace_follow_up/trace_details/patient_behavior:label')"/>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/patient_behavior/good:label')"/>
+          <value>good</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/patient_behavior/bad:label')"/>
+          <value>bad</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/trace_follow_up/trace_details/patient_behavior/fair:label')"/>
+          <value>fair</value>
+        </item>
+      </select1>
+      <input appearance="numbers" ref="/trace_follow_up/trace_details/pill_count">
+        <label ref="jr:itext('/trace_follow_up/trace_details/pill_count:label')"/>
+      </input>
+      <input appearance="multiline" ref="/trace_follow_up/trace_details/remarks">
+        <label ref="jr:itext('/trace_follow_up/trace_details/remarks:label')"/>
+      </input>
+      <input ref="/trace_follow_up/trace_details/next_attempt_date">
+        <label ref="jr:itext('/trace_follow_up/trace_details/next_attempt_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/trace_follow_up/group_review">
+      <label ref="jr:itext('/trace_follow_up/group_review:label')"/>
+      <input ref="/trace_follow_up/group_review/n_submit">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/trace_follow_up/group_review/n_patient_details_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_patient_details">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/trace_follow_up/group_review/n_trace_reasons_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_trace_reasons_title:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_trace_reasons">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_trace_reasons:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_trace_outcomes_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_trace_outcomes_title:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_outcomes_moved">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_moved:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_outcomes_has_medication">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_has_medication:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_outcomes_visited">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_visited:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_outcomes_visited_card_missing">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_visited_card_missing:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_missed_appointment">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_missed_appointment:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_stopped_treatment">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_stopped_treatment:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_traveled">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_traveled:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_receiving_care_outside_neno">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_receiving_care_outside_neno:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_died">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_died:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_outcomes_other">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_outcomes_other:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/trace_follow_up/group_review/n_health_complaints_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_complaints_title:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_fine">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_fine:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_multiple">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_multiple:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_no_problems">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_no_problems:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_unwell">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_unwell:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_old_age">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_old_age:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_weak">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_weak:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_other">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_other:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_none">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_none:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_health_na">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_health_na:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/trace_follow_up/group_review/n_social_complaints_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_complaints_title:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_food">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_food:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_feedback">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_feedback:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_basic_needs">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_basic_needs:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_water">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_water:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_shelter">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_shelter:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_unemployment">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_unemployment:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_support">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_support:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_social_other">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_social_other:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/trace_follow_up/group_review/n_patient_behavior_title">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_patient_behavior_title:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_good">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_good:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_bad">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_bad:label')"/>
+      </input>
+      <input appearance="li" ref="/trace_follow_up/group_review/n_fair">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_fair:label')"/>
+      </input>
+      <input ref="/trace_follow_up/group_review/n_follow_up">
+        <label ref="jr:itext('/trace_follow_up/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Death</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/death/death_details/death_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/death/death_details/death_date:label">
+            <value>Date of death</value>
+          </text>
+          <text id="/death/death_details/death_place/health_facility:label">
+            <value>Health facility</value>
+          </text>
+          <text id="/death/death_details/death_place/outside_health_facility:label">
+            <value>Outside health facility</value>
+          </text>
+          <text id="/death/death_details/death_place:label">
+            <value>Place of death</value>
+          </text>
+          <text id="/death/death_details/treatment_program:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/death/death_details/treatment_program:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/death/death_details/treatment_program:label">
+            <value>Treatment Program</value>
+          </text>
+          <text id="/death/death_details/treatment_program_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/death/death_details:label">
+            <value>Death details</value>
+          </text>
+          <text id="/death/group_review/n_art:label">
+            <value>ART</value>
+          </text>
+          <text id="/death/group_review/n_at_hf:label">
+            <value>_Place of death: Health facility_</value>
+          </text>
+          <text id="/death/group_review/n_date:label">
+            <value>_Date of death <output value=" /death/group_review/c_dod "/>_</value>
+          </text>
+          <text id="/death/group_review/n_malnutrition:label">
+            <value>Malnutrition</value>
+          </text>
+          <text id="/death/group_review/n_ncd:label">
+            <value>NCD</value>
+          </text>
+          <text id="/death/group_review/n_none:label">
+            <value>None</value>
+          </text>
+          <text id="/death/group_review/n_other:label">
+            <value>Other</value>
+          </text>
+          <text id="/death/group_review/n_outside_hf:label">
+            <value>_Place of death: Outside health facility_</value>
+          </text>
+          <text id="/death/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /death/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /death/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/death/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/death/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/death/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/death/group_review/n_treatment_program_title:label">
+            <value>**_Treatment program_**</value>
+          </text>
+          <text id="/death/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/death/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/death/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/death/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/death/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/death/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/death/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/death/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/death/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/death/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/death/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="static_instance-death_places-0">
+            <value>Health facility</value>
+          </text>
+          <text id="static_instance-death_places-1">
+            <value>Outside health facility</value>
+          </text>
+          <text id="static_instance-treatment_programs-0">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-treatment_programs-1">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-treatment_programs-2">
+            <value>Malnutrition</value>
+          </text>
+          <text id="static_instance-treatment_programs-3">
+            <value>NCD</value>
+          </text>
+          <text id="static_instance-treatment_programs-4">
+            <value>Other</value>
+          </text>
+          <text id="static_instance-treatment_programs-5">
+            <value>None</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/death/death_details/death_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/death/death_details/death_date:label">
+            <value>Tsiku lomwalira</value>
+          </text>
+          <text id="/death/death_details/death_place/health_facility:label">
+            <value>kuchipatala</value>
+          </text>
+          <text id="/death/death_details/death_place/outside_health_facility:label">
+            <value>kunja kwa chipatala</value>
+          </text>
+          <text id="/death/death_details/death_place:label">
+            <value>Komwe wamwalilira</value>
+          </text>
+          <text id="/death/death_details/treatment_program:hint">
+            <value>Chongani pologalamu ya mankhwala yomwe omwalirayu analimo</value>
+          </text>
+          <text id="/death/death_details/treatment_program:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/death/death_details/treatment_program:label">
+            <value>Ndondomeko ya Mankhwala yomwe Omwalirayi anali</value>
+          </text>
+          <text id="/death/death_details/treatment_program_other:label">
+            <value>Fotokozera</value>
+          </text>
+          <text id="/death/death_details:label">
+            <value>Tsatanetsatane wa Imfa</value>
+          </text>
+          <text id="/death/group_review/n_art:label">
+            <value>ART</value>
+          </text>
+          <text id="/death/group_review/n_at_hf:label">
+            <value>_Komwe wamwalilira: Kuchipatala_</value>
+          </text>
+          <text id="/death/group_review/n_date:label">
+            <value>_Tsiku lomwalira <output value=" /death/group_review/c_dod "/>_</value>
+          </text>
+          <text id="/death/group_review/n_malnutrition:label">
+            <value>Kunyentchera</value>
+          </text>
+          <text id="/death/group_review/n_ncd:label">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="/death/group_review/n_none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/death/group_review/n_other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/death/group_review/n_outside_hf:label">
+            <value>_Komwe wamwalilira: Malo ena onse oti sikuchipatala_</value>
+          </text>
+          <text id="/death/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /death/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /death/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/death/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/death/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/death/group_review/n_tb:label">
+            <value>TB</value>
+          </text>
+          <text id="/death/group_review/n_treatment_program_title:label">
+            <value>**_Ndondomeko ya Mankhwala yomwe Omwalirayi anali_**</value>
+          </text>
+          <text id="/death/group_review:label">
+            <value>Tsamba La Zotsatira</value>
+          </text>
+          <text id="/death/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/death/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/death/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/death/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/death/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/death/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/death/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/death/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/death/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/death/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/death/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="static_instance-death_places-0">
+            <value>kuchipatala</value>
+          </text>
+          <text id="static_instance-death_places-1">
+            <value>kunja kwa chipatala</value>
+          </text>
+          <text id="static_instance-treatment_programs-0">
+            <value>ART</value>
+          </text>
+          <text id="static_instance-treatment_programs-1">
+            <value>TB</value>
+          </text>
+          <text id="static_instance-treatment_programs-2">
+            <value>Kunyentchera</value>
+          </text>
+          <text id="static_instance-treatment_programs-3">
+            <value>Matenda a mgonagona</value>
+          </text>
+          <text id="static_instance-treatment_programs-4">
+            <value>Zina</value>
+          </text>
+          <text id="static_instance-treatment_programs-5">
+            <value>Palibe</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <death delimiter="#" id="death" prefix="J1!death!" version="2020-03-16 16:15:01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <death_date/>
+          <date_of_death/>
+          <chw_phone/>
+          <geolocation/>
+          <is_in_art>'</is_in_art>
+          <is_in_tb>'</is_in_tb>
+          <is_in_malnutrition/>
+          <is_in_fp/>
+          <art_duration/>
+          <tb_treatment_duration/>
+          <is_in_ncd>'</is_in_ncd>
+          <is_in_others_group/>
+          <is_in_art_group/>
+          <is_in_tb_group/>
+          <is_in_ncd_group/>
+          <is_in_malnutrition_group/>
+          <death_details>
+            <death_date/>
+            <treatment_program/>
+            <treatment_program_other/>
+            <death_place/>
+          </death_details>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_treatment_program_title/>
+            <n_art/>
+            <n_tb/>
+            <n_malnutrition/>
+            <n_ncd/>
+            <n_other/>
+            <n_none/>
+            <c_dod/>
+            <n_date/>
+            <n_at_hf/>
+            <n_outside_hf/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </death>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="death_places">
+        <root>
+          <item>
+            <itextId>static_instance-death_places-0</itextId>
+            <name>health_facility</name>
+          </item>
+          <item>
+            <itextId>static_instance-death_places-1</itextId>
+            <name>outside_health_facility</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="treatment_programs">
+        <root>
+          <item>
+            <itextId>static_instance-treatment_programs-0</itextId>
+            <is_in_art>1</is_in_art>
+            <name>art</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-1</itextId>
+            <name>tb</name>
+            <is_in_tb>1</is_in_tb>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-2</itextId>
+            <is_in_malnutrition>1</is_in_malnutrition>
+            <name>malnutrition</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-3</itextId>
+            <is_in_ncd>1</is_in_ncd>
+            <name>ncd</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-4</itextId>
+            <is_in_others>1</is_in_others>
+            <name>other</name>
+          </item>
+          <item>
+            <itextId>static_instance-treatment_programs-5</itextId>
+            <is_in_others>1</is_in_others>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/death/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/death/inputs/source" type="string"/>
+      <bind nodeset="/death/inputs/source_id" type="string"/>
+      <bind nodeset="/death/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/death/inputs/contact/name" type="string"/>
+      <bind nodeset="/death/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/death/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/death/inputs/contact/sex" type="string"/>
+      <bind nodeset="/death/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/death/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/death/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/death/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/death/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /death/inputs/contact/date_of_birth , today() )" nodeset="/death/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /death/inputs/contact/date_of_birth ) )" nodeset="/death/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /death/inputs/contact/date_of_birth )) div 7)" nodeset="/death/patient_age_in_weeks" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/death/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/death/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/death/patient_name" type="string"/>
+      <bind calculate="../death_details/death_date" nodeset="/death/death_date" type="string"/>
+      <bind calculate="../death_date" nodeset="/death/date_of_death" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/death/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/death/geolocation" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_art" nodeset="/death/is_in_art" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_tb" nodeset="/death/is_in_tb" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_malnutrition" nodeset="/death/is_in_malnutrition" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_fp" nodeset="/death/is_in_fp" type="string"/>
+      <bind calculate="round(../c_art_duration div 365, 0)" nodeset="/death/art_duration" type="string"/>
+      <bind calculate="round(../c_tb_treatment_duration div 365, 0)" nodeset="/death/tb_treatment_duration" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_ncd" nodeset="/death/is_in_ncd" type="string"/>
+      <bind calculate="1" nodeset="/death/is_in_others_group" type="string"/>
+      <bind calculate="if(../is_in_art = 'yes', 1, 0)" nodeset="/death/is_in_art_group" type="string"/>
+      <bind calculate="if(../is_in_tb = 'yes', 1, 0)" nodeset="/death/is_in_tb_group" type="string"/>
+      <bind calculate="if(../is_in_ncd = 'yes', 1, 0)" nodeset="/death/is_in_ncd_group" type="string"/>
+      <bind calculate="if(../is_in_malnutrition = 'yes', 1, 0)" nodeset="/death/is_in_malnutrition_group" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/death/death_details/death_date:jr:constraintMsg')" nodeset="/death/death_details/death_date" required="true()" type="date"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/death/death_details/treatment_program:jr:constraintMsg')" nodeset="/death/death_details/treatment_program" required="true()" type="select"/>
+      <bind nodeset="/death/death_details/treatment_program_other" relevant="selected(../treatment_program, 'other')" required="true()" type="string"/>
+      <bind nodeset="/death/death_details/death_place" required="true()" type="select1"/>
+      <bind nodeset="/death/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/death/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/death/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /death/patient_age_in_years , ' years ',  /death/group_review/c_patient_mod_mnths , ' months old'),
+concat( /death/patient_age_in_years , ' years old'))" nodeset="/death/group_review/c_age_string" type="string"/>
+      <bind nodeset="/death/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/death/group_review/n_treatment_program_title" readonly="true()" type="string"/>
+      <bind nodeset="/death/group_review/n_art" readonly="true()" relevant="selected(../../death_details/treatment_program, 'art')" type="string"/>
+      <bind nodeset="/death/group_review/n_tb" readonly="true()" relevant="selected(../../death_details/treatment_program, 'tb')" type="string"/>
+      <bind nodeset="/death/group_review/n_malnutrition" readonly="true()" relevant="selected(../../death_details/treatment_program, 'malnutrition')" type="string"/>
+      <bind nodeset="/death/group_review/n_ncd" readonly="true()" relevant="selected(../../death_details/treatment_program, 'ncd')" type="string"/>
+      <bind nodeset="/death/group_review/n_other" readonly="true()" relevant="selected(../../death_details/treatment_program, 'other')" type="string"/>
+      <bind nodeset="/death/group_review/n_none" readonly="true()" relevant="selected(../../death_details/treatment_program, 'none')" type="string"/>
+      <bind calculate="format-date(../../death_date, &quot;%d/%m/%Y&quot;)" nodeset="/death/group_review/c_dod" type="string"/>
+      <bind nodeset="/death/group_review/n_date" readonly="true()" type="string"/>
+      <bind nodeset="/death/group_review/n_at_hf" readonly="true()" relevant="selected(../../death_details//death_place, 'health_facility')" type="string"/>
+      <bind nodeset="/death/group_review/n_outside_hf" readonly="true()" relevant="selected(../../death_details//death_place, 'outside_health_facility')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/death/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/death/inputs">
+      <label ref="jr:itext('/death/inputs:label')"/>
+      <group ref="/death/inputs/contact">
+        <label ref="jr:itext('/death/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/death/inputs/contact/_id">
+          <label ref="jr:itext('/death/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/death/inputs/contact/parent">
+          <label ref="jr:itext('/death/inputs/contact/parent:label')"/>
+          <group ref="/death/inputs/contact/parent/parent">
+            <label ref="jr:itext('/death/inputs/contact/parent/parent:label')"/>
+            <group ref="/death/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/death/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/death/death_details">
+      <label ref="jr:itext('/death/death_details:label')"/>
+      <input ref="/death/death_details/death_date">
+        <label ref="jr:itext('/death/death_details/death_date:label')"/>
+      </input>
+      <select ref="/death/death_details/treatment_program">
+        <label ref="jr:itext('/death/death_details/treatment_program:label')"/>
+        <hint ref="jr:itext('/death/death_details/treatment_program:hint')"/>
+        <itemset nodeset="instance('treatment_programs')/root/item[is_in_art =  /death/is_in_art_group  or is_in_tb =  /death/is_in_tb_group  or is_in_ncd =  /death/is_in_ncd_group  or is_in_malnutrition =  /death/is_in_malnutrition_group  or is_in_others =  /death/is_in_others_group ]">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/death/death_details/treatment_program_other">
+        <label ref="jr:itext('/death/death_details/treatment_program_other:label')"/>
+      </input>
+      <select1 ref="/death/death_details/death_place">
+        <label ref="jr:itext('/death/death_details/death_place:label')"/>
+        <item>
+          <label ref="jr:itext('/death/death_details/death_place/health_facility:label')"/>
+          <value>health_facility</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/death/death_details/death_place/outside_health_facility:label')"/>
+          <value>outside_health_facility</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/death/group_review">
+      <label ref="jr:itext('/death/group_review:label')"/>
+      <input ref="/death/group_review/n_submit">
+        <label ref="jr:itext('/death/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/death/group_review/n_patient_details_title">
+        <label ref="jr:itext('/death/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/death/group_review/n_patient_details">
+        <label ref="jr:itext('/death/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/death/group_review/n_treatment_program_title">
+        <label ref="jr:itext('/death/group_review/n_treatment_program_title:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_art">
+        <label ref="jr:itext('/death/group_review/n_art:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_tb">
+        <label ref="jr:itext('/death/group_review/n_tb:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_malnutrition">
+        <label ref="jr:itext('/death/group_review/n_malnutrition:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_ncd">
+        <label ref="jr:itext('/death/group_review/n_ncd:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_other">
+        <label ref="jr:itext('/death/group_review/n_other:label')"/>
+      </input>
+      <input appearance="li" ref="/death/group_review/n_none">
+        <label ref="jr:itext('/death/group_review/n_none:label')"/>
+      </input>
+      <input ref="/death/group_review/n_date">
+        <label ref="jr:itext('/death/group_review/n_date:label')"/>
+      </input>
+      <input ref="/death/group_review/n_at_hf">
+        <label ref="jr:itext('/death/group_review/n_at_hf:label')"/>
+      </input>
+      <input ref="/death/group_review/n_outside_hf">
+        <label ref="jr:itext('/death/group_review/n_outside_hf:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

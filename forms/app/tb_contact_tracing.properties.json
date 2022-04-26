@@ -1,0 +1,15 @@
+{
+    "icon": "icon-disease-respiratory",
+    "title": {
+        "en": "TB contact tracing",
+        "ny": "Kufufuzira kwa chifuwa chachikulu"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && ageInYears(contact) < 5 && !contact.date_of_death && !contact.muted && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

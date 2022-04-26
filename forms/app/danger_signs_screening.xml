@@ -1,0 +1,921 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Danger signs screening</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/danger_signs_screening/chw_area_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/danger_signs_screening/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:label">
+            <value>Is <output value=" /danger_signs_screening/c_patient_name "/> currently experiencing any of these danger signs?</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/abdominal_distension:label">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/crying_continuously:label">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/eye_discharge:label">
+            <value>Eye discharge</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/jaundice:label">
+            <value>Jaundice</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/not_feeding:label">
+            <value>Failing to feed</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/skin_rash:label">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/umbilical_infection:label">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs:label">
+            <value>Is <output value=" /danger_signs_screening/c_patient_name "/> currently experiencing any of these danger signs?</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/n_ref:label">
+            <value>_Accompany <output value=" /danger_signs_screening/c_patient_name "/> to the health facility immediately._</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs:label">
+            <value>Is <output value=" /danger_signs_screening/c_patient_name "/> currently experiencing any of these danger signs?</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred:label">
+            <value>Did you refer <output value=" /danger_signs_screening/c_patient_name "/> to the health facility?</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/danger_signs_screening/facility_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/abdominal_distension:label">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/crying_continuously:label">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/eye_discharge:label">
+            <value>Eye discharge</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/jaundice:label">
+            <value>Jaundice</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_danger_signs_screening:label">
+            <value>Danger signs screening</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_danger_signs_title:label">
+            <value>**_Danger signs_**</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_ds_follow_up:label">
+            <value>Follow up task will appear on <output value=" /danger_signs_screening/group_review/c_ds_follow_up_date "/></value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /danger_signs_screening/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /danger_signs_screening/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_referral:label">
+            <value>_Accompany <output value=" /danger_signs_screening/c_patient_name "/> to the health facility immediately for danger signs management._</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/none:label">
+            <value>None</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/not_feeding:label">
+            <value>Failing to feed</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/skin_rash:label">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/umbilical_infection:label">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="/danger_signs_screening/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/ref_type:label">
+            <value>Referral type</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/danger_signs_screening/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/danger_signs_screening/chw_area_id:label">
+            <value>-</value>
+          </text>
+          <text id="/danger_signs_screening/chw_id:label">
+            <value>-</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulire kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/lower_abdominal_pain:label">
+            <value>Kupweteka pansi pa nchombo</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs/swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:hint">
+            <value>Chongani chizindikiro china chiri chonse chomwe chiri chofunika</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale chizindikilo china chowopysa!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/anc_danger_signs:label">
+            <value>Kodi <output value=" /danger_signs_screening/c_patient_name "/> woyembekezera akuwona zizindikiro zowopsya izi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/abdominal_distension:label">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/crying_continuously:label">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/eye_discharge:label">
+            <value>Manthongo</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/not_feeding:label">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/skin_rash:label">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs/umbilical_infection:label">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale chizindikilo china chowopysa!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/baby_danger_signs:label">
+            <value>Kodi <output value=" /danger_signs_screening/c_patient_name "/> woyembekezera akuwona zizindikiro zowopsya izi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/n_ref:label">
+            <value>-</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulire kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/lower_abdominal_pain:label">
+            <value>Kupweteka pansi pa m'chombo</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs/swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale chizindikilo china chowopysa!</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/pnc_danger_signs:label">
+            <value>Kodi <output value=" /danger_signs_screening/c_patient_name "/> woyembekezera akuwona zizindikiro zowopsya izi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type/no_chw:label">
+            <value>Anapita yekha ku chipatala</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred/yes:label">
+            <value>Inde</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening/referred:label">
+            <value>Kodi munatumiza <output value=" /danger_signs_screening/c_patient_name "/> kuchipatala</value>
+          </text>
+          <text id="/danger_signs_screening/danger_sign_screening:label">
+            <value>Zizindikiro Zoopsa</value>
+          </text>
+          <text id="/danger_signs_screening/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/abdominal_distension:label">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/crying_continuously:label">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/eye_discharge:label">
+            <value>Manthongo</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulire kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/lower_abdominal_pain:label">
+            <value>Kupweteka pansi pa m'chombo</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_danger_signs_screening:label">
+            <value>-</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_danger_signs_title:label">
+            <value>**_Zizindikiro zoopysa_**</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_ds_follow_up:label">
+            <value>Follow up task will appear on <output value=" /danger_signs_screening/group_review/c_ds_follow_up_date "/></value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_follow_up_title:label">
+            <value>Kalondolondo &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /danger_signs_screening/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /danger_signs_screening/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_patient_details_title:label">
+            <value>Mbiri ya odwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_referral:label">
+            <value>_Pelekezani <output value=" /danger_signs_screening/c_patient_name "/> ku chipatala kuti akalandire chithandizo china._</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_referral_title:label">
+            <value>Tumizani kuchipatala&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/not_feeding:label">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/skin_rash:label">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/danger_signs_screening/group_review/umbilical_infection:label">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="/danger_signs_screening/group_review:label">
+            <value>Zotsatira/ Tsamba la zotsatira</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/ref_type:label">
+            <value>Referral type</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/danger_signs_screening/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/danger_signs_screening/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <danger_signs_screening delimiter="#" id="danger_signs_screening" prefix="J1!danger_signs_screening!" version="2020-03-16 16:11:23">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <ref_type/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <ncd>"ncd"</ncd>
+          <ref_type/>
+          <c_patient_name/>
+          <c_patient_age_in_years/>
+          <chw_id/>
+          <chw_area_id/>
+          <facility_id/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <source_uuid/>
+          <patient_date_of_birth/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <pregnant>no</pregnant>
+          <days_since_delivery>-1</days_since_delivery>
+          <is_referral_case/>
+          <c_patient_mod_mnths/>
+          <c_age_string/>
+          <danger_sign_screening>
+            <anc_danger_signs/>
+            <pnc_danger_signs/>
+            <baby_danger_signs/>
+            <n_ref/>
+            <referred/>
+            <ref_type/>
+          </danger_sign_screening>
+          <group_review>
+            <n_danger_signs_screening/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_danger_signs_title/>
+            <bleeding/>
+            <swelling/>
+            <fever/>
+            <headache_dizziness/>
+            <lower_abdominal_pain/>
+            <convulsions/>
+            <none/>
+            <diarrhoea/>
+            <jaundice/>
+            <umbilical_infection/>
+            <abdominal_distension/>
+            <crying_continuously/>
+            <eye_discharge/>
+            <not_feeding/>
+            <skin_rash/>
+            <n_referral_title/>
+            <n_referral/>
+            <n_follow_up_title/>
+            <c_ds_follow_up_date/>
+            <n_ds_follow_up/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </danger_signs_screening>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/danger_signs_screening/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/danger_signs_screening/inputs/source" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/source_id" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/ref_type" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/name" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/sex" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/danger_signs_screening/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/danger_signs_screening/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/danger_signs_screening/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/danger_signs_screening/patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/danger_signs_screening/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/danger_signs_screening/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/danger_signs_screening/patient_name" type="string"/>
+      <bind calculate="instance('contact-summary')/context/ncd" nodeset="/danger_signs_screening/ncd" type="string"/>
+      <bind calculate="../inputs/ref_type" nodeset="/danger_signs_screening/ref_type" type="string"/>
+      <bind calculate="../patient_name" nodeset="/danger_signs_screening/c_patient_name" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/danger_signs_screening/c_patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/_id" nodeset="/danger_signs_screening/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/danger_signs_screening/chw_area_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/danger_signs_screening/facility_id" type="string"/>
+      <bind calculate="difference-in-months( ../inputs/contact/date_of_birth, today() )" nodeset="/danger_signs_screening/patient_age_in_months" type="string"/>
+      <bind calculate="../source_id" nodeset="/danger_signs_screening/source_uuid" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/danger_signs_screening/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /danger_signs_screening/patient_date_of_birth ) )" nodeset="/danger_signs_screening/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /danger_signs_screening/patient_date_of_birth )) div 7)" nodeset="/danger_signs_screening/patient_age_in_weeks" type="string"/>
+      <bind calculate="coalesce(instance('contact-summary')/context/pregnant, '')" nodeset="/danger_signs_screening/pregnant" type="string"/>
+      <bind calculate="coalesce(instance('contact-summary')/context/days_since_delivery, -1)" nodeset="/danger_signs_screening/days_since_delivery" type="string"/>
+      <bind calculate="if((count-selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs ) &gt; 0 and not(selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'none'))) or (count-selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs ) &gt; 0 and not(selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'none'))) or (count-selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs ) &gt; 0 and not(selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'none'))), 'yes', 'no')" nodeset="/danger_signs_screening/is_referral_case" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/danger_signs_screening/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /danger_signs_screening/patient_age_in_years , ' years ',  /danger_signs_screening/c_patient_mod_mnths , ' months old'),
+concat( /danger_signs_screening/patient_age_in_years , ' years old'))" nodeset="/danger_signs_screening/c_age_string" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs:jr:constraintMsg')" nodeset="/danger_signs_screening/danger_sign_screening/anc_danger_signs" relevant=" /danger_signs_screening/pregnant  = 'yes'" required="true()" type="select"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs:jr:constraintMsg')" nodeset="/danger_signs_screening/danger_sign_screening/pnc_danger_signs" relevant=" /danger_signs_screening/days_since_delivery  &gt;=0 and  /danger_signs_screening/days_since_delivery  &lt;= 42" required="true()" type="select"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs:jr:constraintMsg')" nodeset="/danger_signs_screening/danger_sign_screening/baby_danger_signs" relevant=" /danger_signs_screening/patient_age_in_days  &lt;= 42" required="true()" type="select"/>
+      <bind nodeset="/danger_signs_screening/danger_sign_screening/n_ref" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind nodeset="/danger_signs_screening/danger_sign_screening/referred" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/danger_signs_screening/danger_sign_screening/ref_type" relevant=" /danger_signs_screening/danger_sign_screening/referred  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_danger_signs_screening" readonly="true()" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_danger_signs_title" readonly="true()" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/bleeding" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'bleeding') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'bleeding')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/swelling" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'swelling') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'swelling')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/fever" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'fever') or selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'fever') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'fever')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/headache_dizziness" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'headache_dizziness') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'headache_dizziness')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/lower_abdominal_pain" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'lower_abdominal_pain') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'lower_abdominal_pain')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/convulsions" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'convulsions') or selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'convulsions') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'convulsions')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/none" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/pnc_danger_signs , 'none') or selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'none') or selected( /danger_signs_screening/danger_sign_screening/anc_danger_signs , 'none')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/diarrhoea" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'diarrhoea')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/jaundice" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'jaundice')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/umbilical_infection" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'umbilical_infection')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/abdominal_distension" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'abdominal_distension')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/crying_continuously" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'crying_continuously')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/eye_discharge" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'eye_discharge')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/not_feeding" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'not_feeding')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/skin_rash" readonly="true()" relevant="selected( /danger_signs_screening/danger_sign_screening/baby_danger_signs , 'skin_rash')" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_referral_title" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_referral" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_follow_up_title" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind calculate="format-date-time(decimal-date-time(today())+3, &quot;%d/%m/%Y&quot;)" nodeset="/danger_signs_screening/group_review/c_ds_follow_up_date" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_ds_follow_up" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind nodeset="/danger_signs_screening/group_review/n_follow_up" readonly="true()" relevant=" /danger_signs_screening/is_referral_case  = 'yes'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/danger_signs_screening/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/danger_signs_screening/inputs">
+      <label ref="jr:itext('/danger_signs_screening/inputs:label')"/>
+      <group ref="/danger_signs_screening/inputs/contact">
+        <label ref="jr:itext('/danger_signs_screening/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/danger_signs_screening/inputs/contact/_id">
+          <label ref="jr:itext('/danger_signs_screening/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/danger_signs_screening/inputs/contact/parent">
+          <label ref="jr:itext('/danger_signs_screening/inputs/contact/parent:label')"/>
+          <group ref="/danger_signs_screening/inputs/contact/parent/parent">
+            <label ref="jr:itext('/danger_signs_screening/inputs/contact/parent/parent:label')"/>
+            <group ref="/danger_signs_screening/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/danger_signs_screening/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/danger_signs_screening/danger_sign_screening">
+      <label ref="jr:itext('/danger_signs_screening/danger_sign_screening:label')"/>
+      <select ref="/danger_signs_screening/danger_sign_screening/anc_danger_signs">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs:label')"/>
+        <hint ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs:hint')"/>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/bleeding:label')"/>
+          <value>bleeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/swelling:label')"/>
+          <value>swelling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/headache_dizziness:label')"/>
+          <value>headache_dizziness</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/lower_abdominal_pain:label')"/>
+          <value>lower_abdominal_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/anc_danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <select ref="/danger_signs_screening/danger_sign_screening/pnc_danger_signs">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs:label')"/>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/bleeding:label')"/>
+          <value>bleeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/swelling:label')"/>
+          <value>swelling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/headache_dizziness:label')"/>
+          <value>headache_dizziness</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/lower_abdominal_pain:label')"/>
+          <value>lower_abdominal_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/pnc_danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <select ref="/danger_signs_screening/danger_sign_screening/baby_danger_signs">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs:label')"/>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/diarrhoea:label')"/>
+          <value>diarrhoea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/jaundice:label')"/>
+          <value>jaundice</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/umbilical_infection:label')"/>
+          <value>umbilical_infection</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/abdominal_distension:label')"/>
+          <value>abdominal_distension</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/crying_continuously:label')"/>
+          <value>crying_continuously</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/eye_discharge:label')"/>
+          <value>eye_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/not_feeding:label')"/>
+          <value>not_feeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/skin_rash:label')"/>
+          <value>skin_rash</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/baby_danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/danger_signs_screening/danger_sign_screening/n_ref">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/n_ref:label')"/>
+      </input>
+      <select1 ref="/danger_signs_screening/danger_sign_screening/referred">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/referred:label')"/>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/danger_signs_screening/danger_sign_screening/ref_type">
+        <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/ref_type:label')"/>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/ref_type/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/danger_signs_screening/danger_sign_screening/ref_type/no_chw:label')"/>
+          <value>no_chw</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/danger_signs_screening/group_review">
+      <label ref="jr:itext('/danger_signs_screening/group_review:label')"/>
+      <input appearance="h1 blue" ref="/danger_signs_screening/group_review/n_danger_signs_screening">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_danger_signs_screening:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_submit">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/danger_signs_screening/group_review/n_patient_details_title">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_patient_details">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_patient_details:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_danger_signs_title">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_danger_signs_title:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/bleeding">
+        <label ref="jr:itext('/danger_signs_screening/group_review/bleeding:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/swelling">
+        <label ref="jr:itext('/danger_signs_screening/group_review/swelling:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/fever">
+        <label ref="jr:itext('/danger_signs_screening/group_review/fever:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/headache_dizziness">
+        <label ref="jr:itext('/danger_signs_screening/group_review/headache_dizziness:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/lower_abdominal_pain">
+        <label ref="jr:itext('/danger_signs_screening/group_review/lower_abdominal_pain:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/convulsions">
+        <label ref="jr:itext('/danger_signs_screening/group_review/convulsions:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/none">
+        <label ref="jr:itext('/danger_signs_screening/group_review/none:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/diarrhoea">
+        <label ref="jr:itext('/danger_signs_screening/group_review/diarrhoea:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/jaundice">
+        <label ref="jr:itext('/danger_signs_screening/group_review/jaundice:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/umbilical_infection">
+        <label ref="jr:itext('/danger_signs_screening/group_review/umbilical_infection:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/abdominal_distension">
+        <label ref="jr:itext('/danger_signs_screening/group_review/abdominal_distension:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/crying_continuously">
+        <label ref="jr:itext('/danger_signs_screening/group_review/crying_continuously:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/eye_discharge">
+        <label ref="jr:itext('/danger_signs_screening/group_review/eye_discharge:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/not_feeding">
+        <label ref="jr:itext('/danger_signs_screening/group_review/not_feeding:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/skin_rash">
+        <label ref="jr:itext('/danger_signs_screening/group_review/skin_rash:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/danger_signs_screening/group_review/n_referral_title">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_referral">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_referral:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/danger_signs_screening/group_review/n_follow_up_title">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_ds_follow_up">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_ds_follow_up:label')"/>
+      </input>
+      <input ref="/danger_signs_screening/group_review/n_follow_up">
+        <label ref="jr:itext('/danger_signs_screening/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

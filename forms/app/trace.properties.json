@@ -1,0 +1,15 @@
+{
+    "icon": "icon-form-general",
+    "title": {
+        "en": "TRACE report",
+        "ny": "lipoti la TRACE"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "user._id != contact._id && user.parent.contact_type === 'site' && contact.contact_type === 'person' && !contact.date_of_death && !contact.muted"
+    },
+    "hidden_fields": [
+
+    ]
+}

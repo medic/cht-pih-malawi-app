@@ -1,0 +1,1425 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Pregnancy/FP screeninig</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/pregnancy/danger_sign_screening/danger_signs/bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/constipation:label">
+            <value>Constipation</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/haemorrhoids:label">
+            <value>Haemorrhoids</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/muscle_cramps:label">
+            <value>Muscle cramps</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/water_bag_breaks:label">
+            <value>Water bag breaks early</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:hint">
+            <value>Please educate the client on danger signs using the job aids</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:label">
+            <value>Is <output value=" /pregnancy/patient_name "/> currently experiencing any of these danger signs?</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/n_ref:label">
+            <value>_Refer <output value=" /pregnancy/patient_name "/> to the health facility immediately._</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/n_ref_and_accompany:label">
+            <value>_Refer and accompany <output value=" /pregnancy/patient_name "/> to the health facility immediately._</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/pregnancy/fp_screening/entry_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/fp_screening/entry_date:label">
+            <value>Date of entry</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/bilateral_tubal_ligation:label">
+            <value>Bilateral Tubal Ligation</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/combined_oral_contraceptives:label">
+            <value>Combined Oral Contraceptive Pills- COCs</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/depo_provera:label">
+            <value>Depo-Provera</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/emergency_pills:label">
+            <value>Emergency Pills</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/iud:label">
+            <value>Intrauterine Device (IUD)</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/progestreone_only_pills:label">
+            <value>Progesterone Only Pills (POPs)</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/subdermal_implant:label">
+            <value>Subdermal Implant (Implanon, Norplant)</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method:label">
+            <value>Which family planning method is <output value=" /pregnancy/patient_name "/> using?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date:label">
+            <value>Does <output value=" /pregnancy/patient_name "/> know the date of the last menstrual cycle?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/2:label">
+            <value>Up to 2 months ago</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/3:label">
+            <value>Up to 3 months ago</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/4:label">
+            <value>Up to 4 months ago</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/5:label">
+            <value>Between 5 and 6 months ago</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/7:label">
+            <value>Between 7 and 8 months ago</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx:label">
+            <value>What is <output value=" /pregnancy/patient_name "/>'s approximate date of last cycle?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_date:label">
+            <value>When was the start date of <output value=" /pregnancy/patient_name "/>'s last menstrual cycle?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_fp_education:label">
+            <value>_Use the family planning story to educate household members on family planning._</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_ref_for_fp:label">
+            <value>_Refer the woman to go to health facility for family planning service._</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_ref_for_preg_test:label">
+            <value>_Refer and accompany the woman to the health facility for pregnancy test._</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp:label">
+            <value>Is <output value=" /pregnancy/patient_name "/> on family planning?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp:label">
+            <value>Would <output value=" /pregnancy/patient_name "/> like to start using a family planning method?</value>
+          </text>
+          <text id="/pregnancy/fp_screening:label">
+            <value>FP screening</value>
+          </text>
+          <text id="/pregnancy/group_review/n_bleeding:label">
+            <value>Bleeding</value>
+          </text>
+          <text id="/pregnancy/group_review/n_constipation:label">
+            <value>Constipation</value>
+          </text>
+          <text id="/pregnancy/group_review/n_convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/pregnancy/group_review/n_edd:label">
+            <value>Facility EDD: <output value=" /pregnancy/group_review/c_edd "/></value>
+          </text>
+          <text id="/pregnancy/group_review/n_fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/pregnancy/group_review/n_findings_title_fp:label">
+            <value>Family planning findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_findings_title_preg:label">
+            <value>Pregnancy findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/pregnancy/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_fp_method:label">
+            <value>On <output value=" /pregnancy/fp_screening/fp_method "/></value>
+          </text>
+          <text id="/pregnancy/group_review/n_fp_tips:label">
+            <value>&lt;h4 style=""text-align:center;""&gt;Use of family planning;&lt;/h4&gt; &lt;h5 style=""text-align:center;""&gt;1. Helps you and your spouse to space the children the way you want.&lt;/h5&gt;&lt;h5 style=""text-align:center;""&gt;2. Allows you to have the family size that you can comfortably take care of it.&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_haemorrhoids:label">
+            <value>Haemorrhoids</value>
+          </text>
+          <text id="/pregnancy/group_review/n_headache_dizziness:label">
+            <value>Headaches, dizziness or blurry vision</value>
+          </text>
+          <text id="/pregnancy/group_review/n_lower_abdominal_pain:label">
+            <value>Lower abdominal pain</value>
+          </text>
+          <text id="/pregnancy/group_review/n_muscle_cramps:label">
+            <value>Muscle cramps</value>
+          </text>
+          <text id="/pregnancy/group_review/n_nausea:label">
+            <value>Nausea</value>
+          </text>
+          <text id="/pregnancy/group_review/n_none:label">
+            <value>None</value>
+          </text>
+          <text id="/pregnancy/group_review/n_not_on_fp:label">
+            <value>Not on family planning</value>
+          </text>
+          <text id="/pregnancy/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_patient_details_title:label">
+            <value>Person details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_pregnancy_ds_title:label">
+            <value>**_Pregnancy danger signs_**</value>
+          </text>
+          <text id="/pregnancy/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/pregnancy/group_review/n_swelling:label">
+            <value>Swelling (feet, hands, legs, face)</value>
+          </text>
+          <text id="/pregnancy/group_review/n_water_bag_breaks:label">
+            <value>Water bag breaks early</value>
+          </text>
+          <text id="/pregnancy/group_review:label">
+            <value>Summary page</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_1:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_1:label">
+            <value>Date of the first visit</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_2:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_2:label">
+            <value>Date of the second visit</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_3:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_3:label">
+            <value>Date of the third visit</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_4:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_4:label">
+            <value>Date of the fourth visit</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/0:label">
+            <value>Zero</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/1:label">
+            <value>One</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/2:label">
+            <value>Two</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/3:label">
+            <value>Three</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/4:label">
+            <value>Four</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/5:label">
+            <value>More than 4</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:hint">
+            <value>Confirm ANC clinic attendance from the health passport</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:jr:constraintMsg">
+            <value>Number of visits has to be greater than 0!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:label">
+            <value>What is the total number of ANC visits attended by <output value=" /pregnancy/patient_name "/> so far?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/facility_edd:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/facility_edd:label">
+            <value>EDD given in the health facility</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date:label">
+            <value>Does the mother know the date of the last menstrual cycle?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/2:label">
+            <value>Up to 2 months ago</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/3:label">
+            <value>Up to 3 months ago</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/4:label">
+            <value>Up to 4 months ago</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/5:label">
+            <value>Between 5 and 6 months ago</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/7:label">
+            <value>Between 7 and 8 months ago</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx:label">
+            <value>What is <output value=" /pregnancy/patient_name "/>'s approximate date of last cycle?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_date:label">
+            <value>When was the start date of <output value=" /pregnancy/patient_name "/>'s last menstrual cycle?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/n_ref_for_ancv:label">
+            <value>_Refer and accompany expectant mother to go for her ANC clinics in order to ensure that she and her baby are healthy and to plan for her delivery._</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/next_visit:label">
+            <value>When is the date of the next ANC visit?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration:label">
+            <value>Pregnancy registration</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/n_confirm_pregnancy_details:label">
+            <value>_Confirm all pregnancy details from the health passport._</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant/no:label">
+            <value>No</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant:label">
+            <value>Is <output value=" /pregnancy/patient_name "/> pregnant?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant/on_fp:label">
+            <value>She is on family planning</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant/unknown:label">
+            <value>She doesn't know</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant:label">
+            <value>Why does <output value=" /pregnancy/patient_name "/> think she is not pregnant?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening:label">
+            <value>Pregnancy screening</value>
+          </text>
+          <text id="/pregnancy/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/pregnancy/ref_type/no_chw:label">
+            <value>Without CHW</value>
+          </text>
+          <text id="/pregnancy/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/pregnancy/danger_sign_screening/danger_signs/bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/constipation:label">
+            <value>kudzimbidwa</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/convulsions:label">
+            <value>kukomoka</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/haemorrhoids:label">
+            <value>zotupa za mmimba</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/headache_dizziness:label">
+            <value>kupweteka kwa mutu, chizungulira kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/lower_abdominal_pain:label">
+            <value>kupweteka pansi pa nchombo</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/muscle_cramps:label">
+            <value>kupweteka kwa minyewa</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/nausea:label">
+            <value>nselu</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs/water_bag_breaks:label">
+            <value>kutaya madzi</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:hint">
+            <value>Phunzitsani mayi woyembekezera za zizindikilo zowopysa</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:jr:constraintMsg">
+            <value>Musasankhe palibe ngati mwasankha chizindikilo chowopysa</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/danger_signs:label">
+            <value>Kodi mai oyembekezera akuwona zizindikiro zoopsa izi?</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/n_ref:label">
+            <value>_Pelekezani <output value=" /pregnancy/patient_name "/> kuchipatala mwamsanga._</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening/n_ref_and_accompany:label">
+            <value>_Pelekezani <output value=" /pregnancy/patient_name "/> kuchipatala mwamsanga._</value>
+          </text>
+          <text id="/pregnancy/danger_sign_screening:label">
+            <value>Zizindikilo zowopysa</value>
+          </text>
+          <text id="/pregnancy/fp_screening/entry_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/fp_screening/entry_date:label">
+            <value>Tsiku lolowetsa</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/bilateral_tubal_ligation:label">
+            <value>Kuseka kwa amayi kwa mbali ziwiri</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/combined_oral_contraceptives:label">
+            <value>Njiraya kulera ya mapilisi a mphamvu ziwiri</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/depo_provera:label">
+            <value>Kulera kwa jakisoni</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/emergency_pills:label">
+            <value>Kulera kwa pangozi</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/iud:label">
+            <value>Kachida kolowa mu chibelekero</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/progestreone_only_pills:label">
+            <value>Njira ya kulera ya mphamvu imodzi</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method/subdermal_implant:label">
+            <value>Njira ya kulera ya pa nkono</value>
+          </text>
+          <text id="/pregnancy/fp_screening/fp_method:label">
+            <value>Kodi <output value=" /pregnancy/patient_name "/> akugwilitsa ntchito njira yanji yolera?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy/fp_screening/knows_lmp_date:label">
+            <value>Kodi <output value=" /pregnancy/patient_name "/> akudziwa Tsiku lomwe anasamba komaliza?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/2:label">
+            <value>Miyezi 2 yapitayo</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/3:label">
+            <value>Miyezi 3 yapitayo</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/4:label">
+            <value>Miyezi 4 yapitayo</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/5:label">
+            <value>Pakati pa miyezi 5 ndi 6</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx/7:label">
+            <value>Pakati pa miyezi 7 ndi 8</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_approx:label">
+            <value>Tsiku lomwe <output value=" /pregnancy/patient_name "/>'s akuganizira kuti anamaliza nsambo womaliza</value>
+          </text>
+          <text id="/pregnancy/fp_screening/lmp_date:label">
+            <value>Kodi nsambo <output value=" /pregnancy/patient_name "/>'s wake womaliza anayamba liti?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_fp_education:label">
+            <value>_Phunzitsani apa banja pogwilitsa ntchito nkhani yakulera_</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_ref_for_fp:label">
+            <value>_Mutumizeni ku chipatala kuti akalandire thandizo la kulera._</value>
+          </text>
+          <text id="/pregnancy/fp_screening/n_ref_for_preg_test:label">
+            <value>_Pelekezani mai kuchipatala kuti akayezetse ngati ali ndi pakati._</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy/fp_screening/on_fp:label">
+            <value>Kodi <output value=" /pregnancy/patient_name "/> akutenga njira zolera?</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy/fp_screening/wants_fp:label">
+            <value>Kodi <output value=" /pregnancy/patient_name "/> akufuna kuyamba kutenga njira ya kulera?</value>
+          </text>
+          <text id="/pregnancy/fp_screening:label">
+            <value>Kufufuza njira zakulera</value>
+          </text>
+          <text id="/pregnancy/group_review/n_bleeding:label">
+            <value>Kutaya magazi</value>
+          </text>
+          <text id="/pregnancy/group_review/n_constipation:label">
+            <value>Kudzimbidwa</value>
+          </text>
+          <text id="/pregnancy/group_review/n_convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/pregnancy/group_review/n_edd:label">
+            <value>Tsiku loyembekezera kuchira lomwe mayi anapatsidwa kuchipatala: <output value=" /pregnancy/group_review/c_edd "/></value>
+          </text>
+          <text id="/pregnancy/group_review/n_fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/pregnancy/group_review/n_findings_title_fp:label">
+            <value>Maleledwe&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_findings_title_preg:label">
+            <value>Zotsatira za kafukufuku wa nkhani ya pakati&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/pregnancy/group_review/n_follow_up_title:label">
+            <value>Kalondolondo &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_fp_method:label">
+            <value>Kodi <output value=" /pregnancy/fp_screening/fp_method "/> akutenga njira zolera</value>
+          </text>
+          <text id="/pregnancy/group_review/n_fp_tips:label">
+            <value>&lt;h4 style=""text-align:center;""&gt;Kugwiritsa ntchito njira za kulera;&lt;/h4&gt; &lt;h5 style=""text-align:center;""&gt;1. Zimakuthandizani inu ndi wokondedwa wanu kuti mukhale ndi ana mwa dongosolo.&lt;/h5&gt;&lt;h5 style=""text-align:center;""&gt;2. Zimakuthandizani kuti mukhale ndi banja loti muthe kukwaniritsa kulisamalira.&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_haemorrhoids:label">
+            <value>Zotupa za mmimba</value>
+          </text>
+          <text id="/pregnancy/group_review/n_headache_dizziness:label">
+            <value>Kupweteka kwa mutu, chizungulira kapenga nkhungu mmaso</value>
+          </text>
+          <text id="/pregnancy/group_review/n_lower_abdominal_pain:label">
+            <value>Kupweteka pansi pa nchombo</value>
+          </text>
+          <text id="/pregnancy/group_review/n_muscle_cramps:label">
+            <value>Kupweteka kwa minyewa</value>
+          </text>
+          <text id="/pregnancy/group_review/n_nausea:label">
+            <value>Kselu</value>
+          </text>
+          <text id="/pregnancy/group_review/n_none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/pregnancy/group_review/n_not_on_fp:label">
+            <value>Sakutenga njira yolera</value>
+          </text>
+          <text id="/pregnancy/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /pregnancy/patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/pregnancy/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo</value>
+          </text>
+          <text id="/pregnancy/group_review/n_pregnancy_ds_title:label">
+            <value>**_Zinzindikiro zoopsa za mayi oyembekezera/ wapakati_**</value>
+          </text>
+          <text id="/pregnancy/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/pregnancy/group_review/n_swelling:label">
+            <value>Kutupa (mapazi, manja, miyendo, nkhope)</value>
+          </text>
+          <text id="/pregnancy/group_review/n_water_bag_breaks:label">
+            <value>Kutaya madzi</value>
+          </text>
+          <text id="/pregnancy/group_review:label">
+            <value>Tsamba lolembedwa mwachidule</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/pregnancy/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/pregnancy/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/pregnancy/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/pregnancy/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/pregnancy/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_1:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_1:label">
+            <value>Tsiku la sikelo yoyamba</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_2:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_2:label">
+            <value>Tsiku la sikelo yachiwiri</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_3:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_3:label">
+            <value>Tsiku la sikelo yachitatu</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_4:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_4:label">
+            <value>Tsiku la sikelo yachinayi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/0:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/1:label">
+            <value>Kamodzi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/2:label">
+            <value>Kawiri</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/3:label">
+            <value>Katatu</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/4:label">
+            <value>Kanayi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits/5:label">
+            <value>Koposera kanayi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:hint">
+            <value>Tsimikizani za maulendo akusikelo powona bukhu la kuchipatala</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:jr:constraintMsg">
+            <value>Maulendo oyendera aposele 0!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/anc_visits:label">
+            <value>Wayenda maulendo angati akusikelo ya amai oyembekezera kufikira pano?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/facility_edd:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/facility_edd:label">
+            <value>Tsiku loyembekezera kuchira lopelekedwa kuchipatala</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/knows_lmp_date:label">
+            <value>Kodi mai akudziwa Tsiku lomwe anasamba komaliza?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/2:label">
+            <value>Miyezi 2 yapitayo</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/3:label">
+            <value>Miyezi 3 yapitayo</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/4:label">
+            <value>Miyezi 4 yapitayo</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/5:label">
+            <value>Pakati pa miyezi 5 ndi 6</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx/7:label">
+            <value>Pakati pa miyezi 7 ndi 8</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_approx:label">
+            <value>Kodi nsambo wake <output value=" /pregnancy/patient_name "/>'s womaliza anayamba liti?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/lmp_date:label">
+            <value>Kodi nsambo wake <output value=" /pregnancy/patient_name "/>'s womaliza anayamba liti?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/n_ref_for_ancv:label">
+            <value>_Mupelekezeni mai kuchipatala kuti akayambe sikelo kuti iye ndi mwana womuyembekezerayo akhale athanzi ndi kukonzekera kukachilira ku chipatala.._</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration/next_visit:label">
+            <value>Sikelo ina yotsatira ili liti?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_registration:label">
+            <value>Kulembera Amai Apakati</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/n_confirm_pregnancy_details:label">
+            <value>Tsimikizani nkhani ya pakati pa mai kuchokera mu bukhu la kuchipatala</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/pregnant:label">
+            <value>Kodi <output value=" /pregnancy/patient_name "/> ndi woyembekezera</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant/on_fp:label">
+            <value>Akutenga njira zolera</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant/unknown:label">
+            <value>Sakudziwa</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening/reason_not_pregnant:label">
+            <value>Nchifukwa chani <output value=" /pregnancy/patient_name "/> akuganiza kuti sowoyembekezera?</value>
+          </text>
+          <text id="/pregnancy/pregnancy_screening:label">
+            <value>Kufufuza amayi apakati</value>
+          </text>
+          <text id="/pregnancy/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/pregnancy/ref_type/no_chw:label">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="/pregnancy/ref_type:label">
+            <value>Mtundu wakutumiza</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <pregnancy delimiter="#" id="pregnancy" prefix="J1!pregnancy!" version="2019-05-28 18:01:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_uuid tag="hidden"/>
+          <patient_id/>
+          <patient_name/>
+          <lmp_date/>
+          <edd/>
+          <days_since_lmp/>
+          <weeks_since_lmp/>
+          <lmp/>
+          <danger_sign_at_reg/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <pregnancy_screening>
+            <pregnant/>
+            <n_confirm_pregnancy_details/>
+            <reason_not_pregnant/>
+          </pregnancy_screening>
+          <fp_screening>
+            <n_fp_education/>
+            <on_fp/>
+            <fp_method/>
+            <entry_date/>
+            <knows_lmp_date/>
+            <lmp_date/>
+            <lmp_approx/>
+            <n_ref_for_preg_test/>
+            <wants_fp/>
+            <n_ref_for_fp/>
+          </fp_screening>
+          <pregnancy_registration>
+            <knows_lmp_date/>
+            <lmp_date/>
+            <lmp_approx/>
+            <anc_visits/>
+            <anc_1/>
+            <anc_2/>
+            <anc_3/>
+            <anc_4/>
+            <facility_edd/>
+            <n_ref_for_ancv/>
+            <next_visit/>
+          </pregnancy_registration>
+          <danger_sign_screening>
+            <danger_signs/>
+            <refer_and_accompany/>
+            <refer_only/>
+            <n_ref_and_accompany/>
+            <n_ref/>
+          </danger_sign_screening>
+          <is_referral_case/>
+          <ref_type/>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title_fp/>
+            <n_findings_title_preg/>
+            <c_edd/>
+            <n_edd/>
+            <n_pregnancy_ds_title/>
+            <n_bleeding/>
+            <n_swelling/>
+            <n_fever/>
+            <n_headache_dizziness/>
+            <n_lower_abdominal_pain/>
+            <n_convulsions/>
+            <n_water_bag_breaks/>
+            <n_constipation/>
+            <n_nausea/>
+            <n_muscle_cramps/>
+            <n_haemorrhoids/>
+            <n_none/>
+            <n_fp_method/>
+            <n_not_on_fp/>
+            <n_fp_tips/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </pregnancy>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/pregnancy/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/pregnancy/inputs/source" type="string"/>
+      <bind nodeset="/pregnancy/inputs/source_id" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/pregnancy/inputs/contact/name" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/sex" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/pregnancy/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/pregnancy/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/pregnancy/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/pregnancy/patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/pregnancy/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/pregnancy/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/pregnancy/patient_name" type="string"/>
+      <bind calculate="format-date-time(
+if(selected(../pregnancy_registration/knows_lmp_date, 'yes'), ../pregnancy_registration/lmp_date,
+date-time(decimal-date-time(today()) - round(../pregnancy_registration/lmp_approx * 30.5, 0))
+), &quot;%Y-%m-%d&quot;)" nodeset="/pregnancy/lmp_date" type="string"/>
+      <bind calculate="../pregnancy_registration/facility_edd" nodeset="/pregnancy/edd" type="string"/>
+      <bind calculate="round(decimal-date-time(today()) - decimal-date-time(../lmp_date), 2)" nodeset="/pregnancy/days_since_lmp" type="string"/>
+      <bind calculate="round(../days_since_lmp div 7, 2)" nodeset="/pregnancy/weeks_since_lmp" type="string"/>
+      <bind calculate="../lmp_date" nodeset="/pregnancy/lmp" type="string"/>
+      <bind calculate="if(not(selected(../danger_sign_screening/danger_signs, '')), 'yes', 'no')" nodeset="/pregnancy/danger_sign_at_reg" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/pregnancy/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/pregnancy/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/pregnancy/geolocation" type="string"/>
+      <bind nodeset="/pregnancy/pregnancy_screening/pregnant" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/pregnancy_screening/n_confirm_pregnancy_details" readonly="true()" relevant="selected(../pregnant, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy/pregnancy_screening/reason_not_pregnant" relevant="selected(../pregnant, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/fp_screening" relevant="selected(../pregnancy_screening/pregnant, 'no')"/>
+      <bind nodeset="/pregnancy/fp_screening/n_fp_education" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy/fp_screening/on_fp" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/fp_screening/fp_method" relevant="selected(../on_fp, 'yes')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/fp_screening/entry_date:jr:constraintMsg')" nodeset="/pregnancy/fp_screening/entry_date" relevant="selected(../fp_method, 'iud')
+or selected(../fp_method, 'subdermal_implant')
+or selected(../fp_method, 'depo_provera')" required="false()" type="date"/>
+      <bind nodeset="/pregnancy/fp_screening/knows_lmp_date" relevant="selected(../on_fp, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/fp_screening/lmp_date" relevant="selected(../knows_lmp_date, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/pregnancy/fp_screening/lmp_approx" relevant="selected(../knows_lmp_date, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/fp_screening/n_ref_for_preg_test" readonly="true()" relevant="int(../lmp_approx) &gt;= 3
+or ../../weeks_since_lmp &gt; 12" type="string"/>
+      <bind nodeset="/pregnancy/fp_screening/wants_fp" relevant="selected(../on_fp, 'no')
+and (int(../lmp_approx) &lt; 3
+or ../../weeks_since_lmp &lt;= 12)" required="true()" type="select1"/>
+      <bind nodeset="/pregnancy/fp_screening/n_ref_for_fp" readonly="true()" relevant="selected(../wants_fp, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy/pregnancy_registration" relevant="selected(../pregnancy_screening/pregnant, 'yes')"/>
+      <bind nodeset="/pregnancy/pregnancy_registration/knows_lmp_date" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/lmp_date:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/lmp_date" relevant="selected(../knows_lmp_date, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/pregnancy/pregnancy_registration/lmp_approx" relevant="selected(../knows_lmp_date, 'no')" required="true()" type="select1"/>
+      <bind constraint=". &gt;= 0" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/anc_visits:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/anc_visits" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/anc_1:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/anc_1" relevant="int(../anc_visits) &gt;= 1" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/anc_2:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/anc_2" relevant="int(../anc_visits) &gt;= 2" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/anc_3:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/anc_3" relevant="int(../anc_visits) &gt;= 3" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/anc_4:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/anc_4" relevant="int(../anc_visits) &gt;= 4" required="true()" type="date"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/facility_edd:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/facility_edd" relevant="int(../anc_visits) &gt;= 1" required="false()" type="date"/>
+      <bind nodeset="/pregnancy/pregnancy_registration/n_ref_for_ancv" readonly="true()" relevant="int(../anc_visits) = 0" type="string"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/pregnancy/pregnancy_registration/next_visit:jr:constraintMsg')" nodeset="/pregnancy/pregnancy_registration/next_visit" relevant="int(../anc_visits) &gt;= 1" required="true()" type="date"/>
+      <bind nodeset="/pregnancy/danger_sign_screening" relevant="selected(../pregnancy_screening/pregnant, 'yes')"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/pregnancy/danger_sign_screening/danger_signs:jr:constraintMsg')" nodeset="/pregnancy/danger_sign_screening/danger_signs" required="true()" type="select"/>
+      <bind calculate="if(selected(../danger_signs, 'bleeding')
+or selected(../danger_signs, 'swelling')
+or selected(../danger_signs, 'fever')
+or selected(../danger_signs, 'headache_dizziness')
+or selected(../danger_signs, 'lower_abdominal_pain')
+or selected(../danger_signs, 'convulsions')
+or selected(../danger_signs, 'water_bag_breaks'),
+'yes', 'no')" nodeset="/pregnancy/danger_sign_screening/refer_and_accompany" type="string"/>
+      <bind calculate="if(selected(../danger_signs, 'constipation')
+or selected(../danger_signs, 'nausea')
+or selected(../danger_signs, 'muscle_cramps')
+or selected(../danger_signs, 'haemorrhoids') 
+and ../refer_and_accompany = 'no',
+'yes', 'no')" nodeset="/pregnancy/danger_sign_screening/refer_only" type="string"/>
+      <bind nodeset="/pregnancy/danger_sign_screening/n_ref_and_accompany" readonly="true()" relevant="../refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/pregnancy/danger_sign_screening/n_ref" readonly="true()" relevant="../refer_only = 'yes'
+and ../refer_and_accompany = 'no'" type="string"/>
+      <bind calculate="if( /pregnancy/danger_sign_screening/refer_and_accompany  = 'yes' or  /pregnancy/danger_sign_screening/refer_only  = 'yes', 'yes', 'no')" nodeset="/pregnancy/is_referral_case" type="string"/>
+      <bind nodeset="/pregnancy/ref_type" relevant="(not(selected(../danger_sign_screening/danger_signs, 'none'))
+and (count-selected(../danger_sign_screening/danger_signs) &gt;= 1))
+or int(../pregnancy_registration/anc_visits) = 0
+or (selected(../fp_screening/wants_fp, 'yes')
+or (selected(../pregnancy_screening/pregnant, 'no')
+and (int(../fp_screening/lmp_approx) &gt;= 3
+or ../fp_screening/weeks_since_lmp &gt; 12)))
+or int(../nutrition/muac) &lt; 22" type="select1"/>
+      <bind nodeset="/pregnancy/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_findings_title_fp" readonly="true()" relevant="selected(../../pregnancy_screening/pregnant, 'no')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_findings_title_preg" readonly="true()" relevant="selected(../../pregnancy_screening/pregnant, 'yes')" type="string"/>
+      <bind calculate="format-date-time( /pregnancy/pregnancy_registration/facility_edd ,&quot;%b %e, %Y&quot;)" nodeset="/pregnancy/group_review/c_edd" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_edd" readonly="true()" relevant="selected(../../pregnancy_screening/pregnant, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_pregnancy_ds_title" readonly="true()" relevant="selected(../../pregnancy_screening/pregnant, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_bleeding" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'bleeding')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_swelling" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'swelling')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_fever" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'fever')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_headache_dizziness" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'headache_dizziness')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_lower_abdominal_pain" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'lower_abdominal_pain')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_convulsions" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'convulsions')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_water_bag_breaks" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'water_bag_breaks')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_constipation" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'constipation')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_nausea" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'nausea')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_muscle_cramps" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'muscle_cramps')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_haemorrhoids" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'haemorrhoids')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_none" readonly="true()" relevant="selected(../../danger_sign_screening/danger_signs, 'none')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_fp_method" readonly="true()" relevant="selected(../../fp_screening/on_fp, 'yes')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_not_on_fp" readonly="true()" relevant="selected(../../fp_screening/on_fp, 'no')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_fp_tips" readonly="true()" relevant="selected(../../pregnancy_screening/pregnant, 'no')" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind nodeset="/pregnancy/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/pregnancy/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/pregnancy/inputs">
+      <label ref="jr:itext('/pregnancy/inputs:label')"/>
+      <group ref="/pregnancy/inputs/contact">
+        <label ref="jr:itext('/pregnancy/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/pregnancy/inputs/contact/_id">
+          <label ref="jr:itext('/pregnancy/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/pregnancy/inputs/contact/parent">
+          <label ref="jr:itext('/pregnancy/inputs/contact/parent:label')"/>
+          <group ref="/pregnancy/inputs/contact/parent/parent">
+            <label ref="jr:itext('/pregnancy/inputs/contact/parent/parent:label')"/>
+            <group ref="/pregnancy/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/pregnancy/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/pregnancy/pregnancy_screening">
+      <label ref="jr:itext('/pregnancy/pregnancy_screening:label')"/>
+      <select1 ref="/pregnancy/pregnancy_screening/pregnant">
+        <label ref="jr:itext('/pregnancy/pregnancy_screening/pregnant:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_screening/pregnant/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_screening/pregnant/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/pregnancy_screening/n_confirm_pregnancy_details">
+        <label ref="jr:itext('/pregnancy/pregnancy_screening/n_confirm_pregnancy_details:label')"/>
+      </input>
+      <select1 ref="/pregnancy/pregnancy_screening/reason_not_pregnant">
+        <label ref="jr:itext('/pregnancy/pregnancy_screening/reason_not_pregnant:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_screening/reason_not_pregnant/unknown:label')"/>
+          <value>unknown</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_screening/reason_not_pregnant/on_fp:label')"/>
+          <value>on_fp</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/pregnancy/fp_screening">
+      <label ref="jr:itext('/pregnancy/fp_screening:label')"/>
+      <input ref="/pregnancy/fp_screening/n_fp_education">
+        <label ref="jr:itext('/pregnancy/fp_screening/n_fp_education:label')"/>
+      </input>
+      <select1 ref="/pregnancy/fp_screening/on_fp">
+        <label ref="jr:itext('/pregnancy/fp_screening/on_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/on_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/on_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy/fp_screening/fp_method">
+        <label ref="jr:itext('/pregnancy/fp_screening/fp_method:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/combined_oral_contraceptives:label')"/>
+          <value>combined_oral_contraceptives</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/progestreone_only_pills:label')"/>
+          <value>progestreone_only_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/emergency_pills:label')"/>
+          <value>emergency_pills</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/iud:label')"/>
+          <value>iud</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/subdermal_implant:label')"/>
+          <value>subdermal_implant</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/bilateral_tubal_ligation:label')"/>
+          <value>bilateral_tubal_ligation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/fp_method/depo_provera:label')"/>
+          <value>depo_provera</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/fp_screening/entry_date">
+        <label ref="jr:itext('/pregnancy/fp_screening/entry_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy/fp_screening/knows_lmp_date">
+        <label ref="jr:itext('/pregnancy/fp_screening/knows_lmp_date:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/knows_lmp_date/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/knows_lmp_date/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/fp_screening/lmp_date">
+        <label ref="jr:itext('/pregnancy/fp_screening/lmp_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy/fp_screening/lmp_approx">
+        <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/lmp_approx/7:label')"/>
+          <value>7</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/fp_screening/n_ref_for_preg_test">
+        <label ref="jr:itext('/pregnancy/fp_screening/n_ref_for_preg_test:label')"/>
+      </input>
+      <select1 ref="/pregnancy/fp_screening/wants_fp">
+        <label ref="jr:itext('/pregnancy/fp_screening/wants_fp:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/wants_fp/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/fp_screening/wants_fp/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/fp_screening/n_ref_for_fp">
+        <label ref="jr:itext('/pregnancy/fp_screening/n_ref_for_fp:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy/pregnancy_registration">
+      <label ref="jr:itext('/pregnancy/pregnancy_registration:label')"/>
+      <select1 ref="/pregnancy/pregnancy_registration/knows_lmp_date">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/knows_lmp_date:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/knows_lmp_date/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/knows_lmp_date/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/pregnancy_registration/lmp_date">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_date:label')"/>
+      </input>
+      <select1 ref="/pregnancy/pregnancy_registration/lmp_approx">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx:label')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx/5:label')"/>
+          <value>5</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/lmp_approx/7:label')"/>
+          <value>7</value>
+        </item>
+      </select1>
+      <select1 ref="/pregnancy/pregnancy_registration/anc_visits">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits:label')"/>
+        <hint ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/0:label')"/>
+          <value>0</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_visits/5:label')"/>
+          <value>5</value>
+        </item>
+      </select1>
+      <input ref="/pregnancy/pregnancy_registration/anc_1">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_1:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/anc_2">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_2:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/anc_3">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_3:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/anc_4">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/anc_4:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/facility_edd">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/facility_edd:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/n_ref_for_ancv">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/n_ref_for_ancv:label')"/>
+      </input>
+      <input ref="/pregnancy/pregnancy_registration/next_visit">
+        <label ref="jr:itext('/pregnancy/pregnancy_registration/next_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/pregnancy/danger_sign_screening">
+      <label ref="jr:itext('/pregnancy/danger_sign_screening:label')"/>
+      <select ref="/pregnancy/danger_sign_screening/danger_signs">
+        <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs:label')"/>
+        <hint ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs:hint')"/>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/bleeding:label')"/>
+          <value>bleeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/swelling:label')"/>
+          <value>swelling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/headache_dizziness:label')"/>
+          <value>headache_dizziness</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/lower_abdominal_pain:label')"/>
+          <value>lower_abdominal_pain</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/water_bag_breaks:label')"/>
+          <value>water_bag_breaks</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/constipation:label')"/>
+          <value>constipation</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/nausea:label')"/>
+          <value>nausea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/muscle_cramps:label')"/>
+          <value>muscle_cramps</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/haemorrhoids:label')"/>
+          <value>haemorrhoids</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/pregnancy/danger_sign_screening/danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+      <input ref="/pregnancy/danger_sign_screening/n_ref_and_accompany">
+        <label ref="jr:itext('/pregnancy/danger_sign_screening/n_ref_and_accompany:label')"/>
+      </input>
+      <input ref="/pregnancy/danger_sign_screening/n_ref">
+        <label ref="jr:itext('/pregnancy/danger_sign_screening/n_ref:label')"/>
+      </input>
+    </group>
+    <select1 ref="/pregnancy/ref_type">
+      <label ref="jr:itext('/pregnancy/ref_type:label')"/>
+      <item>
+        <label ref="jr:itext('/pregnancy/ref_type/chw:label')"/>
+        <value>chw</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/pregnancy/ref_type/no_chw:label')"/>
+        <value>no_chw</value>
+      </item>
+    </select1>
+    <group appearance="field-list summary" ref="/pregnancy/group_review">
+      <label ref="jr:itext('/pregnancy/group_review:label')"/>
+      <input ref="/pregnancy/group_review/n_submit">
+        <label ref="jr:itext('/pregnancy/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/pregnancy/group_review/n_patient_details_title">
+        <label ref="jr:itext('/pregnancy/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_patient_details">
+        <label ref="jr:itext('/pregnancy/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy/group_review/n_findings_title_fp">
+        <label ref="jr:itext('/pregnancy/group_review/n_findings_title_fp:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/pregnancy/group_review/n_findings_title_preg">
+        <label ref="jr:itext('/pregnancy/group_review/n_findings_title_preg:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_edd">
+        <label ref="jr:itext('/pregnancy/group_review/n_edd:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_pregnancy_ds_title">
+        <label ref="jr:itext('/pregnancy/group_review/n_pregnancy_ds_title:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_bleeding">
+        <label ref="jr:itext('/pregnancy/group_review/n_bleeding:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_swelling">
+        <label ref="jr:itext('/pregnancy/group_review/n_swelling:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_fever">
+        <label ref="jr:itext('/pregnancy/group_review/n_fever:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_headache_dizziness">
+        <label ref="jr:itext('/pregnancy/group_review/n_headache_dizziness:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_lower_abdominal_pain">
+        <label ref="jr:itext('/pregnancy/group_review/n_lower_abdominal_pain:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_convulsions">
+        <label ref="jr:itext('/pregnancy/group_review/n_convulsions:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_water_bag_breaks">
+        <label ref="jr:itext('/pregnancy/group_review/n_water_bag_breaks:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_constipation">
+        <label ref="jr:itext('/pregnancy/group_review/n_constipation:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_nausea">
+        <label ref="jr:itext('/pregnancy/group_review/n_nausea:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_muscle_cramps">
+        <label ref="jr:itext('/pregnancy/group_review/n_muscle_cramps:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_haemorrhoids">
+        <label ref="jr:itext('/pregnancy/group_review/n_haemorrhoids:label')"/>
+      </input>
+      <input appearance="li" ref="/pregnancy/group_review/n_none">
+        <label ref="jr:itext('/pregnancy/group_review/n_none:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_fp_method">
+        <label ref="jr:itext('/pregnancy/group_review/n_fp_method:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_not_on_fp">
+        <label ref="jr:itext('/pregnancy/group_review/n_not_on_fp:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_fp_tips">
+        <label ref="jr:itext('/pregnancy/group_review/n_fp_tips:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/pregnancy/group_review/n_follow_up_title">
+        <label ref="jr:itext('/pregnancy/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/pregnancy/group_review/n_follow_up">
+        <label ref="jr:itext('/pregnancy/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

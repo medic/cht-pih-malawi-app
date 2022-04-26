@@ -1,0 +1,1267 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Immunization follow up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/immunization/baby_condition/danger_signs/abdominal_distension:label">
+            <value>Abdominal distension and not passing stools</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/convulsions:label">
+            <value>Convulsions</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/crying_continuously:label">
+            <value>Crying continuously after all effort failed</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/eye_discharge:label">
+            <value>Eye discharge</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/jaundice:label">
+            <value>Jaundice</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/not_feeding:label">
+            <value>Failing to feed</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/skin_rash:label">
+            <value>Skin rash all over the body</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/umbilical_infection:label">
+            <value>Swelling, redness or pus discharges on the umbilical cord</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs:label">
+            <value>Does <output value=" /immunization/patient_name "/> have any of the following danger signs?</value>
+          </text>
+          <text id="/immunization/baby_condition:label">
+            <value>Baby's condition</value>
+          </text>
+          <text id="/immunization/child_details/condition/alive:label">
+            <value>Alive</value>
+          </text>
+          <text id="/immunization/child_details/condition/dead:label">
+            <value>Dead</value>
+          </text>
+          <text id="/immunization/child_details/condition:label">
+            <value>How is <output value=" /immunization/patient_name "/>?</value>
+          </text>
+          <text id="/immunization/child_details/date_of_death:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/immunization/child_details/date_of_death:label">
+            <value>Date of death</value>
+          </text>
+          <text id="/immunization/child_details:label">
+            <value>Child details</value>
+          </text>
+          <text id="/immunization/group_review/n_bcg:label">
+            <value>BCG</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib1:label">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib2:label">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib3:label">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="/immunization/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/immunization/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_ipv:label">
+            <value>IPV</value>
+          </text>
+          <text id="/immunization/group_review/n_measles:label">
+            <value>Measles</value>
+          </text>
+          <text id="/immunization/group_review/n_opv0:label">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="/immunization/group_review/n_opv1:label">
+            <value>OPV 1</value>
+          </text>
+          <text id="/immunization/group_review/n_opv2:label">
+            <value>OPV 2</value>
+          </text>
+          <text id="/immunization/group_review/n_opv3:label">
+            <value>OPV 3</value>
+          </text>
+          <text id="/immunization/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization/patient_age_in_years "/> years old&lt;/h5&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv1:label">
+            <value>PCV 1</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv2:label">
+            <value>PCV 2</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv3:label">
+            <value>PCV 3</value>
+          </text>
+          <text id="/immunization/group_review/n_referral:label">
+            <value>_Refer <output value=" /immunization/patient_name "/> immediately for danger signs management!_</value>
+          </text>
+          <text id="/immunization/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_rota1:label">
+            <value>Rota 1</value>
+          </text>
+          <text id="/immunization/group_review/n_rota2:label">
+            <value>Rota 2</value>
+          </text>
+          <text id="/immunization/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/immunization/group_review/n_vaccines_title:label">
+            <value>**_Vaccines given_**</value>
+          </text>
+          <text id="/immunization/group_review/n_vitamin:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/immunization/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/immunization/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/immunization/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/immunization/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/immunization/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/immunization/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/immunization/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/immunization/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/immunization/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/immunization/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery/no:label">
+            <value>No</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery:label">
+            <value>Has <output value=" /immunization/patient_name "/> had any health facility PNC visit since delivery?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/n_encourage_pnc:label">
+            <value>_Encourage care giver to take baby to the health facility for PNC visit._</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit/1:label">
+            <value>1 week facility visit</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit/6:label">
+            <value>6 weeks facility visit</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit:label">
+            <value>Which facility PNC visit are you reporting?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit/3:label">
+            <value>3 days home visit</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit/5:label">
+            <value>5 days home visit</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit:label">
+            <value>Which PNC home visit are you reporting?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/visit_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/visit_date:label">
+            <value>Select date when PNC visit was done</value>
+          </text>
+          <text id="/immunization/pnc_visit_details:label">
+            <value>PNC visit</value>
+          </text>
+          <text id="/immunization/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/immunization/ref_type/no_chw:label">
+            <value>Without CHW</value>
+          </text>
+          <text id="/immunization/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/1:label">
+            <value>DPT-HepB-Hib 1</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/2:label">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/3:label">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib:label">
+            <value>Select which dose of DPT-HepB-Hib was given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/measles/1:label">
+            <value>Measles 1</value>
+          </text>
+          <text id="/immunization/vaccines_given/measles/2:label">
+            <value>Measles 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/measles:label">
+            <value>Select which dose of Measles was given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/n_advise_parent:label">
+            <value>_Please advise the parent to take the child to the health facility!_</value>
+          </text>
+          <text id="/immunization/vaccines_given/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/immunization/vaccines_given/next_visit:label">
+            <value>When is <output value=" /immunization/patient_name "/> due for the next immunization?</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/1:label">
+            <value>OPV 1</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/2:label">
+            <value>OPV 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/3:label">
+            <value>OPV 3</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv:label">
+            <value>Select which dose of OPV was given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/1:label">
+            <value>PCV 1</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/2:label">
+            <value>PCV 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/3:label">
+            <value>PCV 3</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv:label">
+            <value>Select which dose of PCV was given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines/no:label">
+            <value>No</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines:hint">
+            <value>Please check the vaccines information in the newborn notebook</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines:label">
+            <value>Has <output value=" /immunization/patient_name "/> received any vaccines?</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota/1:label">
+            <value>Rota 1</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota/2:label">
+            <value>Rota 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota:label">
+            <value>Select which dose of Rota was given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccine_date:jr:constraintMsg">
+            <value>Date cannot be in the future!</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccine_date:label">
+            <value>Date when vaccines were received</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/bcg:label">
+            <value>BCG</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/birth_polio:label">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/dpt_hepb_hib:label">
+            <value>DPT-HepB-Hib</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/ipv:label">
+            <value>IPV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/measles:label">
+            <value>Measles</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/opv:label">
+            <value>OPV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/pcv:label">
+            <value>PCV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/rota:label">
+            <value>Rota</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines:label">
+            <value>Select the vaccines that were given on <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given:label">
+            <value>Vaccines</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/immunization/baby_condition/danger_signs/abdominal_distension:label">
+            <value>Kupweteka kwa m'mimba ndi kukanika kuchita chimbuzi</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/convulsions:label">
+            <value>Kukomoka</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/crying_continuously:label">
+            <value>Kulira kosalekeza</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/eye_discharge:label">
+            <value>Manthongo</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/fever:label">
+            <value>Kutentha thupi</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/not_feeding:label">
+            <value>Kukanika kudya</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/skin_rash:label">
+            <value>Kutuluka zilonda pa khungu</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs/umbilical_infection:label">
+            <value>Kutupa, kufiira kapena kutuluka mafinya pa mchombo</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/immunization/baby_condition/danger_signs:label">
+            <value>Kodi <output value=" /immunization/patient_name "/> ali ndi zina mwa zizindikilo izi?</value>
+          </text>
+          <text id="/immunization/baby_condition:label">
+            <value>Momwe mwana aliri</value>
+          </text>
+          <text id="/immunization/child_details/condition/alive:label">
+            <value>Ali moyo</value>
+          </text>
+          <text id="/immunization/child_details/condition/dead:label">
+            <value>Wa mwalira</value>
+          </text>
+          <text id="/immunization/child_details/condition:label">
+            <value><output value=" /immunization/patient_name "/> ali bwanji</value>
+          </text>
+          <text id="/immunization/child_details/date_of_death:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo</value>
+          </text>
+          <text id="/immunization/child_details/date_of_death:label">
+            <value>Tsiku lomwalira</value>
+          </text>
+          <text id="/immunization/child_details:label">
+            <value>Mbiri ya mwana</value>
+          </text>
+          <text id="/immunization/group_review/n_bcg:label">
+            <value>BCG</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib1:label">
+            <value>DPT-HepB-Hib 2</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib2:label">
+            <value>DPT-HepB-Hib 3</value>
+          </text>
+          <text id="/immunization/group_review/n_dpt_hepb_hib3:label">
+            <value>DPT-HepB-Hib 4</value>
+          </text>
+          <text id="/immunization/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/immunization/group_review/n_follow_up_title:label">
+            <value>Kalondolondo &lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_ipv:label">
+            <value>IPV</value>
+          </text>
+          <text id="/immunization/group_review/n_measles:label">
+            <value>Measles</value>
+          </text>
+          <text id="/immunization/group_review/n_opv0:label">
+            <value>Birth Polio (OPV 0)</value>
+          </text>
+          <text id="/immunization/group_review/n_opv1:label">
+            <value>OPV 2</value>
+          </text>
+          <text id="/immunization/group_review/n_opv2:label">
+            <value>OPV 3</value>
+          </text>
+          <text id="/immunization/group_review/n_opv3:label">
+            <value>OPV 4</value>
+          </text>
+          <text id="/immunization/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /immunization/patient_age_in_years "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_patient_details_title:label">
+            <value>Mbiri ya odwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv1:label">
+            <value>PCV 2</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv2:label">
+            <value>PCV 3</value>
+          </text>
+          <text id="/immunization/group_review/n_pcv3:label">
+            <value>PCV 4</value>
+          </text>
+          <text id="/immunization/group_review/n_referral:label">
+            <value>_Tumizani <output value=" /immunization/patient_name "/> mwansanga kuchipatala akakhala ndi zizizndikiro zoopsa!_</value>
+          </text>
+          <text id="/immunization/group_review/n_referral_title:label">
+            <value>Tumizani kuchipatala&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/immunization/group_review/n_rota1:label">
+            <value>Rota 2</value>
+          </text>
+          <text id="/immunization/group_review/n_rota2:label">
+            <value>Rota 3</value>
+          </text>
+          <text id="/immunization/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/immunization/group_review/n_vaccines_title:label">
+            <value>**_Vaccines given_**</value>
+          </text>
+          <text id="/immunization/group_review/n_vitamin:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/immunization/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/immunization/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/facility_visit_since_delivery:label">
+            <value>Kodi <output value=" /immunization/patient_name "/> anapita ku chipatala atangochira?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/n_encourage_pnc:label">
+            <value>_Limbikitsani makolo zopita ndi mwana wawo ku sikelo._</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit/1:label">
+            <value>Tsabata 1</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit/6:label">
+            <value>Tsabata 6</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_facility_visit:label">
+            <value>Kodi ulendo wa kuchipatala uwu ndi wa liti?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit/3:label">
+            <value>Tsiku 3</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit/5:label">
+            <value>Tsiku 5</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/pnc_home_visit:label">
+            <value>Kodi kuyendera uku ndi kwa tsiku liti?</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/visit_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/immunization/pnc_visit_details/visit_date:label">
+            <value>Sankhani tsiku lomwe anapita ku chipatala</value>
+          </text>
+          <text id="/immunization/pnc_visit_details:label">
+            <value>Kuyendera mayi akachira</value>
+          </text>
+          <text id="/immunization/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/immunization/ref_type/no_chw:label">
+            <value>Opanda CHW</value>
+          </text>
+          <text id="/immunization/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/immunization/source:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/1:label">
+            <value>DPT-HepB-Hib1</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/2:label">
+            <value>DPT-HepB-Hib2</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib/3:label">
+            <value>DPT-HepB-Hib3</value>
+          </text>
+          <text id="/immunization/vaccines_given/dpt_hepb_hib:label">
+            <value>Sankhani mtundu wa DPT-HepB-Hib omwe analandira patsikuli <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/measles/1:label">
+            <value>Measles 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/measles/2:label">
+            <value>Measles 3</value>
+          </text>
+          <text id="/immunization/vaccines_given/measles:label">
+            <value>Sankhani mtundu wa katemera wa chikuku omwe analandira patsikuli <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/n_advise_parent:label">
+            <value>_Chonde limbikitsani makolo zopita ndi mwana wawo kuchipatala kukalandira katemera!_</value>
+          </text>
+          <text id="/immunization/vaccines_given/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/immunization/vaccines_given/next_visit:label">
+            <value>Kodi <output value=" /immunization/patient_name "/> alandilanso katemera wina liti?</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/1:label">
+            <value>OPV1</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/2:label">
+            <value>OPV2</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv/3:label">
+            <value>OPV3</value>
+          </text>
+          <text id="/immunization/vaccines_given/opv:label">
+            <value>Sankhani mtundu wa OPV omwe analandira patsikuli <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/1:label">
+            <value>PCV1</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/2:label">
+            <value>PCV2</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv/3:label">
+            <value>PCV3</value>
+          </text>
+          <text id="/immunization/vaccines_given/pcv:label">
+            <value>Sankhani mtundu wa PCV omwe analandira patsikuli <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines:hint">
+            <value>Chonde fufuzani ndondomeko ya katemela mu buku la mwana amene wangobadwa kumene</value>
+          </text>
+          <text id="/immunization/vaccines_given/received_vaccines:label">
+            <value>Kodi <output value=" /immunization/patient_name "/> analandira katemera wina aliyense kuchokera tsiku lomwe munayendera banjali?</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota/1:label">
+            <value>Rota 2</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota/2:label">
+            <value>Rota 3</value>
+          </text>
+          <text id="/immunization/vaccines_given/rota:label">
+            <value>Sankhani mtundu wa Rota omwe analandira patsikulia <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccine_date:jr:constraintMsg">
+            <value>Tsiku silingakhale la mtsogolo!</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccine_date:label">
+            <value>Tsiku lomwe analandira katemera</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/bcg:label">
+            <value>BCG</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/birth_polio:label">
+            <value>Polio (OPV 0)</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/dpt_hepb_hib:label">
+            <value>DPT-HepB-Hib</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/ipv:label">
+            <value>IPV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/measles:label">
+            <value>Measles</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/opv:label">
+            <value>OPV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/pcv:label">
+            <value>PCV</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/rota:label">
+            <value>Rota</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines/vitamin_a:label">
+            <value>Vitamin A</value>
+          </text>
+          <text id="/immunization/vaccines_given/vaccines:label">
+            <value>Sankhani katemera yemwe analandira patsikuli <output value=" /immunization/vaccines_given/vaccine_date "/></value>
+          </text>
+          <text id="/immunization/vaccines_given:label">
+            <value>Katemera</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <immunization delimiter="#" id="immunization" prefix="J1!immunization!" version="2019-05-02 10:23:28">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <received_vaccines/>
+          <received_vaccines_detail/>
+          <received_bcg/>
+          <received_polio0/>
+          <received_dpt1/>
+          <received_dpt3/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <child_details>
+            <condition/>
+            <date_of_death/>
+          </child_details>
+          <pnc_visit_details>
+            <pnc_home_visit/>
+            <facility_visit_since_delivery/>
+            <pnc_facility_visit/>
+            <visit_date/>
+            <n_encourage_pnc/>
+          </pnc_visit_details>
+          <vaccines_given>
+            <received_vaccines/>
+            <n_advise_parent/>
+            <vaccine_date/>
+            <vaccines/>
+            <opv/>
+            <pcv/>
+            <dpt_hepb_hib/>
+            <rota/>
+            <measles/>
+            <next_visit/>
+          </vaccines_given>
+          <baby_condition>
+            <danger_signs/>
+          </baby_condition>
+          <ref_type/>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <n_vaccines_title/>
+            <n_bcg/>
+            <n_opv0/>
+            <n_opv1/>
+            <n_opv2/>
+            <n_opv3/>
+            <n_pcv1/>
+            <n_pcv2/>
+            <n_pcv3/>
+            <n_dpt_hepb_hib1/>
+            <n_dpt_hepb_hib2/>
+            <n_dpt_hepb_hib3/>
+            <n_ipv/>
+            <n_rota1/>
+            <n_rota2/>
+            <n_vitamin/>
+            <n_measles/>
+            <n_referral_title/>
+            <n_referral/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </immunization>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/immunization/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/immunization/inputs/source" type="string"/>
+      <bind nodeset="/immunization/inputs/source_id" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/immunization/inputs/contact/name" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/sex" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/immunization/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/immunization/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/immunization/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/immunization/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/immunization/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/immunization/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/immunization/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /immunization/patient_date_of_birth , today() ) div 12 )" nodeset="/immunization/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /immunization/patient_date_of_birth , today() )" nodeset="/immunization/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /immunization/patient_date_of_birth ) )" nodeset="/immunization/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /immunization/patient_date_of_birth )) div 7)" nodeset="/immunization/patient_age_in_weeks" type="string"/>
+      <bind calculate="if(count-selected(../vaccines) &gt; 0, 'yes', 'no')" nodeset="/immunization/received_vaccines" type="string"/>
+      <bind calculate="../vaccines" nodeset="/immunization/received_vaccines_detail" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'bcg'), 'yes', 'no')" nodeset="/immunization/received_bcg" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'birth_polio'), 'yes', 'no')" nodeset="/immunization/received_polio0" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'dpt_hepb_hib') and selected(../dpt_hepb_hib, '1'), 'yes', 'no')" nodeset="/immunization/received_dpt1" type="string"/>
+      <bind calculate="if(selected(../vaccines, 'dpt_hepb_hib') and selected(../dpt_hepb_hib, '3'), 'yes', 'no')" nodeset="/immunization/received_dpt3" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/immunization/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/immunization/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/immunization/geolocation" type="string"/>
+      <bind nodeset="/immunization/child_details/condition" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/immunization/child_details/date_of_death:jr:constraintMsg')" nodeset="/immunization/child_details/date_of_death" relevant="selected(../condition, 'dead')" required="true()" type="date"/>
+      <bind nodeset="/immunization/pnc_visit_details" relevant="int(../patient_age_in_weeks) &lt;= 6
+and selected(../child_details/condition, 'alive')"/>
+      <bind nodeset="/immunization/pnc_visit_details/pnc_home_visit" relevant="int(../../patient_age_in_days) &lt;= 5" required="true()" type="select1"/>
+      <bind nodeset="/immunization/pnc_visit_details/facility_visit_since_delivery" relevant="int(../../patient_age_in_days) &gt; 7" required="true()" type="select1"/>
+      <bind nodeset="/immunization/pnc_visit_details/pnc_facility_visit" relevant="selected(../facility_visit_since_delivery, 'yes')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/immunization/pnc_visit_details/visit_date:jr:constraintMsg')" nodeset="/immunization/pnc_visit_details/visit_date" relevant="selected(../facility_visit_since_delivery, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/immunization/pnc_visit_details/n_encourage_pnc" readonly="true()" relevant="selected(../facility_visit_since_delivery, 'no')" type="string"/>
+      <bind nodeset="/immunization/vaccines_given" relevant="selected(../child_details/condition, 'alive')"/>
+      <bind nodeset="/immunization/vaccines_given/received_vaccines" required="true()" type="select1"/>
+      <bind nodeset="/immunization/vaccines_given/n_advise_parent" readonly="true()" relevant="selected(../received_vaccines, 'no')" type="string"/>
+      <bind constraint="decimal-date-time(.) &lt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/immunization/vaccines_given/vaccine_date:jr:constraintMsg')" nodeset="/immunization/vaccines_given/vaccine_date" relevant="selected(../received_vaccines, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/immunization/vaccines_given/vaccines" relevant="selected(../received_vaccines, 'yes')" required="true()" type="select"/>
+      <bind nodeset="/immunization/vaccines_given/opv" relevant="selected(../vaccines, 'opv')" required="true()" type="select1"/>
+      <bind nodeset="/immunization/vaccines_given/pcv" relevant="selected(../vaccines, 'pcv')" required="true()" type="select1"/>
+      <bind nodeset="/immunization/vaccines_given/dpt_hepb_hib" relevant="selected(../vaccines, 'dpt_hepb_hib')" required="true()" type="select1"/>
+      <bind nodeset="/immunization/vaccines_given/rota" relevant="selected(../vaccines, 'rota')" required="true()" type="select1"/>
+      <bind nodeset="/immunization/vaccines_given/measles" relevant="selected(../vaccines, 'measles')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/immunization/vaccines_given/next_visit:jr:constraintMsg')" nodeset="/immunization/vaccines_given/next_visit" relevant="selected(../received_vaccines, 'yes')" required="true()" type="date"/>
+      <bind nodeset="/immunization/baby_condition" relevant="selected(../child_details/condition, 'alive') 
+and int(../patient_age_in_weeks) &lt;= 6"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/immunization/baby_condition/danger_signs:jr:constraintMsg')" nodeset="/immunization/baby_condition/danger_signs" required="true()" type="select"/>
+      <bind nodeset="/immunization/ref_type" relevant="count-selected(../baby_condition/danger_signs) &gt;= 1 
+and not(selected(../baby_condition/danger_signs, 'none'))" type="select1"/>
+      <bind nodeset="/immunization/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/immunization/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/immunization/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/immunization/group_review/n_findings_title" readonly="true()" relevant="selected(../../child_details/condition, 'alive')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_vaccines_title" readonly="true()" relevant="selected(../../child_details/condition, 'alive')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_bcg" readonly="true()" relevant="selected(../../vaccines_given/vaccines, 'bcg')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_opv0" readonly="true()" relevant="selected(../../vaccines_given/vaccines, 'birth_polio')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_opv1" readonly="true()" relevant="selected(../../vaccines_given/opv, '1')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_opv2" readonly="true()" relevant="selected(../../vaccines_given/opv, '2')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_opv3" readonly="true()" relevant="selected(../../vaccines_given/opv, '3')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_pcv1" readonly="true()" relevant="selected(../../vaccines_given/pcv, '1')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_pcv2" readonly="true()" relevant="selected(../../vaccines_given/pcv, '2')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_pcv3" readonly="true()" relevant="selected(../../vaccines_given/pcv, '3')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_dpt_hepb_hib1" readonly="true()" relevant="selected(../../vaccines_given/dpt_hepb_hib, '1')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_dpt_hepb_hib2" readonly="true()" relevant="selected(../../vaccines_given/dpt_hepb_hib, '2')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_dpt_hepb_hib3" readonly="true()" relevant="selected(../../vaccines_given/dpt_hepb_hib, '3')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_ipv" readonly="true()" relevant="selected(../../vaccines_given/vaccines, 'ipv')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_rota1" readonly="true()" relevant="selected(../../vaccines_given/rota, '1')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_rota2" readonly="true()" relevant="selected(../../vaccines_given/rota, '2')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_vitamin" readonly="true()" relevant="selected(../../vaccines_given/vaccines, 'vitamin_a')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_measles" readonly="true()" relevant="selected(../../vaccines_given/vaccines, 'measles')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_referral_title" readonly="true()" relevant="count-selected(../../baby_condition/danger_signs) &gt;= 1 
+and not(selected(../../baby_condition/danger_signs, 'none'))" type="string"/>
+      <bind nodeset="/immunization/group_review/n_referral" readonly="true()" relevant="count-selected(../../baby_condition/danger_signs) &gt;= 1 
+and not(selected(../../baby_condition/danger_signs, 'none'))" type="string"/>
+      <bind nodeset="/immunization/group_review/n_follow_up_title" readonly="true()" relevant="selected(../../child_details/condition, 'alive')" type="string"/>
+      <bind nodeset="/immunization/group_review/n_follow_up" readonly="true()" relevant="selected(../../child_details/condition, 'alive')" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/immunization/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/immunization/inputs">
+      <label ref="jr:itext('/immunization/inputs:label')"/>
+      <group ref="/immunization/inputs/contact">
+        <label ref="jr:itext('/immunization/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/immunization/inputs/contact/_id">
+          <label ref="jr:itext('/immunization/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/immunization/inputs/contact/parent">
+          <label ref="jr:itext('/immunization/inputs/contact/parent:label')"/>
+          <group ref="/immunization/inputs/contact/parent/parent">
+            <label ref="jr:itext('/immunization/inputs/contact/parent/parent:label')"/>
+            <group ref="/immunization/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/immunization/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/immunization/child_details">
+      <label ref="jr:itext('/immunization/child_details:label')"/>
+      <select1 ref="/immunization/child_details/condition">
+        <label ref="jr:itext('/immunization/child_details/condition:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/child_details/condition/alive:label')"/>
+          <value>alive</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/child_details/condition/dead:label')"/>
+          <value>dead</value>
+        </item>
+      </select1>
+      <input ref="/immunization/child_details/date_of_death">
+        <label ref="jr:itext('/immunization/child_details/date_of_death:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization/pnc_visit_details">
+      <label ref="jr:itext('/immunization/pnc_visit_details:label')"/>
+      <select1 ref="/immunization/pnc_visit_details/pnc_home_visit">
+        <label ref="jr:itext('/immunization/pnc_visit_details/pnc_home_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/pnc_home_visit/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/pnc_home_visit/5:label')"/>
+          <value>5</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/pnc_visit_details/facility_visit_since_delivery">
+        <label ref="jr:itext('/immunization/pnc_visit_details/facility_visit_since_delivery:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/facility_visit_since_delivery/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/facility_visit_since_delivery/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/pnc_visit_details/pnc_facility_visit">
+        <label ref="jr:itext('/immunization/pnc_visit_details/pnc_facility_visit:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/pnc_facility_visit/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/pnc_visit_details/pnc_facility_visit/6:label')"/>
+          <value>6</value>
+        </item>
+      </select1>
+      <input ref="/immunization/pnc_visit_details/visit_date">
+        <label ref="jr:itext('/immunization/pnc_visit_details/visit_date:label')"/>
+      </input>
+      <input ref="/immunization/pnc_visit_details/n_encourage_pnc">
+        <label ref="jr:itext('/immunization/pnc_visit_details/n_encourage_pnc:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization/vaccines_given">
+      <label ref="jr:itext('/immunization/vaccines_given:label')"/>
+      <select1 ref="/immunization/vaccines_given/received_vaccines">
+        <label ref="jr:itext('/immunization/vaccines_given/received_vaccines:label')"/>
+        <hint ref="jr:itext('/immunization/vaccines_given/received_vaccines:hint')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/received_vaccines/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/received_vaccines/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/immunization/vaccines_given/n_advise_parent">
+        <label ref="jr:itext('/immunization/vaccines_given/n_advise_parent:label')"/>
+      </input>
+      <input ref="/immunization/vaccines_given/vaccine_date">
+        <label ref="jr:itext('/immunization/vaccines_given/vaccine_date:label')"/>
+      </input>
+      <select ref="/immunization/vaccines_given/vaccines">
+        <label ref="jr:itext('/immunization/vaccines_given/vaccines:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/bcg:label')"/>
+          <value>bcg</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/birth_polio:label')"/>
+          <value>birth_polio</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/opv:label')"/>
+          <value>opv</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/pcv:label')"/>
+          <value>pcv</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/dpt_hepb_hib:label')"/>
+          <value>dpt_hepb_hib</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/ipv:label')"/>
+          <value>ipv</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/rota:label')"/>
+          <value>rota</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/vitamin_a:label')"/>
+          <value>vitamin_a</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/vaccines/measles:label')"/>
+          <value>measles</value>
+        </item>
+      </select>
+      <select1 ref="/immunization/vaccines_given/opv">
+        <label ref="jr:itext('/immunization/vaccines_given/opv:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/opv/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/opv/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/opv/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/vaccines_given/pcv">
+        <label ref="jr:itext('/immunization/vaccines_given/pcv:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/pcv/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/pcv/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/pcv/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/vaccines_given/dpt_hepb_hib">
+        <label ref="jr:itext('/immunization/vaccines_given/dpt_hepb_hib:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/dpt_hepb_hib/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/dpt_hepb_hib/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/dpt_hepb_hib/3:label')"/>
+          <value>3</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/vaccines_given/rota">
+        <label ref="jr:itext('/immunization/vaccines_given/rota:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/rota/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/rota/2:label')"/>
+          <value>2</value>
+        </item>
+      </select1>
+      <select1 ref="/immunization/vaccines_given/measles">
+        <label ref="jr:itext('/immunization/vaccines_given/measles:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/measles/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/vaccines_given/measles/2:label')"/>
+          <value>2</value>
+        </item>
+      </select1>
+      <input ref="/immunization/vaccines_given/next_visit">
+        <label ref="jr:itext('/immunization/vaccines_given/next_visit:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/immunization/baby_condition">
+      <label ref="jr:itext('/immunization/baby_condition:label')"/>
+      <select ref="/immunization/baby_condition/danger_signs">
+        <label ref="jr:itext('/immunization/baby_condition/danger_signs:label')"/>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/diarrhoea:label')"/>
+          <value>diarrhoea</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/convulsions:label')"/>
+          <value>convulsions</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/jaundice:label')"/>
+          <value>jaundice</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/umbilical_infection:label')"/>
+          <value>umbilical_infection</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/abdominal_distension:label')"/>
+          <value>abdominal_distension</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/crying_continuously:label')"/>
+          <value>crying_continuously</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/eye_discharge:label')"/>
+          <value>eye_discharge</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/not_feeding:label')"/>
+          <value>not_feeding</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/skin_rash:label')"/>
+          <value>skin_rash</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/immunization/baby_condition/danger_signs/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+    </group>
+    <select1 ref="/immunization/ref_type">
+      <label ref="jr:itext('/immunization/ref_type:label')"/>
+      <item>
+        <label ref="jr:itext('/immunization/ref_type/chw:label')"/>
+        <value>chw</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/immunization/ref_type/no_chw:label')"/>
+        <value>no_chw</value>
+      </item>
+    </select1>
+    <group appearance="field-list summary" ref="/immunization/group_review">
+      <label ref="jr:itext('/immunization/group_review:label')"/>
+      <input ref="/immunization/group_review/n_submit">
+        <label ref="jr:itext('/immunization/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/immunization/group_review/n_patient_details_title">
+        <label ref="jr:itext('/immunization/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/immunization/group_review/n_patient_details">
+        <label ref="jr:itext('/immunization/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/immunization/group_review/n_findings_title">
+        <label ref="jr:itext('/immunization/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/immunization/group_review/n_vaccines_title">
+        <label ref="jr:itext('/immunization/group_review/n_vaccines_title:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_bcg">
+        <label ref="jr:itext('/immunization/group_review/n_bcg:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_opv0">
+        <label ref="jr:itext('/immunization/group_review/n_opv0:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_opv1">
+        <label ref="jr:itext('/immunization/group_review/n_opv1:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_opv2">
+        <label ref="jr:itext('/immunization/group_review/n_opv2:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_opv3">
+        <label ref="jr:itext('/immunization/group_review/n_opv3:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_pcv1">
+        <label ref="jr:itext('/immunization/group_review/n_pcv1:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_pcv2">
+        <label ref="jr:itext('/immunization/group_review/n_pcv2:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_pcv3">
+        <label ref="jr:itext('/immunization/group_review/n_pcv3:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_dpt_hepb_hib1">
+        <label ref="jr:itext('/immunization/group_review/n_dpt_hepb_hib1:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_dpt_hepb_hib2">
+        <label ref="jr:itext('/immunization/group_review/n_dpt_hepb_hib2:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_dpt_hepb_hib3">
+        <label ref="jr:itext('/immunization/group_review/n_dpt_hepb_hib3:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_ipv">
+        <label ref="jr:itext('/immunization/group_review/n_ipv:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_rota1">
+        <label ref="jr:itext('/immunization/group_review/n_rota1:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_rota2">
+        <label ref="jr:itext('/immunization/group_review/n_rota2:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_vitamin">
+        <label ref="jr:itext('/immunization/group_review/n_vitamin:label')"/>
+      </input>
+      <input appearance="li" ref="/immunization/group_review/n_measles">
+        <label ref="jr:itext('/immunization/group_review/n_measles:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/immunization/group_review/n_referral_title">
+        <label ref="jr:itext('/immunization/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/immunization/group_review/n_referral">
+        <label ref="jr:itext('/immunization/group_review/n_referral:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/immunization/group_review/n_follow_up_title">
+        <label ref="jr:itext('/immunization/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/immunization/group_review/n_follow_up">
+        <label ref="jr:itext('/immunization/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

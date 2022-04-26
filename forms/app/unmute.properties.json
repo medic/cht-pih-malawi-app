@@ -1,0 +1,15 @@
+{
+    "icon": "icon-messages-on",
+    "title": {
+        "en": "Unmute request",
+        "ny": "Kuchotsa pempho loyimitsa"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && !contact.date_of_death && contact.muted && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

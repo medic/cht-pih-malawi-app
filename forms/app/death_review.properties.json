@@ -1,0 +1,8 @@
+{
+  "icon": "icon-death-coffin",
+  "context": {
+      "person": false,
+      "place": false,
+      "expression": "contact && user.parent.contact_type === 'schw_region'"
+  }
+}

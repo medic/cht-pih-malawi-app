@@ -1,0 +1,2170 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Household survey</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/household_survey/Introduction_to_interviewee/current_location/client_household:label">
+            <value>Client's household</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location/elsewhere:label">
+            <value>Elsewhere</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location/my_home:label">
+            <value>At my home</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location:label">
+            <value>Where are you currently?</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/household_head:label">
+            <value>Household Head</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/household_member:label">
+            <value>Household member</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/own_household_member:label">
+            <value>A member of my own household</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee:label">
+            <value>Who are you interviewing</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/n_hh_qns:label">
+            <value>_Explain to the person you are interviewing that for the next 10 minutes, you will ask them a few questions about their household. The data is important because it helps the CHWs and leadership to improve design and review of our programmes so that we are able to improve care to all people in the district._</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/n_thank:label">
+            <value>_When you finish the interview, please remember to thank the interviewee._</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee:label">
+            <value>Introduction to interviewee</value>
+          </text>
+          <text id="/household_survey/bank/bank_account/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/bank/bank_account/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/bank/bank_account:label">
+            <value>Does any member of this household have a bank account?</value>
+          </text>
+          <text id="/household_survey/bank:label">
+            <value>Bank account</value>
+          </text>
+          <text id="/household_survey/economy/charging/home:label">
+            <value>Within the home</value>
+          </text>
+          <text id="/household_survey/economy/charging/outside:label">
+            <value>Outside the home</value>
+          </text>
+          <text id="/household_survey/economy/charging:label">
+            <value>Where do you usually charge the phone from.</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone:label">
+            <value>Does anyone in the household have a functioning mobile phone that is accessible for use by household members.</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/higher:label">
+            <value>Higher</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/lower:label">
+            <value>Lower</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/same:label">
+            <value>Same</value>
+          </text>
+          <text id="/household_survey/economy/relative_position:label">
+            <value>Considering your household wealth, education, community influence and other aspects considered important in your community. What position would you rank your household relative to the community you live in?</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/electricity:label">
+            <value>Paid for electricity charging</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/other:label">
+            <value>Others</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/solar:label">
+            <value>Paid for solar charging</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/vehicle:label">
+            <value>Vehicle battery</value>
+          </text>
+          <text id="/household_survey/economy/where_outside:label">
+            <value>Specify where outside the home.</value>
+          </text>
+          <text id="/household_survey/economy/where_outside_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/household_survey/economy:label">
+            <value>Economic Survey</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8:label">
+            <value>Have any children in this household attended school up to class 8?</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school:label">
+            <value>Has anyone in this household completed five or more years of schooling?</value>
+          </text>
+          <text id="/household_survey/education_level:label">
+            <value>Education level</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/charcoal:label">
+            <value>Charcoal</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/dung:label">
+            <value>Dung</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/electricity:label">
+            <value>Electricity</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/gas:label">
+            <value>Cooking Gas</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/kerosene:label">
+            <value>Kerosene</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/wood:label">
+            <value>Wood</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel:label">
+            <value>What type of fuel does the household mainly use for cooking?</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel_other:label">
+            <value>Specify other cooking fuel</value>
+          </text>
+          <text id="/household_survey/fuel:label">
+            <value>Fuel</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical:label">
+            <value>During the last 12 months, did you or other members of your household have to borrow money or sell assets in order to pay for medical costs?</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/agree:label">
+            <value>Agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/disagree:label">
+            <value>Disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/neutral:label">
+            <value>Neutral</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/not_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/strongly_agree:label">
+            <value>Strongly agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/strongly_disagree:label">
+            <value>Strongly disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services:label">
+            <value>I can get all the health services I need in Neno.</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/bicycle:label">
+            <value>Bicycle</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/foot:label">
+            <value>On foot</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/motorbike:label">
+            <value>Motorbike</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/public_transport:label">
+            <value>Public transport</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/vehicle:label">
+            <value>Vehicle</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means:label">
+            <value>The last time you went to clinic how did you travel?</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means_other:label">
+            <value>Specify other means of transport to health facility.</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/not_comfortable:label">
+            <value>Not at all comfortable</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/not_very_comfortable:label">
+            <value>Not very comfortable</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/somewhat_comfortable:label">
+            <value>Somewhat Comfortable</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/very_comfortable:label">
+            <value>Very Comfortable</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level:label">
+            <value>How comfortable would you be discussing your own Covid experience with your health care provider.</value>
+          </text>
+          <text id="/household_survey/general_household_health/count_cervical_cancer_screened:label">
+            <value>How many women (30-49 Years) in this household have been screened for cervical cancer?</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms:label">
+            <value>Have you ever reported any covid related symptoms to the CHWs during the year.</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/agree:label">
+            <value>Agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/disagree:label">
+            <value>Disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/neutral:label">
+            <value>Neutral</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/not_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/strongly_agree:label">
+            <value>Strongly agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/strongly_disagree:label">
+            <value>Strongly disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved:label">
+            <value>Over the past year, the services such as tests and medications, at my nearest health facility have improved</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness:label">
+            <value>Does anyone in the household sometimes have fits, become rigid, or lose consciousness?</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv:label">
+            <value>Did any girl(s) in the household receive the HPV vaccine this year?</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths:label">
+            <value>Has the household been sprayed with insecticides within the last 12 months?</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment:label">
+            <value>Is anyone in the household malnourished?</value>
+          </text>
+          <text id="/household_survey/general_household_health/n_refer_epilespsy:label">
+            <value>_Refer to facility for evaluation for epilepsy._</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/agree:label">
+            <value>Agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/disagree:label">
+            <value>Disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/neutral:label">
+            <value>Neutral</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/not_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/strongly_agree:label">
+            <value>Strongly agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/strongly_disagree:label">
+            <value>Strongly disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved:label">
+            <value>Over the past year, my confidence in my health provider has improved</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/agree:label">
+            <value>Agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/disagree:label">
+            <value>Disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/neutral:label">
+            <value>Neutral</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/not_know:label">
+            <value>Don't know</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/strongly_agree:label">
+            <value>Strongly agree</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/strongly_disagree:label">
+            <value>Strongly disagree</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility:label">
+            <value>Regarding the nearest health facility to me, I would recommend a friend attend this clinic if they are sick.</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/between_30_and_60:label">
+            <value>Between 30 minutes and 60 minutes</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/more_than_60:label">
+            <value>More than 60 minutes</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/under_30:label">
+            <value>Less than 30 minutes</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility:label">
+            <value>How long did it take you to reach the health facility?</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/all:label">
+            <value>All the sleeping point</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/none:label">
+            <value>None</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/some:label">
+            <value>Some sleeping points</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets:label">
+            <value>Do all the sleeping points in the household have an insecticide-treated net (ITN)?</value>
+          </text>
+          <text id="/household_survey/general_household_health/women_30_49:label">
+            <value>How many women in the household are aged 30-49 years</value>
+          </text>
+          <text id="/household_survey/general_household_health:label">
+            <value>General household health</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/bed_with_mattress:label">
+            <value>Bed with mattress</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/bicycle:label">
+            <value>Bicycle</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/car_or_truck:label">
+            <value>Car or truck</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/electricity:label">
+            <value>Electricity</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/motorbike:label">
+            <value>Motorbike</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/none:label">
+            <value>None</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/radio:label">
+            <value>Radio</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/refrigerator:label">
+            <value>Refrigerator</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/sofa_set:label">
+            <value>Sofa set</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/television:label">
+            <value>Television</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:hint">
+            <value>Tick every option that applies</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:label">
+            <value>Does this household have any of the following items that are functioning:</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership:label">
+            <value>Household asset ownership</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/cement:label">
+            <value>Cement</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/dung:label">
+            <value>Dung</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/earth:label">
+            <value>Earth/sand</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/other:label">
+            <value>Other floor material</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material:label">
+            <value>What is the main material of the floor of the dwelling?</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material_other:label">
+            <value>Specify other floor material</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/metal:label">
+            <value>Metal</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/thatch:label">
+            <value>Thatch/palm leaf</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material:label">
+            <value>What is the main material of the roof of the dwelling?</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material_other:label">
+            <value>Specify other roof material</value>
+          </text>
+          <text id="/household_survey/housing_material:label">
+            <value>Housing material</value>
+          </text>
+          <text id="/household_survey/inputs/contact/_id:label">
+            <value>Which household are you visiting?</value>
+          </text>
+          <text id="/household_survey/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/household_survey/inputs/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/household_survey/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/household_survey/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/household_survey/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/household_survey/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/household_survey/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_1:label">
+            <value>_This is a household survey that will be happening once or twice a year and the target is to reach all households in your catchment area._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_2:label">
+            <value>_It is important that you collect all information correctly._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_3:label">
+            <value>_You are expected to reach ALL your assigned households._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_4:label">
+            <value>_Please interview the household head (father or mother). If not available, interview a household member who is 18 years and above who can provide the required information. Note the person you will be getting the information from. If there is no one, make plans to revisit the house._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_5:label">
+            <value>_Please ensure that GPS is turned enabled on your phone when you are starting the interview._</value>
+          </text>
+          <text id="/household_survey/introduction:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/household_survey/validation/comments:label">
+            <value>Comments</value>
+          </text>
+          <text id="/household_survey/validation/satisfied/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/validation/satisfied/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/validation/satisfied:label">
+            <value>As the CHW are you satisfied with the responses given</value>
+          </text>
+          <text id="/household_survey/validation:label">
+            <value>Validation of responses</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/borehole:label">
+            <value>Tubewell or borehole</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/bottled:label">
+            <value>Bottled</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/piped_water:label">
+            <value>Piped water</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/rainwater:label">
+            <value>Rainwater</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/spring:label">
+            <value>Water from spring</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/surface_water:label">
+            <value>Surface water</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/well:label">
+            <value>Dug well</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source:label">
+            <value>What is your main source of drinking water?</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source_other:label">
+            <value>Specify other water source</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility:label">
+            <value>Does this household have a hand washing facility?</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility:label">
+            <value>Does the household share toilet facility with other households?</value>
+          </text>
+          <text id="/household_survey/wash/soap/no:label">
+            <value>No</value>
+          </text>
+          <text id="/household_survey/wash/soap/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/household_survey/wash/soap:label">
+            <value>Does the handwashing facility have soap?</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/between_30_and_60:label">
+            <value>Between 30 minutes and 60 minutes</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/more_than_60:label">
+            <value>More than 60 minutes</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/under_30:label">
+            <value>Less than 30 minutes</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source:label">
+            <value>How long does it take to walk to the drinking water source?</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/bucket:label">
+            <value>Bucket</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/composing_toilet:label">
+            <value>Composting toilet</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/flush_toilet:label">
+            <value>Flush toilet</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/none:label">
+            <value>No facilities/bush/field</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/other:label">
+            <value>Other (specify)</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/pit_latrine:label">
+            <value>Pit latrine</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type:label">
+            <value>What type of toilet facility is mainly used by the household members?</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type_other:label">
+            <value>Specify other toilet facility</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/boiling:label">
+            <value>Boiling</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/chemical_treatment:label">
+            <value>Chemical treatment</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/filtration:label">
+            <value>Filtration</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/heated_in_sun:label">
+            <value>Heated in the sun</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/not_treated:label">
+            <value>Not treated</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water:label">
+            <value>What is the primary method used to treat the household's drinking water?</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water_other:label">
+            <value>Specify other drinking water treatment</value>
+          </text>
+          <text id="/household_survey/wash:label">
+            <value>Water, sanitation and hygiene</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/household_survey/Introduction_to_interviewee/current_location/client_household:label">
+            <value>Pakhomo limodzi la manyuma amene ndili nawo</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location/elsewhere:label">
+            <value>Ndili malo ena</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location/my_home:label">
+            <value>Kunyumba kwanga</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/current_location:label">
+            <value>Padakali pano, muli kuti?</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/household_head:label">
+            <value>Mutu wabanja</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/household_member:label">
+            <value>Munthu wokhala pakhomoli</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee/own_household_member:label">
+            <value>Munthu wokhala pakhomo langa</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/interviewee:label">
+            <value>Kodi mukulankhula ndi ndani?</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/n_hh_qns:label">
+            <value>_Mufotokozereni munthu amene mukulankhulana nayeyo kuti mukhala mukucheza naye kwa mphindi khumi kumufunsa mafunso okhudzana ndi pakhomopo. Uthenga umene mukutolerawo ndiwofunikira kwambiri popititsa patsogolo ntchito ya za umoyo m'boma la Neno._</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee/n_thank:label">
+            <value>_Mukamaliza kucheza kwanu, kumbukirani kumuthokoza munthuyo_</value>
+          </text>
+          <text id="/household_survey/Introduction_to_interviewee:label">
+            <value>Zoyenera kufotokozera amene mukucheza nayeyo</value>
+          </text>
+          <text id="/household_survey/bank/bank_account/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/bank/bank_account/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/bank/bank_account:label">
+            <value>Pali wina aliyense pa banja pano yemwe ali akaunti ya ku banki?</value>
+          </text>
+          <text id="/household_survey/bank:label">
+            <value>Akaunti ya ku banki</value>
+          </text>
+          <text id="/household_survey/economy/charging/home:label">
+            <value>Pakhomo pompano</value>
+          </text>
+          <text id="/household_survey/economy/charging/outside:label">
+            <value>Imatchajidwa kwina</value>
+          </text>
+          <text id="/household_survey/economy/charging:label">
+            <value>Kodi foni imeneyi mumakatchaja kuti?</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/economy/mobile_phone:label">
+            <value>Kodi alipo pano amene ali ndi foni ya m'manja yoti ikugwira ntchito ndipo imagwiritsidwanso ntchito ndi anthu ena pakhomo pano?</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/higher:label">
+            <value>Pam'lingo wapamwamba kuposa mabanja ena</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/lower:label">
+            <value>Pamlingo wotsika</value>
+          </text>
+          <text id="/household_survey/economy/relative_position/same:label">
+            <value>Pamlingo wofanana ndi mabanja ena</value>
+          </text>
+          <text id="/household_survey/economy/relative_position:label">
+            <value>Mukalingalira chuma chomwe muli nacho pakhomo lino, maphunziro anu komanso zinthu zimene zimasonyeza kufunikira kwanu m'mudzi muno, mutakhala kuti mwadziyeza pa sikelo, mukuwona kuti mungagwe patipati mofananiza ndi mabanja ena m'mudzi muno?</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/electricity:label">
+            <value>Timakatchajitsa ku magetsi olipira</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/other:label">
+            <value>Timakatchajitsa malo ena</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/solar:label">
+            <value>Timakatchajitsa ku solar yolipira</value>
+          </text>
+          <text id="/household_survey/economy/where_outside/vehicle:label">
+            <value>Timakatchajitsa pa batile la galimoto</value>
+          </text>
+          <text id="/household_survey/economy/where_outside:label">
+            <value>Ngati imakatchajidwa kwina, fotokozani kuti ndi kuti?</value>
+          </text>
+          <text id="/household_survey/economy/where_outside_other:label">
+            <value>Fotokozerani malo enieni</value>
+          </text>
+          <text id="/household_survey/economy:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/education_level/hh_children_to_class_8:label">
+            <value>Pali ana omwe anafikapo sitandande 8 ali pa sukulu?</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/education_level/hh_member_5_yr_school:label">
+            <value>Alipo wina aliyense pa banja pano yemwe anafika zaka 5 kapena kuposera ali pa sukulu?</value>
+          </text>
+          <text id="/household_survey/education_level:label">
+            <value>Maphunziro</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/charcoal:label">
+            <value>Makala</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/dung:label">
+            <value>Ndowe</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/electricity:label">
+            <value>Magetsi</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/gas:label">
+            <value>Gasi</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/kerosene:label">
+            <value>Mafuta a parafin</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/other:label">
+            <value>Fotokozani mtundu wina wa mafuta ophikira</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel/wood:label">
+            <value>Nkhuni</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel:label">
+            <value>Kodi banja lino limagwilitsa ntchito njira yanji pophika?</value>
+          </text>
+          <text id="/household_survey/fuel/cooking_fuel_other:label">
+            <value>Fotokozani njira zina zophikira</value>
+          </text>
+          <text id="/household_survey/fuel:label">
+            <value>Njira yophikira</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/borrow_money_sold_asset_for_medical:label">
+            <value>Miyezi khimo ndi iwiri yapitayi munabwereka ndalama kapena kugulitsa katundu wa mnyumba kuti muthe kulipira kuchipatala?</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/agree:label">
+            <value>Ndikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/disagree:label">
+            <value>Sindikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/neutral:label">
+            <value>Sindikugwiriza nazo komanso sindikutsutsana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/not_know:label">
+            <value>Sindikuziwa</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/strongly_agree:label">
+            <value>Ndikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services/strongly_disagree:label">
+            <value>Sindikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/can_get_all_services:label">
+            <value>Nditha kupeza thandizo lina liri lonse la za umoyo mu Neno</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/bicycle:label">
+            <value>Njinga</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/foot:label">
+            <value>Kuyenda wa pansi</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/motorbike:label">
+            <value>Njinga ya moto</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/public_transport:label">
+            <value>Matola</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means/vehicle:label">
+            <value>Galimoto</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means:hint">
+            <value>Chongani chilichonse chimene chili choyenera</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means:label">
+            <value>Ulendo womaliza womwe munapita ku chipatala, munagwilitsa ntchito mayendedwe otani?</value>
+          </text>
+          <text id="/household_survey/general_household_health/clinic_travel_means_other:label">
+            <value>Fotokozani zina mwa njira za mayendedwe opitira ku chipatala</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/not_comfortable:label">
+            <value>Sindingamasuke</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/not_very_comfortable:label">
+            <value>Sindingamasuke kwenikweni</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/somewhat_comfortable:label">
+            <value>Womasuka pang'ono</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level/very_comfortable:label">
+            <value>Womasuka kwambiri</value>
+          </text>
+          <text id="/household_survey/general_household_health/comfort_level:label">
+            <value>Kodi mungakhale womasuka kukambira ndi wina aliyense wa za umoyo mutakhala kuti mukumva zizindikiro za Covid-19?</value>
+          </text>
+          <text id="/household_survey/general_household_health/count_cervical_cancer_screened:label">
+            <value>Kodi ndi amayi angati a zaka za pakati 30 mpaka 49 mnyumba muno omwe anafufuzidwa ngati ali ndi khansa ya khomo la chiberekero?</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/covid_symptoms:label">
+            <value>Kodi inuyo mwafotokozerako alangizi a za umoyo (CHW) za zizindikiro zina zili zonse za Covid-19 chaka chino?</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/agree:label">
+            <value>Ndikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/disagree:label">
+            <value>Sindikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/neutral:label">
+            <value>Sindikugwiriza nazo komanso sindikutsutsana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/not_know:label">
+            <value>Sindikuziwa</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/strongly_agree:label">
+            <value>Ndikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved/strongly_disagree:label">
+            <value>Sindikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/facility_services_improved:label">
+            <value>Kwa chaka chapitachi, thandizo la chipatala monga kuyeza matenda komanso thandizo la mankhwala ku chipatala chomwe ndiri nacho pafupi lakhala likupita pa tsogolo</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/fits_unconsciousness:label">
+            <value>Kodi alipo wina mnyumba muno amene amaonetsa zizindikiro monga kukomoka, kapenanso kuuma thupi?</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/girls_received_hpv:label">
+            <value>Kodi mtsikana/atsikana a mnyumbamo alandira katemera oteteza ku matenda a khansa ya khomo ya chiberekero chaka chino?</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths:label">
+            <value>Mwapoperako mankhwala opha tizilombo m'nyumba mwanu kwa miyezi 12 yapitayi?</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/general_household_health/malnourishment:label">
+            <value>Alipo yemwe wanyentchera pa banja pano?</value>
+          </text>
+          <text id="/household_survey/general_household_health/n_refer_epilespsy:label">
+            <value>_Tumizani odwala kuchipatala kuti akamuone ngati ndi khunyu._</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/agree:label">
+            <value>Ndikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/disagree:label">
+            <value>Sindikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/neutral:label">
+            <value>Sindikugwiriza nazo komanso sindikutsutsana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/not_know:label">
+            <value>Sindikuziwa</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/strongly_agree:label">
+            <value>Ndikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved/strongly_disagree:label">
+            <value>Sindikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/provider_confidence_improved:label">
+            <value>Kwa chaka chapitachi, chikhulupiliro changa pa anthu opereka thandizo la za umoyo chakhala chikukulirakulira</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/agree:label">
+            <value>Ndikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/disagree:label">
+            <value>Sindikugwilizana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/neutral:label">
+            <value>Sindikugwiriza nazo komanso sindikutsutsana nazo</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/not_know:label">
+            <value>Sindikuziwa</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/strongly_agree:label">
+            <value>Ndikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility/strongly_disagree:label">
+            <value>Sindikugwilizana nazo kotheratu</value>
+          </text>
+          <text id="/household_survey/general_household_health/recommend_nearest_facility:label">
+            <value>Poyang'anira chipatala chomwe ndiri nacho pafupi, nditha kumulimbikitsa nzanga kupita ku chipatala chimenechi ngati wadwala</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/between_30_and_60:label">
+            <value>Pakati pa mphindi 30 ndi 60</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/more_than_60:label">
+            <value>Kupitilira ola imodzi</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility/under_30:label">
+            <value>Mphindi zochepera 30</value>
+          </text>
+          <text id="/household_survey/general_household_health/time_to_facility:label">
+            <value>Kodi zinakutengerani nthawi yaitali bwanji kuti mufike kuchipatala?</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/all:label">
+            <value>M'malo onse ogonamo</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets/some:label">
+            <value>M'malo ena ogonamo</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china</value>
+          </text>
+          <text id="/household_survey/general_household_health/treated_nets:label">
+            <value>Kodi mu zipinda zonse zogona mnyumba muno muli ma net onyikidwa ku mankhwala?</value>
+          </text>
+          <text id="/household_survey/general_household_health/women_30_49:label">
+            <value>Kodi ndi akazi/amayi angati pakhomo pano amene ali ndi zaka zosachepera 30 koma zosapitilira 49</value>
+          </text>
+          <text id="/household_survey/general_household_health:label">
+            <value>Nkhani zokhunza umoyo wa pa banja</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/bed_with_mattress:label">
+            <value>Kama ndi matilesi</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/bicycle:label">
+            <value>Njinga</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/car_or_truck:label">
+            <value>Galimoto</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/electricity:label">
+            <value>Magetsi</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/motorbike:label">
+            <value>Njinga ya moto</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/radio:label">
+            <value>Wailesi</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/refrigerator:label">
+            <value>Fridge</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/sofa_set:label">
+            <value>Sofa</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets/television:label">
+            <value>Kanema</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:hint">
+            <value>Chongani chilichonse chimene chili choyenera</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership/household_assets:label">
+            <value>Kodi pakhomo pano muli ndi zinthu izi zoti zikugwira ntchito</value>
+          </text>
+          <text id="/household_survey/household_asset_ownership:label">
+            <value>Katundu wopezeka pa banjali</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/cement:label">
+            <value>Simenti</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/dung:label">
+            <value>Ndowe</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/earth:label">
+            <value>Dothi/mchenga</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material:label">
+            <value>Kodi pansi pa nyumba yanu munamangira ndi chani?</value>
+          </text>
+          <text id="/household_survey/housing_material/floor_material_other:label">
+            <value>Fotokozani mwa zipangizo zina</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/metal:label">
+            <value>Malata</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/other:label">
+            <value>Zina</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material/thatch:label">
+            <value>Mawudzu/masamba</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material:label">
+            <value>Kodi denga la nyumba yanu inafoleledwa ndi chani</value>
+          </text>
+          <text id="/household_survey/housing_material/roof_material_other:label">
+            <value>Fotokozani zipangizo zina zofolelera nyumba</value>
+          </text>
+          <text id="/household_survey/housing_material:label">
+            <value>Zipangizo zomwe munamagira nyumba</value>
+          </text>
+          <text id="/household_survey/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_1:label">
+            <value>_Uyu ndi kafukufuku amene adzichitika kamodzi kapena kawiri pa chaka amene akuyenera kufikira manyumba onse amene muli nawo m'dera lanu._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_2:label">
+            <value>_Ndikofunikira kwambiri kuti mulembe mayankho onse molondola._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_3:label">
+            <value>_Mukuyenera kufikira manyumba anu onse ndi kafukufukuyi._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_4:label">
+            <value>_Chonde lankhulani ndi mutu wabanja za kafukufukuyi. Ngati palibe, lankhulani ndi munthu wa pakhomopo wa zaka 18 kupita m'tsogolo amene angapereke mayankho oyenera. Fotokozani kuti mwalankhula nayeyo ndi ndani ndipo ngati palibe oti mulankhule naye, konzani kubweleranso panyumbayo._</value>
+          </text>
+          <text id="/household_survey/introduction/n_intro_5:label">
+            <value>_Wonetsetsani kuti GPS yanu ndiyoyatsidwa pa foni yanu pamene mukulankhula ndi munthu pakhomo lina lili lonse komanso pamene mukutumiza fomu yakafukufukuyi._</value>
+          </text>
+          <text id="/household_survey/introduction:label">
+            <value>Mau Oyamba</value>
+          </text>
+          <text id="/household_survey/place_id:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/source:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/household_survey/validation/comments:label">
+            <value>Ndemanga</value>
+          </text>
+          <text id="/household_survey/validation/satisfied/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/validation/satisfied/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/validation/satisfied:label">
+            <value>Monga CHW mukukhutira ndi mayankho omwe aperekedwa</value>
+          </text>
+          <text id="/household_survey/validation:label">
+            <value>Kutsimikizira za mayankho amene aperekedwawo</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/borehole:label">
+            <value>Pa njigo</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/bottled:label">
+            <value>Madzi a m'botolo</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/other:label">
+            <value>Fotokozani malo ena otunga madzi</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/piped_water:label">
+            <value>Mpopi</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/rainwater:label">
+            <value>Madzi a mvula</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/spring:label">
+            <value>Madzi a kasupe</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/surface_water:label">
+            <value>Madzi ongoyenda</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source/well:label">
+            <value>Chitsime chokumba</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source:label">
+            <value>Madzi anu akumwa mumatunga kuti?</value>
+          </text>
+          <text id="/household_survey/wash/drinking_water_source_other:label">
+            <value>Fotokozani malo ena otunga madzi</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/wash/hand_washing_facility:label">
+            <value>Kodi pa banja lino pali chosambira m'manja?</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/wash/shared_toilet_facility:label">
+            <value>Kodi chimbuzi chanu mumalowanso anthu ena?</value>
+          </text>
+          <text id="/household_survey/wash/soap/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/household_survey/wash/soap/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/household_survey/wash/soap:label">
+            <value>Kodi pa chosambira m'manja pamakhala sopo?</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/between_30_and_60:label">
+            <value>Pakati pa mphindi 30 ndi 60</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/more_than_60:label">
+            <value>Kupitilira ola imodzi</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source/under_30:label">
+            <value>Mphindi zochepera 30</value>
+          </text>
+          <text id="/household_survey/wash/time_to_drinking_water_source:label">
+            <value>Mumayenda nthawi yayitali bwanji kuti mufike komwe mumatunga madzi akumwa?</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/bucket:label">
+            <value>Mu chitini</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/composing_toilet:label">
+            <value>Chimbuzi chokolola manyowa</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/flush_toilet:label">
+            <value>Chimbuzi cha madzi/ chogejemula</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/none:label">
+            <value>Palibe chimbuzi/ku tchire/ ku munda</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/other:label">
+            <value>Fotokoza mtundu wina wa chimbuzi</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type/pit_latrine:label">
+            <value>Chimbuzi chokumba</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type:label">
+            <value>Kodi anthu a pa banja pano amagwilitsa ntchito mtundu wanji wa chimbuzi?</value>
+          </text>
+          <text id="/household_survey/wash/toilet_facility_type_other:label">
+            <value>Fotokoza mtundu wina wa chimbuzi</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/boiling:label">
+            <value>Kuwilitsa</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/chemical_treatment:label">
+            <value>Kuthira mankhwala</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/filtration:label">
+            <value>Kusefa</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/heated_in_sun:label">
+            <value>Kutenthetsa pa dzuwa</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/not_treated:label">
+            <value>Osateteza</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water/other:label">
+            <value>Fotokozani njira zina zotetezera madzi</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water:label">
+            <value>Madzi anu akumwa pa banja pano mumawateteza bwanji?</value>
+          </text>
+          <text id="/household_survey/wash/treatment_for_drinking_water_other:label">
+            <value>Fotokozani njira zina zotetezera madzi?</value>
+          </text>
+          <text id="/household_survey/wash:label">
+            <value>Madzi ndi ukhondo wa pakhomo</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <household_survey delimiter="#" id="household_survey" prefix="J1!household_survey!" version="2020-11-09 05:04:51">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <place_id/>
+          <geolocation/>
+          <introduction>
+            <n_intro_1/>
+            <n_intro_2/>
+            <n_intro_3/>
+            <n_intro_4/>
+            <n_intro_5/>
+          </introduction>
+          <Introduction_to_interviewee>
+            <interviewee/>
+            <n_hh_qns/>
+            <n_thank/>
+            <current_location/>
+          </Introduction_to_interviewee>
+          <housing_material>
+            <floor_material/>
+            <floor_material_other/>
+            <roof_material/>
+            <roof_material_other/>
+          </housing_material>
+          <household_asset_ownership>
+            <household_assets/>
+          </household_asset_ownership>
+          <bank>
+            <bank_account/>
+          </bank>
+          <fuel>
+            <cooking_fuel/>
+            <cooking_fuel_other/>
+          </fuel>
+          <wash>
+            <drinking_water_source/>
+            <drinking_water_source_other/>
+            <time_to_drinking_water_source/>
+            <treatment_for_drinking_water/>
+            <treatment_for_drinking_water_other/>
+            <toilet_facility_type/>
+            <toilet_facility_type_other/>
+            <shared_toilet_facility/>
+            <hand_washing_facility/>
+            <soap/>
+          </wash>
+          <education_level>
+            <hh_member_5_yr_school/>
+            <hh_children_to_class_8/>
+          </education_level>
+          <general_household_health>
+            <covid_symptoms/>
+            <comfort_level/>
+            <malnourishment/>
+            <borrow_money_sold_asset_for_medical/>
+            <clinic_travel_means/>
+            <clinic_travel_means_other/>
+            <time_to_facility/>
+            <women_30_49/>
+            <count_cervical_cancer_screened/>
+            <girls_received_hpv/>
+            <fits_unconsciousness/>
+            <n_refer_epilespsy/>
+            <treated_nets/>
+            <hh_sprayed_in_last_12_mnths/>
+            <can_get_all_services/>
+            <recommend_nearest_facility/>
+            <provider_confidence_improved/>
+            <facility_services_improved/>
+          </general_household_health>
+          <economy>
+            <mobile_phone/>
+            <charging/>
+            <where_outside/>
+            <where_outside_other/>
+            <relative_position/>
+          </economy>
+          <validation>
+            <satisfied/>
+            <comments/>
+          </validation>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </household_survey>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/household_survey/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/household_survey/inputs/source" type="string"/>
+      <bind nodeset="/household_survey/inputs/source_id" type="string"/>
+      <bind nodeset="/household_survey/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/household_survey/inputs/contact/name" type="string"/>
+      <bind nodeset="/household_survey/inputs/contact/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/household_survey/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/household_survey/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/household_survey/place_id" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/household_survey/geolocation" type="string"/>
+      <bind nodeset="/household_survey/introduction/n_intro_1" readonly="true()" type="string"/>
+      <bind nodeset="/household_survey/introduction/n_intro_2" readonly="true()" type="string"/>
+      <bind nodeset="/household_survey/introduction/n_intro_3" readonly="true()" type="string"/>
+      <bind nodeset="/household_survey/introduction/n_intro_4" readonly="true()" type="string"/>
+      <bind nodeset="/household_survey/introduction/n_intro_5" readonly="true()" type="string"/>
+      <bind nodeset="/household_survey/Introduction_to_interviewee/interviewee" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/Introduction_to_interviewee/n_hh_qns" readonly="true()" required="true()" type="string"/>
+      <bind nodeset="/household_survey/Introduction_to_interviewee/n_thank" readonly="true()" required="true()" type="string"/>
+      <bind nodeset="/household_survey/Introduction_to_interviewee/current_location" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/housing_material/floor_material" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/housing_material/floor_material_other" relevant="selected(../floor_material, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/housing_material/roof_material" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/housing_material/roof_material_other" relevant="selected(../roof_material, 'other')" required="true()" type="string"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/household_survey/household_asset_ownership/household_assets:jr:constraintMsg')" nodeset="/household_survey/household_asset_ownership/household_assets" required="true()" type="select"/>
+      <bind nodeset="/household_survey/bank/bank_account" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/fuel/cooking_fuel" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/fuel/cooking_fuel_other" relevant="selected(../cooking_fuel, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/wash/drinking_water_source" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/drinking_water_source_other" relevant="selected(../drinking_water_source, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/wash/time_to_drinking_water_source" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/treatment_for_drinking_water" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/treatment_for_drinking_water_other" relevant="selected(../treatment_for_drinking_water, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/wash/toilet_facility_type" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/toilet_facility_type_other" relevant="selected(../toilet_facility_type, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/wash/shared_toilet_facility" relevant="selected(../toilet_facility_type, 'flush_toilet') or selected(../toilet_facility_type, 'pit_latrine') or selected(../toilet_facility_type, 'composing_toilet')" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/hand_washing_facility" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/wash/soap" relevant="selected(../hand_washing_facility, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/education_level/hh_member_5_yr_school" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/education_level/hh_children_to_class_8" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/covid_symptoms" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/comfort_level" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/malnourishment" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/borrow_money_sold_asset_for_medical" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/clinic_travel_means" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/clinic_travel_means_other" relevant="selected(../clinic_travel_means, 'other')" required="true()" type="string"/>
+      <bind nodeset="/household_survey/general_household_health/time_to_facility" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/women_30_49" required="true()" type="int"/>
+      <bind nodeset="/household_survey/general_household_health/count_cervical_cancer_screened" relevant=" /household_survey/general_household_health/women_30_49  &gt; 0" required="true()" type="int"/>
+      <bind nodeset="/household_survey/general_household_health/girls_received_hpv" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/fits_unconsciousness" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/n_refer_epilespsy" readonly="true()" relevant="selected(../fits_unconsciousness, 'yes')" required="true()" type="string"/>
+      <bind constraint="not(selected(., 'none') 
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/household_survey/general_household_health/treated_nets:jr:constraintMsg')" nodeset="/household_survey/general_household_health/treated_nets" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/can_get_all_services" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/recommend_nearest_facility" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/provider_confidence_improved" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/general_household_health/facility_services_improved" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/economy/mobile_phone" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/economy/charging" relevant=" /household_survey/economy/mobile_phone  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/economy/where_outside" relevant=" /household_survey/economy/charging  = 'outside'" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/economy/where_outside_other" relevant=" /household_survey/economy/where_outside  = 'other'" required="true()" type="string"/>
+      <bind nodeset="/household_survey/economy/relative_position" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/validation/satisfied" required="true()" type="select1"/>
+      <bind nodeset="/household_survey/validation/comments" relevant=" /household_survey/validation/satisfied  = 'no'" required="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/household_survey/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/household_survey/inputs">
+      <label ref="jr:itext('/household_survey/inputs:label')"/>
+      <group ref="/household_survey/inputs/contact">
+        <label ref="jr:itext('/household_survey/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/household_survey/inputs/contact/_id">
+          <label ref="jr:itext('/household_survey/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/household_survey/inputs/contact/parent">
+          <label ref="jr:itext('/household_survey/inputs/contact/parent:label')"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/household_survey/introduction">
+      <label ref="jr:itext('/household_survey/introduction:label')"/>
+      <input ref="/household_survey/introduction/n_intro_1">
+        <label ref="jr:itext('/household_survey/introduction/n_intro_1:label')"/>
+      </input>
+      <input ref="/household_survey/introduction/n_intro_2">
+        <label ref="jr:itext('/household_survey/introduction/n_intro_2:label')"/>
+      </input>
+      <input ref="/household_survey/introduction/n_intro_3">
+        <label ref="jr:itext('/household_survey/introduction/n_intro_3:label')"/>
+      </input>
+      <input ref="/household_survey/introduction/n_intro_4">
+        <label ref="jr:itext('/household_survey/introduction/n_intro_4:label')"/>
+      </input>
+      <input ref="/household_survey/introduction/n_intro_5">
+        <label ref="jr:itext('/household_survey/introduction/n_intro_5:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/household_survey/Introduction_to_interviewee">
+      <label ref="jr:itext('/household_survey/Introduction_to_interviewee:label')"/>
+      <select1 ref="/household_survey/Introduction_to_interviewee/interviewee">
+        <label ref="jr:itext('/household_survey/Introduction_to_interviewee/interviewee:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/interviewee/household_head:label')"/>
+          <value>household_head</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/interviewee/household_member:label')"/>
+          <value>household_member</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/interviewee/own_household_member:label')"/>
+          <value>own_household_member</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/Introduction_to_interviewee/n_hh_qns">
+        <label ref="jr:itext('/household_survey/Introduction_to_interviewee/n_hh_qns:label')"/>
+      </input>
+      <input ref="/household_survey/Introduction_to_interviewee/n_thank">
+        <label ref="jr:itext('/household_survey/Introduction_to_interviewee/n_thank:label')"/>
+      </input>
+      <select1 ref="/household_survey/Introduction_to_interviewee/current_location">
+        <label ref="jr:itext('/household_survey/Introduction_to_interviewee/current_location:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/current_location/client_household:label')"/>
+          <value>client_household</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/current_location/my_home:label')"/>
+          <value>my_home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/Introduction_to_interviewee/current_location/elsewhere:label')"/>
+          <value>elsewhere</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/household_survey/housing_material">
+      <label ref="jr:itext('/household_survey/housing_material:label')"/>
+      <select1 ref="/household_survey/housing_material/floor_material">
+        <label ref="jr:itext('/household_survey/housing_material/floor_material:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/floor_material/earth:label')"/>
+          <value>earth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/floor_material/cement:label')"/>
+          <value>cement</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/floor_material/dung:label')"/>
+          <value>dung</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/floor_material/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/housing_material/floor_material_other">
+        <label ref="jr:itext('/household_survey/housing_material/floor_material_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/housing_material/roof_material">
+        <label ref="jr:itext('/household_survey/housing_material/roof_material:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/roof_material/thatch:label')"/>
+          <value>thatch</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/roof_material/metal:label')"/>
+          <value>metal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/housing_material/roof_material/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/housing_material/roof_material_other">
+        <label ref="jr:itext('/household_survey/housing_material/roof_material_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/household_survey/household_asset_ownership">
+      <label ref="jr:itext('/household_survey/household_asset_ownership:label')"/>
+      <select ref="/household_survey/household_asset_ownership/household_assets">
+        <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets:label')"/>
+        <hint ref="jr:itext('/household_survey/household_asset_ownership/household_assets:hint')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/bicycle:label')"/>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/electricity:label')"/>
+          <value>electricity</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/television:label')"/>
+          <value>television</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/radio:label')"/>
+          <value>radio</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/bed_with_mattress:label')"/>
+          <value>bed_with_mattress</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/sofa_set:label')"/>
+          <value>sofa_set</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/refrigerator:label')"/>
+          <value>refrigerator</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/motorbike:label')"/>
+          <value>motorbike</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/car_or_truck:label')"/>
+          <value>car_or_truck</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/household_asset_ownership/household_assets/none:label')"/>
+          <value>none</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/household_survey/bank">
+      <label ref="jr:itext('/household_survey/bank:label')"/>
+      <select1 ref="/household_survey/bank/bank_account">
+        <label ref="jr:itext('/household_survey/bank/bank_account:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/bank/bank_account/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/bank/bank_account/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/household_survey/fuel">
+      <label ref="jr:itext('/household_survey/fuel:label')"/>
+      <select1 ref="/household_survey/fuel/cooking_fuel">
+        <label ref="jr:itext('/household_survey/fuel/cooking_fuel:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/wood:label')"/>
+          <value>wood</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/charcoal:label')"/>
+          <value>charcoal</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/dung:label')"/>
+          <value>dung</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/kerosene:label')"/>
+          <value>kerosene</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/gas:label')"/>
+          <value>gas</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/electricity:label')"/>
+          <value>electricity</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/fuel/cooking_fuel/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/fuel/cooking_fuel_other">
+        <label ref="jr:itext('/household_survey/fuel/cooking_fuel_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/household_survey/wash">
+      <label ref="jr:itext('/household_survey/wash:label')"/>
+      <select1 ref="/household_survey/wash/drinking_water_source">
+        <label ref="jr:itext('/household_survey/wash/drinking_water_source:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/piped_water:label')"/>
+          <value>piped_water</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/borehole:label')"/>
+          <value>borehole</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/well:label')"/>
+          <value>well</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/spring:label')"/>
+          <value>spring</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/rainwater:label')"/>
+          <value>rainwater</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/surface_water:label')"/>
+          <value>surface_water</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/bottled:label')"/>
+          <value>bottled</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/drinking_water_source/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/wash/drinking_water_source_other">
+        <label ref="jr:itext('/household_survey/wash/drinking_water_source_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/wash/time_to_drinking_water_source">
+        <label ref="jr:itext('/household_survey/wash/time_to_drinking_water_source:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/time_to_drinking_water_source/under_30:label')"/>
+          <value>under_30</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/time_to_drinking_water_source/between_30_and_60:label')"/>
+          <value>between_30_and_60</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/time_to_drinking_water_source/more_than_60:label')"/>
+          <value>more_than_60</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/wash/treatment_for_drinking_water">
+        <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/filtration:label')"/>
+          <value>filtration</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/chemical_treatment:label')"/>
+          <value>chemical_treatment</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/boiling:label')"/>
+          <value>boiling</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/heated_in_sun:label')"/>
+          <value>heated_in_sun</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/not_treated:label')"/>
+          <value>not_treated</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/wash/treatment_for_drinking_water_other">
+        <label ref="jr:itext('/household_survey/wash/treatment_for_drinking_water_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/wash/toilet_facility_type">
+        <label ref="jr:itext('/household_survey/wash/toilet_facility_type:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/flush_toilet:label')"/>
+          <value>flush_toilet</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/pit_latrine:label')"/>
+          <value>pit_latrine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/composing_toilet:label')"/>
+          <value>composing_toilet</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/bucket:label')"/>
+          <value>bucket</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/none:label')"/>
+          <value>none</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/toilet_facility_type/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/wash/toilet_facility_type_other">
+        <label ref="jr:itext('/household_survey/wash/toilet_facility_type_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/wash/shared_toilet_facility">
+        <label ref="jr:itext('/household_survey/wash/shared_toilet_facility:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/shared_toilet_facility/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/shared_toilet_facility/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/wash/hand_washing_facility">
+        <label ref="jr:itext('/household_survey/wash/hand_washing_facility:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/hand_washing_facility/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/hand_washing_facility/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/wash/soap">
+        <label ref="jr:itext('/household_survey/wash/soap:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/soap/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/wash/soap/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/household_survey/education_level">
+      <label ref="jr:itext('/household_survey/education_level:label')"/>
+      <select1 ref="/household_survey/education_level/hh_member_5_yr_school">
+        <label ref="jr:itext('/household_survey/education_level/hh_member_5_yr_school:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/education_level/hh_member_5_yr_school/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/education_level/hh_member_5_yr_school/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/education_level/hh_children_to_class_8">
+        <label ref="jr:itext('/household_survey/education_level/hh_children_to_class_8:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/education_level/hh_children_to_class_8/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/education_level/hh_children_to_class_8/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/household_survey/general_household_health">
+      <label ref="jr:itext('/household_survey/general_household_health:label')"/>
+      <select1 ref="/household_survey/general_household_health/covid_symptoms">
+        <label ref="jr:itext('/household_survey/general_household_health/covid_symptoms:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/covid_symptoms/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/covid_symptoms/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/comfort_level">
+        <label ref="jr:itext('/household_survey/general_household_health/comfort_level:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/comfort_level/very_comfortable:label')"/>
+          <value>very_comfortable</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/comfort_level/somewhat_comfortable:label')"/>
+          <value>somewhat_comfortable</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/comfort_level/not_very_comfortable:label')"/>
+          <value>not_very_comfortable</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/comfort_level/not_comfortable:label')"/>
+          <value>not_comfortable</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/malnourishment">
+        <label ref="jr:itext('/household_survey/general_household_health/malnourishment:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/malnourishment/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/malnourishment/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/borrow_money_sold_asset_for_medical">
+        <label ref="jr:itext('/household_survey/general_household_health/borrow_money_sold_asset_for_medical:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/borrow_money_sold_asset_for_medical/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/borrow_money_sold_asset_for_medical/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/clinic_travel_means">
+        <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means:label')"/>
+        <hint ref="jr:itext('/household_survey/general_household_health/clinic_travel_means:hint')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/foot:label')"/>
+          <value>foot</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/bicycle:label')"/>
+          <value>bicycle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/motorbike:label')"/>
+          <value>motorbike</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/vehicle:label')"/>
+          <value>vehicle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/public_transport:label')"/>
+          <value>public_transport</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/general_household_health/clinic_travel_means_other">
+        <label ref="jr:itext('/household_survey/general_household_health/clinic_travel_means_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/general_household_health/time_to_facility">
+        <label ref="jr:itext('/household_survey/general_household_health/time_to_facility:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/time_to_facility/under_30:label')"/>
+          <value>under_30</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/time_to_facility/between_30_and_60:label')"/>
+          <value>between_30_and_60</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/time_to_facility/more_than_60:label')"/>
+          <value>more_than_60</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/general_household_health/women_30_49">
+        <label ref="jr:itext('/household_survey/general_household_health/women_30_49:label')"/>
+      </input>
+      <input ref="/household_survey/general_household_health/count_cervical_cancer_screened">
+        <label ref="jr:itext('/household_survey/general_household_health/count_cervical_cancer_screened:label')"/>
+      </input>
+      <select1 ref="/household_survey/general_household_health/girls_received_hpv">
+        <label ref="jr:itext('/household_survey/general_household_health/girls_received_hpv:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/girls_received_hpv/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/girls_received_hpv/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/fits_unconsciousness">
+        <label ref="jr:itext('/household_survey/general_household_health/fits_unconsciousness:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/fits_unconsciousness/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/fits_unconsciousness/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/general_household_health/n_refer_epilespsy">
+        <label ref="jr:itext('/household_survey/general_household_health/n_refer_epilespsy:label')"/>
+      </input>
+      <select1 ref="/household_survey/general_household_health/treated_nets">
+        <label ref="jr:itext('/household_survey/general_household_health/treated_nets:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/treated_nets/all:label')"/>
+          <value>all</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/treated_nets/some:label')"/>
+          <value>some</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/treated_nets/none:label')"/>
+          <value>none</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/hh_sprayed_in_last_12_mnths">
+        <label ref="jr:itext('/household_survey/general_household_health/hh_sprayed_in_last_12_mnths:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/hh_sprayed_in_last_12_mnths/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/can_get_all_services">
+        <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/strongly_agree:label')"/>
+          <value>strongly_agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/agree:label')"/>
+          <value>agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/neutral:label')"/>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/disagree:label')"/>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/strongly_disagree:label')"/>
+          <value>strongly_disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/can_get_all_services/not_know:label')"/>
+          <value>not_know</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/recommend_nearest_facility">
+        <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/strongly_agree:label')"/>
+          <value>strongly_agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/agree:label')"/>
+          <value>agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/neutral:label')"/>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/disagree:label')"/>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/strongly_disagree:label')"/>
+          <value>strongly_disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/recommend_nearest_facility/not_know:label')"/>
+          <value>not_know</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/provider_confidence_improved">
+        <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/strongly_agree:label')"/>
+          <value>strongly_agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/agree:label')"/>
+          <value>agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/neutral:label')"/>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/disagree:label')"/>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/strongly_disagree:label')"/>
+          <value>strongly_disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/provider_confidence_improved/not_know:label')"/>
+          <value>not_know</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/general_household_health/facility_services_improved">
+        <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/strongly_agree:label')"/>
+          <value>strongly_agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/agree:label')"/>
+          <value>agree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/neutral:label')"/>
+          <value>neutral</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/disagree:label')"/>
+          <value>disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/strongly_disagree:label')"/>
+          <value>strongly_disagree</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/general_household_health/facility_services_improved/not_know:label')"/>
+          <value>not_know</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/household_survey/economy">
+      <label ref="jr:itext('/household_survey/economy:label')"/>
+      <select1 ref="/household_survey/economy/mobile_phone">
+        <label ref="jr:itext('/household_survey/economy/mobile_phone:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/mobile_phone/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/mobile_phone/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/economy/charging">
+        <label ref="jr:itext('/household_survey/economy/charging:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/charging/home:label')"/>
+          <value>home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/charging/outside:label')"/>
+          <value>outside</value>
+        </item>
+      </select1>
+      <select1 ref="/household_survey/economy/where_outside">
+        <label ref="jr:itext('/household_survey/economy/where_outside:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/where_outside/solar:label')"/>
+          <value>solar</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/where_outside/electricity:label')"/>
+          <value>electricity</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/where_outside/vehicle:label')"/>
+          <value>vehicle</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/where_outside/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/economy/where_outside_other">
+        <label ref="jr:itext('/household_survey/economy/where_outside_other:label')"/>
+      </input>
+      <select1 ref="/household_survey/economy/relative_position">
+        <label ref="jr:itext('/household_survey/economy/relative_position:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/relative_position/higher:label')"/>
+          <value>higher</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/relative_position/same:label')"/>
+          <value>same</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/economy/relative_position/lower:label')"/>
+          <value>lower</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/household_survey/validation">
+      <label ref="jr:itext('/household_survey/validation:label')"/>
+      <select1 ref="/household_survey/validation/satisfied">
+        <label ref="jr:itext('/household_survey/validation/satisfied:label')"/>
+        <item>
+          <label ref="jr:itext('/household_survey/validation/satisfied/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/household_survey/validation/satisfied/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/household_survey/validation/comments">
+        <label ref="jr:itext('/household_survey/validation/comments:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

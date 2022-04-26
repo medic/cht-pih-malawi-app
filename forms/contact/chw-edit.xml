@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit CHW</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/chw/alternate_phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/chw/alternate_phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/chw/alternate_phone:label">
+            <value>Secondary phone number</value>
+          </text>
+          <text id="/data/chw/contact_type:label">
+            <value>Contact Type</value>
+          </text>
+          <text id="/data/chw/date_joined:label">
+            <value>Date joined</value>
+          </text>
+          <text id="/data/chw/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/chw/education_level/college:label">
+            <value>College</value>
+          </text>
+          <text id="/data/chw/education_level/none:label">
+            <value>None</value>
+          </text>
+          <text id="/data/chw/education_level/primary:label">
+            <value>Primary</value>
+          </text>
+          <text id="/data/chw/education_level/secondary:label">
+            <value>Secondary</value>
+          </text>
+          <text id="/data/chw/education_level/university:label">
+            <value>University</value>
+          </text>
+          <text id="/data/chw/education_level:label">
+            <value>Education level</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/age:jr:constraintMsg">
+            <value>. &gt; 0 and . &lt; 120</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/age:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method/approx:label">
+            <value>Date of birth with current age</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method/calendar:label">
+            <value>With calendar (preferred)</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>.&lt;today()</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_calendar:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_iso:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/chw/name:jr:constraintMsg">
+            <value>Name can only have alphabetic characters</value>
+          </text>
+          <text id="/data/chw/name:label">
+            <value>Names</value>
+          </text>
+          <text id="/data/chw/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/chw/parent:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/chw/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/data/chw/phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/chw/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/chw/phone:label">
+            <value>Primary phone number</value>
+          </text>
+          <text id="/data/chw/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/chw/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/chw/sex:label">
+            <value>Gender</value>
+          </text>
+          <text id="/data/chw/treatment_program:label">
+            <value>Treatment Program</value>
+          </text>
+          <text id="/data/chw/type:hint">
+            <value>mandatory</value>
+          </text>
+          <text id="/data/chw/type:label">
+            <value>Person Type</value>
+          </text>
+          <text id="/data/chw:label">
+            <value>Person details</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/n_none_hh_member:label">
+            <value>&lt;span style="color:red;font-weight: bold"&gt;You are trying to register a person outside a household. Please exit the form and choose the correct household.&lt;/span&gt;</value>
+          </text>
+        </translation>
+        <translation lang="sw">
+          <text id="/data/chw/alternate_phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/chw/alternate_phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/chw/alternate_phone:label">
+            <value>Nambari nyingine ya simu</value>
+          </text>
+          <text id="/data/chw/contact_type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/date_joined:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/date_of_birth:label">
+            <value>Tarehe ya Kuzaliwa</value>
+          </text>
+          <text id="/data/chw/education_level/college:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/education_level/none:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/education_level/primary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/education_level/secondary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/education_level/university:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/education_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/age:jr:constraintMsg">
+            <value>Age must be between 0 and 120</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/age:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method/approx:label">
+            <value>Tsiku lobadwa ndi zaka zomwe munthu ali nazo pa nthawiyo</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method/calendar:label">
+            <value>Ndi kalendala (ngati nkotheka)</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/contact_dob_method:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_calendar:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_iso:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob/dob_raw:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/ephemeral_dob:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/name:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/name:label">
+            <value>Jina</value>
+          </text>
+          <text id="/data/chw/notes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chw/parent:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/chw/parent:label">
+            <value>nambari ya mzazi</value>
+          </text>
+          <text id="/data/chw/phone:hint">
+            <value>Use one of the following formats: 07XXXXXXXX or +2547XXXXXXXX</value>
+          </text>
+          <text id="/data/chw/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/chw/phone:label">
+            <value>Nambari ya simu</value>
+          </text>
+          <text id="/data/chw/sex/female:label">
+            <value>Mke</value>
+          </text>
+          <text id="/data/chw/sex/male:label">
+            <value>Mume</value>
+          </text>
+          <text id="/data/chw/sex:label">
+            <value>Jinsia</value>
+          </text>
+          <text id="/data/chw/treatment_program:label">
+            <value>Maelezo ya ziada</value>
+          </text>
+          <text id="/data/chw/type:hint">
+            <value>inahitajika</value>
+          </text>
+          <text id="/data/chw/type:label">
+            <value>Aina ya mtu</value>
+          </text>
+          <text id="/data/chw:label">
+            <value>Maelezo ya mtu</value>
+          </text>
+          <text id="/data/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Namba ya Usajili ya mtumiaji wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Kitambulisho cha mahali cha mtumizi wa huduma hii</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Jina ya mtumizi</value>
+          </text>
+          <text id="/data/n_none_hh_member:label">
+            <value>&lt;span style="color:red;font-weight: bold"&gt;Unajaribu mkumsajili mtu asiye na kaya. Tafadhali ondoka kwenye fomu hii na uchague kaya sahihi.&lt;/span&gt;</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:chw:edit" prefix="J1!contact:chw:edit!" version="2020-02-11 07:57:06">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <chw>
+            <type>contact</type>
+            <contact_type>chw</contact_type>
+            <parent>PARENT</parent>
+            <name/>
+            <sex/>
+            <date_of_birth/>
+            <ephemeral_dob>
+              <contact_dob_method/>
+              <dob_calendar/>
+              <age/>
+              <dob_raw/>
+              <dob_iso/>
+            </ephemeral_dob>
+            <phone/>
+            <alternate_phone/>
+            <treatment_program/>
+            <education_level/>
+            <date_joined/>
+            <notes/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+            </meta>
+          </chw>
+          <facility_id/>
+          <n_none_hh_member/>
+          <none_hh_member_flag/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind calculate="../inputs/user/facility_id" nodeset="/data/facility_id" type="string"/>
+      <bind nodeset="/data/n_none_hh_member" readonly="true()" relevant="starts-with( /data/chw/parent , ../facility_id)" type="string"/>
+      <bind calculate="if(starts-with( /data/chw/parent , ../facility_id),1,0)" nodeset="/data/none_hh_member_flag" type="string"/>
+      <bind nodeset="/data/chw" relevant=" /data/none_hh_member_flag  = 0"/>
+      <bind nodeset="/data/chw/type" type="string"/>
+      <bind nodeset="/data/chw/contact_type" type="string"/>
+      <bind nodeset="/data/chw/parent" type="string"/>
+      <bind constraint="regex(.,'[a-zA-Z]{1,50}[ ]{0,1}[a-zA-Z]{1,50}')" jr:constraintMsg="jr:itext('/data/chw/name:jr:constraintMsg')" nodeset="/data/chw/name" required="true()" type="string"/>
+      <bind nodeset="/data/chw/sex" required="true()" type="select1"/>
+      <bind calculate="format-date-time(date(../ephemeral_dob/dob_iso),'%Y-%m-%d')" nodeset="/data/chw/date_of_birth" type="string"/>
+      <bind nodeset="/data/chw/ephemeral_dob/contact_dob_method" type="select1"/>
+      <bind jr:constraintMsg="jr:itext('/data/chw/ephemeral_dob/dob_calendar:jr:constraintMsg')" nodeset="/data/chw/ephemeral_dob/dob_calendar" relevant="selected(../contact_dob_method,'calendar')" required="true()" type="date"/>
+      <bind jr:constraintMsg="jr:itext('/data/chw/ephemeral_dob/age:jr:constraintMsg')" nodeset="/data/chw/ephemeral_dob/age" relevant="selected(../contact_dob_method,'approx')" required="true()" type="int"/>
+      <bind calculate="if(selected( ../contact_dob_method,'calendar'), ../dob_calendar, format-date-time( decimal-date-time( today() ) - (365.25 * ../age) , &quot;%Y-%m-%d&quot;) )" nodeset="/data/chw/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="decimal-date-time(../dob_raw)" nodeset="/data/chw/ephemeral_dob/dob_iso" type="string"/>
+      <bind jr:constraintMsg="jr:itext('/data/chw/phone:jr:constraintMsg')" nodeset="/data/chw/phone" required="false()" type="string"/>
+      <bind jr:constraintMsg="jr:itext('/data/chw/alternate_phone:jr:constraintMsg')" nodeset="/data/chw/alternate_phone" required="false()" type="string"/>
+      <bind nodeset="/data/chw/treatment_program" type="string"/>
+      <bind nodeset="/data/chw/education_level" type="select1"/>
+      <bind nodeset="/data/chw/date_joined" type="date"/>
+      <bind nodeset="/data/chw/notes" type="string"/>
+      <bind nodeset="/data/chw/meta/created_by" type="string"/>
+      <bind nodeset="/data/chw/meta/created_by_person_uuid" type="string"/>
+      <bind nodeset="/data/chw/meta/created_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <input ref="/data/n_none_hh_member">
+      <label ref="jr:itext('/data/n_none_hh_member:label')"/>
+    </input>
+    <group appearance="field-list" ref="/data/chw">
+      <label ref="jr:itext('/data/chw:label')"/>
+      <input ref="/data/chw/name">
+        <label ref="jr:itext('/data/chw/name:label')"/>
+      </input>
+      <select1 ref="/data/chw/sex">
+        <label ref="jr:itext('/data/chw/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/chw/sex/male:label')"/>
+          <value>male</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/chw/sex/female:label')"/>
+          <value>female</value>
+        </item>
+      </select1>
+      <group ref="/data/chw/ephemeral_dob">
+        <select1 ref="/data/chw/ephemeral_dob/contact_dob_method">
+          <label ref="jr:itext('/data/chw/ephemeral_dob/contact_dob_method:label')"/>
+          <item>
+            <label ref="jr:itext('/data/chw/ephemeral_dob/contact_dob_method/approx:label')"/>
+            <value>approx</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/chw/ephemeral_dob/contact_dob_method/calendar:label')"/>
+            <value>calendar</value>
+          </item>
+        </select1>
+        <input ref="/data/chw/ephemeral_dob/dob_calendar">
+          <label ref="jr:itext('/data/chw/ephemeral_dob/dob_calendar:label')"/>
+        </input>
+        <input ref="/data/chw/ephemeral_dob/age">
+          <label ref="jr:itext('/data/chw/ephemeral_dob/age:label')"/>
+        </input>
+      </group>
+      <input appearance="numbers" ref="/data/chw/phone">
+        <label ref="jr:itext('/data/chw/phone:label')"/>
+        <hint ref="jr:itext('/data/chw/phone:hint')"/>
+      </input>
+      <input appearance="numbers" ref="/data/chw/alternate_phone">
+        <label ref="jr:itext('/data/chw/alternate_phone:label')"/>
+        <hint ref="jr:itext('/data/chw/alternate_phone:hint')"/>
+      </input>
+      <input appearance="hidden" ref="/data/chw/treatment_program">
+        <label ref="jr:itext('/data/chw/treatment_program:label')"/>
+      </input>
+      <select1 ref="/data/chw/education_level">
+        <label ref="jr:itext('/data/chw/education_level:label')"/>
+        <item>
+          <label ref="jr:itext('/data/chw/education_level/none:label')"/>
+          <value>none</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/chw/education_level/primary:label')"/>
+          <value>primary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/chw/education_level/secondary:label')"/>
+          <value>secondary</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/chw/education_level/college:label')"/>
+          <value>college</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/chw/education_level/university:label')"/>
+          <value>university</value>
+        </item>
+      </select1>
+      <input ref="/data/chw/date_joined">
+        <label ref="jr:itext('/data/chw/date_joined:label')"/>
+      </input>
+      <input ref="/data/chw/notes">
+        <label ref="jr:itext('/data/chw/notes:label')"/>
+      </input>
+      <group ref="/data/chw/meta"/>
+    </group>
+  </h:body>
+</h:html>

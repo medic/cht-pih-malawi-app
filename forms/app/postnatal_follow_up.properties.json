@@ -1,0 +1,15 @@
+{
+    "icon": "icon-people-woman-baby-crop",
+    "title": {
+        "en": "PNC follow up",
+        "ny": "Mayi akachira"
+    },
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && (!contact.sex || contact.sex === 'female') && (!contact.date_of_birth || (ageInYears(contact) >= 12 && ageInYears(contact) < 49)) && user._id != contact._id && !(summary.pregnant === 'yes') && (summary.days_since_delivery > 0 &&  summary.days_since_delivery <= 56) && !contact.date_of_death && !contact.muted && user.contact_type === 'chw'"
+    },
+    "hidden_fields": [
+
+    ]
+}

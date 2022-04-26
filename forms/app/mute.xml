@@ -1,0 +1,453 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Mute request</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/mute/group_review/n_follow_up:label">
+            <value>Follow up tasks will stop showing!</value>
+          </text>
+          <text id="/mute/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_hospitalized:label">
+            <value>Hospitalized</value>
+          </text>
+          <text id="/mute/group_review/n_moved_permanently:label">
+            <value>Moved permanently</value>
+          </text>
+          <text id="/mute/group_review/n_moved_temporarily:label">
+            <value>Moved temporarily</value>
+          </text>
+          <text id="/mute/group_review/n_other:label">
+            <value><output value=" /mute/mute_request/reason_other "/></value>
+          </text>
+          <text id="/mute/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /mute/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /mute/group_review/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_reasons_title:label">
+            <value>**_Reasons for mute request_**</value>
+          </text>
+          <text id="/mute/group_review/n_special_instruction:label">
+            <value>_Tasks for <output value=" /mute/patient_name "/> will stop showing until you submit unmute request._</value>
+          </text>
+          <text id="/mute/group_review/n_special_instruction_title:label">
+            <value>Special instruction&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/mute/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/mute/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/mute/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/mute/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/_id:label">
+            <value>Family ID</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/mute/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/mute/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/mute/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/mute/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/mute/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/mute/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/mute/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/mute/mute_request/reason/hospitalized:label">
+            <value>Hospitalized</value>
+          </text>
+          <text id="/mute/mute_request/reason/moved_permanently:label">
+            <value>Moved permanently</value>
+          </text>
+          <text id="/mute/mute_request/reason/moved_temporarily:label">
+            <value>Moved temporarily</value>
+          </text>
+          <text id="/mute/mute_request/reason/other:label">
+            <value>Others (specify)</value>
+          </text>
+          <text id="/mute/mute_request/reason:label">
+            <value>Reasons for mute request</value>
+          </text>
+          <text id="/mute/mute_request/reason_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/mute/mute_request:label">
+            <value>Mute request</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/mute/group_review/n_follow_up:label">
+            <value>_Mauthenga a <output value=" /mute/patient_name "/> asiya kuwoneka kufikira pempho loyimitsali litachotsedwa._</value>
+          </text>
+          <text id="/mute/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_hospitalized:label">
+            <value>Agonekedwa m'chipatala</value>
+          </text>
+          <text id="/mute/group_review/n_moved_permanently:label">
+            <value>Anasamukiratu</value>
+          </text>
+          <text id="/mute/group_review/n_moved_temporarily:label">
+            <value>Wachokapo kwa nthawi yochepa</value>
+          </text>
+          <text id="/mute/group_review/n_other:label">
+            <value><output value=" /mute/mute_request/reason_other "/></value>
+          </text>
+          <text id="/mute/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /mute/patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /mute/group_review/c_age_string "/> zaka&lt;/h5&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_patient_details_title:label">
+            <value>Mbiri ya Munthuyo &lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/mute/group_review/n_reasons_title:label">
+            <value>**_Zifukwa zomuyikira munthu pachete_**</value>
+          </text>
+          <text id="/mute/group_review/n_special_instruction:label">
+            <value>_Mauthenga a <output value=" /mute/patient_name "/> asiya kuwoneka kufikira pempho loyimitsali litachotsedwa._</value>
+          </text>
+          <text id="/mute/group_review/n_special_instruction_title:label">
+            <value>Malangizo a padera</value>
+          </text>
+          <text id="/mute/group_review/n_submit:label">
+            <value>_Wonetsetsani kuti mwatumiza tsambali kuti mumalize ntchito iyi._</value>
+          </text>
+          <text id="/mute/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/mute/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/mute/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/mute/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/mute/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/mute/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/mute/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/mute/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/mute/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/mute/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/mute/mute_request/reason/hospitalized:label">
+            <value>Agonekedwa m'chipatala</value>
+          </text>
+          <text id="/mute/mute_request/reason/moved_permanently:label">
+            <value>Anasamukiratu</value>
+          </text>
+          <text id="/mute/mute_request/reason/moved_temporarily:label">
+            <value>Wachokapo kwa nthawi yochepa</value>
+          </text>
+          <text id="/mute/mute_request/reason/other:label">
+            <value>Fotokozani za zina</value>
+          </text>
+          <text id="/mute/mute_request/reason:label">
+            <value>Zifukwa zoyimitsira</value>
+          </text>
+          <text id="/mute/mute_request/reason_other:label">
+            <value>Zina (fotokozani)</value>
+          </text>
+          <text id="/mute/mute_request:label">
+            <value>Pempho loyimitsa kuti pasabwerenso uthenga wokhudzana ndi munthuyi</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <mute delimiter="#" id="mute" prefix="J1!mute!" version="2020-03-16 16:16:53">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <contact>
+                    <_id/>
+                    <name/>
+                    <phone/>
+                  </contact>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <chw_id/>
+          <chw_name/>
+          <chw_phone/>
+          <geolocation/>
+          <mute_request>
+            <reason/>
+            <reason_other/>
+          </mute_request>
+          <group_review>
+            <n_submit/>
+            <n_patient_details_title/>
+            <c_patient_mod_mnths/>
+            <c_age_string/>
+            <n_patient_details/>
+            <n_reasons_title/>
+            <n_hospitalized/>
+            <n_moved_temporarily/>
+            <n_moved_permanently/>
+            <n_other/>
+            <n_special_instruction_title/>
+            <n_special_instruction/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </mute>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/mute/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/mute/inputs/source" type="string"/>
+      <bind nodeset="/mute/inputs/source_id" type="string"/>
+      <bind nodeset="/mute/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/mute/inputs/contact/name" type="string"/>
+      <bind nodeset="/mute/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/mute/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/mute/inputs/contact/sex" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/parent/contact/_id" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/mute/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/mute/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/mute/source_id" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/mute/date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/mute/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months( ../date_of_birth, today() )" nodeset="/mute/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/mute/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/mute/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/mute/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/_id" nodeset="/mute/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/name" nodeset="/mute/chw_name" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/mute/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/mute/geolocation" type="string"/>
+      <bind nodeset="/mute/mute_request/reason" required="true()" type="select1"/>
+      <bind nodeset="/mute/mute_request/reason_other" relevant="selected(../reason, 'other')" required="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind calculate="../../patient_age_in_months mod 12" nodeset="/mute/group_review/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../../patient_age_in_years &lt;= 5, 
+concat( /mute/patient_age_in_years , ' years ',  /mute/group_review/c_patient_mod_mnths , ' months old'),
+concat( /mute/patient_age_in_years , ' years old'))" nodeset="/mute/group_review/c_age_string" type="string"/>
+      <bind nodeset="/mute/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_reasons_title" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_hospitalized" readonly="true()" relevant="selected(../../mute_request/reason, 'hospitalized')" type="string"/>
+      <bind nodeset="/mute/group_review/n_moved_temporarily" readonly="true()" relevant="selected(../../mute_request/reason, 'moved_temporarily')" type="string"/>
+      <bind nodeset="/mute/group_review/n_moved_permanently" readonly="true()" relevant="selected(../../mute_request/reason, 'moved_permanently')" type="string"/>
+      <bind nodeset="/mute/group_review/n_other" readonly="true()" relevant="selected(../../mute_request/reason, 'other')" type="string"/>
+      <bind nodeset="/mute/group_review/n_special_instruction_title" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_special_instruction" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind nodeset="/mute/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/mute/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/mute/inputs">
+      <label ref="jr:itext('/mute/inputs:label')"/>
+      <group ref="/mute/inputs/contact">
+        <label ref="jr:itext('/mute/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/mute/inputs/contact/_id">
+          <label ref="jr:itext('/mute/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/mute/inputs/contact/parent">
+          <label ref="jr:itext('/mute/inputs/contact/parent:label')"/>
+          <group ref="/mute/inputs/contact/parent/parent">
+            <label ref="jr:itext('/mute/inputs/contact/parent/parent:label')"/>
+            <group ref="/mute/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/mute/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+            <group ref="/mute/inputs/contact/parent/parent/parent">
+              <label ref="jr:itext('/mute/inputs/contact/parent/parent/parent:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/mute/mute_request">
+      <label ref="jr:itext('/mute/mute_request:label')"/>
+      <select1 ref="/mute/mute_request/reason">
+        <label ref="jr:itext('/mute/mute_request/reason:label')"/>
+        <item>
+          <label ref="jr:itext('/mute/mute_request/reason/hospitalized:label')"/>
+          <value>hospitalized</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mute/mute_request/reason/moved_temporarily:label')"/>
+          <value>moved_temporarily</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mute/mute_request/reason/moved_permanently:label')"/>
+          <value>moved_permanently</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/mute/mute_request/reason/other:label')"/>
+          <value>other</value>
+        </item>
+      </select1>
+      <input ref="/mute/mute_request/reason_other">
+        <label ref="jr:itext('/mute/mute_request/reason_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/mute/group_review">
+      <label ref="jr:itext('/mute/group_review:label')"/>
+      <input ref="/mute/group_review/n_submit">
+        <label ref="jr:itext('/mute/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/mute/group_review/n_patient_details_title">
+        <label ref="jr:itext('/mute/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/mute/group_review/n_patient_details">
+        <label ref="jr:itext('/mute/group_review/n_patient_details:label')"/>
+      </input>
+      <input ref="/mute/group_review/n_reasons_title">
+        <label ref="jr:itext('/mute/group_review/n_reasons_title:label')"/>
+      </input>
+      <input appearance="li" ref="/mute/group_review/n_hospitalized">
+        <label ref="jr:itext('/mute/group_review/n_hospitalized:label')"/>
+      </input>
+      <input appearance="li" ref="/mute/group_review/n_moved_temporarily">
+        <label ref="jr:itext('/mute/group_review/n_moved_temporarily:label')"/>
+      </input>
+      <input appearance="li" ref="/mute/group_review/n_moved_permanently">
+        <label ref="jr:itext('/mute/group_review/n_moved_permanently:label')"/>
+      </input>
+      <input appearance="li" ref="/mute/group_review/n_other">
+        <label ref="jr:itext('/mute/group_review/n_other:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/mute/group_review/n_special_instruction_title">
+        <label ref="jr:itext('/mute/group_review/n_special_instruction_title:label')"/>
+      </input>
+      <input ref="/mute/group_review/n_special_instruction">
+        <label ref="jr:itext('/mute/group_review/n_special_instruction:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/mute/group_review/n_follow_up_title">
+        <label ref="jr:itext('/mute/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/mute/group_review/n_follow_up">
+        <label ref="jr:itext('/mute/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

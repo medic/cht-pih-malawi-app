@@ -1,0 +1,12 @@
+{
+  "context": {
+    "expression": "(!contact || contact.contact_type === 'chw_area') && !contact.muted && user.role === 'district-admin' && user._id !== contact._id",
+    "person": false,
+    "place": false
+  },
+  "icon": "icon-messages-off",
+  "title": {
+    "en": "Mute request",
+    "ny": "Pempho loyimitsa kuti pasabwerenso uthenga wokhudzana ndi munthuyi"
+  }
+}

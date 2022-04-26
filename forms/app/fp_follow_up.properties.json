@@ -1,0 +1,15 @@
+{
+    "icon": "icon-family-planning",
+    "title": {
+        "en": "FP follow up",
+        "ny": "Kalondolondo wa njira zakulera"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person'"
+    },
+    "hidden_fields": [
+        "patient_uuid"
+    ]
+}

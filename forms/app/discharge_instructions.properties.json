@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-generic",
+    "title": {
+        "en": "Discharge instructions",
+        "ny": "Malangizo operekedwa pamene wodwala akutulutsidwa m'chipatala"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && !contact.date_of_death"
+    },
+    "hidden_fields": [
+
+    ]
+}

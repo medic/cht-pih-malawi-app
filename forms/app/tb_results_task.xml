@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>TB results task</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/tb_results_task/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_task/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results_task/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results_task/inputs/tb_result:label">
+            <value>TB Result</value>
+          </text>
+          <text id="/tb_results_task/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> TB results is <output value=" /tb_results_task/result "/>._ --&gt;&gt;&gt; <output value=" /tb_results_task/tb_test_result "/></value></text>
+          <text id="/tb_results_task/tb_results/n_results_negative:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> TB results is negative. If still experiencing signs ask them to go to the health facility for further tests._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results_positive:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> TB results is positive. Please ask them to go to the health facility for TB treatment commencement._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results_rejected:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> TB samples were rejected. Please ask to go back to the SCHW for collection of another sample._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred:label">
+            <value>Did you refer <output value=" /tb_results_task/patient_name "/> to the health facility?</value>
+          </text>
+          <text id="/tb_results_task/tb_results:label">
+            <value>TB results</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/tb_results_task/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/tb_results_task/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/tb_results_task/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/tb_results_task/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/tb_results_task/inputs/tb_result:label">
+            <value>TB Result</value>
+          </text>
+          <text id="/tb_results_task/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/tb_results_task/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> zotsatira za TB ndi <output value=" /tb_results_task/result_ny "/>._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results_negative:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> Zotsatira za chifuwa cha TB zilibe. Ngati mukukumana ndi zizindikiro afunseni kuti apite kuchipatala kukayesedwa._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results_positive:label">
+            <value>__<output value=" /tb_results_task/patient_name "/> wapezeka ndi TB. Chonde mutumizeni kuchipatala kuti akayambe kulandira mankhwala._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/n_results_rejected:label">
+            <value>_<output value=" /tb_results_task/patient_name "/> Zitsanzo za TB zidakanidwa. Chonde funsani kuti mubwerere ku SCHW kuti musonkhanitse zitsanzo zina._</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type/no_chw:label">
+            <value>Anapita yekha ku chipatala</value>
+          </text>
+          <text id="/tb_results_task/tb_results/ref_type:label">
+            <value>Mtundu wakutumiza</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred/yes:label">
+            <value>Inde</value>
+          </text>
+          <text id="/tb_results_task/tb_results/referred:label">
+            <value>Kodi mwamutumiza <output value=" /tb_results_task/patient_name "/> kuchipatala?</value>
+          </text>
+          <text id="/tb_results_task/tb_results:label">
+            <value>Zotsatira za TB</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <tb_results_task delimiter="#" id="tb_results_task" prefix="J1!tb_results_task!" version="2021-10-12 05:20:07">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <tb_result/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_date_of_birth/>
+          <patient_age_in_years>0</patient_age_in_years>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <date_of_birth/>
+          <chw_phone/>
+          <geolocation/>
+          <is_referral_case/>
+          <tb_test_result/>
+          <result/>
+          <result_ny/>
+          <tb_results>
+            <n_results_positive/>
+            <n_results_negative/>
+            <n_results_rejected/>
+            <n_results/>
+            <referred/>
+            <ref_type/>
+          </tb_results>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </tb_results_task>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/tb_results_task/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/tb_results_task/inputs/source" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/source_id" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/tb_result" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/tb_results_task/inputs/contact/name" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/sex" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/tb_results_task/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/tb_results_task/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/tb_results_task/source_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/tb_results_task/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/tb_results_task/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/tb_results_task/patient_name" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_results_task/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( difference-in-months(  /tb_results_task/patient_date_of_birth , today() ) div 12 )" nodeset="/tb_results_task/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(  /tb_results_task/patient_date_of_birth , today() )" nodeset="/tb_results_task/patient_age_in_months" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /tb_results_task/patient_date_of_birth ) )" nodeset="/tb_results_task/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /tb_results_task/patient_date_of_birth )) div 7)" nodeset="/tb_results_task/patient_age_in_weeks" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/tb_results_task/date_of_birth" type="string"/>
+      <bind calculate="../inputs/contact/parent/contact/phone" nodeset="/tb_results_task/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/tb_results_task/geolocation" type="string"/>
+      <bind calculate=" /tb_results_task/tb_results/referred " nodeset="/tb_results_task/is_referral_case" type="string"/>
+      <bind calculate="instance('contact-summary')/context/tb_test_result" nodeset="/tb_results_task/tb_test_result" type="string"/>
+      <bind calculate="../inputs/tb_result" nodeset="/tb_results_task/result" type="string"/>
+      <bind calculate="if(../result = 'positive', 'Ali ndi chifuwa chachikulu', if(../result='negative', 'Alibe chifuwa chachikulu', 'Makhololo anabwezedwa'))" nodeset="/tb_results_task/result_ny" type="string"/>
+      <bind nodeset="/tb_results_task/tb_results/n_results_positive" readonly="true()" relevant=" /tb_results_task/result  = 'positive'" type="string"/>
+      <bind nodeset="/tb_results_task/tb_results/n_results_negative" readonly="true()" relevant=" /tb_results_task/result  = 'negative'" type="string"/>
+      <bind nodeset="/tb_results_task/tb_results/n_results_rejected" readonly="true()" relevant=" /tb_results_task/result  = 'rejected'" type="string"/>
+      <bind nodeset="/tb_results_task/tb_results/n_results" readonly="true()" type="string"/>
+      <bind nodeset="/tb_results_task/tb_results/referred" relevant=" /tb_results_task/result  = 'positive'" required="true()" type="select1"/>
+      <bind nodeset="/tb_results_task/tb_results/ref_type" relevant="selected(../referred, 'yes')" required="true()" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/tb_results_task/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list hidden" ref="/tb_results_task/inputs">
+      <label ref="jr:itext('/tb_results_task/inputs:label')"/>
+      <group appearance="hidden" ref="/tb_results_task/inputs/contact">
+        <label ref="jr:itext('/tb_results_task/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/tb_results_task/inputs/contact/_id">
+          <label ref="jr:itext('/tb_results_task/inputs/contact/_id:label')"/>
+        </input>
+        <group appearance="hidden" ref="/tb_results_task/inputs/contact/parent">
+          <label ref="jr:itext('/tb_results_task/inputs/contact/parent:label')"/>
+          <group appearance="hidden" ref="/tb_results_task/inputs/contact/parent/parent">
+            <label ref="jr:itext('/tb_results_task/inputs/contact/parent/parent:label')"/>
+            <group appearance="hidden" ref="/tb_results_task/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/tb_results_task/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/tb_results_task/tb_results">
+      <label ref="jr:itext('/tb_results_task/tb_results:label')"/>
+      <input ref="/tb_results_task/tb_results/n_results_positive">
+        <label ref="jr:itext('/tb_results_task/tb_results/n_results_positive:label')"/>
+      </input>
+      <input ref="/tb_results_task/tb_results/n_results_negative">
+        <label ref="jr:itext('/tb_results_task/tb_results/n_results_negative:label')"/>
+      </input>
+      <input ref="/tb_results_task/tb_results/n_results_rejected">
+        <label ref="jr:itext('/tb_results_task/tb_results/n_results_rejected:label')"/>
+      </input>
+      <input appearance="hidden" ref="/tb_results_task/tb_results/n_results">
+        <label ref="jr:itext('/tb_results_task/tb_results/n_results:label')"/>
+      </input>
+      <select1 ref="/tb_results_task/tb_results/referred">
+        <label ref="jr:itext('/tb_results_task/tb_results/referred:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_results_task/tb_results/referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_results_task/tb_results/referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/tb_results_task/tb_results/ref_type">
+        <label ref="jr:itext('/tb_results_task/tb_results/ref_type:label')"/>
+        <item>
+          <label ref="jr:itext('/tb_results_task/tb_results/ref_type/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/tb_results_task/tb_results/ref_type/no_chw:label')"/>
+          <value>no_chw</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

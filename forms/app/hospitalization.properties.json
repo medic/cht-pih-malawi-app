@@ -1,0 +1,15 @@
+{
+    "icon": "icon-healthcare-generic-2",
+    "title": {
+        "en": "Hospitalization report",
+        "ny": "Lipoti la kugonekedwa mu chipatala"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id"
+    },
+    "hidden_fields": [
+
+    ]
+}

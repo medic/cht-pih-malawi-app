@@ -1,0 +1,2094 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Patient Daily Follow Up</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/daily_follow_up/chw_area_id:label">
+            <value>CHW Area ID</value>
+          </text>
+          <text id="/daily_follow_up/chw_id:label">
+            <value>CHW ID</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/n_refer:label">
+            <value>_Refer <output value=" /daily_follow_up/c_patient_name "/> to health facility for further management_</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_age_in_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome/cured:label">
+            <value>Cured</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome/not_cured:label">
+            <value>Not cured</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome:label">
+            <value>Patient outcome</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred:label">
+            <value>Did you refer <output value=" /daily_follow_up/c_patient_name "/> to health facility</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields:label">
+            <value>Exit details</value>
+          </text>
+          <text id="/daily_follow_up/exit/form:label">
+            <value>Form</value>
+          </text>
+          <text id="/daily_follow_up/exit/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/daily_follow_up/exit:label">
+            <value>Exit report</value>
+          </text>
+          <text id="/daily_follow_up/facility_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method/by_phone:label">
+            <value>By phone</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method/in_person:label">
+            <value>In person</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method:label">
+            <value>How are you following up?</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_findings_title:label">
+            <value>Findings&lt;I class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_follow_up:label">
+            <value>Tasks will appear when follow up is needed.</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_follow_up_title:label">
+            <value>Follow Up&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_hiv_danger_signs_screening:label">
+            <value>_**HIV danger signs screening:** <output value=" /daily_follow_up/group_review/c_hiv_danger_signs_screening "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /daily_follow_up/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /daily_follow_up/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_details_title:label">
+            <value>Patient Details&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_outcome:label">
+            <value>_Exit Outcome: <output value=" /daily_follow_up/group_review/c_patient_outcome "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_and_accompany_hiv:label">
+            <value>_Accompany <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_and_accompany_tb:label">
+            <value>_Accompany <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_hiv:label">
+            <value>_Refer <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_tb:label">
+            <value>_Refer <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_referral:label">
+            <value>_&lt;span style=&quot;color:red;&quot;&gt;Refer <output value=" /daily_follow_up/c_patient_name "/> immediately for danger signs management!&lt;/span&gt;_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_referral_title:label">
+            <value>Refer to health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_submit:label">
+            <value>_Be sure you submit to complete this action._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_summary_title:label">
+            <value>Patient Daily Follow Up</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_danger_signs_screening:label">
+            <value>_**TB danger signs screening:** <output value=" /daily_follow_up/group_review/c_tb_danger_signs_screening "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_exited:label">
+            <value>Exited TB</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_follow_up:label">
+            <value>**_TB follow up_**</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_still_enrolled:label">
+            <value>Still enrolled in TB</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type/chw:label">
+            <value>CHW accompaniment</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type/no_chw:label">
+            <value>Person to visit health facility alone</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type:label">
+            <value>Type of referral</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred:label">
+            <value>Did you refer and accompany <output value=" /daily_follow_up/c_patient_name "/> to the health facility?</value>
+          </text>
+          <text id="/daily_follow_up/group_review:label">
+            <value>Results/Summary Page</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly:label">
+            <value>Has the clinician recommended shifting from daily to monthly visits?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_art_period:label">
+            <value>_<output value=" /daily_follow_up/c_patient_name "/> has been on ART treatment for <output value=" /daily_follow_up/art_duration_display "/> years and <output value=" /daily_follow_up/art_duration_months "/> months_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_ask_clinician:label">
+            <value>_Ask the clinician to stop daily visits based on how the patient is doing at the next appointment_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_explain:label">
+            <value>_Explain to <output value=" /daily_follow_up/c_patient_name "/> that you will not need to visit them daily anymore but during the monthly home visit instead_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period:label">
+            <value>ART Period</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer1:label">
+            <value>_Refer <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer_and_accompany1:label">
+            <value>_Accompany <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/body_pains:label">
+            <value>Body pains/fever</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/jaundice:label">
+            <value>Yellow eyes (jaundice)</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/none:label">
+            <value>None</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_abdominal_pain:label">
+            <value>Severe abdominal pain</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_headache:label">
+            <value>Severe or daily headache</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/shortness_of_breath:label">
+            <value>Shortness of breath</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/swelling_sores_rash:label">
+            <value>Swelling, sores or rash</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/vomiting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/weight_loss:label">
+            <value>Significant weight loss</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:jr:constraintMsg">
+            <value>None cannot be selected with any other option!</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:label">
+            <value>Is <output value=" /daily_follow_up/c_patient_name "/> experiencing any of the following signs?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening:label">
+            <value>Danger signs and side effects screening</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication:label">
+            <value>Does <output value=" /daily_follow_up/c_patient_name "/> have any challenges taking their medication?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_plan_to_accompany:label">
+            <value>_Plan to accompany <output value=" /daily_follow_up/c_patient_name "/> on their next appointment._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_provide_emotional_support:label">
+            <value>_Provide emotional support to <output value=" /daily_follow_up/c_patient_name "/>._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:label">
+            <value>When is the next appointment date?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment:label">
+            <value>Is <output value=" /daily_follow_up/c_patient_name "/> taking treatment as prescribed?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence:label">
+            <value>ARV adherence</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/form:label">
+            <value>Form</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit:label">
+            <value>HIV home visit</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>CHW name</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>CHW phone</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/daily_follow_up/inputs/ref_type:label">
+            <value>Referral type</value>
+          </text>
+          <text id="/daily_follow_up/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/daily_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/daily_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based1:label">
+            <value>HIV adherence</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based2:label">
+            <value>TB adherence</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based:label">
+            <value>_Based on <output value=" /daily_follow_up/c_patient_name "/> profile, you should follow them on:_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent/_id:label">
+            <value>CHW Area</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent/parent/_id:label">
+            <value>Facility ID</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_educate:label">
+            <value>_Educate other household members on TB prevention and refer everyone to the health facility where over 5 will be screened for TB while under 5 will be started on IPT_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_follow_up_ref:label">
+            <value>_Follow up with referred persons for contact tracing: Everyone in the HH should go to the health facility where with over 5 will be screened for TB while under 5 will be started on IPT_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_remind_caregiver:label">
+            <value>_Remind the caregiver to ensure <output value=" /daily_follow_up/c_patient_name "/> adheres to treatment._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members:label">
+            <value>Are there other family members living in the same household as <output value=" /daily_follow_up/c_patient_name "/></value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred:label">
+            <value>Did you refer the household members for contact tracing?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing:label">
+            <value>Contact tracing</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_name:label">
+            <value>Patient name</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_uuid:label">
+            <value>Patient UUID</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/deafness:label">
+            <value>Hearing loss</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/difficulty_breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/dizziness:label">
+            <value>Dizziness</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/fatigue:label">
+            <value>Weakness or fatigue</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/feet_numbness:label">
+            <value>Numbness of feet</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/jaundice:label">
+            <value>Yellow eyes (jaundice)</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/loss_of_appetite:label">
+            <value>Loss of appetite</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/muscle_joint_pain:label">
+            <value>Muscle or joint pain</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/none:label">
+            <value>None</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/rash:label">
+            <value>Rash</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_eyes:label">
+            <value>Swollen eyes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_tongue:label">
+            <value>Swollen tongue</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/trouble_swallowing:label">
+            <value>Trouble swallowing</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vision_loss:label">
+            <value>Vision loss</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vomitting:label">
+            <value>Vomiting</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:hint">
+            <value>Tick every condition/symptom that applies</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:jr:constraintMsg">
+            <value>You cannot select none if you have selected a danger sign!</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:label">
+            <value>Is <output value=" /daily_follow_up/c_patient_name "/> experiencing any of the following signs?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_educate:label">
+            <value>_Educate <output value=" /daily_follow_up/c_patient_name "/> on TB drugs side effects using TB counselling cards_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer:label">
+            <value>_Refer <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer_and_accompany:label">
+            <value>_Accompany <output value=" /daily_follow_up/c_patient_name "/> to the health facility for further management._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening:label">
+            <value>Danger signs and side effects screening</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication:label">
+            <value>Does <output value=" /daily_follow_up/c_patient_name "/> have any challenges taking their medication?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb:label">
+            <value>Is <output value=" /daily_follow_up/c_patient_name "/> still enrolled in TB program</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb:label">
+            <value>Would you like to submit an exit form for <output value=" /daily_follow_up/c_patient_name "/></value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date:label">
+            <value>Was <output value=" /daily_follow_up/c_patient_name "/> given next appointment date</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_next_visit:label">
+            <value>_Next appointment date is <output value=" /daily_follow_up/tb_home_visit/fields/treatment_adherence/tb_next_visit "/>. Plan to accompany <output value=" /daily_follow_up/c_patient_name "/>_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_provide_emotional_support:label">
+            <value>_Give the patient hope using Joseph's story in the TB counselling cards_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg">
+            <value>Date cannot be in the past!</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:label">
+            <value>When is the next appointment date?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/no:label">
+            <value>No</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment:label">
+            <value>Is <output value=" /daily_follow_up/c_patient_name "/> taking treatment as prescribed?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence:label">
+            <value>Drugs adherence</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/form:label">
+            <value>Form</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/type:label">
+            <value>Type</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit:label">
+            <value>TB Treatment adherence</value>
+          </text>
+        </translation>
+        <translation lang="ny">
+          <text id="/daily_follow_up/art_period_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/art_period_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/chw_area_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/chw_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/child_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/content_type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/created_by_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/n_refer:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala kuti akalandire thandizo_</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome/cured:label">
+            <value>Anachira</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome/not_cured:label">
+            <value>Sanachire</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_outcome:label">
+            <value>Zotsatira pa wodwala</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/referred:label">
+            <value>Kodi munatumiza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/source:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/fields:label">
+            <value>Ndondomeko yotulukira mu pologalamu</value>
+          </text>
+          <text id="/daily_follow_up/exit/form:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit/type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/exit:label">
+            <value>Fomu yotulutsila mundondomeko</value>
+          </text>
+          <text id="/daily_follow_up/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method/by_phone:label">
+            <value>Pa lamya</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method/in_person:label">
+            <value>Pa maso</value>
+          </text>
+          <text id="/daily_follow_up/follow_up_method:label">
+            <value>Kodi mukuwalondola bwanji?</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_findings_title:label">
+            <value>Zotsatira&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_follow_up:label">
+            <value>Padzaoneka chidziwitso ngati padzafunike kalondolondo</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_follow_up_title:label">
+            <value>Kalondolondo&lt;i class="fa fa-flag"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_hiv_danger_signs_screening:label">
+            <value>_**Kufufuza za zizindikiro zoopsya za HIV ** <output value=" /daily_follow_up/group_review/c_hiv_danger_signs_screening "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_details:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;<output value=" /daily_follow_up/c_patient_name "/>&lt;/h4&gt;&lt;h5 style=&quot;text-align:center;&quot;&gt;<output value=" /daily_follow_up/c_age_string "/>&lt;/h5&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_details_title:label">
+            <value>Mbiri ya odwala&lt;I class="fa fa-user"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_patient_outcome:label">
+            <value>_Zotsatira za kutuluka: <output value=" /daily_follow_up/group_review/c_patient_outcome "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_and_accompany_hiv:label">
+            <value>_Pelekezani <output value=" /daily_follow_up/c_patient_name "/> ku chipatala kuti akathandizidwe_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_and_accompany_tb:label">
+            <value>_Pelekezani <output value=" /daily_follow_up/c_patient_name "/> ku chipatala kuti akathandizidwe._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_hiv:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /daily_follow_up/c_patient_name "/> ku chipatala kuti akathandizidwe_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_refer_tb:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala kuti akalandire thandizo._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_referral:label">
+            <value>_&lt;span style=&quot;color:red;&quot;&gt;Tumizani <output value=" /daily_follow_up/c_patient_name "/> mwansanga kuchipatala akakhala ndi zizindikiro zoopsa izi!&lt;/span&gt;_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_referral_title:label">
+            <value>Tumizani kuchipatala.&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_submit:label">
+            <value>_Onetsetsani kuti mwapereka mukatsiriza ntchito._</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_summary_title:label">
+            <value>Kalondolondo wa Tsiku ndi Tsiku</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_danger_signs_screening:label">
+            <value>_**Kufufuza zizindikiro zoopsya za matenda a TB** <output value=" /daily_follow_up/group_review/c_tb_danger_signs_screening "/>_</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_exited:label">
+            <value>Anatuluka mu program ya TB</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_follow_up:label">
+            <value>**_Kalondolondo wa TB_**</value>
+          </text>
+          <text id="/daily_follow_up/group_review/n_tb_still_enrolled:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> adakamwa mankhwala a TB?</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type/chw:label">
+            <value>Anapelekezedwa ndi CHW</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type/no_chw:label">
+            <value>Munthu kupita yekha ku chipatala</value>
+          </text>
+          <text id="/daily_follow_up/group_review/ref_type:label">
+            <value>Mtundu wa kutumiza</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/group_review/referred:label">
+            <value>Kodi munatumiza ndi kupelekeza <output value=" /daily_follow_up/c_patient_name "/> ku chipatala?</value>
+          </text>
+          <text id="/daily_follow_up/group_review:label">
+            <value>Zotsatira/ tsamba la zotsatira</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/child_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/content_type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/created_by_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly:label">
+            <value>Kodi adotolo avomereza kuti mutha kusiya kuyendera wodwalayo tsiku ndi tsiku ndikuyamba kumuyendera kamodzi pa mwezi?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_art_period:label">
+            <value>_<output value=" /daily_follow_up/c_patient_name "/> wakhala ali pa ART kwa zaka <output value=" /daily_follow_up/art_duration_display "/>, ndi <output value=" /daily_follow_up/art_duration_months "/> _</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_ask_clinician:label">
+            <value>_Pemphani kwa adotolo kuti musiye kuyendera wodwalayo tsiku ndi tsiku malingana ndi momwe aliri pa ulendo wotsatira wa kuchipatala_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period/n_explain:label">
+            <value>_Mufotokozeleni <output value=" /daily_follow_up/c_patient_name "/> kuti simumamuyendelanso tsiku ndi tsiku koma m'malo mwake kamodzi pa mwezi pa nthawi yoyendera mabanja yokha_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/art_period:label">
+            <value>Nthawi yomwe wakhala pa ART</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/is_referral_case:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer1:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala kuti akalandire thandizo_</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer_and_accompany1:label">
+            <value>_Pelekezani <output value=" /daily_follow_up/c_patient_name "/> ku chipatala kuti akalandire chithandizo china._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/refer_and_accompany:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/refer_only:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/body_pains:label">
+            <value>Kupweteka kwa thupi/kutentha thupi</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/diarrhoea:label">
+            <value>Kutsekula m'mimba</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_abdominal_pain:label">
+            <value>Kupweteka kwa m'mimba</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_headache:label">
+            <value>Kupweteka kwa mutu kwa tsiku ndi tsiku</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/shortness_of_breath:label">
+            <value>Kuvutika/kubanika popuma</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/swelling_sores_rash:label">
+            <value>Kutupa, zilonda kapena nsungu</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/vomiting:label">
+            <value>Kusanza</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/weight_loss:label">
+            <value>Kutsika kwa sikelo</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:hint">
+            <value>Chongani chizindikiro china chiri chonse chomwe chiri chofunika</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale china!</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> akuwona zina mwa zizindikiro zowopysa izi kapena zovuta zobwera chifukwa cha kumwa mankhwala</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/side_effect_screening:label">
+            <value>Kufufuza kwa zizindikiro zoopsya zodza kamba ka mankhwala</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/source:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication:label">
+            <value>Nanga <output value=" /daily_follow_up/c_patient_name "/> akukumana ndi mavuto ena aliwonse kamba ka mankhwalawa?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_plan_to_accompany:label">
+            <value>_Konzekelani zomuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala pa tsiku lofunika kupita ku chipatala._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_provide_emotional_support:label">
+            <value>_Perekani chilimbikitso kwa <output value=" /daily_follow_up/c_patient_name "/>._</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:label">
+            <value>Tsiku lina loti apite ku chipatala ndi liti?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> akumwa mankhwala mwandondomeko?</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/fields/treatment_adherence:label">
+            <value>Kumwa ma ARV mwa ndondomeko</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/form:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit/type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/hiv_home_visit:label">
+            <value>Kuyendera munthu amene ali pa mankhwala a HIV</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/parent:label">
+            <value>Parent</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/daily_follow_up/inputs/ref_type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based1:label">
+            <value>Kutsatira ndondomeko ya kamwedwe ka mankhwala a HIV</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based2:label">
+            <value>Kumwa mankhwala a TB mwa ndondomeko</value>
+          </text>
+          <text id="/daily_follow_up/note_group/n_based:label">
+            <value>_Malingana ndi momwe mbiri ya <output value=" /daily_follow_up/c_patient_name "/> iliri pangani kalondolondo:_</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/child_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/content_type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/created_by_doc:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_educate:label">
+            <value>_Phunzitsa pabanjapo momwe angapewere TB ndipo tumizani aliyense kuchipatala kuti akawapime onse oposera zaka zisanu ngati ali ndi TB ndipo kuti onse ochepera zaka zisanu akalandire mankhwala oteteza ku TB._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_follow_up_ref:label">
+            <value>_Pangani kalondolondo pa banja lomwe papezeka munthu wa TB Tumizani aliyense oposera zaka zisanu kuchipatala kuti akapimidwe ngati ali ndi TB ndipo kuti onse ochepera zaka zisanu akalandire mankhwala oteteza ku TB._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_remind_caregiver:label">
+            <value>_Kumbutsani anthu omwe akupereka chisamaliro kuwonetsetsa kuti akutsatira ndondomeko wa mankhwala omwe apatsidwa._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members:label">
+            <value>Kodi pali anthu ena pabanjapo omwe amakhala limodzi ndi <output value=" /daily_follow_up/c_patient_name "/>?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred:label">
+            <value>Kodi munatumiza anthu a pa banjapo kuchipatala kuti akafufuzidwe pa nkhani ya TB?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/contact_tracing:label">
+            <value>Kulumikiza anthu ena apabanja kuchipatala pa nkhani ya TB</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/is_referral_case:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/deafness:label">
+            <value>Kugontha m'makutu</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/difficulty_breathing:label">
+            <value>Kuvutika kupuma</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/dizziness:label">
+            <value>Chizungulire</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/fatigue:label">
+            <value>Kumva kufowoka kapena kutopa kwambiri</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/feet_numbness:label">
+            <value>Dzanzi m'mapazi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/jaundice:label">
+            <value>Chikasu m'maso</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/loss_of_appetite:label">
+            <value>Kusowa chilakolako cha chakudya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/muscle_joint_pain:label">
+            <value>Kupweteka kwa minyewa ndi m'mafupa</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/none:label">
+            <value>Palibe</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/rash:label">
+            <value>Nsungu pa khungu</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_eyes:label">
+            <value>Kutupa maso</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_tongue:label">
+            <value>Kutupa kwa lilime</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/trouble_swallowing:label">
+            <value>Kuvutika kumeza</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vision_loss:label">
+            <value>Khungu m'maso</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vomitting:label">
+            <value>Kusanza</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:hint">
+            <value>Chongani chizindikiro china chiri chonse chomwe chiri chofunika</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:jr:constraintMsg">
+            <value>Simungasankhe palibe ngati mwasankha kale chizindikilo china chowopysa!</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> akuwona zina mwa zizindikilo izi?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_educate:label">
+            <value>_Phunzitsani <output value=" /daily_follow_up/c_patient_name "/> za zizindikilo zachilendo zobwera kamba komwa mankhwala a TB pogwilitsa ntchito ma kadi ophunzitsira._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer:label">
+            <value>_Tumizani ndi kuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala kuti akalandire thandizo._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer_and_accompany:label">
+            <value>_Pelekezani <output value=" /daily_follow_up/c_patient_name "/> ku chipatala kuti akalandire chithandizo china._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/refer_and_accompany:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening/refer_only:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/side_effect_screening:label">
+            <value>Kufufuza kwa zizindikiro zoopsya zodza kamba ka mankhwala</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/source:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication:label">
+            <value>Nanga<output value=" /daily_follow_up/c_patient_name "/> akukumana ndi mavuto ena aliwonse kamba ka mankhwalawa?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> adakalibe mu program ya TB</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb:label">
+            <value>Kodi mukufuna kulemba fomu yom'tulutsila <output value=" /daily_follow_up/c_patient_name "/> mu ndondomeko ya TB.</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> anapatsidwa tsiku lotsatira lomwe akuyenera kupita ku chipatala?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_next_visit:label">
+            <value>Tsiku lina lokawonana ndi adotolo ndi <output value=" /daily_follow_up/tb_home_visit/fields/treatment_adherence/tb_next_visit "/>. Konzekelani zomuperekeza <output value=" /daily_follow_up/c_patient_name "/> kuchipatala pa tsiku lofunika kupita ku chipatala.</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_provide_emotional_support:label">
+            <value>_Perekani uthenga wa chilimbikitso kwa odwala pogwiritsa ntchito khani ya Josefe._</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg">
+            <value>Tsiku silingakhale la m'buyo!</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:label">
+            <value>Tsiku lina loti apite ku chipatala ndi liti?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/no:label">
+            <value>Ayi</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/yes:label">
+            <value>Eya</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment:label">
+            <value>Kodi <output value=" /daily_follow_up/c_patient_name "/> akumwa mankhwala mwandondomeko?</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence/tb_next_visit:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/fields/treatment_adherence:label">
+            <value>Kutsatira ndondomeko yakamwedwe ka mankhwala</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/form:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit/type:label">
+            <value>-</value>
+          </text>
+          <text id="/daily_follow_up/tb_home_visit:label">
+            <value>Kumwa mankhwala a TB mwa ndondomeko</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <daily_follow_up delimiter="#" id="daily_follow_up" prefix="J1!daily_follow_up!" version="2021-11-15 23:16:04">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <ref_type/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <parent>
+                  <contact>
+                    <name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_age_in_years/>
+          <patient_age_in_months>0</patient_age_in_months>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <ncd>"ncd"</ncd>
+          <ref_type/>
+          <c_patient_name/>
+          <c_patient_age_in_years/>
+          <chw_id/>
+          <chw_area_id/>
+          <facility_id/>
+          <art_period_in_years/>
+          <art_period_in_months/>
+          <is_in_art>'</is_in_art>
+          <is_in_tb>'</is_in_tb>
+          <is_in_malnutrition/>
+          <ncds/>
+          <is_in_fp/>
+          <fp_method/>
+          <c_art_duration/>
+          <c_tb_treatment_duration/>
+          <art_duration/>
+          <tb_treatment_duration/>
+          <art_duration_months/>
+          <is_contact_tracing_referred/>
+          <c_patient_mod_mnths/>
+          <c_age_string/>
+          <chw_phone/>
+          <geolocation/>
+          <date_of_birth/>
+          <is_in_ncd>'</is_in_ncd>
+          <art_duration_display/>
+          <patient_date_of_birth/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <follow_up_method/>
+          <note_group>
+            <n_based/>
+            <n_based1/>
+            <n_based2/>
+          </note_group>
+          <hiv_home_visit db-doc="true">
+            <fields>
+              <patient_id/>
+              <patient_age_in_years/>
+              <source/>
+              <source_id/>
+              <patient_uuid/>
+              <patient_name/>
+              <is_referral_case/>
+              <treatment_adherence>
+                <taking_treatment/>
+                <challenges_taking_medication/>
+                <n_provide_emotional_support/>
+                <next_visit/>
+                <n_plan_to_accompany/>
+              </treatment_adherence>
+              <side_effect_screening>
+                <side_effects/>
+                <refer_and_accompany/>
+                <refer_only/>
+                <n_refer_and_accompany1/>
+                <n_refer1/>
+              </side_effect_screening>
+              <art_period>
+                <n_art_period/>
+                <n_ask_clinician/>
+                <daily_to_monthly/>
+                <n_explain/>
+              </art_period>
+            </fields>
+            <child_doc db-doc-ref=" /daily_follow_up/hiv_home_visit "/>
+            <created_by_doc db-doc-ref="/daily_follow_up"/>
+            <content_type>xml</content_type>
+            <type>data_record</type>
+            <form>hiv_home_visit</form>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+            </contact>
+          </hiv_home_visit>
+          <tb_home_visit db-doc="true">
+            <fields>
+              <patient_id/>
+              <patient_age_in_years/>
+              <source/>
+              <source_id/>
+              <patient_uuid/>
+              <patient_name/>
+              <is_referral_case/>
+              <treatment_adherence>
+                <enrolled_in_tb/>
+                <exit_tb/>
+                <taking_treatment/>
+                <taking_treatment_display/>
+                <challenges_taking_medication/>
+                <n_provide_emotional_support/>
+                <has_appointment_date/>
+                <next_visit/>
+                <tb_next_visit/>
+                <n_next_visit/>
+              </treatment_adherence>
+              <side_effect_screening>
+                <n_educate/>
+                <danger_signs/>
+                <refer_and_accompany/>
+                <refer_only/>
+                <n_refer_and_accompany/>
+                <n_refer/>
+              </side_effect_screening>
+              <contact_tracing>
+                <other_hh_members/>
+                <n_educate/>
+                <referred/>
+                <n_remind_caregiver/>
+                <n_follow_up_ref/>
+              </contact_tracing>
+            </fields>
+            <child_doc db-doc-ref=" /daily_follow_up/tb_home_visit "/>
+            <created_by_doc db-doc-ref="/daily_follow_up"/>
+            <content_type>xml</content_type>
+            <type>data_record</type>
+            <form>tb_home_visit</form>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+            </contact>
+          </tb_home_visit>
+          <exit db-doc="true">
+            <fields>
+              <patient_outcome/>
+              <n_refer/>
+              <referred/>
+              <patient_better/>
+              <patient_recovered/>
+              <exited_tb/>
+              <patient_id/>
+              <patient_age_in_years/>
+              <patient_age_in_months/>
+              <source/>
+              <source_id/>
+              <patient_uuid/>
+              <patient_name/>
+            </fields>
+            <child_doc db-doc-ref=" /daily_follow_up/exit "/>
+            <created_by_doc db-doc-ref="/daily_follow_up"/>
+            <content_type>xml</content_type>
+            <type>data_record</type>
+            <form>exit</form>
+            <from/>
+            <contact>
+              <_id/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                </parent>
+              </parent>
+            </contact>
+          </exit>
+          <group_review>
+            <n_summary_title/>
+            <n_submit/>
+            <n_patient_details_title/>
+            <n_patient_details/>
+            <n_findings_title/>
+            <c_hiv_danger_signs_screening/>
+            <c_tb_danger_signs_screening/>
+            <n_hiv_danger_signs_screening/>
+            <n_refer_and_accompany_hiv/>
+            <n_refer_hiv/>
+            <n_tb_danger_signs_screening/>
+            <n_refer_and_accompany_tb/>
+            <n_refer_tb/>
+            <n_tb_follow_up/>
+            <n_tb_still_enrolled/>
+            <n_tb_exited/>
+            <c_patient_outcome/>
+            <n_patient_outcome/>
+            <n_referral_title/>
+            <n_referral/>
+            <referred/>
+            <ref_type/>
+            <n_follow_up_title/>
+            <n_follow_up/>
+          </group_review>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </daily_follow_up>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/daily_follow_up/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/daily_follow_up/inputs/source" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/source_id" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/ref_type" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/name" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/sex" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/parent/parent/contact/name" type="string"/>
+      <bind nodeset="/daily_follow_up/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind calculate="../inputs/source" nodeset="/daily_follow_up/source" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/daily_follow_up/source_id" type="string"/>
+      <bind calculate="floor( difference-in-months( ../inputs/contact/date_of_birth, today() ) div 12 )" nodeset="/daily_follow_up/patient_age_in_years" type="string"/>
+      <bind calculate="difference-in-months(../inputs/contact/date_of_birth, today() )" nodeset="/daily_follow_up/patient_age_in_months" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/daily_follow_up/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/daily_follow_up/patient_id" required="true()" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/daily_follow_up/patient_name" type="string"/>
+      <bind calculate="instance('contact-summary')/context/ncd" nodeset="/daily_follow_up/ncd" type="string"/>
+      <bind calculate="../inputs/ref_type" nodeset="/daily_follow_up/ref_type" type="string"/>
+      <bind calculate="../patient_name" nodeset="/daily_follow_up/c_patient_name" type="string"/>
+      <bind calculate="../patient_age_in_years" nodeset="/daily_follow_up/c_patient_age_in_years" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/_id" nodeset="/daily_follow_up/chw_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/daily_follow_up/chw_area_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/daily_follow_up/facility_id" type="string"/>
+      <bind calculate="instance('contact-summary')/context/art_period_in_years" nodeset="/daily_follow_up/art_period_in_years" type="string"/>
+      <bind calculate="instance('contact-summary')/context/art_period_in_months" nodeset="/daily_follow_up/art_period_in_months" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_art" nodeset="/daily_follow_up/is_in_art" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_tb" nodeset="/daily_follow_up/is_in_tb" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_malnutrition" nodeset="/daily_follow_up/is_in_malnutrition" type="string"/>
+      <bind calculate="instance('contact-summary')/context/ncds" nodeset="/daily_follow_up/ncds" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_fp" nodeset="/daily_follow_up/is_in_fp" type="string"/>
+      <bind calculate="instance('contact-summary')/context/fp_method" nodeset="/daily_follow_up/fp_method" type="string"/>
+      <bind calculate="instance('contact-summary')/context/art_duration" nodeset="/daily_follow_up/c_art_duration" type="string"/>
+      <bind calculate="instance('contact-summary')/context/tb_treatment_duration" nodeset="/daily_follow_up/c_tb_treatment_duration" type="string"/>
+      <bind calculate="round(../c_art_duration div 365, 0)" nodeset="/daily_follow_up/art_duration" type="string"/>
+      <bind calculate="round(../c_tb_treatment_duration div 365, 0)" nodeset="/daily_follow_up/tb_treatment_duration" type="string"/>
+      <bind calculate="round((../c_art_duaration mod 365) div 30.5, 0)" nodeset="/daily_follow_up/art_duration_months" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_contact_tracing_referred" nodeset="/daily_follow_up/is_contact_tracing_referred" type="string"/>
+      <bind calculate="../patient_age_in_months mod 12" nodeset="/daily_follow_up/c_patient_mod_mnths" type="string"/>
+      <bind calculate="if(../patient_age_in_years &lt;= 5, 
+concat( /daily_follow_up/c_patient_age_in_years , ' years ',  /daily_follow_up/c_patient_mod_mnths , ' months old'),
+concat( /daily_follow_up/c_patient_age_in_years , ' years old'))" nodeset="/daily_follow_up/c_age_string" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/contact/phone" nodeset="/daily_follow_up/chw_phone" type="string"/>
+      <bind calculate="concat(../../inputs/meta/location/lat, concat(' ', ../../inputs/meta/location/long))" nodeset="/daily_follow_up/geolocation" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/daily_follow_up/date_of_birth" type="string"/>
+      <bind calculate="instance('contact-summary')/context/is_in_ncd" nodeset="/daily_follow_up/is_in_ncd" type="string"/>
+      <bind calculate="../art_duration" nodeset="/daily_follow_up/art_duration_display" type="string"/>
+      <bind calculate="../inputs/contact/date_of_birth" nodeset="/daily_follow_up/patient_date_of_birth" type="string"/>
+      <bind calculate="floor( decimal-date-time(today()) - decimal-date-time( /daily_follow_up/patient_date_of_birth ) )" nodeset="/daily_follow_up/patient_age_in_days" type="string"/>
+      <bind calculate="floor((decimal-date-time(today()) - decimal-date-time( /daily_follow_up/patient_date_of_birth )) div 7)" nodeset="/daily_follow_up/patient_age_in_weeks" type="string"/>
+      <bind nodeset="/daily_follow_up/follow_up_method" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/note_group/n_based" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/note_group/n_based1" readonly="true()" relevant="../../is_in_art = 'yes' and ../../art_duration &lt; 1" type="string"/>
+      <bind nodeset="/daily_follow_up/note_group/n_based2" readonly="true()" relevant="../../is_in_tb = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit" relevant="../is_in_art = 'yes' and ../art_duration &lt; 1"/>
+      <bind calculate="../../../patient_id" nodeset="/daily_follow_up/hiv_home_visit/fields/patient_id" type="string"/>
+      <bind calculate="../../../patient_age_in_years" nodeset="/daily_follow_up/hiv_home_visit/fields/patient_age_in_years" type="string"/>
+      <bind calculate="../../../source" nodeset="/daily_follow_up/hiv_home_visit/fields/source" type="string"/>
+      <bind calculate="../../../source_id" nodeset="/daily_follow_up/hiv_home_visit/fields/source_id" type="string"/>
+      <bind calculate="../../../patient_uuid" nodeset="/daily_follow_up/hiv_home_visit/fields/patient_uuid" type="string"/>
+      <bind calculate="../../../patient_name" nodeset="/daily_follow_up/hiv_home_visit/fields/patient_name" type="string"/>
+      <bind calculate="if(../side_effect_screening/refer_and_accompany = 'yes' or ../side_effect_screening/refer_only = 'yes', 'yes', 'no')" nodeset="/daily_follow_up/hiv_home_visit/fields/is_referral_case" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_provide_emotional_support" readonly="true()" relevant="selected(../challenges_taking_medication, 'yes')" type="string"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg')" nodeset="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit" required="true()" type="date"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_plan_to_accompany" readonly="true()" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and count-selected(.) &gt; 1)" jr:constraintMsg="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:jr:constraintMsg')" nodeset="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects" required="true()" type="select"/>
+      <bind calculate="if(selected(../side_effects, 'shortness_of_breath')
+or selected(../side_effects, 'body_pains')
+or selected(../side_effects, 'swelling_sores_rash')
+or selected(../side_effects, 'body_pains')
+or selected(../side_effects, 'diarrhoea')
+or selected(../side_effects, 'severe_headache')
+or selected(../side_effects, 'vomiting')
+or selected(../side_effects, 'severe_abdominal_pain'),
+'yes', 'no')" nodeset="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/refer_and_accompany" type="string"/>
+      <bind calculate="if(selected(../side_effects, 'weight_loss') 
+or selected(../side_effects, 'jaundice'),
+'yes', 'no')" nodeset="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/refer_only" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer_and_accompany1" readonly="true()" relevant="../refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer1" readonly="true()" relevant="../refer_only = 'yes'
+and ../refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/art_period" relevant="../../is_in_art = 'yes' and ../../art_duration &gt; 1"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/art_period/n_art_period" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/art_period/n_ask_clinician" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/hiv_home_visit/fields/art_period/n_explain" readonly="true()" relevant="../daily_to_monthly = 'yes'" type="string"/>
+      <bind calculate=" /daily_follow_up/hiv_home_visit " nodeset="/daily_follow_up/hiv_home_visit/child_doc" type="string"/>
+      <bind calculate="." nodeset="/daily_follow_up/hiv_home_visit/created_by_doc" type="string"/>
+      <bind calculate="&quot;xml&quot;" nodeset="/daily_follow_up/hiv_home_visit/content_type" type="string"/>
+      <bind calculate="&quot;data_record&quot;" nodeset="/daily_follow_up/hiv_home_visit/type" type="string"/>
+      <bind calculate="&quot;hiv_home_visit&quot;" nodeset="/daily_follow_up/hiv_home_visit/form" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_id " nodeset="/daily_follow_up/hiv_home_visit/contact/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_area_id " nodeset="/daily_follow_up/hiv_home_visit/contact/parent/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/facility_id " nodeset="/daily_follow_up/hiv_home_visit/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit" relevant="../is_in_tb = 'yes'"/>
+      <bind calculate="../../../patient_id" nodeset="/daily_follow_up/tb_home_visit/fields/patient_id" type="string"/>
+      <bind calculate="../../../patient_age_in_years" nodeset="/daily_follow_up/tb_home_visit/fields/patient_age_in_years" type="string"/>
+      <bind calculate="../../../source" nodeset="/daily_follow_up/tb_home_visit/fields/source" type="string"/>
+      <bind calculate="../../../source_id" nodeset="/daily_follow_up/tb_home_visit/fields/source_id" type="string"/>
+      <bind calculate="../../../patient_uuid" nodeset="/daily_follow_up/tb_home_visit/fields/patient_uuid" type="string"/>
+      <bind calculate="../../../patient_name" nodeset="/daily_follow_up/tb_home_visit/fields/patient_name" type="string"/>
+      <bind calculate="if(../side_effect_screening/refer_and_accompany = 'yes' or ../side_effect_screening/refer_only = 'yes', 'yes', 'no')" nodeset="/daily_follow_up/tb_home_visit/fields/is_referral_case" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb" relevant="selected(../enrolled_in_tb, 'no')" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment" relevant="selected(../enrolled_in_tb, 'yes')" required="true()" type="select1"/>
+      <bind calculate="if(../taking_treatment = 'yes', 'adhering to treatment', 'not adhering to treatment')" nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment_display" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication" relevant="not(selected(../exit_tb, 'yes'))" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_provide_emotional_support" readonly="true()" relevant="selected(../challenges_taking_medication, 'yes') or selected(../exit_tb, 'no')" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date" relevant="selected(../challenges_taking_medication, 'yes') or selected(../exit_tb, 'no')" required="true()" type="select1"/>
+      <bind constraint="decimal-date-time(.) &gt;= decimal-date-time(today())" jr:constraintMsg="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:jr:constraintMsg')" nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit" relevant="selected(../has_appointment_date, 'yes')" required="true()" type="date"/>
+      <bind calculate="format-date-time(../next_visit,&quot;%d-%m-%Y&quot;)" nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/tb_next_visit" relevant="../next_visit != ''" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_next_visit" readonly="true()" relevant="../next_visit != ''" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening" relevant="not(selected(../treatment_adherence/exit_tb, 'yes'))"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_educate" readonly="true()" type="string"/>
+      <bind constraint="not(selected(., 'none')
+and (count-selected(.) &gt; 1))" jr:constraintMsg="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:jr:constraintMsg')" nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs" required="true()" type="select"/>
+      <bind calculate="if(selected(../danger_signs, 'difficulty_breathing')
+or selected(../danger_signs, 'deafness')
+or selected(../danger_signs, 'jaundice')
+or selected(../danger_signs, 'vision_loss')
+or selected(../danger_signs, 'vomitting')
+or selected(../danger_signs, 'rash'),
+'yes', 'no')" nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/refer_and_accompany" type="string"/>
+      <bind calculate="if(selected(../danger_signs, 'muscle_joint_pain')
+or selected(../danger_signs, 'trouble_swallowing')
+or selected(../danger_signs, 'fatigue')
+or selected(../danger_signs, 'loss_of_appetite')
+or selected(../danger_signs, 'swollen_eyes')
+or selected(../danger_signs, 'swollen_tongue')
+or selected(../danger_signs, 'feet_numbness')
+or selected(../danger_signs, 'dizziness')
+and ../refer_and_accompany = 'no',
+'yes', 'no')" nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/refer_only" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer_and_accompany" readonly="true()" relevant="../refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer" readonly="true()" relevant="../refer_only = 'yes'
+and ../refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing" relevant="not(selected(../treatment_adherence/exit_tb, 'yes'))"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members" relevant=" /daily_follow_up/is_contact_tracing_referred  != 'yes'" type="select1"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_educate" readonly="true()" relevant="../other_hh_members = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred" relevant="../other_hh_members = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_remind_caregiver" readonly="true()" relevant="selected(../put_on_treatment, 'yes')" type="string"/>
+      <bind nodeset="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_follow_up_ref" readonly="true()" relevant=" /daily_follow_up/is_contact_tracing_referred  = 'yes'" type="string"/>
+      <bind calculate=" /daily_follow_up/tb_home_visit " nodeset="/daily_follow_up/tb_home_visit/child_doc" type="string"/>
+      <bind calculate="." nodeset="/daily_follow_up/tb_home_visit/created_by_doc" type="string"/>
+      <bind calculate="&quot;xml&quot;" nodeset="/daily_follow_up/tb_home_visit/content_type" type="string"/>
+      <bind calculate="&quot;data_record&quot;" nodeset="/daily_follow_up/tb_home_visit/type" type="string"/>
+      <bind calculate="&quot;tb_home_visit&quot;" nodeset="/daily_follow_up/tb_home_visit/form" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_id " nodeset="/daily_follow_up/tb_home_visit/contact/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_area_id " nodeset="/daily_follow_up/tb_home_visit/contact/parent/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/facility_id " nodeset="/daily_follow_up/tb_home_visit/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/daily_follow_up/exit" relevant="selected(../tb_home_visit/fields/treatment_adherence/exit_tb, 'yes')"/>
+      <bind nodeset="/daily_follow_up/exit/fields/patient_outcome" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/exit/fields/n_refer" readonly="true()" relevant="selected(../patient_outcome, 'not_cured')" required="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/exit/fields/referred" relevant="selected(../patient_outcome, 'not_cured')" required="true()" type="select1"/>
+      <bind calculate="if(selected(../patient_outcome, 'cured'), 'yes', 'no')" nodeset="/daily_follow_up/exit/fields/patient_better" type="string"/>
+      <bind calculate="if(selected(../patient_outcome, 'cured'), 'yes', 'no')" nodeset="/daily_follow_up/exit/fields/patient_recovered" type="string"/>
+      <bind calculate="../../../tb_home_visit/fields/treatment_adherence/exit_tb" nodeset="/daily_follow_up/exit/fields/exited_tb" type="string"/>
+      <bind calculate="../../../patient_id" nodeset="/daily_follow_up/exit/fields/patient_id" type="string"/>
+      <bind calculate="../../../patient_age_in_years" nodeset="/daily_follow_up/exit/fields/patient_age_in_years" type="string"/>
+      <bind calculate="../../../patient_age_in_months" nodeset="/daily_follow_up/exit/fields/patient_age_in_months" type="string"/>
+      <bind calculate="../../../source" nodeset="/daily_follow_up/exit/fields/source" type="string"/>
+      <bind calculate="../../../source_id" nodeset="/daily_follow_up/exit/fields/source_id" type="string"/>
+      <bind calculate="../../../patient_uuid" nodeset="/daily_follow_up/exit/fields/patient_uuid" type="string"/>
+      <bind calculate="../../../patient_name" nodeset="/daily_follow_up/exit/fields/patient_name" type="string"/>
+      <bind calculate=" /daily_follow_up/exit " nodeset="/daily_follow_up/exit/child_doc" type="string"/>
+      <bind calculate="." nodeset="/daily_follow_up/exit/created_by_doc" type="string"/>
+      <bind calculate="&quot;xml&quot;" nodeset="/daily_follow_up/exit/content_type" type="string"/>
+      <bind calculate="&quot;data_record&quot;" nodeset="/daily_follow_up/exit/type" type="string"/>
+      <bind calculate="&quot;exit&quot;" nodeset="/daily_follow_up/exit/form" type="string"/>
+      <bind calculate="../../chw_phone" nodeset="/daily_follow_up/exit/from" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_id " nodeset="/daily_follow_up/exit/contact/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/chw_area_id " nodeset="/daily_follow_up/exit/contact/parent/_id" type="string"/>
+      <bind calculate=" /daily_follow_up/facility_id " nodeset="/daily_follow_up/exit/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_summary_title" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_submit" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_patient_details_title" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_patient_details" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_findings_title" readonly="true()" type="string"/>
+      <bind calculate="if(../../hiv_home_visit/fields/side_effect_screening/refer_and_accompany = 'yes' or ../../hiv_home_visit/fields/side_effect_screening/refer_only = 'yes' , 'Danger signs present', 'No danger signs')" nodeset="/daily_follow_up/group_review/c_hiv_danger_signs_screening" type="string"/>
+      <bind calculate="if(../../tb_home_visit/fields/side_effect_screening/refer_and_accompany = 'yes' or ../../tb_home_visit/fields/side_effect_screening/refer_only = 'yes' , 'Danger signs present', 'No danger signs')" nodeset="/daily_follow_up/group_review/c_tb_danger_signs_screening" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_hiv_danger_signs_screening" readonly="true()" relevant="../../is_in_art = 'yes' and ../../hiv_home_visit/fields/side_effect_screening/side_effects != ''" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_refer_and_accompany_hiv" readonly="true()" relevant="../../hiv_home_visit/fields/side_effect_screening/refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_refer_hiv" readonly="true()" relevant="../../hiv_home_visit/fields/side_effect_screening/refer_only = 'yes'
+and ../../hiv_home_visit/fields/side_effect_screening/refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_tb_danger_signs_screening" readonly="true()" relevant="../../tb_home_visit/fields/side_effect_screening/danger_signs != ''" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_refer_and_accompany_tb" readonly="true()" relevant="../../tb_home_visit/fields/side_effect_screening/refer_only = 'no'
+and ../../tb_home_visit/fields/side_effect_screening/refer_and_accompany = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_refer_tb" readonly="true()" relevant="../../tb_home_visit/fields/side_effect_screening/refer_only = 'yes'
+and ../../tb_home_visit/fields/side_effect_screening/refer_and_accompany = 'no'" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_tb_follow_up" readonly="true()" relevant="../../is_in_tb = 'yes'" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_tb_still_enrolled" readonly="true()" relevant="selected(../../tb_home_visit/fields/treatment_adherence/exit_tb 'no') or selected(../../tb_home_visit/fields/treatment_adherence/enrolled_in_tb, 'yes')" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_tb_exited" readonly="true()" relevant="selected(../../tb_home_visit/fields/treatment_adherence/exit_tb 'yes')" type="string"/>
+      <bind calculate="jr:choice-name( /daily_follow_up/exit/fields/patient_outcome , ' /daily_follow_up/exit/fields/patient_outcome ')" nodeset="/daily_follow_up/group_review/c_patient_outcome" relevant="selected(../../tb_home_visit/fields/treatment_adherence/exit_tb 'yes')" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_patient_outcome" readonly="true()" relevant="selected(../../tb_home_visit/fields/treatment_adherence/exit_tb 'yes')" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_referral_title" readonly="true()" relevant="(not(selected(../../hiv_home_visit/fields/side_effect_screening/side_effects, 'none')) 
+and count-selected(../../hiv_home_visit/fields/side_effect_screening/side_effects) &gt;= 1) or (not(selected(../../tb_home_visit/fields/side_effect_screening/danger_signs, 'none')) 
+and count-selected(../../tb_home_visit/fields/side_effect_screening/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_referral" readonly="true()" relevant="(not(selected(../../hiv_home_visit/fields/side_effect_screening/side_effects, 'none')) 
+and count-selected(../../hiv_home_visit/fields/side_effect_screening/side_effects) &gt;= 1) or (not(selected(../../tb_home_visit/fields/side_effect_screening/danger_signs, 'none')) 
+and count-selected(../../tb_home_visit/fields/side_effect_screening/danger_signs) &gt;= 1)" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/referred" relevant="(not(selected(../../hiv_home_visit/fields/side_effect_screening/side_effects, 'none')) 
+and count-selected(../../hiv_home_visit/fields/side_effect_screening/side_effects) &gt;= 1) or (not(selected(../../tb_home_visit/fields/side_effect_screening/danger_signs, 'none')) 
+and count-selected(../../tb_home_visit/fields/side_effect_screening/danger_signs) &gt;= 1)" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/group_review/ref_type" relevant="selected(../referred, 'yes')" required="true()" type="select1"/>
+      <bind nodeset="/daily_follow_up/group_review/n_follow_up_title" readonly="true()" type="string"/>
+      <bind nodeset="/daily_follow_up/group_review/n_follow_up" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/daily_follow_up/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/daily_follow_up/inputs">
+      <label ref="jr:itext('/daily_follow_up/inputs:label')"/>
+      <group ref="/daily_follow_up/inputs/contact">
+        <label ref="jr:itext('/daily_follow_up/inputs/contact:label')"/>
+        <input appearance="db-object" ref="/daily_follow_up/inputs/contact/_id">
+          <label ref="jr:itext('/daily_follow_up/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/daily_follow_up/inputs/contact/parent">
+          <label ref="jr:itext('/daily_follow_up/inputs/contact/parent:label')"/>
+          <group ref="/daily_follow_up/inputs/contact/parent/parent">
+            <label ref="jr:itext('/daily_follow_up/inputs/contact/parent/parent:label')"/>
+            <group ref="/daily_follow_up/inputs/contact/parent/parent/contact">
+              <label ref="jr:itext('/daily_follow_up/inputs/contact/parent/parent/contact:label')"/>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <select1 ref="/daily_follow_up/follow_up_method">
+      <label ref="jr:itext('/daily_follow_up/follow_up_method:label')"/>
+      <item>
+        <label ref="jr:itext('/daily_follow_up/follow_up_method/in_person:label')"/>
+        <value>in_person</value>
+      </item>
+      <item>
+        <label ref="jr:itext('/daily_follow_up/follow_up_method/by_phone:label')"/>
+        <value>by_phone</value>
+      </item>
+    </select1>
+    <group appearance="field-list" ref="/daily_follow_up/note_group">
+      <input ref="/daily_follow_up/note_group/n_based">
+        <label ref="jr:itext('/daily_follow_up/note_group/n_based:label')"/>
+      </input>
+      <input appearance="li" ref="/daily_follow_up/note_group/n_based1">
+        <label ref="jr:itext('/daily_follow_up/note_group/n_based1:label')"/>
+      </input>
+      <input appearance="li" ref="/daily_follow_up/note_group/n_based2">
+        <label ref="jr:itext('/daily_follow_up/note_group/n_based2:label')"/>
+      </input>
+    </group>
+    <group ref="/daily_follow_up/hiv_home_visit">
+      <label ref="jr:itext('/daily_follow_up/hiv_home_visit:label')"/>
+      <group ref="/daily_follow_up/hiv_home_visit/fields">
+        <group appearance="field-list" ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence">
+          <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence:label')"/>
+          <select1 ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/taking_treatment/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_provide_emotional_support">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_provide_emotional_support:label')"/>
+          </input>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/next_visit:label')"/>
+          </input>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_plan_to_accompany">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/treatment_adherence/n_plan_to_accompany:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/daily_follow_up/hiv_home_visit/fields/side_effect_screening">
+          <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening:label')"/>
+          <select ref="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:label')"/>
+            <hint ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects:hint')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/shortness_of_breath:label')"/>
+              <value>shortness_of_breath</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/body_pains:label')"/>
+              <value>body_pains</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/swelling_sores_rash:label')"/>
+              <value>swelling_sores_rash</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/diarrhoea:label')"/>
+              <value>diarrhoea</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_headache:label')"/>
+              <value>severe_headache</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/vomiting:label')"/>
+              <value>vomiting</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/severe_abdominal_pain:label')"/>
+              <value>severe_abdominal_pain</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/jaundice:label')"/>
+              <value>jaundice</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/weight_loss:label')"/>
+              <value>weight_loss</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/side_effects/none:label')"/>
+              <value>none</value>
+            </item>
+          </select>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer_and_accompany1">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer_and_accompany1:label')"/>
+          </input>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer1">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/side_effect_screening/n_refer1:label')"/>
+          </input>
+        </group>
+        <group ref="/daily_follow_up/hiv_home_visit/fields/art_period">
+          <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period:label')"/>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/art_period/n_art_period">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/n_art_period:label')"/>
+          </input>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/art_period/n_ask_clinician">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/n_ask_clinician:label')"/>
+          </input>
+          <select1 ref="/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/daily_to_monthly/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/hiv_home_visit/fields/art_period/n_explain">
+            <label ref="jr:itext('/daily_follow_up/hiv_home_visit/fields/art_period/n_explain:label')"/>
+          </input>
+        </group>
+      </group>
+      <group appearance="hidden" ref="/daily_follow_up/hiv_home_visit/contact">
+        <group appearance="hidden" ref="/daily_follow_up/hiv_home_visit/contact/parent">
+          <group appearance="hidden" ref="/daily_follow_up/hiv_home_visit/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/daily_follow_up/tb_home_visit">
+      <label ref="jr:itext('/daily_follow_up/tb_home_visit:label')"/>
+      <group ref="/daily_follow_up/tb_home_visit/fields">
+        <group appearance="field-list" ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence">
+          <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence:label')"/>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/enrolled_in_tb/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/exit_tb/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/taking_treatment/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/challenges_taking_medication/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_provide_emotional_support">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_provide_emotional_support:label')"/>
+          </input>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/has_appointment_date/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/next_visit:label')"/>
+          </input>
+          <input ref="/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_next_visit">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/treatment_adherence/n_next_visit:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/daily_follow_up/tb_home_visit/fields/side_effect_screening">
+          <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening:label')"/>
+          <input ref="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_educate">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_educate:label')"/>
+          </input>
+          <select ref="/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:label')"/>
+            <hint ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs:hint')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/difficulty_breathing:label')"/>
+              <value>difficulty_breathing</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/deafness:label')"/>
+              <value>deafness</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/jaundice:label')"/>
+              <value>jaundice</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vision_loss:label')"/>
+              <value>vision_loss</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/vomitting:label')"/>
+              <value>vomitting</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/rash:label')"/>
+              <value>rash</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/muscle_joint_pain:label')"/>
+              <value>muscle_joint_pain</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/trouble_swallowing:label')"/>
+              <value>trouble_swallowing</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/fatigue:label')"/>
+              <value>fatigue</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/loss_of_appetite:label')"/>
+              <value>loss_of_appetite</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_eyes:label')"/>
+              <value>swollen_eyes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/swollen_tongue:label')"/>
+              <value>swollen_tongue</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/feet_numbness:label')"/>
+              <value>feet_numbness</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/dizziness:label')"/>
+              <value>dizziness</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/danger_signs/none:label')"/>
+              <value>none</value>
+            </item>
+          </select>
+          <input ref="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer_and_accompany">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer_and_accompany:label')"/>
+          </input>
+          <input ref="/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/side_effect_screening/n_refer:label')"/>
+          </input>
+        </group>
+        <group appearance="field-list" ref="/daily_follow_up/tb_home_visit/fields/contact_tracing">
+          <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing:label')"/>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/other_hh_members/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_educate">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/n_educate:label')"/>
+          </input>
+          <select1 ref="/daily_follow_up/tb_home_visit/fields/contact_tracing/referred">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/referred:label')"/>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/yes:label')"/>
+              <value>yes</value>
+            </item>
+            <item>
+              <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/referred/no:label')"/>
+              <value>no</value>
+            </item>
+          </select1>
+          <input ref="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_remind_caregiver">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/n_remind_caregiver:label')"/>
+          </input>
+          <input ref="/daily_follow_up/tb_home_visit/fields/contact_tracing/n_follow_up_ref">
+            <label ref="jr:itext('/daily_follow_up/tb_home_visit/fields/contact_tracing/n_follow_up_ref:label')"/>
+          </input>
+        </group>
+      </group>
+      <group appearance="hidden" ref="/daily_follow_up/tb_home_visit/contact">
+        <group appearance="hidden" ref="/daily_follow_up/tb_home_visit/contact/parent">
+          <group appearance="hidden" ref="/daily_follow_up/tb_home_visit/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group ref="/daily_follow_up/exit">
+      <label ref="jr:itext('/daily_follow_up/exit:label')"/>
+      <group appearance="field-list" ref="/daily_follow_up/exit/fields">
+        <label ref="jr:itext('/daily_follow_up/exit/fields:label')"/>
+        <select1 ref="/daily_follow_up/exit/fields/patient_outcome">
+          <label ref="jr:itext('/daily_follow_up/exit/fields/patient_outcome:label')"/>
+          <item>
+            <label ref="jr:itext('/daily_follow_up/exit/fields/patient_outcome/cured:label')"/>
+            <value>cured</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/daily_follow_up/exit/fields/patient_outcome/not_cured:label')"/>
+            <value>not_cured</value>
+          </item>
+        </select1>
+        <input ref="/daily_follow_up/exit/fields/n_refer">
+          <label ref="jr:itext('/daily_follow_up/exit/fields/n_refer:label')"/>
+        </input>
+        <select1 ref="/daily_follow_up/exit/fields/referred">
+          <label ref="jr:itext('/daily_follow_up/exit/fields/referred:label')"/>
+          <item>
+            <label ref="jr:itext('/daily_follow_up/exit/fields/referred/yes:label')"/>
+            <value>yes</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/daily_follow_up/exit/fields/referred/no:label')"/>
+            <value>no</value>
+          </item>
+        </select1>
+      </group>
+      <group appearance="hidden" ref="/daily_follow_up/exit/contact">
+        <group appearance="hidden" ref="/daily_follow_up/exit/contact/parent">
+          <group appearance="hidden" ref="/daily_follow_up/exit/contact/parent/parent"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/daily_follow_up/group_review">
+      <label ref="jr:itext('/daily_follow_up/group_review:label')"/>
+      <input appearance="h1 blue" ref="/daily_follow_up/group_review/n_summary_title">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_summary_title:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_submit">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/daily_follow_up/group_review/n_patient_details_title">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_patient_details_title:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_patient_details">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_patient_details:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/daily_follow_up/group_review/n_findings_title">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_findings_title:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_hiv_danger_signs_screening">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_hiv_danger_signs_screening:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_refer_and_accompany_hiv">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_refer_and_accompany_hiv:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_refer_hiv">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_refer_hiv:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_tb_danger_signs_screening">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_tb_danger_signs_screening:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_refer_and_accompany_tb">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_refer_and_accompany_tb:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_refer_tb">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_refer_tb:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_tb_follow_up">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_tb_follow_up:label')"/>
+      </input>
+      <input appearance="li" ref="/daily_follow_up/group_review/n_tb_still_enrolled">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_tb_still_enrolled:label')"/>
+      </input>
+      <input appearance="li" ref="/daily_follow_up/group_review/n_tb_exited">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_tb_exited:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_patient_outcome">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_patient_outcome:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/daily_follow_up/group_review/n_referral_title">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_referral_title:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_referral">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_referral:label')"/>
+      </input>
+      <select1 ref="/daily_follow_up/group_review/referred">
+        <label ref="jr:itext('/daily_follow_up/group_review/referred:label')"/>
+        <item>
+          <label ref="jr:itext('/daily_follow_up/group_review/referred/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/daily_follow_up/group_review/referred/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/daily_follow_up/group_review/ref_type">
+        <label ref="jr:itext('/daily_follow_up/group_review/ref_type:label')"/>
+        <item>
+          <label ref="jr:itext('/daily_follow_up/group_review/ref_type/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/daily_follow_up/group_review/ref_type/no_chw:label')"/>
+          <value>no_chw</value>
+        </item>
+      </select1>
+      <input appearance="h1 green" ref="/daily_follow_up/group_review/n_follow_up_title">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_follow_up_title:label')"/>
+      </input>
+      <input ref="/daily_follow_up/group_review/n_follow_up">
+        <label ref="jr:itext('/daily_follow_up/group_review/n_follow_up:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

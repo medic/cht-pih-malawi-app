@@ -1,0 +1,122 @@
+{
+  "coreVersion": "3.10.3",
+  "user": "chw_id",
+  "subject": "patient_id",
+
+  "ownedBySubject": true,
+
+  "docs": [
+    {
+      "_id": "chw_id",
+      "name": "CHW",
+      "date_of_birth": "1971-03-10",
+      "phone": "+17782473214",
+      "reported_date": 1550559625153,
+      "type": "person",
+      "parent": {
+        "_id": "chw_area_id",
+        "parent": {
+          "_id": "branch_id"
+        }
+      }
+    },
+
+    {
+      "_id": "patient_id",
+      "type": "person",
+      "contact_type": "person",
+      "name": "Patient Name",
+      "role": "patient",
+      "date_of_birth": "2017-07-09",
+      "sex": "female",
+      "reported_date": 928195200000,
+      "patient_id": "patient_id",
+      "art_id": "ART 000",
+      "art_start_date": "01-01-2019",
+      "parent": {
+        "_id": "family_id",
+        "parent": {
+          "_id": "chw_area_id",
+          "parent": {
+            "_id": "schw_region_id",
+            "parent": {
+              "_id": "site_id"
+            }
+          }
+        }
+      }
+    },
+
+    {
+      "_id": "patient_id2",
+      "type": "person",
+      "contact_type": "person",
+      "name": "Patient Name",
+      "role": "patient",
+      "date_of_birth": "2000-07-09",
+      "sex": "female",
+      "reported_date": 928195200000
+    },
+
+    {
+      "_id": "family_id",
+      "type": "contact",
+      "contact_type": "household",
+      "name": "Test Family Contact",
+      "reported_date": 1546306973000,
+      "date_of_birth": "1990-07-09",
+      "parent": {
+        "_id": "chw_area_id",
+        "parent": {
+          "_id": "schw_region_id",
+          "parent": {
+            "_id": "site_id"
+          }
+        }
+      }
+    },
+
+    {
+      "_id": "chw_area_id",
+      "type": "health_center",
+      "contact_type": "chw_area",
+      "name": "CHW Area",
+      "parent": {
+        "_id": "schw_region_id",
+        "parent": {
+          "_id": "site_id"
+        }
+      },
+      "contact": {
+        "_id": "chw_area_contact_id"
+      }
+    },
+
+    {
+      "_id": "schw_id",
+      "name": "SCHW",
+      "date_of_birth": "1971-03-10",
+      "phone": "+17782473214",
+      "reported_date": 1550559625153,
+      "type": "contact",
+      "contact_type": "schw",
+      "parent": {
+        "_id": "schw_region_id",
+        "parent": {
+          "_id": "site_id"
+        },
+        "contact": {
+          "_id": "chw_area_contact_id"
+        }
+      }
+    },
+
+    {
+      "_id": "schw_region_id",
+      "contact_type": "schw_region",
+      "parent": {
+        "_id": "site_id"
+      }
+    }
+  ]
+}

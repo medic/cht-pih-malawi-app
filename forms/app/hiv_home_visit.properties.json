@@ -1,0 +1,15 @@
+{
+    "icon": "icon-disease-hiv-aids",
+    "title": {
+        "en": "HIV home visit",
+        "ny": "Lipoti la zotsatira za kuyendera pa banja"
+    },
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "contact.contact_type === 'person' && user._id != contact._id && summary.is_in_art === 'yes' && summary.alive"
+    },
+    "hidden_fields": [
+
+    ]
+}
